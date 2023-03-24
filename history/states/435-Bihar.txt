@@ -1,0 +1,32 @@
+
+state={
+	id=435
+	name="STATE_435"
+
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		add_extra_state_shared_building_slots = 1
+		victory_points = {
+			4516 15 
+		}
+		victory_points = {
+			7537 3 
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 3
+			air_base = 1
+
+		}
+
+	}
+
+	provinces={
+		1656 4459 4516 4544 4571 7475 7537 10361 10878 
+	}
+	manpower=82998000
+	buildings_max_level_factor=1.000
+	state_category=state_level_21
+}

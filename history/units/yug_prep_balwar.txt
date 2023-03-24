@@ -1,0 +1,32 @@
+units = {
+    division = {
+		name = "Hugosharveyan Anti Balkham Brigade"
+		location = 3617
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "Hugosharveyan Anti Balkham Brigade 2"
+		location = 3617
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "Hugosharveyan Anti Balkham Brigade 3"
+		location = 3617
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "Hugosharveyan Anti Balkham Brigade 4"
+		location = 3617
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+    division = {
+		name = "Hugosharveyan Anti Balkham Brigade 5"
+		location = 3617
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.3
+	}
+}

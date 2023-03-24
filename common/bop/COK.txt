@@ -1,0 +1,177 @@
+
+COK_power_balance = {
+    initial_value = -0.10
+    left_side = COK_Diet_Coke_Side
+    right_side = COK_Coca_Cola_Side
+    decision_category = COK_balance_of_power_category
+    range = {
+        id = COK_balance_range
+        min = -0.10
+        max = 0.10
+        modifier = {
+            market_liberal_drift = 0.1
+            democratic_socialist_drift = 0.05
+            communist_drift = 0.05
+		}
+		on_activate = {
+            add_political_power = -150
+		}
+		on_deactivate = {
+			add_political_power = 150
+		}
+    }
+    side = {
+        id = COK_Diet_Coke_Side
+        icon = GFX_bop_COK_Diet_Coke_Side
+        range = {
+            id = COK_Diet_Coke_Low_Control_Range
+            min = -0.3
+            max = -0.1
+            modifier = {
+                democratic_socialist_drift = 0.1
+                communist_drift = 0.05
+                political_power_gain = 0.2
+		    }
+            on_activate = {
+                add_popularity = {
+                    ideology = market_liberal
+                    popularity = -0.1
+                }
+            }
+            on_deactivate = {
+                
+            }
+        }
+        range = {
+            id = COK_Diet_Coke_Med_Control_Range
+            min = -0.6
+            max = -0.3
+            modifier = {
+                democratic_socialist_drift = 0.1
+                communist_drift = 0.1
+                political_power_gain = 0.3
+                production_speed_buildings_factor = 0.5
+		    }
+            on_activate = {
+                add_political_power = 100
+            }
+            on_deactivate = {
+                add_political_power = -100
+            }
+        }
+        range = {
+            id = COK_Diet_Coke_High_Control_Range
+            min = -0.9
+            max = -0.6
+            modifier = {
+                democratic_socialist_drift = 0.05
+                communist_drift = 0.1
+                political_power_gain = 0.5
+                production_speed_buildings_factor = 0.8
+                army_attack_speed_factor = 0.5
+		    }
+            on_activate = {
+                add_political_power = 150
+            }
+            on_deactivate = {
+                
+            }
+        }
+        range = {
+            id = COK_Extreme_Diet_Coke
+            min = -1
+            max = -0.9
+            modifier = {
+                democratic_socialist_drift = 0.01
+                communist_drift = 0.15
+                political_power_gain = 0.8
+                production_speed_buildings_factor = 1.2
+                army_attack_speed_factor = 1
+		    }
+            on_activate = {
+                add_popularity = {
+                    ideology = market_liberal
+                    popularity = -1
+                }
+            }
+            on_deactivate = {
+                add_popularity = {
+                    ideology = communist
+                    popularity = -0.2
+                }
+            }
+        }
+    }
+    side = {
+        id = COK_Coca_Cola_Side
+        icon = GFX_bop_COK_Coca-Cola_Side
+        range = {
+            id = COK_Coca_Cola_Low_Control_Range
+            min = 0.1
+            max = 0.3
+            modifier = {
+                market_liberal_drift = 0.1
+                offence = 0.5
+		    }
+            on_activate = {
+
+            }
+            on_deactivate = {
+                
+            }
+        }
+        range = {
+            id = COK_Coca_Cola_Med_Control_Range
+            min = 0.3
+            max = 0.6
+            modifier = {
+                market_liberal_drift = 0.15
+                offence = 0.8
+                monthly_population = -0.5
+		    }
+            on_activate = {
+
+            }
+            on_deactivate = {
+                
+            }
+        }
+        range = {
+            id = COK_Coca_Cola_High_Control_Range
+            min = 0.6
+            max = 0.9
+            modifier = {
+                market_liberal_drift = 0.2
+                offence = 1.0
+                monthly_population = -0.5
+                conscription = 0.2
+		    }
+            on_activate = {
+
+            }
+            on_deactivate = {
+                
+            }
+        }
+        range = {
+            id = COK_Extreme_Coca_Cola
+            min = 0.9
+            max = 1
+            modifier = {
+                market_liberal_drift = 0.25
+                offence = 1.5
+                monthly_population = -0.5
+                conscription = 0.5
+		    }
+            on_activate = {
+                set_politics = {
+                    ruling_party = market_liberal
+                    elections_allowed = no
+                }
+            }
+            on_deactivate = {
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+spriteTypes = {
+    spriteType = {
+        name = "house_compass"
+        textureFile = "gfx/interface/house_divide/house_compass.dds"
+    }
+    spriteType = {
+        name = "house_compass_circle"
+        textureFile = "gfx/interface/house_divide/house_compass_circle.dds"
+    }
+    spriteType = {
+        name = "house_compass_button"
+        textureFile = "gfx/interface/house_divide/house_compass_button.dds"
+    }
+    spriteType = {
+        name = "beaufort_corner"
+        textureFile = "gfx/interface/house_divide/beaufort_corner.dds"
+    }
+    spriteType = {
+        name = "howard_corner"
+        textureFile = "gfx/interface/house_divide/howard_corner.dds"
+    }
+    spriteType = {
+        name = "seymour_corner"
+        textureFile = "gfx/interface/house_divide/seymour_corner.dds"
+    }
+    spriteType = {
+        name = "tudor_corner"
+        textureFile = "gfx/interface/house_divide/tudor_corner.dds"
+    }
+    spriteType = {
+        name = "GFX_house_divide_omalley"
+        textureFile = "gfx/leaders/CHB/Steven_O_Malley.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_house_divide_dowling"
+        textureFile = "gfx/leaders/CHB/Thomas_Dowling.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_house_divide_giles"
+        textureFile = "gfx/leaders/CHB/Giles_Hill.dds"
+        legacy_lazy_load = no
+    }
+    spriteType = {
+        name = "GFX_house_divide_nash"
+        textureFile = "gfx/leaders/CHB/Nashers.dds"
+        legacy_lazy_load = no
+    }
+}

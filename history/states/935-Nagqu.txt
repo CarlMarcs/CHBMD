@@ -1,0 +1,22 @@
+state={
+	id=935
+	name="STATE_935"
+	
+	provinces={
+		2010 5011 8068 10755 10918 
+	}
+
+	history = {
+		owner = PRC
+		add_core_of = TIB
+		add_core_of = PRC
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	
+	manpower=366380
+	state_category = state_level_1
+	buildings_max_level_factor=1.000
+}

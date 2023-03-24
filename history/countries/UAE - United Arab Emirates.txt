@@ -1,0 +1,126 @@
+﻿capital = 658
+
+oob = "UAE_2000"
+
+set_research_slots = 4
+set_convoys = 500
+set_stability = 0.4
+
+set_war_support = 0.2
+
+set_country_flag = country_language_arabic
+
+set_technology = {
+	## Infantry ##
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	support_weapons = 1
+	night_vision = 1
+	body_armor = 1
+	camouflage = 1
+	marines = 1
+	tech_mountaineers = 1
+	paratroopers = 1
+	
+	## Support Companies ##
+	tech_support = 1
+	basic_train =1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	
+	## Armor ##
+	main_battle_tank1 = 1
+	main_battle_tank2 = 1
+	main_battle_tank3 = 1
+	light_tank1 = 1
+	mechanised_infantry1 = 1
+	light_mechanized_infantry1 = 1
+	
+	## Artillery ##
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	
+	## Air ##
+	CAS1 = 1
+	CAS2 = 1
+	fighter1 = 1
+	fighter2 = 1
+	fighter3 = 1
+	naval_bomber1 = 1
+	strategic_bomber1 = 1
+	
+	## Engineering ##
+	electronic_mechanical_engineering = 1
+	
+	## Industry ##
+	basic_machine_tools = 1
+	
+	## Doctrines ##
+	superior_firepower = 1
+	formation_flying = 1
+}
+
+set_country_flag = dominant_religion_islam
+set_country_flag = sunni_islam
+
+add_ideas = {
+	centralization_federal
+	government_system_absolute_monarchy
+	economy_tax_meager
+	civil_liberties_totalitarian
+	population_growth_rapid
+	arab_league_member
+	limited_conscription
+}
+
+set_politics = {	
+	ruling_party = monarchist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    islamist = 30
+    conservative = 5
+    monarchist = 60
+    social_liberal = 5
+}
+recruit_character = UAE_khalifa_bin_zayed
+recruit_character = UAE_sultan_bin_kayed_alqasimi
+recruit_character = UAE_khaled_aldakhil
+recruit_character = UAE_nasir_bin_ghaith
+recruit_character = UAE_ibrahim_al_haram
+recruit_character = UAE_abdul_khaliq_abdullah
+recruit_character = UAE_sultan_saud_alqasimi
+recruit_character = UAE_ahmed_al_jarwan
+recruit_character = UAE_khaled_al_qasimi
+recruit_character = UAE_sultan_bin_mohammed_alqasimi
+recruit_character = UAE_saadat_jamal_al_zaabi
+recruit_character = UAE_louay_mohammad_deeb
+recruit_character = UAE_hamad_mohammed_alrumaithi
+recruit_character = UAE_gomaa_ahmed_albawardi
+recruit_character = UAE_saleh_mohammed_alameri
+recruit_character = UAE_ahmed_bin_tahnoon
+recruit_character = UAE_issa_saif_almazrouei
+recruit_character = UAE_al_matrooshi_mourn
+recruit_character = UAE_khalifa_bin_nahila
+recruit_character = UAE_mohammed_al_dhahiri
+recruit_character = UAE_abdul_qudous_abdul_razzaq
+recruit_character = UAE_hamad_adil_alshamsi
+recruit_character = UAE_mubarak_bin_muhairoum
+recruit_character = UAE_mubarak_abdullah_almuhairi
+recruit_character = UAE_ibrahim_salem_mohammed
+
+
+2016.1.1 = {
+	oob = "UAE_2016"
+}

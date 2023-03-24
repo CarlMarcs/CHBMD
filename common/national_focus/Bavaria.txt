@@ -1,0 +1,147 @@
+focus_tree = {
+	id = bavfocus
+	country = {
+	factor = 0
+	modifier = {
+		add = 10
+		tag = BAY
+	} }
+	continuous_focus_position = {
+		x = 56
+        y = 785
+	}
+	focus = {
+		id = bavfocus_unify_homeland
+		icon = war2
+		x = 3
+		y = 0
+		cost = 6
+		bypass = {
+			has_war_with = GER
+		}
+		completion_reward = {
+            add_stability = -0.1
+            GER = {
+                add_stability = -0.1
+            }
+        }
+	}
+	focus = {
+		id = bavfocus_promise_democracy
+		icon = democracyf
+		x = 3
+		y = 1
+		cost = 5
+		bypass = {
+			has_war_with = GER
+		}
+		prerequisite = {
+			focus = bavfocus_unify_homeland
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = reactionary
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.05
+			}
+			add_equipment_to_stockpile = {
+                type = infantry_equipment_2
+                amount = 10000
+                producer = USA
+            }
+            add_equipment_to_stockpile = {
+                type = artillery_equipment_1
+                amount = 1000
+                producer = USA
+            }
+            add_equipment_to_stockpile = {
+                type = modern_tank_equipment_3
+                amount = 100
+                producer = USA
+            }
+		}
+	}
+	focus = {
+		id = bavfocus_camphill_support
+		icon = align_to_camphill
+		x = 2
+		y = 2
+		cost = 5
+		bypass = {
+			has_war_with = GER
+		}
+		available = {
+			CHB = {
+                OR = {
+                    has_completed_focus = chbfocus_angry_ASS
+                    has_government = reactionary
+                    has_government = nationalist
+					has_government = fascist
+                }
+            }
+		}
+		prerequisite = {
+			focus = bavfocus_promise_democracy
+		}
+		completion_reward = {
+			CHB = {
+                add_popularity = {
+                    ideology = fascist
+                    popularity = 0.1
+                }
+            }
+            add_equipment_to_stockpile = {
+                type = infantry_equipment_2
+                amount = 1000
+                producer = CHB
+            }
+		}
+	}
+	focus = {
+		id = bavfocus_second_anschluss
+		icon = align_to_austria
+		x = 4
+		y = 2
+		cost = 5
+		bypass = {
+			has_war_with = GER
+		}
+		prerequisite = {
+			focus = bavfocus_promise_democracy
+		}
+		completion_reward = {
+			every_state = { limit = { is_controlled_by = AUS } ROOT = { add_state_core = PREV } }
+			GER = {
+				add_state_core = 4
+				add_state_core = 152
+				add_state_core = 153
+			}
+			annex_country = {
+                target = AUS
+                transfer_troops = no
+            }
+		}
+	}
+	focus = {
+		id = bavfocus_strike_first
+		icon = war
+		x = 3
+		y = 3
+		cost = 5
+		bypass = {
+			has_war_with = GER
+		}
+		prerequisite = {
+			focus = bavfocus_second_anschluss
+		}
+		completion_reward = {
+			declare_war_on = {
+                target = GER
+                type = annex_everything
+            }
+		}
+	}
+}

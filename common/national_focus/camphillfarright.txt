@@ -1,0 +1,1060 @@
+focus_tree = {
+    id = chbassfocus
+
+    country = {
+        factor = 0
+
+        modifier = {
+            add = 10
+            tag = CHB
+        }
+    }
+    continuous_focus_position = {
+        x = 56
+        y = 785
+    }
+    default = no
+    shared_focus = chbengwar_init
+    focus = {
+        id = chbassfocus_initial
+        x = 2
+        y = 0
+        cost = 1
+        icon = fascism
+        completion_reward = {
+            add_stability = 0.1
+            add_political_power = 100
+            add_popularity = {
+                ideology = reactionary
+                popularity = 0.2
+            }
+            add_popularity = {
+                ideology = fascist
+                popularity = 0.15
+            }
+            add_popularity = {
+            ideology = nationalist
+            popularity = 0.15
+            }
+            add_popularity = {
+                ideology = monarchist
+                popularity = 0.1
+            }
+        }
+    }
+    focus = {
+        id = chbassfocus_kids
+        x = 0
+        y = 1
+        icon = kids
+        cost = 5
+        prerequisite = {
+            focus = chbassfocus_initial
+        }
+        completion_reward = {
+            country_event = Camphill.27
+        }
+    }
+    focus = {
+        id = chbassfocus_military
+        x = 2
+        y = 1
+        icon = small_arms
+        cost = 5
+        prerequisite = {
+            focus = chbassfocus_initial
+        }
+        completion_reward = {
+            country_event = CampHill.28
+        }
+    }
+    focus = {
+        id = chbassfocus_democracy
+        x = 4
+        y = 1
+        icon = democracy
+        cost = 5
+        prerequisite = {
+            focus = chbassfocus_initial
+        }
+        completion_reward = {
+            country_event = CampHill.29
+        }
+        
+    }
+    focus = {
+        id = chbassfocus_diplomacy
+        x = 1
+        y = 2
+        icon = alliance_brown
+        cost = 5
+        prerequisite = {
+            focus = chbassfocus_kids
+            focus = chbassfocus_military
+            focus = chbassfocus_democracy
+        }
+        completion_reward = {
+            country_event = CampHill.30
+        }
+    }
+    focus = {
+        id = chbassfocus_industry
+        x = 3
+        y = 2
+        icon = industry_civilian
+        cost = 5
+        prerequisite = {
+            focus = chbassfocus_kids
+            focus = chbassfocus_military
+            focus = chbassfocus_democracy
+        }
+        completion_reward = {
+            country_event = CampHill.31
+        }
+    }
+    focus = {
+        id = chbassfocus_collapse
+        x = 2
+        y = 3
+        icon = alliance_blue
+        cost = 5
+        prerequisite = {
+            focus = chbassfocus_diplomacy
+        }
+        prerequisite = {
+            focus = chbassfocus_industry
+        }
+        completion_reward = {
+            add_political_power = 150
+            add_stability = 0.2
+            set_party_name = {
+                ideology = reactionary
+                long_name = CHB_United_Camp_Hill_long
+                name = CHB_United_Camp_Hill
+            }
+            set_party_name = {
+                ideology = nationalist
+                long_name = CHB_Republican_long
+                name = CHB_Republican
+            }
+            set_party_name = {
+                ideology = fascist
+                long_name = CHB_daddy_long
+                name = CHB_daddy
+            }
+            set_party_name = {
+                ideology = monarchist
+                long_name = CHB_military_hardline_long
+                name = CHB_military_hardline
+            }
+        }
+    }
+    focus = {
+        id = chbassfocus_winner
+        x = 2
+        y = 4
+        icon = demand_territory
+        cost = 2
+        prerequisite = {
+            focus = chbassfocus_collapse
+        }
+        completion_reward = {
+            if = {
+                limit = {reactionary > 0.40}
+                custom_effect_tooltip = chbassfocusreward_elections
+                add_popularity = {
+                    ideology = reactionary
+                    popularity = 0.1
+                }
+                set_politics = {
+                    ruling_party = reactionary
+                    elections_allowed = yes
+                    election_frequency = 60
+                }
+            }
+            else_if = {
+                limit = {nationalist > 0.40}
+                custom_effect_tooltip = chbassfocusreward_elections
+                add_popularity = {
+                    ideology = nationalist
+                    popularity = 0.1
+                }
+                set_politics = {
+                    ruling_party = nationalist
+                    elections_allowed = no
+                    election_frequency = 60
+                }
+            }
+            else_if = {
+                limit = {fascist > 0.40}
+                custom_effect_tooltip = chbassfocusreward_elections
+                add_popularity = {
+                    ideology = fascist
+                    popularity = 0.1
+                }
+                set_politics = {
+                    ruling_party = fascist
+                    elections_allowed = no
+                    election_frequency = 60
+                }
+            }
+            else = {
+                custom_effect_tooltip = chbassfocusreward_elections
+                country_event = CampHill.32
+            }
+        }
+    }
+    focus = {
+        id = chbassfocus_burgees
+        x = 10
+        y = 0
+        cost = 0
+        icon = attack_democracy
+        available = {
+            has_country_leader = {
+                character = CHB_Tim_Burgees
+                ruling_only = yes
+            }
+            has_completed_focus = chbassfocus_winner
+        }
+        bypass = {
+            has_country_leader = {
+                character = CHB_Tim_Burgees
+                ruling_only = yes
+            }
+            has_completed_focus = chbassfocus_winner
+            has_elections = yes
+        }
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = chbassfocus_taylor
+        x = 15
+        y = 0
+        cost = 0
+        icon = military_mission
+        available = {
+            has_country_leader = {
+                character = CHB_Warren_Taylor
+                ruling_only = yes
+            }
+            has_completed_focus = chbassfocus_winner
+        }
+        bypass = {
+            has_country_leader = {
+                character = CHB_Warren_Taylor
+                ruling_only = yes
+            }
+            has_completed_focus = chbassfocus_winner
+        }
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = chbassfocus_duncan
+        x = 20
+        y = 0
+        cost = 0
+        icon = fascism3
+        available = {
+            has_country_leader = {
+                character = CHB_Mark_Duncan
+                ruling_only = yes
+            }
+            has_completed_focus = chbassfocus_winner
+        }
+        bypass = {
+            has_country_leader = {
+                character = CHB_Mark_Duncan
+                ruling_only = yes
+            }
+        }
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = chbassfocus_pitfield
+        x = 25
+        y = 0
+        cost = 0
+        icon = small_arms
+        available = {
+            has_country_leader = {
+                character = CHB_Thomas_Pitfield
+                ruling_only = yes
+            }
+        }
+        bypass = {
+            has_country_leader = {
+                character = CHB_Thomas_Pitfield
+                ruling_only = yes
+            }
+            has_completed_focus = chbassfocus_winner
+        }
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = chbassfocus_purge_new_guard
+        x = 11
+        y = 1
+        cost = 5
+        icon = attack_democracy2
+        prerequisite = {
+            focus = chbassfocus_burgees
+            focus = chbassfocus_taylor
+        }
+        mutually_exclusive = {
+            focus = chbassfocus_ally_new_guard
+        }
+        completion_reward = {
+            add_popularity = {
+                ideology = monarchist
+                popularity = -0.3
+            }
+            add_stability = 0.2
+        }
+    }
+    focus = {
+        id = chbassfocus_ally_new_guard
+        icon = kids
+        cost = 5
+        x = 14
+        y = 1
+        mutually_exclusive = {
+            focus = chbassfocus_purge_new_guard
+        }
+        prerequisite = {
+            focus = chbassfocus_burgees
+            focus = chbassfocus_taylor
+        }
+        completion_reward = { 
+            if = {
+                limit = {has_government = reactionary }
+                add_popularity = {
+                    ideology = reactionary
+                    popularity = 0.1
+                }
+            }
+            if = {
+                limit = {has_government = nationalist}
+                add_popularity = {
+                    ideology = nationalist
+                    popularity = 0.1
+                }
+            }
+            918 = {
+                create_unit = {
+                    division = "name = \"1st Young Guard\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = CHB
+                }
+                create_unit = {
+                    division = "name = \"2nd Young Guard\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = CHB
+                }
+                create_unit = {
+                    division = "name = \"3rd Young Guard\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = CHB
+                }
+                create_unit = {
+                    division = "name = \"4th Young Guard\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = CHB
+                }
+                create_unit = {
+                    division = "name = \"5th Young Guard\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = CHB
+                }
+            }
+        }
+    }
+    focus = {
+        id = chbassfocus_us_align
+        x = 11
+        y = 2
+        icon = align_to_america
+        cost = 5
+        mutually_exclusive = {
+            focus = chbassfocus_russia_align
+        }
+        prerequisite = {
+            focus = chbassfocus_purge_new_guard
+            focus = chbassfocus_ally_new_guard
+        }
+        completion_reward = {
+            USA = {
+                add_to_faction = CHB
+            }
+            add_popularity = {
+                ideology = reactionary
+                popularity = 0.2
+            }
+            add_popularity = {
+                ideology = nationalist
+                popularity = 0.1
+            }
+        }
+    }
+    focus = {
+        id = chbassfocus_russia_align
+        icon = align_to_russia
+        cost = 5
+        x = 14
+        y = 2
+        available = {
+            SOV = {
+                NOT = {
+                    has_government = communist
+                }
+            }
+        }
+        mutually_exclusive = {
+            focus = chbassfocus_us_align
+        }
+        prerequisite = {
+            focus = chbassfocus_purge_new_guard
+            focus = chbassfocus_ally_new_guard
+        }
+        completion_reward = { 
+            SOV = {
+                add_to_faction = CHB
+            }
+            add_popularity = {
+                ideology = nationalist
+                popularity = 0.2
+            }
+            add_popularity = {
+                ideology = reactionary
+                popularity = 0.1
+            }
+        }
+    }
+    focus = {
+        id = chbassfocus_burgees_democracy
+        icon = democracyf
+        cost = 5
+        x = 10
+        y = 3
+        prerequisite = {
+            focus = chbassfocus_burgees
+        }
+        prerequisite = {
+            focus = chbassfocus_us_align
+            focus = chbassfocus_russia_align
+        }
+        completion_reward = { 
+           add_popularity = {
+            ideology = reactionary
+            popularity = 0.1
+           }
+           swap_ideas = {
+            remove_idea = CHB_Sweaties
+            add_idea = CHB_SweatiesB
+           } 
+        }
+    }
+    focus = {
+        id = chbassfocus_taylor_cross_country
+        icon = skull
+        cost = 5
+        x = 15
+        y = 3
+        prerequisite = {
+            focus = chbassfocus_taylor
+        }
+        prerequisite = {
+            focus = chbassfocus_us_align
+            focus = chbassfocus_russia_align
+        }
+        completion_reward = { 
+            add_manpower = -100
+            swap_ideas = {
+             remove_idea = CHB_Sweaties
+             add_idea = CHB_SweatiesT
+            } 
+         }
+    }
+    focus = {
+        id = chbassfocus_burgees_ban_parties
+        icon = attack_democracy3
+        cost = 5
+        x = 10
+        y = 4
+        prerequisite = {
+            focus = chbassfocus_burgees_democracy
+        }
+        completion_reward = {
+            add_ideas = {
+                CHB_Burgees_Party_Ban
+            }
+        }
+    }
+    focus = {
+        id = chbassfocus_taylor_ban_learning
+        icon = war_on_learning
+        x = 15
+        y = 4
+        cost = 5
+        prerequisite = {
+            focus = chbassfocus_taylor_cross_country
+        }
+        completion_reward = {
+            add_ideas = {
+                CHB_Taylor_War_on_Learning
+            }
+        }
+    }
+    focus = {
+        id = chbassfocus_corporatism
+        icon = industry_democratic
+        x = 18
+        y = 5
+        cost = 5
+        prerequisite = {
+            focus = chbassfocus_burgees_ban_parties
+            focus = chbassfocus_taylor_ban_learning
+            focus = chbassfocus_enslave_adults
+        }
+        mutually_exclusive = {
+            focus = chbassfocus_social_capitalism
+        }
+        completion_reward = {
+            add_stability = -0.1
+            add_political_power = 300
+            add_resource = {
+                type = oil
+                amount = 50
+                state = 918
+            }
+            if = {
+                limit = {has_government = reactionary }
+                add_popularity = {
+                    ideology = reactionary
+                    popularity = 0.1
+                }
+            }
+            if = {
+                limit = {has_government = nationalist}
+                add_popularity = {
+                    ideology = nationalist
+                    popularity = 0.1
+                }
+            }
+            if = {
+                limit = {has_government = fascist}
+                add_popularity = {
+                    ideology = fascist
+                    popularity = 0.1
+                }
+            }
+            add_popularity = {
+                ideology = market_liberal
+                popularity = 0.1
+            }
+        }
+    }
+    focus = {
+        id = chbassfocus_social_capitalism
+        icon = industry_democratic3
+        x = 12
+        y = 5
+        cost = 5
+        prerequisite = {
+            focus = chbassfocus_burgees_ban_parties
+            focus = chbassfocus_taylor_ban_learning
+            focus = chbassfocus_enslave_adults
+        }
+        mutually_exclusive = {
+            focus = chbassfocus_corporatism
+        }
+        completion_reward = {
+            add_building_construction = {
+                type = industrial_complex
+                level = 5
+                instant_build = yes
+            }
+            add_building_construction = {
+                type = industrial_complex
+                level = 5
+                instant_build = yes
+            }
+            add_building_construction = {
+                type = industrial_complex
+                level = 5
+                instant_build = yes
+            }
+            add_popularity = {
+                ideology = social_liberal
+                popularity = 0.05
+            }
+        }
+    }
+    focus = {
+        id = chbassfocus_duncan_basement
+        icon = basement
+        x = 20
+        y = 1
+        cost = 5
+        prerequisite = {
+            focus = chbassfocus_duncan
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = CHB_Sweaties
+                add_idea = CHB_Duncan_Basement
+            }
+        }
+    }
+    focus = {
+        id = chbassfocus_duncan_absorb_new_guard
+        icon = kids
+        x = 20
+        y = 2
+        cost = 5
+        prerequisite = {
+            focus = chbassfocus_duncan_basement
+        }
+        completion_reward = {
+            add_popularity = {
+                ideology = monarchist
+                popularity = -0.2
+            }
+            add_popularity = {
+                ideology = fascist
+                popularity = 0.2
+            }
+            918 = {
+                create_unit = {
+                    division = "name = \"1st Young Guard Kids\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = CHB
+                }
+                create_unit = {
+                    division = "name = \"2nd Young Guard Kids\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = CHB
+                }
+                create_unit = {
+                    division = "name = \"3rd Young Guard Kids\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = CHB
+                }
+                create_unit = {
+                    division = "name = \"4th Young Guard Kids\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = CHB
+                }
+            }
+        }
+    }
+    focus = {
+        id = chbassfocus_duncan_prince_andrew
+        icon = align_to_britain2
+        x = 19
+        y = 3
+        cost = 5
+        prerequisite = {
+            focus = chbassfocus_duncan_absorb_new_guard
+        }
+        mutually_exclusive = {
+            focus = chbassfocus_duncan_vatican
+        }
+        completion_reward = {
+            add_state_core = 130
+            transfer_state = 130
+            130 = {
+                create_unit = {
+                    division = "name = \"5th Young Guard Kids\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = CHB
+                }
+                create_unit = {
+                    division = "name = \"6th Young Guard Kids\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = CHB
+                }
+                create_unit = {
+                    division = "name = \"7th Young Guard Kids\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = CHB
+                }
+                create_unit = {
+                    division = "name = \"8th Young Guard Kids\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = CHB
+                }
+                create_unit = {
+                    division = "name = \"9th Young Guard Kids\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = CHB
+                }
+                create_unit = {
+                    division = "name = \"10th Young Guard Kids\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = CHB
+                }
+                create_unit = {
+                    division = "name = \"11th Young Guard Kids\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = CHB
+                }
+                create_unit = {
+                    division = "name = \"12th Young Guard Kids\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = CHB
+                }
+                create_unit = {
+                    division = "name = \"13th Young Guard Kids\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = CHB
+                }
+            }
+        }
+    }
+    focus = {
+        id = chbassfocus_duncan_vatican
+        icon = align_to_vatican
+        x = 21
+        y = 3
+        cost = 5
+        prerequisite = {
+            focus = chbassfocus_duncan_absorb_new_guard
+        }
+        mutually_exclusive = {
+            focus = chbassfocus_duncan_prince_andrew
+        }
+        completion_reward = {
+            add_state_core = 835
+            transfer_state = 835
+            835 = {
+                create_unit = {
+                    division = "name = \"5th Young Guard Kids\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = CHB
+                }
+                create_unit = {
+                    division = "name = \"6th Young Guard Kids\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = CHB
+                }
+                create_unit = {
+                    division = "name = \"7th Young Guard Kids\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                    owner = CHB
+                }
+            }
+        }
+    }
+    focus = {
+        id = chbassfocus_enslave_adults
+        icon = become_puppet
+        x = 20
+        y = 4
+        cost = 5
+        prerequisite = {
+            focus = chbassfocus_duncan_prince_andrew
+            focus = chbassfocus_duncan_vatican
+        }
+        completion_reward = {
+            add_popularity = {
+                ideology = fascist
+                popularity = 1
+            }
+            add_ideas = {
+                CHB_Adult_Slaves
+            }
+        }
+    }
+    focus = {
+        id = chbassfocus_pitfield_ally_commies
+        icon = communism
+        x = 25
+        y = 1
+        cost = 5
+        prerequisite = {
+            focus = chbassfocus_pitfield
+        }
+        completion_reward = {
+            add_popularity = {
+                ideology = communist
+                popularity = 0.15
+            }
+            add_popularity = {
+                ideology = democratic_socialist
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = monarchist
+                popularity = 0.2
+            }
+        }
+    }
+    focus = {
+        id = chbassfocus_pitfield_purge
+        icon = attack_fascism
+        x = 25
+        y = 2
+        cost = 5
+        prerequisite = {
+            focus = chbassfocus_pitfield_ally_commies
+        }
+        completion_reward = {
+            remove_ideas = {
+                CHB_Sweaties
+            }
+            add_popularity = {
+                ideology = reactionary
+                popularity = -1
+            }
+            add_popularity = {
+                ideology = nationalist
+                popularity = -1
+            }
+            add_popularity = {
+                ideology = fascist
+                popularity = -1
+            }
+        }
+    }
+    focus = {
+        id = chbassfocus_pitfield_market_socialism
+        icon = industry_democratic4
+        x = 25
+        y = 3
+        cost = 5
+        prerequisite = {
+            focus = chbassfocus_pitfield_purge
+        }
+        completion_reward = {
+            add_popularity = {
+                ideology = communist
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = democratic_socialist
+                popularity = 0.1
+            }
+            add_ideas = {
+                CHB_Market_Socialism
+            }
+        }
+    }
+    focus = {
+        id = chbassfocus_pitfield_corporate
+        icon = industry_democratic2
+        x = 25
+        y = 4
+        cost = 5
+        prerequisite = {
+            focus = chbassfocus_pitfield_market_socialism
+        }
+        completion_reward = {
+            add_resource = {
+                type = oil
+                amount = 50
+                state = 918
+            }
+            add_popularity = {
+                ideology = market_liberal
+                popularity = 0.1
+            }
+        }
+    }
+    focus = {
+        id = chbassfocus_pitfield_democracy
+        icon = democracy
+        x = 25
+        y = 5
+        cost = 5
+        prerequisite = {
+            focus = chbassfocus_pitfield_corporate
+        }
+        completion_reward = {
+            set_politics = {
+                ruling_party = monarchist
+                elections_allowed = yes
+                election_frequency = 60
+            }
+        }
+    }
+    focus = {
+        id = chbassfocus_threaten_irish
+        icon = attack_ireland
+        x = 18
+        y = 7
+        cost = 5
+        prerequisite = {
+            focus = chbassfocus_social_capitalism
+            focus = chbassfocus_corporatism
+            focus = chbassfocus_pitfield_democracy
+        }
+        completion_reward = {
+            IRE = {
+                country_event = CampHill.34
+            }
+        }
+    }
+    focus = {
+        id = chbassfocus_splitter_deal
+        icon = forceful_treaty
+        x = 18
+        y = 8
+        cost = 5
+        prerequisite = {
+            focus = chbassfocus_threaten_irish
+        }
+        completion_reward = {
+            give_guarantee = SCO
+            give_guarantee = WLS
+            WLS = {
+                give_guarantee = SCO
+                give_guarantee = CHB
+            }
+            SCO = {
+                give_guarantee = WLS
+                give_guarantee = CHB
+            }
+        }
+    }
+    focus = {
+        id = chbassfocus_british_war
+        icon = attack_britain
+        cost = 5
+        x = 18
+        y = 9
+        prerequisite = {
+            focus = chbassfocus_splitter_deal
+        }
+        completion_reward = {
+            custom_effect_tooltip = chbassfocus_reward_collapse
+            ENG = {
+                declare_war_on = {
+                    target = CHB
+                    type = annex_everything
+                }
+                declare_war_on = {
+                    target = WLS
+                    type = annex_everything
+                }
+                declare_war_on = {
+                    target = SCO
+                    type = annex_everything
+                }
+                country_event = CampHill.21
+            }            
+        }
+    }
+    focus = {
+        id = chbassfocus_victory
+        icon = alliance_teal
+        cost = 1
+        x = 18
+        y = 10
+        available = {
+            has_war = no
+            is_subject = no
+        }
+        bypass = {
+            NOT = {
+                country_exists = ENG
+            }
+        }
+        prerequisite = {
+            focus = chbassfocus_british_war
+        }
+        completion_reward = {
+            annex_country = {
+                target = ENG
+                transfer_troops = yes
+            }
+            transfer_state = 123
+            transfer_state = 127
+            transfer_state = 338
+            transfer_state = 126
+            transfer_state = 128
+            transfer_state = 129
+            transfer_state = 125
+            transfer_state = 132
+            transfer_state = 130
+            transfer_state = 131
+
+            add_state_core = 123
+            add_state_core = 127
+            add_state_core = 338
+            add_state_core = 126
+            add_state_core = 128
+            add_state_core = 129
+            add_state_core = 125
+            add_state_core = 132
+            add_state_core = 130
+            add_state_core = 131
+
+            IRE = {
+                transfer_state = 119
+            }
+            hidden_effect = {
+                if = {
+                    limit = {has_government = reactionary }
+                    set_global_flag = Burgess_CHB
+                }
+                if = {
+                    limit = {has_government = nationalist}
+                    set_global_flag = Taylor_CHB
+                }
+                if = {
+                    limit = {has_government = fascist}
+                    set_global_flag = Duncan_CHB
+                }
+                if = {
+                    limit = {has_government = monarchist}
+                    set_global_flag = Thomas_CHB
+                } 
+            }
+        }
+    }
+    focus = {
+        id = chbassfocus_revive_ass
+        icon = fascism
+        cost = 3
+        x = 16
+        y = 11
+        available = {
+            NOT = {
+                has_government = monarchist
+            }
+        }
+        mutually_exclusive = {
+            focus = chbassfocus_destroy_ass
+        }
+        prerequisite = {
+            focus = chbassfocus_victory
+        }
+        completion_reward = {
+            add_stability = -0.2
+            set_party_name = {
+                ideology = reactionary
+                long_name = CHB_reactionary_party_long
+                name = CHB_reactionary_party
+            }
+            set_party_name = {
+                ideology = nationalist
+                long_name = CHB_nationalist_party_long
+                name = CHB_nationalist_party
+            }
+            set_party_name = {
+                ideology = fascist
+                long_name = CHB_fascist_party_long
+                name = CHB_fascist_party
+            }
+            set_party_name = {
+                ideology = monarchist
+                long_name = CHB_mon_ass_long
+                name = CHB_mon_ass
+            }
+        }
+    }
+    focus = {
+        id = chbassfocus_destroy_ass
+        icon = attack_fascism
+        cost = 3
+        x = 20
+        y = 11
+        prerequisite = {
+            focus = chbassfocus_victory
+        }
+        mutually_exclusive = {
+            focus = chbassfocus_revive_ass
+        }
+        completion_reward = {
+            add_stability = 0.3
+        }
+    }
+}

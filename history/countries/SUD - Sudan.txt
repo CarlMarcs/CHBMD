@@ -1,0 +1,137 @@
+﻿capital = 551
+
+oob = "SUD_2000"
+
+set_research_slots = 3
+set_convoys = 80
+set_stability = 0.15
+
+set_country_flag = country_language_arabic
+set_country_flag = country_language_english
+set_country_flag = country_behavior_dispersed
+set_country_flag = country_behavior_indolent
+
+set_technology = {
+	## Infantry ##
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	night_vision = 1
+	body_armor = 1
+	camouflage = 1
+	marines = 1
+	tech_mountaineers = 1
+	paratroopers = 1
+	
+	## Support Companies ##
+	tech_support = 1
+	basic_train =1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	
+	## Armor ##
+	main_battle_tank1 = 1
+	main_battle_tank2 = 1
+	main_battle_tank3 = 1
+	light_tank1 = 1
+	mechanised_infantry1 = 1
+	light_mechanized_infantry1 = 1
+	
+	## Artillery ##
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	
+	## Air ##
+	CAS1 = 1
+	CAS2 = 1
+	fighter1 = 1
+	fighter2 = 1
+	fighter3 = 1
+	strategic_bomber1 = 1
+	
+	## Engineering ##
+	#eng_low
+	
+	## Industry ##
+	#ind_low
+	
+	## Doctrines ##
+	mass_assault = 1
+	air_superiority = 1
+}
+
+set_country_flag = dominant_religion_islam
+set_country_flag = sunni_islam
+
+add_ideas = {
+	centralization_federal
+	national_development_undeveloped
+	economy_growth
+	civil_liberties_totalitarian
+	population_growth_explosion
+	african_union_member
+	arab_league_member
+	extensive_conscription
+}
+
+set_politics = {	
+	ruling_party = islamist
+	last_election = "1996.3.2"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    islamist = 75
+    nationalist = 2
+    reactionary = 10
+    conservative = 3
+    social_liberal = 5
+    democratic_socialist = 4
+    communist = 1
+}
+
+recruit_character = SUD_omar_albashir
+recruit_character = SUD_fatimah_abdel_mahmoud
+recruit_character = SUD_jalal_aldigair
+recruit_character = SUD_malik_agar
+recruit_character = SUD_hassan_alturabi
+recruit_character = SUD_muhammad_mukhtar_alkhatib
+recruit_character = SUD_sadiq_almahdi
+recruit_character = SUD_adil_abdel_aati
+recruit_character = SUD_mustafa_osman_obeid_salim
+recruit_character = SUD_hassan_keir
+recruit_character = SUD_alfred_panyang
+recruit_character = SUD_luol_mayardit
+recruit_character = SUD_john_lokonyen
+
+
+
+2015.4.16 = {
+	
+	set_politics = {	
+	ruling_party = islamist
+	last_election = "2015.4.16"
+	election_frequency = 60
+	elections_allowed = no
+}
+
+set_popularities = {
+    islamist = 83
+    nationalist = 1
+    reactionary = 9
+    conservative = 1
+    social_liberal = 4
+    democratic_socialist = 1
+    communist = 1
+}
+}

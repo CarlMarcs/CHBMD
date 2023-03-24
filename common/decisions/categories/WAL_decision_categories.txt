@@ -1,0 +1,10 @@
+the_welsh_struggle_category = {
+    icon = wales
+    priority = 10
+    allowed = {
+        original_tag = WAL
+    }
+    visible = {
+        has_completed_focus = walfocus_alliance_split
+    }
+}

@@ -1,0 +1,137 @@
+﻿capital = 206
+
+oob = "BLR_2000"
+
+set_research_slots = 3
+set_convoys = 10
+set_stability = 0.45
+
+set_country_flag = country_language_belarusian
+set_country_flag = country_language_russian
+
+set_technology = {
+	## Infantry ##
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	night_vision = 1
+	body_armor = 1
+	camouflage = 1
+	paratroopers = 1
+	
+	## Support Companies ##
+	tech_support = 1
+	basic_train =1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	
+	## Armor ##
+	main_battle_tank1 = 1
+	main_battle_tank2 = 1
+	main_battle_tank3 = 1
+	light_tank1 = 1
+	mechanised_infantry1 = 1
+	light_mechanized_infantry1 = 1
+	
+	## Artillery ##
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	
+	## Air ##
+	CAS1 = 1
+	CAS2 = 1
+	fighter1 = 1
+	fighter2 = 1
+	fighter3 = 1
+	strategic_bomber1 = 1
+	tactical_bomber1 = 1
+	
+	## Engineering ##
+	electronic_mechanical_engineering = 1
+	
+	## Industry ##
+	basic_machine_tools = 1
+	
+	## Doctrines ##
+	superior_firepower = 1
+	formation_flying = 1
+}
+
+add_ideas = {
+	public_safety_secret_police
+	immigration_policy_loose_regulations
+	civil_liberties_totalitarian
+	population_growth_decline
+	limited_conscription
+}
+
+set_politics = {	
+	ruling_party = reactionary
+	last_election = "1997.1.1"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+    nationalist = 10
+    reactionary = 30
+    conservative = 20
+    market_liberal = 5
+    social_liberal = 5
+    social_democrat = 10
+    communist = 20
+}
+recruit_character = BLR_alexander_lukashenko
+recruit_character = BLR_sergei_gaidukevich
+recruit_character = BLR_vincuk_viacorka
+recruit_character = BLR_paval_sieviaryniets
+recruit_character = BLR_vladimir_novosiad
+recruit_character = BLR_alyaksandr_kazulin
+recruit_character = BLR_aleh_novikau
+recruit_character = BLR_vladimir_alexandrovich
+recruit_character = BLR_igor_karpenko
+recruit_character = BLR_andrei_ravkov
+recruit_character = BLR_oleg_belokonev
+recruit_character = BLR_sergei_potapenko
+recruit_character = BLR_igor_lotenkov
+recruit_character = BLR_vitaly_kireyev
+recruit_character = BLR_viktor_hrenin
+recruit_character = BLR_ruslan_kosygin
+recruit_character = BLR_andrei_zhuk
+recruit_character = BLR_anatolyi_bulavko
+recruit_character = BLR_andrei_fedin
+recruit_character = BLR_oreh_vladimir
+recruit_character = BLR_alexander_volfovich
+recruit_character = BLR_valeriy_gnilozub
+recruit_character = BLR_vladimir_kulazhin
+recruit_character = BLR_alexander_gurin
+recruit_character = BLR_igor_kuzmuk
+recruit_character = BLR_vitaly_shkadrovich
+recruit_character = BLR_vadim_denisenko
+recruit_character = BLR_igor_danilchik
+recruit_character = BLR_vyacheslav_starkov
+recruit_character = BLR_dmitry_lukyanenko
+recruit_character = BLR_oleg_dvigalev
+recruit_character = BLR_sergei_trus
+recruit_character = BLR_igor_golub
+recruit_character = BLR_alexander_karev
+recruit_character = BLR_valery_shevchenko
+recruit_character = BLR_alexander_astrauh
+recruit_character = BLR_alexander_panfyorov
+recruit_character = BLR_ivan_nebogatov
+recruit_character = BLR_vladislav_rozhestvensky
+recruit_character = BLR_roman_ivannikov
+
+
+2016.1.1 = {
+	oob = "BLR_2016"
+}

@@ -1,0 +1,137 @@
+add_namespace = scotland
+
+country_event = {
+    id = scotland.1
+    title = scotland.1.t
+    desc = scotland.1.d
+    fire_only_once = yes
+    trigger = {
+        AND = {
+            tag = SCO
+            NOT = {
+                CHB = {
+                    has_idea = CHB_Socialist_Memery
+                }
+                has_global_flag = CHB_Init_End
+            }
+        }
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+    option = {
+        name = scotland.1.o1
+        add_stability = 0.1
+    }
+    option = {
+        name = scotland.1.o2
+        add_ideas = {
+            CHB_Socialist_Exiles
+        }
+        promote_character = {
+            character = SCO_Zeeshan
+            ideology = marxist
+        }
+        promote_character = {
+            character = SCO_Aine_Garvey
+            ideology = green
+        }
+        promote_character = {
+            character = SCO_Nathan_Hill
+            ideology = social_democrat_ideology
+        }
+        add_popularity = {
+            ideology = communist
+            popularity = 0.1
+        }
+        add_popularity = {
+            ideology = progressive
+            popularity = 0.1
+        }
+        add_popularity = {
+            ideology = social_democrat
+            popularity = 0.1
+        }
+    }
+}
+country_event = {
+    id = scotland.2
+    title = scotland.2.t
+    desc = scotland.2.d
+    trigger = {
+        AND = {
+            tag = SCO
+            NOT = {
+                CHB = {
+                    has_idea = CHB_Sweaties
+                }
+                has_global_flag = CHB_Init_End
+            }
+        }
+    }
+    fire_only_once = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+    option = {
+        name = scotland.1.o1
+        add_stability = 0.1
+    }
+    option = {
+        name = scotland.2.o2
+        add_ideas = {
+            CHB_Sweaties_Exiled
+        }
+        promote_character = {
+            character = SCO_Mark_Duncan
+            ideology = childist
+        }
+        promote_character = {
+            character = SCO_Warren_Taylor
+            ideology = proto_fascist
+        }
+        promote_character = {
+            character = SCO_Tom_Burgess
+            ideology = oligarchist
+        }
+        add_popularity = {
+            ideology = fascist
+            popularity = 0.1
+        }
+        add_popularity = {
+            ideology = nationalist
+            popularity = 0.1
+        }
+        add_popularity = {
+            ideology = reactionary
+            popularity = 0.1
+        }
+    }
+}
+country_event = {
+    id = scotland.3
+    title = scotland.3.t
+    desc = scotland.3.d
+    fire_only_once = yes
+    trigger = {
+        AND = {
+            has_idea = CHB_Socialist_Exiles
+            has_idea = CHB_Sweaties_Exiled
+        }
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+    option = {
+        name = scotland.3.o1
+        remove_ideas = {
+            CHB_Sweaties_Exiled
+        }
+    }
+    option = {
+        name = scotland.3.o2
+        remove_ideas = {
+            CHB_Socialist_Exiles
+        }
+    }
+}

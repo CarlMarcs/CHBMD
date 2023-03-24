@@ -1,0 +1,356 @@
+focus_tree = {
+    id = chbcringehillfocus
+    country = {
+        factor = 0
+    }
+    continuous_focus_position = {
+        x = 50
+        y = 1
+    }
+    focus = {
+        id = cringehill_northern_ireland
+        x = 15
+        y = 0
+        icon = military_deal
+        cost = 5
+        bypass = {
+            119 = {
+                is_demilitarized_zone = no
+            }
+        }
+        completion_reward = {
+            119 = {
+                set_demilitarized_zone = no
+            }
+            add_political_power = 120
+            army_experience = 5
+        }
+    }
+    focus = {
+        id = cringehill_ger_friend
+        x = 1
+        y = 2
+        cost = 7
+        relative_position_id = cringehill_northern_ireland
+        icon = fascism
+        available = {
+            country_exists = BAY
+        }
+        bypass = {
+            NOT = {
+                country_exists = BAY
+            }
+        }
+        prerequisite = {
+            focus = cringehill_northern_ireland
+        }
+        completion_reward = {
+            if = {
+                limit = {
+                    GER = {
+                        country_exists = no
+                    }
+                }
+                add_to_faction = BAY
+            }
+            add_opinion_modifier = {
+                target = BAY
+                modifier = new_diplomatic_missions
+            }
+            BAY = {
+                add_opinion_modifier = {
+                    target = CHB
+                    modifier = new_diplomatic_missions
+                }
+            }
+        }
+    }
+    focus = {
+        id = cringehill_bul_friend
+        x = -1
+        y = 2
+        cost = 7
+        relative_position_id = cringehill_northern_ireland
+        icon = fascism4
+        available = {
+            country_exists = BUL
+        }
+        bypass = {
+            NOT = {
+                country_exists = BUL
+            }
+        }
+        prerequisite = {
+            focus = cringehill_northern_ireland
+        }
+        completion_reward = {
+            add_opinion_modifier = {
+                target = BUL
+                modifier = new_diplomatic_missions
+            }
+            BUL = {
+                add_opinion_modifier = {
+                    target = CHB
+                    modifier = new_diplomatic_missions
+                }
+            }
+        }
+    }
+    focus = {
+        id = cringehill_ger_intervene
+        x = 0
+        y = 1
+        cost = 5
+        relative_position_id = cringehill_ger_friend
+        icon = war
+        prerequisite = {
+            focus = cringehill_ger_friend
+        }
+        will_lead_to_war_with = GER
+        available = {
+            OR = {
+                NOT = {
+                    country_exists = BAY
+                }
+                BAY = {
+                    has_war_with = GER
+                }
+            }
+        }
+        completion_reward = {
+            if = {
+                limit = {
+                    NOT = {
+                        country_exists = BAY
+                    }
+                }
+                50 = {
+                    transfer_state_to = BAY
+                }
+            }
+            if = {
+                limit = {
+                    is_in_faction = yes
+                }
+                add_to_faction = BAY
+            }
+            declare_war_on = {
+                target = GER
+                type = annex_everything
+            }
+        }
+    }
+    focus = {
+        id = cringehill_bul_intervene
+        x = 0
+        y = 1
+        relative_position_id = cringehill_bul_friend
+        icon = war3
+        cost = 5
+        prerequisite = {
+            focus = cringehill_bul_friend
+        }
+        will_lead_to_war_with = YUG
+        available = {
+            OR = {
+                NOT = {
+                    country_exists = BUL
+                }
+                BUL = {
+                    has_war_with = YUG
+                }
+            }
+        }
+        completion_reward = {
+            if = {
+                limit = {
+                    NOT = {
+                        country_exists = BUL
+                    }
+                }
+                48 = {
+                    transfer_state_to = BUL
+                 }
+            }
+            if = {
+                limit = {
+                    is_in_faction = yes
+                }
+                add_to_faction = BUL
+            }
+            declare_war_on = {
+                target = YUG
+                type = annex_everything
+            }
+        }
+    }
+    focus = {
+        id = cringehill_faction
+        x = 0
+        y = 1
+        cost = 2
+        relative_position_id = cringehill_northern_ireland
+        icon = alliance_brown
+        prerequisite = {
+            focus = cringehill_northern_ireland
+        }
+        completion_reward = {
+            create_faction = "Axis 2"
+        }
+    }
+    focus = {
+        id = cringehill_anti_russia
+        x = -3
+        y = 4
+        relative_position_id = cringehill_northern_ireland
+        cost = 10
+        icon = attack_russia
+        prerequisite = {
+            focus = cringehill_northern_ireland
+        }
+        available = {
+            NOT = {
+                is_in_faction_with = SOV
+            }
+        }
+        completion_reward = {
+            SOV = {
+                add_opinion_modifier = {
+                    target = CHB
+                    modifier = unprovoked_aggression
+                }
+            }
+        }
+    }
+    focus = {
+        id = cringehill_connection
+        x = 3
+        y = 4
+        relative_position_id = cringehill_northern_ireland
+        icon = anschluss
+        cost = 10
+        prerequisite = {
+            focus = cringehill_northern_ireland
+        }
+        available = {
+            country_exists = IRE
+            has_army_manpower = { size > 499999 }
+        }
+        completion_reward = {
+            IRE = {
+                country_event = CampHill.42
+            }
+        }
+    }
+    focus = {
+        id = cringehill_demand_newfoundland
+        x = 1
+        y = 1
+        cost = 10
+        relative_position_id = cringehill_connection
+        icon = demand_sudetenland
+        prerequisite = {
+            focus = cringehill_connection
+        }
+        completion_reward = {
+            USA = {
+                country_event = CampHill.43
+            }
+        }
+    }
+    focus = {
+        id = cringehill_demand_normandy
+        x = -1
+        y = 1
+        cost = 10
+        relative_position_id = cringehill_connection
+        icon = attack_france
+        prerequisite = {
+            focus = cringehill_connection
+        }
+        mutually_exclusive = {
+            focus = cringehill_ally_france
+        }
+        completion_reward = {
+            FRA = {
+                country_event = CampHill.44
+            }
+        }
+    }
+    focus = {
+        id = cringehill_demand_north_normandy
+        x = 3
+        y = 1
+        cost = 10
+        relative_position_id = cringehill_connection
+        icon = political_pressure
+        prerequisite = {
+            focus = cringehill_connection
+        }
+        available = {
+            has_completed_focus = cringehill_demand_normandy
+        }
+        completion_reward = {
+            BEL = {
+                country_event = CampHill.45
+            }
+        }
+    }
+    focus = {
+        id = cringehill_king
+        x = 5
+        y = 1
+        cost = 10
+        relative_position_id = cringehill_connection
+        icon = fascism
+        prerequisite = {
+            focus = cringehill_connection
+        }
+        available = {
+            fascist > 0.80
+        }
+        completion_reward = {
+            add_country_leader_role = {
+                character = CHB_Edward_VI
+                promote_leader = yes
+                country_leader = {
+                    ideology = absolute_monarchist
+                    expire = "2069.6.9.6"
+                }
+            }
+            add_ideas = {
+                CHB_Edward_VI
+            }
+        }
+    }
+    focus = {
+        id = cringehill_ally_france
+        x = -3
+        y = 1
+        cost = 10
+        relative_position_id = cringehill_connection
+        icon = align_to_france
+        prerequisite = {
+            focus = cringehill_connection
+        }
+        mutually_exclusive = {
+            focus = cringehill_demand_normandy
+        }
+        completion_reward = {
+            add_opinion_modifier = {
+                target = FRA
+                modifier = declaration_of_friendship
+            }
+            FRA = {
+                add_opinion_modifier = {
+                    target = CHB
+                    modifier = declaration_of_friendship
+                }
+                add_timed_idea = {
+                    idea = idea_focus_generic_neo_fascist_doctrine
+                    days = 1095
+                }
+            }
+        }
+    }
+}

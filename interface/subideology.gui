@@ -1,0 +1,32 @@
+guiTypes = {
+
+	##SUBIDEOL##
+		containerWindowType = {
+			name = "diplo_subideo_info"
+			instantTextboxType = {
+				name = "funnysubide_name"
+				position = { x = 262 y = 145 }
+				font = "hoi_16mbs"
+				text = "subideology"
+				pdx_tooltip = "FUNNY_SUBID_TEXT_DESC"
+				maxWidth = 245
+				maxHeight = 20
+				format = left
+			}
+		}
+		
+		containerWindowType = {
+			name = "poli_subideo_info"
+			instantTextboxType = {
+				name = "funnysubide_name"
+				position = { x = 96 y = 313 }
+				font = "hoi_18mbs"
+				text = "subideology"
+				pdx_tooltip = "FUNNY_SUBID_TEXT_DESC"
+				vertical_alignment = center 
+				maxWidth = 147
+				maxHeight = 20
+				format = left
+			}
+		}
+	}

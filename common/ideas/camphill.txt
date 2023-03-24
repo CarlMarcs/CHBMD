@@ -1,0 +1,554 @@
+ideas = {
+    country = {
+        CHB_Soviet_Legacy = {
+            picture = ussr
+            modifier = {
+                communist_drift = 0.2
+                democratic_socialist_drift = 0.1
+                progressive_drift = 0.1
+                stability_weekly = 0.005
+				political_power_gain = 0.3
+            }
+        }
+        CHB_The_Blip = {
+            picture = blip
+            modifier = {
+                research_speed_factor = 10
+                local_resources_factor = 10
+                max_surrender_limit_offset = -1
+                political_power_gain = -0.3
+                stability_factor = -0.1
+                production_speed_buildings_factor = 0.5
+                war_support_weekly = 0.10
+                autonomy_gain = 0.5
+                subjects_autonomy_gain = -0.5
+                agency_upgrade_time = -0.5
+                airforce_intel_to_others = -10
+                civilian_intel_to_others = -10
+                navy_intel_to_others = -10
+                offence = 1
+                defence = 1
+            }
+        }
+        YUG_German_Support = {
+            picture = bundesadler
+            modifier = {
+                army_attack_factor = 0.5
+                army_defence_factor = 0.5
+                army_speed_factor = 0.5
+                army_morale = 20
+                army_org = 20
+            }
+        }
+        CHB_Market_Socialism = {
+            picture = factory_strikes
+            modifier = {
+                industrial_capacity_factory = 0.3
+                production_speed_buildings_factor = 0.5
+                production_factory_efficiency_gain_factor = 0.5 
+            }
+        }
+        CHB_Adult_Slaves = {
+            picture = production_bonus
+            modifier = {
+                industrial_capacity_factory = 0.3
+                production_speed_buildings_factor = 0.5
+                production_factory_efficiency_gain_factor = 0.5 
+            }
+        }
+        CHB_Full_Privatisation = {
+            picture = foreign_capital
+            modifier = {
+                industrial_capacity_factory = 0.3
+                production_speed_buildings_factor = 0.5
+                production_factory_efficiency_gain_factor = 0.5 
+            }
+        }
+        CHB_Socialist_Staff_Collab = {
+            picture = communism6
+            modifier = {
+                political_power_gain = 0.3
+                communist_drift = 0.2
+                democratic_socialist_drift = 0.1
+            }
+        }
+        CHB_Socialist_Memery = {
+            picture = communism
+            modifier = {
+                communist_drift = 0.2
+                political_power_gain = -0.3
+                stability_factor = -0.1
+                offence = -0.1
+            }
+        }
+        CHB_Socialist_Exiles = {
+            picture = communism
+            modifier = {
+                communist_drift = 0.2
+                progressive_drift = 0.1
+                social_democrat_drift = 0.1
+                democratic_socialist_drift = 0.1
+                political_power_gain = -0.3
+                stability_factor = -0.1
+                offence = 0.1
+            }
+        }
+        CHB_Titoist_Memery = {
+            picture = communism7
+            modifier = {
+                communist_drift = 0.2
+                political_power_gain = 0.3
+                stability_factor = 0.1
+                offence = 0.1
+            }
+        }
+        CHB_Ruddist_Memery = {
+            picture = communism
+            modifier = {
+                democratic_socialist_drift = 0.2
+                political_power_gain = 0.3
+                stability_factor = -0.1
+                offence = 0.1
+            }
+        }
+        CHB_NHill_Memery = {
+            picture = communism5
+            modifier = {
+                social_democrat_drift = 0.2
+                communist_drift = 0.1
+                social_liberal_drift = 0.1
+                political_power_gain = 0.3
+                stability_factor = -0.2
+                offence = 0.2
+            }
+        }
+        CHB_Ancap_Memery = {
+            picture = reactionary_democracy
+            modifier = {
+                democratic_socialist_drift = -0.1
+                communist_drift = -0.2
+                market_liberal_drift  = 0.1
+                political_power_gain = 0.3
+                stability_factor = -0.2
+                offence = 0.2
+            }
+        }
+        CHB_Sweaties = {
+            picture = fascism2
+            modifier = {
+                reactionary_drift = 0.2
+                fascist_drift = 0.1
+                nationalist_drift = 0.1
+                political_power_gain = -0.3
+                stability_factor = -0.1
+                offence = -0.1
+            }
+        }
+        CHB_Sweaties_Exiled = {
+            picture = fascism2
+            modifier = {
+                reactionary_drift = 0.2
+                fascist_drift = 0.1
+                nationalist_drift = 0.1
+                political_power_gain = -0.3
+                stability_factor = -0.1
+                offence = 0.1
+            }
+        }
+        CHB_SweatiesB = {
+            picture = democracy
+            modifier = {
+                reactionary_drift = 0.2
+                political_power_gain = 0.3
+                stability_factor = 0.1
+                offence = 0.1
+            }
+        }
+        CHB_SweatiesT = {
+            picture = nationalism
+            modifier = {
+                nationalist_drift = 0.2
+                political_power_gain = 0.3
+                stability_factor = 0.1
+                offence = 0.1
+                monthly_population = -0.1
+            }
+        }
+        CHB_Burgees_Party_Ban = {
+            picture = democracy
+            modifier = {
+                monarchist_drift = -0.1
+                islamist_drift = -0.1
+                conservative_drift = -0.1
+                social_liberal_drift = -0.1
+                social_democrat_drift = -0.1
+                progressive_drift = -0.1
+                democratic_socialist_drift = -0.1
+                communist_drift = -0.1
+
+            }
+        }
+        CHB_Duncan_Basement = {
+            picture = army_war_college
+            modifier = {
+                monthly_population = 0.5
+                political_power_gain = 3
+                stability_weekly = 0.1
+                fascist_drift = 0.2
+            }
+        }
+        CHB_Taylor_War_on_Learning = {
+            picture = scw_intervention_rep
+            modifier = {
+                research_speed_factor = -10
+                offence = 10
+                defence = 10
+
+            }
+        }
+        CHB_Wake_Up_Sheeple = {
+            picture = sheep
+            modifier = {
+                communist_drift = 0.2
+                offence = 0.2
+                defence = 0.2
+                stability_factor = -0.2
+            }
+        }
+        CHB_boys_carry_bags = {
+            picture = bag
+            modifier = {
+                offence = 0.2
+                defence = 0.2
+                army_speed_factor = 0.5
+            }
+        }
+        CHB_yugoslav_partisans = {
+            picture = yugoslavian_militias
+            modifier = {
+                communist_drift = 0.2
+                offence = 0.2
+                defence = 0.2
+                stability_factor = -0.2
+                surrender_limit = 1
+            }
+        }
+        CHB_crusadist_militias = {
+            picture = yugoslavian_militias
+            modifier = {
+                monarchist_drift = 0.2
+                offence = 0.2
+                defence = 0.2
+                stability_factor = -0.2
+            }
+        }
+        CHB_yugoslav_resistance = {
+            picture = yugoslavian_militias
+            modifier = {
+                communist_drift = 0.4
+                offence = -0.2
+                defence = -0.2
+                stability_factor = -0.4
+                surrender_limit = 0.5
+            }
+        }
+        CHB_balkham_bombings = {
+            picture = strategic_bombing
+            modifier = {
+                offence = -0.2
+                defence = -0.2
+            }
+            cancel = {
+                NOT = {
+                    country_exists = BUL
+                }
+            }
+        }
+        CHB_Edward_VI = {
+            picture = edward_VI
+            modifier = {
+                stability_weekly = 0.1
+                monarchist_drift = 0.1
+                fascist_drift = 0.2
+            }
+        }
+        CHB_Fuck_English = {
+            picture = ban_monarchy
+            targeted_modifier = {
+                tag = ENG
+                attack_bonus_against = 2
+                defense_bonus_against = 2
+            }
+        }
+        CHB_House_Divide = {
+            picture = house_divide
+        }
+    }
+    political_advisor = {
+        zeeshan = {
+            name = "Zeeshan"
+            allowed = {
+                original_tag = CHB
+            }
+            available = {
+                OR = {
+                    has_completed_focus = chbfocus_angry_students
+                    has_government = democratic_socialist
+                    AND = {
+                        has_government = communist
+                        NOT = {
+                            has_country_leader = {
+                                character = CHB_Zeeshan
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                }
+            }
+            traits = {
+                communist_revolutionary
+            }
+        }
+
+        sampy_boy = {
+            name = "Sampanna Raut"
+            allowed = {
+                original_tag = CHB
+            }
+            available = {
+                NOT = {
+                    has_global_flag = sampanna_killed
+                }
+            }
+            traits = {
+                tory_drummer
+            }
+        }
+        stephen_hawking = {
+            name = "Stephen Hawking"
+            allowed = {
+                original_tag = CHB
+            }
+            available = {
+                always = no
+            }
+            traits = {
+                theory_of_everything
+            }
+        }
+        andrew_caves = {
+            name = "Andrew Caves"
+            allowed = {
+                original_tag = CHB
+            }
+            available = {
+                OR = {
+                    has_completed_focus = chbfocus_angry_students
+                    has_government = communist
+                    has_government = democratic_socialist
+                    has_government = progressive
+                    AND = {
+                        has_government = social_democrat
+                        NOT = {
+                            has_country_leader = {
+                                character = CHB_Nathan_Hill
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                }
+            }
+            traits = {
+                edi_founder
+            }
+        }
+        jamie_paige = {
+            name = "Dr Paige"
+            allowed = {
+                original_tag = CHB
+            }
+            available = {
+                AND = {
+                    NOT = {
+                        country_exists = SCO
+                    }
+                    OR = {
+                        has_government = democratic_socialist
+                        has_government = communist
+                        has_government = progressive
+                        has_government = social_democrat
+                        has_government = social_liberal
+                    }
+                }
+            }
+            traits = {
+                professional_bagpipe_player
+            }
+        }
+        timothy_watkins = {
+            name = "Tim Watkins"
+            allowed = {
+                original_tag = CHB
+            }
+            available = {
+                AND = {
+                    NOT = {
+                        country_exists = WLS
+                        has_government = democratic_socialist
+                        has_government = communist
+                        has_government = progressive
+                        has_government = social_democrat
+                    }
+                }
+            }
+            traits = {
+                timothy_watkins
+            }
+        }
+        george_rees = {
+            name = "George Rees"
+            allowed = {
+                original_tag = CHB
+            }
+            available = {
+                has_government = nationalist
+            }
+            traits = {
+                cross_country_runner
+            }
+        }
+        daddy_duncan = {
+            name = "Mark Duncan"
+            allowed = {
+                original_tag = CHB
+            }
+            available = {
+                has_country_leader = {
+                    character = CHB_Mark_Duncan
+                    ruling_only = yes
+                }
+            }
+            traits = {
+                in_the_dark
+            }
+        }
+        emma_lamb = {
+            name = "Emma Lamb"
+            allowed = {
+                original_tag = CHB
+            }
+            available = {
+                AND = {
+                    NOT = {
+                        country_exists = WLS
+                    }
+                    OR = {
+                        has_government = democratic_socialist
+                        has_government = communist
+                        has_government = progressive
+                        has_government = social_democrat
+                    }
+                }
+            }
+            traits = {
+                recruiter_in_sheep
+            }
+        }
+        justin_thompson = {
+            name = "Justin Thompson"
+            allowed = {
+                original_tag = CHB
+            }
+            available = {
+                
+            }
+            traits = {
+                backroom_backstabber
+            }
+        }
+        kishan = {
+            name = "Kishan Sambhi"
+            allowed = {
+                original_tag = CHB
+            }
+            available = {
+                
+            }
+            traits = {
+                popular_figurehead
+            }
+        }
+        daniel_wilkins = {
+            name = "Daniel Wilkins"
+            allowed = {
+                original_tag = CHB
+            }
+            available = {
+                OR = {
+                    has_government = social_democrat
+                    has_cosmetic_tag = brepublic
+                }
+            }
+            traits = {
+                famous_businessman social_democrat_party_membership
+            }
+        }
+        ibby_jamal = {
+            name = "Ibby Jamal"
+            allowed = {
+                original_tag = CHB
+            }
+            available = {
+                
+            }
+            traits = {
+                head_haver
+            }
+        }
+        charlie_moore = {
+            name = "Charlie Moore"
+            allowed = {
+                original_tag = CHB
+            }
+            available = {
+                
+            }
+            traits = {
+                friend_of_britain social_liberal_party_membership
+            }
+        }
+        stephen_jobs = {
+            name = "Stephen Jobs"
+            allowed = {
+                original_tag = CHB
+            }
+            available = {
+                has_country_leader = {
+                    character = CHB_Russel_Bowen
+                    ruling_only = yes
+                }
+            }
+            traits = {
+                bowen_friend
+            }
+        }
+        bob_ross = {
+            name = "Robert Rossiter"
+            allowed = {
+                original_tag = CHB
+            }
+            traits = {
+                always_five
+            }
+        }
+        tom_munoz_britton = {
+            name = "Tom Munoz_Britton"
+            allowed = {
+                original_tag = CHB
+            }
+            traits = {
+                educake_enthusiast
+            }
+        }
+    }
+}

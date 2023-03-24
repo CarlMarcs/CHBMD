@@ -1,0 +1,572 @@
+################
+# SUPER EVENTS #
+################
+
+add_namespace = super
+
+
+country_event = {	#Konstantin starts the War of the Germans
+	id = super.1
+	title = super.1.t
+	desc = super.1.d
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			NOT = {
+				has_global_flag = Super_Konstantin_German_War
+			}
+			GER = {
+				has_offensive_war_with = BAY
+			}
+			
+		}
+	}
+
+	option = {
+		name = super.1.a
+		
+        set_global_flag = Konstantin_German_War
+		set_global_flag = Super_Event_Visible
+		play_song = "Der_Offene_Aufmarsch"
+		
+		
+		set_global_flag = Super_Konstantin_German_War
+	}
+}
+country_event = {	#Thomson sets the War of the Germans
+	id = super.2
+	title = super.2.t
+	desc = super.2.d
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			NOT = {
+				has_global_flag = Super_Thomson_German_War
+			}
+			BAY = {
+				has_offensive_war_with = GER
+			}
+			
+		}
+	}
+
+	option = {
+		name = super.2.a
+		
+        set_global_flag = Thomson_German_War
+		set_global_flag = Super_Event_Visible
+		play_song = "Wo_Alle_Strassen_Enden"
+		
+		
+		set_global_flag = Super_Thomson_German_War
+	}
+}
+country_event = {	#The Balkham War
+	id = super.3
+	title = super.3.t
+	desc = super.3.d
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			NOT = {
+				has_global_flag = Super_Balkham_War
+			}
+			BUL = {
+				has_offensive_war_with = YUG
+			}
+			
+		}
+	}
+
+	option = {
+		name = super.3.a
+		
+        set_global_flag = Balkham_War
+		set_global_flag = Super_Event_Visible
+		play_song = "The_Botev_March"
+		
+		
+		set_global_flag = Super_Balkham_War
+	}
+}
+country_event = {	#The Soviet Union Returns
+	id = super.4
+	title = super.4.t
+	desc = super.4.d
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			NOT = {
+				has_global_flag = Super_Soviet_Reunion
+			}
+			has_global_flag = Soviet_Reunion
+			
+		}
+	}
+
+	option = {
+		name = super.4.a
+		
+        set_global_flag = SE_Soviet_Reunion
+		set_global_flag = Super_Event_Visible
+		play_song = "Soviet_Anthem_Synthwave"
+		
+		
+		set_global_flag = Super_Soviet_Reunion
+	}
+}
+country_event = {	#Ancapistan
+	id = super.5
+	title = super.5.t
+	desc = super.5.d
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			NOT = {
+				has_global_flag = Super_Ancapistan_Formed
+			}
+			has_global_flag = ancapistan_formed
+			
+		}
+	}
+
+	option = {
+		name = super.4.a
+		
+        set_global_flag = SE_Ancapistan_Formed
+		set_global_flag = Super_Event_Visible
+		play_song = "Ancap_Anthem"
+		
+		
+		set_global_flag = Super_Ancapistan_Formed
+	}
+}
+country_event = {	#Neoslavia
+	id = super.6
+	title = super.5.t
+	desc = super.5.d
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			NOT = {
+				has_global_flag = Super_Neoslavia_formed
+			}
+			has_global_flag = neoslavia_formed
+			
+		}
+	}
+
+	option = {
+		name = super.4.a
+		
+        set_global_flag = SE_Neoslavia_Formed
+		set_global_flag = Super_Event_Visible
+		play_song = "With_Marshal_Tito_English"
+		
+		
+		set_global_flag = Super_Neoslavia_Formed
+	}
+}
+country_event = {	#Garrod SSR
+	id = super.7
+	title = super.5.t
+	desc = super.5.d
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			NOT = {
+				has_global_flag = Super_Garrod_SSR
+			}
+			has_global_flag = Garrod_SSR
+			
+		}
+	}
+
+	option = {
+		name = super.4.a
+		
+        set_global_flag = SE_Garrod_SSR
+		set_global_flag = Super_Event_Visible
+		play_song = "Song_Of_The_United_Front"
+		
+		
+		set_global_flag = Super_Garrod_SSR
+	}
+}
+country_event = {	#Hill SSR
+	id = super.8
+	title = super.5.t
+	desc = super.5.d
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			NOT = {
+				has_global_flag = Super_Nazbol_Hill
+			}
+			has_global_flag = CHB_Nazbol_State
+			
+		}
+	}
+
+	option = {
+		name = super.4.a
+		
+        set_global_flag = SE_Nazbol_Hill
+		set_global_flag = Super_Event_Visible
+		play_song = "Workers_Nazionale"
+		
+		
+		set_global_flag = Super_Nazbol_Hill
+	}
+}
+country_event = {	#Nazi Hill
+	id = super.9
+	title = super.5.t
+	desc = super.5.d
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			NOT = {
+				has_global_flag = Super_CHBReich
+			}
+			has_global_flag = CHBReich
+			
+		}
+	}
+
+	option = {
+		name = super.4.a
+		
+        set_global_flag = SE_CHBReich
+		set_global_flag = Super_Event_Visible
+		play_song = "Comrades_the_Voices"
+		
+		
+		set_global_flag = Super_CHBReich
+	}
+}
+country_event = {	#British Republic
+	id = super.10
+	title = super.5.t
+	desc = super.5.d
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			NOT = {
+				has_global_flag = Super_British_Republic
+			}
+			has_global_flag = British_Republic
+			
+		}
+	}
+
+	option = {
+		name = super.4.a
+		
+        set_global_flag = SE_British_Republic
+		set_global_flag = Super_Event_Visible
+		play_song = "Land_Of_Hope_And_Glory"
+		
+		
+		set_global_flag = Super_British_Republic
+	}
+}
+country_event = {	#Airstrip One
+	id = super.11
+	title = super.5.t
+	desc = super.5.d
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			NOT = {
+				has_global_flag = Super_Airstrip_One
+			}
+			has_global_flag = Airstrip_One
+			
+		}
+	}
+
+	option = {
+		name = super.4.a
+		
+        set_global_flag = SE_Airstrip_One
+		set_global_flag = Super_Event_Visible
+		play_song = "Imperial_March_Short"
+		
+		
+		set_global_flag = Super_Airstrip_One
+	}
+}
+country_event = {	#Burgess CHB
+	id = super.12
+	title = super.5.t
+	desc = super.5.d
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			NOT = {
+				has_global_flag = Super_Burgess_CHB
+			}
+			has_global_flag = Burgess_CHB
+			
+		}
+	}
+
+	option = {
+		name = super.4.a
+		
+        set_global_flag = SE_Burgess_CHB
+		set_global_flag = Super_Event_Visible
+		play_song = "Russian_Anthem_English"
+		
+		
+		set_global_flag = Super_Burgees_CHB
+	}
+}
+country_event = {	#Taylor CHB
+	id = super.13
+	title = super.5.t
+	desc = super.5.d
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			NOT = {
+				has_global_flag = Super_Taylor_CHB
+			}
+			has_global_flag = Taylor_CHB
+			
+		}
+	}
+
+	option = {
+		name = super.4.a
+		
+        set_global_flag = SE_Taylor_CHB
+		set_global_flag = Super_Event_Visible
+		play_song = "Taylor_March"
+		
+		
+		set_global_flag = Super_Taylor_CHB
+	}
+}
+country_event = {	#Duncan CHB
+	id = super.14
+	title = super.5.t
+	desc = super.5.d
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			NOT = {
+				has_global_flag = Super_Duncan_CHB
+			}
+			has_global_flag = Duncan_CHB
+			
+		}
+	}
+
+	option = {
+		name = super.4.a
+		
+        set_global_flag = SE_Duncan_CHB
+		set_global_flag = Super_Event_Visible
+		play_song = "Little_Kid_Laughing"
+		
+		
+		set_global_flag = Super_Duncan_CHB
+	}
+}
+country_event = {	#Thomas CHB
+	id = super.15
+	title = super.5.t
+	desc = super.5.d
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			NOT = {
+				has_global_flag = Super_Thomas_CHB
+			}
+			has_global_flag = Thomas_CHB
+			
+		}
+	}
+
+	option = {
+		name = super.4.a
+		
+        set_global_flag = SE_Thomas_CHB
+		set_global_flag = Super_Event_Visible
+		play_song = "Radical_Centrism"
+		
+		
+		set_global_flag = Super_Thomas_CHB
+	}
+}
+country_event = {	#Wide_War
+	id = super.16
+	title = super.5.t
+	desc = super.5.d
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			NOT = {
+				has_global_flag = Super_Wide_War
+			}
+			SOV = {
+				has_war_with = KAZ
+			}
+			
+		}
+	}
+
+	option = {
+		name = super.4.a
+		
+        set_global_flag = Wide_War
+		set_global_flag = Super_Event_Visible
+		play_song = "Wide_Putin_Init"
+		
+		
+		set_global_flag = Super_Wide_War
+	}
+}
+country_event = {	#Wide Taylor
+	id = super.17
+	title = super.5.t
+	desc = super.5.d
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			NOT = {
+				has_global_flag = Super_Wide_Taylor
+			}
+			SOV = {
+				has_capitulated = yes
+			}
+			
+		}
+	}
+
+	option = {
+		name = super.4.a
+		
+        set_global_flag = Wide_Taylor
+		set_global_flag = Super_Event_Visible
+		play_song = "Wide_Putin_2"
+		
+		
+		set_global_flag = Super_Wide_Taylor
+	}
+}
+country_event = {	#Wide Putin
+	id = super.18
+	title = super.5.t
+	desc = super.5.d
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			NOT = {
+				has_global_flag = Super_Wide_Putin
+			}
+			KAZ = {
+				has_capitulated = yes
+			}
+			
+		}
+	}
+
+	option = {
+		name = super.4.a
+		
+        set_global_flag = Wide_Putin
+		set_global_flag = Super_Event_Visible
+		play_song = "Wide_Putin_2"
+		
+		
+		set_global_flag = Super_Wide_Putin
+	}
+}
+country_event = {	#CampHill-English-War
+	id = super.19
+	title = super.1.t
+	desc = super.1.d
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			NOT = {
+				has_global_flag = Super_CHEWar
+			}
+			CHB = {
+				has_war_with = ENG
+			}
+			
+		}
+	}
+
+	option = {
+		name = super.1.a
+		
+        set_global_flag = CHEWar
+		set_global_flag = Super_Event_Visible
+		play_song = "Soldiers_of_the_Queen"
+		
+		
+		set_global_flag = Super_CHEWar
+	}
+}

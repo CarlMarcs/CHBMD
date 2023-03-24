@@ -1,0 +1,143 @@
+focus_tree = {
+	id = gerfocus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		} 
+	}
+	continuous_focus_position = {
+		x = 56
+        y = 785
+	}
+    focus = {
+        id = gerfocus_unify_homeland
+        icon = war2
+        x = 3
+        y = 0
+        cost = 5
+        bypass = {
+			has_war_with = BAY
+		}
+        completion_reward = {
+            add_stability = -0.1
+            BAY = {
+                add_stability = -0.1
+            }
+        }
+    }
+    focus = {
+        id = gerfocus_chinese_support
+        icon = align_to_china
+        x = 3
+        y = 1
+        cost = 5
+        bypass = {
+			has_war_with = BAY
+		}
+        prerequisite = {
+            focus = gerfocus_unify_homeland
+        }
+        completion_reward = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment_2
+                amount = 10000
+                producer = PRC
+            }
+            add_equipment_to_stockpile = {
+                type = artillery_equipment_1
+                amount = 1000
+                producer = PRC
+            }
+            add_equipment_to_stockpile = {
+                type = modern_tank_equipment_3
+                amount = 100
+                producer = PRC
+            }
+        }
+    }
+    focus = {
+        id = gerfocus_camphill_support
+        icon = align_to_camphill
+        x = 2
+        y = 2
+        cost = 5
+        bypass = {
+			has_war_with = BAY
+		}
+        available = {
+            CHB = {
+                OR = {
+                    has_completed_focus = chbfocus_angry_students
+                    has_government = communist
+                    has_government = democratic_socialist
+                    has_government = social_democrat
+                    has_government = progressive
+                }
+            }
+        }
+        prerequisite = {
+            focus = gerfocus_chinese_support
+        }
+        completion_reward = {
+            CHB = {
+                add_popularity = {
+                    ideology = communist
+                    popularity = 0.1
+                }
+            }
+            add_equipment_to_stockpile = {
+                type = infantry_equipment_2
+                amount = 1000
+                producer = CHB
+            }
+        }
+    }
+    focus = {
+        id = gerfocus_chad_support
+        icon = attack_romania
+        x = 4
+        y = 2
+        cost = 5
+        bypass = {
+			has_war_with = BAY
+		}
+        prerequisite = {
+            focus = gerfocus_chinese_support
+        }
+        completion_reward = {
+            puppet = CHA
+            hidden_effect = {
+                CHA = {
+                    set_popularities  = {
+                        communist = 50
+                        democratic_socialist = 25
+                        social_democrat = 15
+                        reactionary = 10
+                    }
+                }
+            }
+        }
+    }
+    focus = {
+        id = gerfocus_strike_first
+        icon = war
+        x = 3
+        y = 3
+        cost = 5
+        bypass = {
+			has_war_with = BAY
+		}
+        prerequisite = {
+            focus = gerfocus_chad_support
+        }
+        completion_reward = {
+            declare_war_on = {
+                target = BAY
+                type = annex_everything
+            }
+        }
+
+    }
+}

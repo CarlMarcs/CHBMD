@@ -1,0 +1,235 @@
+add_namespace = wales
+country_event = {
+    id = wales.1
+    title = wales.1.t
+    desc = wales.1.d
+    is_triggered_only = yes
+    option = {
+        name = wales.1.o1
+        custom_effect_tooltip = WAL_Watkins_Influence_Up
+        hidden_effect = {
+            add_to_variable = { WAL_Watkins_Influence = 2 }
+            set_country_flag = WAL_Team_Watkins
+            activate_mission = lamb_influence_grows
+            activate_mission = butcher_influence_grows
+        }
+    }
+    option = {
+        name = wales.1.o2
+        custom_effect_tooltip = WAL_Lamb_Influence_Up
+        hidden_effect = {
+            add_to_variable = { WAL_Lamb_Influence = 2 }
+            set_country_flag = WAL_Team_Lamb
+            activate_mission = watkins_influence_grows
+            activate_mission = butcher_influence_grows
+        }
+    }
+    option = {
+        name = wales.1.o3
+        custom_effect_tooltip = WAL_Butcher_Influence_Up
+        hidden_effect = {
+            add_to_variable = { WAL_Butcher_Influence = 2 }
+            set_country_flag = WAL_Team_Butcher
+            activate_mission = watkins_influence_grows
+            activate_mission = lamb_influence_grows
+        }
+    }
+}
+country_event = {
+    id = wales.2
+    title = wales.2.t
+    desc = wales.2.d
+    is_triggered_only = yes
+    option = {
+        trigger = {
+            AND = {
+                check_variable = {
+                    WAL_Watkins_Influence > WAL_Butcher_Influence
+                }
+                check_variable = {
+                    WAL_Watkins_Influence > WAL_Lamb_Influence
+                }
+            }
+        }
+        name = wales.2.o1
+        add_popularity = {
+            ideology = reactionary
+            popularity = 0.1
+        }
+        add_popularity = {
+            ideology = nationalist
+            popularity = 0.1
+        }
+        add_popularity = {
+            ideology = fascist
+            popularity = 0.1
+        }
+        add_popularity = {
+            ideology = monarchist
+            popularity = 0.1
+        }
+        add_popularity = {
+            ideology = communist
+            popularity = -0.2
+        }
+    }
+    option = {
+        trigger = {
+            AND = {
+                check_variable = {
+                    WAL_Lamb_Influence > WAL_Watkins_Influence
+                }
+                check_variable = {
+                    WAL_Lamb_Influence > WAL_Butcher_Influence
+                }
+            }
+        }
+        name = wales.2.o2
+        add_popularity = {
+            ideology = social_democrat
+            popularity = -0.2
+        }
+        add_popularity = {
+            ideology = communist
+            popularity = 0.2
+        }
+        add_popularity = {
+            ideology = reactionary
+            popularity = -0.1
+        }
+        set_politics = {
+            ruling_party = communist
+	        last_election = "1999.12.12"
+	        election_frequency = 24
+	        elections_allowed = no
+        }
+    }
+    option = {
+        trigger = {
+            AND = {
+                check_variable = {
+                    WAL_Butcher_Influence > WAL_Watkins_Influence
+                }
+                check_variable = {
+                    WAL_Butcher_Influence > WAL_Lamb_Influence
+                }
+            }
+        }
+        name = wales.2.o3
+        add_popularity = {
+            ideology = social_democrat
+            popularity = 0.2
+        }
+        add_popularity = {
+            ideology = communist
+            popularity = -0.2
+        }
+        add_popularity = {
+            ideology = reactionary
+            popularity = -0.1
+        }
+        set_politics = {
+            ruling_party = social_democrat
+	        last_election = "1999.12.12"
+	        election_frequency = 24
+	        elections_allowed = yes
+        }
+    }
+    option = {
+        trigger = {
+            NOT = {
+                AND = {
+                    check_variable = {
+                        WAL_Watkins_Influence > WAL_Butcher_Influence
+                    }
+                    check_variable = {
+                        WAL_Watkins_Influence > WAL_Lamb_Influence
+                    }
+                }
+                AND = {
+                    check_variable = {
+                        WAL_Lamb_Influence > WAL_Watkins_Influence
+                    }
+                    check_variable = {
+                        WAL_Lamb_Influence > WAL_Butcher_Influence
+                    }
+                }
+                AND = {
+                    check_variable = {
+                        WAL_Butcher_Influence > WAL_Watkins_Influence
+                    }
+                    check_variable = {
+                        WAL_Butcher_Influence > WAL_Lamb_Influence
+                    }
+                }
+            }
+        }
+        name = wales.2.o4
+        country_event = {
+            id = wales.3
+            hours = 12
+        }
+    }
+}
+country_event = {
+    id = wales.3
+    title = wales.3.t
+    desc = wales.3.d
+    is_triggered_only = yes
+    option = {
+        name = wales.3.o1
+        trigger = {
+            country_exists = ENG
+        }
+        custom_effect_tooltip = game_end
+        ENG = {
+            annex_country = {
+                target = WLS
+                transfer_troops = yes
+            }
+            add_state_core = 122
+        }
+    }
+    option = {
+        name = wales.3.o2
+        trigger = {
+            country_exists = CHB
+        }
+        custom_effect_tooltip = game_end
+        CHB = {
+            annex_country = {
+                target = WLS
+                transfer_troops = yes
+            }
+            add_state_core = 122
+        }
+    }
+    option = {
+        name = wales.3.o3
+        trigger = {
+            country_exists = SCO
+        }
+        custom_effect_tooltip = game_end
+        SCO = {
+            annex_country = {
+                target = WLS
+                transfer_troops = yes
+            }
+            add_state_core = 122
+        }
+    }
+    option = {
+        name = wales.3.o4
+        trigger = {
+            country_exists = IRE
+        }
+        custom_effect_tooltip = game_end
+        IRE = {
+            annex_country = {
+                target = WLS
+                transfer_troops = yes
+            }
+            add_state_core = 122
+        }
+    }
+}

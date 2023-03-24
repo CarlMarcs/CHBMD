@@ -1,0 +1,100 @@
+music = {
+	name = "Internationale_Instrumental"
+	file = "Internationale_Instrumental.ogg"
+}
+music = {
+	name = "Soviet_Anthem_Synthwave"
+	file = "Soviet_Anthem_Synthwave.ogg"
+}
+music = {
+	name = "Soviet_Anthem_Instrumental"
+	file = "Soviet_Anthem_Instrumental.ogg"
+}
+music = {
+	name = "Uz_Marsala_Tita_Instrumental"
+	file = "Uz_Marsala_Tita_Instrumental.ogg"
+}
+music = {
+	name = "Workers_Nazionale"
+	file = "Workers_Nazionale.ogg"
+}
+music = {
+	name = "Ancap_Anthem"
+	file = "Ancap_Anthem.ogg"
+}
+music = {
+	name = "Imperial_March"
+	file = "Imperial_March.ogg"
+}
+music = {
+	name = "Land_Of_Hope_And_Glory"
+	file = "Land_Of_Hope_And_Glory.ogg"
+}
+music = {
+	name = "Comrades_the_Voices"
+	file = "Comrades_the_Voices2.ogg"
+}
+music = {
+	name = "All_Hail_Oceania"
+	file = "All_Hail_Oceania.ogg"
+}
+music = {
+	name = "Der_Offene_Aufmarsch"
+	file = "Der_Offene_Aufmarsch.ogg"
+}
+music = {
+	name = "Wo_Alle_Strassen_Enden"
+	file = "Wo_Alle_Strassen_Enden.ogg"
+}
+music = {
+	name = "The_Botev_March"
+	file = "The_Botev_March.ogg"
+}
+music = {
+	name = "With_Marshal_Tito_English"
+	file = "with_marshal_tito_english.ogg"
+}
+music = {
+	name = "Song_Of_The_United_Front"
+	file = "Song_Of_The_United_Front.ogg"
+}
+music = {
+	name = "Imperial_March_Short"
+	file = "Imperial_March_Short.ogg"
+}
+music = {
+	name = "Russian_Anthem_English"
+	file = "Russian_Anthem_English.ogg"
+}
+music = {
+	name = "Taylor_March"
+	file = "Taylor_March.ogg"
+}
+music = {
+	name = "Little_Kid_Laughing"
+	file = "Little_Kid_Laughing.ogg"
+}
+music = {
+	name = "Radical_Centrism"
+	file = "Radical_Centrism.ogg"
+}
+music = {
+	name = "Wide_Putin_Init"
+	file = "Wide_Putin_Init.ogg"
+}
+music = {
+	name = "Wide_Putin_2"
+	file = "Wide_Putin_2.ogg"
+}
+music = {
+	name = "All_Star"
+	file = "All_Star.ogg"
+}
+music = {
+	name = "Never_Gonna_Give_You_Up"
+	file = "Never_Gonna_Give_You_Up.ogg"
+}
+music = {
+	name = "Soldiers_of_the_Queen"
+	file = "Soldiers_of_the_Queen.ogg"
+}

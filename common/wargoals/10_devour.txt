@@ -1,0 +1,27 @@
+wargoal_types = {
+
+	devour = {
+		# PREV = original target country
+		# ROOT = goal owner country
+
+		war_name = WAR_NAME_DEVOUR
+
+		allowed = {
+			always = no
+		}
+		
+		available = {
+		
+		}
+		
+		take_states = {
+			
+		}
+		
+		#take_states_limit = 1
+		#take_states_cost = -50 		#50% cheaper warcost for states
+		
+		
+	}
+	
+}

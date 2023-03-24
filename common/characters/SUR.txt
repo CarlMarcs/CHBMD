@@ -1,0 +1,148 @@
+characters={
+	
+	SUR_adolf_jardim={
+		name="Adolf Jardim"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+			army={
+				large="gfx/leaders/SUR/Portrait_Adolf_Jardim.dds"
+			}
+		}
+		field_marshal={
+			traits={ offensive_doctrine }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	SUR_robert_kartodikromo={
+		name="Robert Kartodikromo"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+			army={
+				large="gfx/leaders/SUR/Portrait_Robert_Kartodikromo.dds"
+			}
+		}
+		field_marshal={
+			traits={ logistics_wizard }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	SUR_egmond_letterboom={
+		name="Egmond Letterboom"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+			army={
+				large="gfx/leaders/SUR/Portrait_Egmond_Letterboom.dds"
+			}
+		}
+		corps_commander={
+			traits={ trickster trait_engineer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	SUR_henri_van_axeldongen={
+		name="Henri van Axeldongen"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+			army={
+				large="gfx/leaders/SUR/Portrait_Henri_van_Axeldongen.dds"
+			}
+		}
+		corps_commander={
+			traits={ jungle_rat }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	SUR_maipath_ganpat={
+		name="Maipath Ganpat"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+			army={
+				large="gfx/leaders/SUR/Portrait_Maipath_Ganpat.dds"
+			}
+		}
+		corps_commander={
+			traits={ urban_assault_specialist }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	SUR_marino_acton={
+		name="Marino Acton"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+			army={
+				large="gfx/leaders/SUR/Portrait_Marino_Acton.dds"
+			}
+		}
+		navy_leader={
+			traits={ blockade_runner }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	SUR_harry_mcalister={
+		name="Harry McAllister"
+		portraits={
+			civilian={
+				large="gfx/leaders/CHB/Harry.dds"
+			}
+		}
+		country_leader = {
+			ideology=marxist_ruddism
+			expire="1.1.1.1"
+		}
+	}
+	SUR_red_impostor={
+		name="Red Impostor"
+		portraits={
+			civilian={
+				large="gfx/leaders/CHB/Red_Impostor.dds"
+			}
+		}
+		country_leader={
+			ideology=moderate_socialism
+			expire="1.1.1.1"
+			traits = {impostor_syndrome}
+		}
+	}
+}

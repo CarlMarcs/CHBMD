@@ -1,0 +1,179 @@
+﻿capital = 52
+
+oob = "GER_2000"
+
+set_research_slots = 4
+set_convoys = 10
+set_stability = 0.65
+
+set_country_flag = country_language_german
+
+set_technology = {
+	## Infantry ##
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	night_vision = 1
+	body_armor = 1
+	camouflage = 1
+	tech_mountaineers = 1
+	paratroopers = 1
+	
+	## Support Companies ##
+	tech_support = 1
+	basic_train =1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	
+	## Armor ##
+	main_battle_tank1 = 1
+	main_battle_tank2 = 1
+	main_battle_tank3 = 1
+	light_tank1 = 1
+	light_tank2 = 1
+	mechanised_infantry1 = 1
+	light_mechanized_infantry1 = 1
+	
+	## Artillery ##
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	
+	## Air ##
+	CAS1 = 1
+	CAS2 = 1
+	fighter1 = 1
+	fighter2 = 1
+	fighter3 = 1
+	naval_bomber1 = 1
+	strategic_bomber1 = 1
+	strategic_bomber2 = 1
+	tactical_bomber1 = 1
+	
+	## Engineering ##
+	electronic_mechanical_engineering = 1
+	radio = 1
+	
+	## Industry ##
+	basic_machine_tools = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	
+	## Doctrines ##
+	
+}
+
+add_ideas = {
+	centralization_federal
+	government_system_parliamentary_republic
+	national_development_developed
+}
+
+set_politics = {
+	ruling_party = fascist
+	last_election = "1999.1.1"
+	election_frequency = 60
+	elections_allowed = no
+}
+add_ideas = {
+	CHB_The_Blip
+}
+set_popularities = {
+    fascist = 40
+	nationalist = 15
+	reactionary = 10
+	conservative = 10
+	social_liberal = 5
+	market_liberal = 5
+	communist = 10
+	democratic_socialist = 5
+}
+recruit_character=BAV_nazi_thomson
+recruit_character=BAV_dmitry_yazov
+recruit_character = BAV_volker_wieker
+recruit_character = BAV_wolfgang_schneiderhan
+recruit_character = BAV_hanspeter_von_kirchbach
+recruit_character = BAV_bruno_kasdorf
+recruit_character = BAV_jörg_vollmer
+recruit_character = BAV_martin_schelleis
+recruit_character = BAV_richard_roßmanith
+recruit_character = BAV_hanserich_antoni
+recruit_character = BAV_joachim_wundrak
+recruit_character = BAV_peter_bohrer
+recruit_character = BAV_helmut_schütz
+recruit_character = BAV_eberhard_zorn
+recruit_character = BAV_ansgar_rieks
+recruit_character = BAV_dieter_warnecke
+recruit_character = BAV_josef_blotz
+recruit_character = BAV_dieter_naskrent
+recruit_character = BAV_karl_müllner
+recruit_character = BAV_klaus_reinhardt
+recruit_character = BAV_karlheinz_lather
+recruit_character = BAV_joachim_spiering
+recruit_character = BAV_rainer_schuwirth
+recruit_character = BAV_dieter_stöckmann
+recruit_character = BAV_hanslothar_domröse
+recruit_character = BAV_werner_freers
+recruit_character = BAV_egon_ramms
+recruit_character = BAV_wolfdieter_langheld
+recruit_character = BAV_ludwig_leinhos
+recruit_character = BAV_hanswerner_wiermann
+recruit_character = BAV_franz_xaver_pfrengle
+recruit_character = BAV_stephan_thomas
+recruit_character = BAV_walter_huhn
+recruit_character = BAV_gert_gawellek
+recruit_character = BAV_carsten_jahnel
+recruit_character = BAV_volker_thomas
+recruit_character = BAV_christof_munzlinger
+recruit_character = BAV_bernd_schuett
+recruit_character = BAV_jürgen_weigt
+recruit_character = BAV_dirk_backen
+recruit_character = BAV_andreas_marlow
+recruit_character = BAV_jürgen_setzer
+recruit_character = BAV_thorsten_poschwatta
+recruit_character = BAV_udo_schnittker
+recruit_character = BAV_alexander_sollfrank
+recruit_character = BAV_dirk_faust
+recruit_character = BAV_markus_laubenthal
+recruit_character = BAV_ruprecht_von_butler
+recruit_character = BAV_heico_hübner
+recruit_character = BAV_frank_leidenberger
+recruit_character = BAV_gert_hagemann
+recruit_character = BAV_walter_spindler
+recruit_character = BAV_manfred_hofmann
+recruit_character = BAV_dag_baehr
+recruit_character = BAV_carsten_jacobson
+recruit_character = BAV_erich_pfeffer
+recruit_character = BAV_erhard_bühler
+recruit_character = BAV_gunter_schneider
+recruit_character = BAV_jörg_see
+recruit_character = BAV_markus_kneip
+recruit_character = BAV_werner_albl
+recruit_character = BAV_oliver_kohl
+recruit_character = BAV_kai_rohrschneider
+recruit_character = BAV_wilhelm_grün
+recruit_character = BAV_manfred_nielson
+recruit_character = BAV_rainer_feist
+recruit_character = BAV_axel_meissel
+recruit_character = BAV_henrik_riechert
+recruit_character = BAV_axel_schimpf
+recruit_character = BAV_andreas_krause
+recruit_character = BAV_joachim_rühle
+recruit_character = BAV_rainer_brinkmann
+recruit_character = BAV_carsten_stawitzki
+recruit_character = BAV_thomas_jugel
+recruit_character = BAV_jan_christian_kaack
+recruit_character = BAV_christoph_müllermeinhard
+recruit_character = BAV_jean_martens
+recruit_character = BAV_axel_deertz
+recruit_character = BAV_jens_nemeyer
+recruit_character = BAV_kayachim_schönbach
+recruit_character = BAV_rainer_endres

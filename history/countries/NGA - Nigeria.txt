@@ -1,0 +1,157 @@
+﻿capital = 767
+
+oob = "NGA_2000"
+
+set_research_slots = 2
+set_convoys = 260
+set_stability = 0.15
+
+set_country_flag = country_language_english
+set_country_flag = country_language_hausa
+set_country_flag = country_language_yoruba
+set_country_flag = country_language_igbo
+set_country_flag = country_behavior_indolent
+
+set_technology = {
+	## Infantry ##
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	support_weapons = 1
+	body_armor = 1
+	camouflage = 1
+	marines = 1
+	tech_mountaineers = 1
+	paratroopers = 1
+	
+	## Support Companies ##
+	tech_support = 1
+	basic_train =1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	
+	## Armor ##
+	main_battle_tank1 = 1
+	main_battle_tank2 = 1
+	main_battle_tank3 = 1
+	light_tank1 = 1
+	mechanised_infantry1 = 1
+	light_mechanized_infantry1 = 1
+	
+	## Artillery ##
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	
+	## Air ##
+	CAS1 = 1
+	CAS2 = 1
+	fighter1 = 1
+	fighter2 = 1
+	fighter3 = 1
+	naval_bomber1 = 1
+	naval_bomber2 = 1
+	strategic_bomber1 = 1
+	
+	## Engineering ##
+	#eng_low
+	
+	## Industry ##
+	#ind_low
+	
+	## Doctrines ##
+	
+}
+
+add_ideas = {
+	centralization_federal
+	economy_boom
+	economy_tax_high
+	public_safety_secret_police
+	civil_liberties_restricted
+	population_growth_explosion
+	african_union_member
+	commonwealth_of_nations_member
+}
+
+set_politics = {
+	ruling_party = conservative
+	last_election = "1999.2.20"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    islamist = 2
+    nationalist = 2
+    reactionary = 20
+    conservative = 49
+    social_liberal = 3
+    social_democrat = 3
+    progressive = 15
+    communist = 6
+}
+recruit_character = NGA_goodluck_jonathan
+recruit_character = NGA_muhammadu_buhari
+recruit_character = NGA_okey_nwosu
+recruit_character = NGA_adebisi_akande
+recruit_character = NGA_joseph_avazi
+recruit_character = NGA_segun_sango
+recruit_character = NGA_alhaji_abdulkadir_abdulsalam
+recruit_character = NGA_tanko_yinusa
+recruit_character = NGA_abubakar_shekau
+recruit_character = NGA_t.y._buratai
+recruit_character = NGA_k.t.j._minimah
+recruit_character = NGA_a._oyebade
+recruit_character = NGA_c.m._abraham
+recruit_character = NGA_p.j._dauke
+recruit_character = NGA_e.o._udoh
+recruit_character = NGA_v.o._ezugwu
+recruit_character = NGA_e.b._oyefolu
+recruit_character = NGA_a.b._abubakar
+recruit_character = NGA_m.a._koleoso
+recruit_character = NGA_s._abubakar
+recruit_character = NGA_kenneth_minimah
+recruit_character = NGA_martin_luther_agwai
+recruit_character = NGA_abayomi_olonisakin
+recruit_character = NGA_abdulrahman_bello_dambazau
+recruit_character = NGA_alexander_ogomudia
+recruit_character = NGA_andrew_azazi
+recruit_character = NGA_turker_yusuf_buratai
+recruit_character = NGA_d._j._ezeoba
+recruit_character = NGA_ishaya_ibrahim
+recruit_character = NGA_u._o._jibrin
+recruit_character = NGA_i.e._ibas
+recruit_character = NGA_u.o._jibrin
+recruit_character = NGA_emem_pepple
+recruit_character = NGA_oluwasegun_nenge
+recruit_character = NGA_abidemi_odusanya
+
+
+2014.1.1 = { add_stability = 0.05 }
+
+2015.3.28 = {
+	oob = "NGA_2016"
+	set_politics = {
+		ruling_party = social_liberal
+		last_election = "2015.3.28"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        islamist = 18
+        fascist = 4
+        reactionary = 2
+        conservative = 30
+        market_liberal = 2
+        social_liberal = 40
+        social_democrat = 4
+    }
+}

@@ -1,0 +1,1669 @@
+add_namespace = CampHill
+
+country_event = {
+    id = CampHill.1
+    title = CampHill.1.t
+    desc = CampHill.1.d
+    is_triggered_only = yes
+    option = {
+        name = CampHill.1.o1
+        add_popularity = {
+            ideology = communist
+            popularity = 0.05
+        }
+        add_popularity = {
+            ideology = reactionary
+            popularity = 0.05
+        }
+        add_stability = -0.05
+    }
+    option = {
+        name = CampHill.1.o2
+        country_event = CampHill.2
+    }
+}
+country_event = {
+    id = CampHill.2
+    title = CampHill.1.t
+    desc = CampHill.2.d
+    is_triggered_only = yes
+    option = {
+        name = CampHill.2.o1
+        add_popularity = {
+            ideology = communist
+            popularity = 0.05
+        }
+        add_popularity = {
+            ideology = reactionary
+            popularity = 0.05
+        }
+        add_stability = -0.05
+    }
+
+}
+country_event = {
+    id = CampHill.6
+    title = CampHill.6.t
+    desc = CampHill.6.d
+    is_triggered_only = yes
+    option = {
+        name = CampHill.6.o1
+        add_popularity = {
+            ideology = communist
+            popularity = 0.1
+        }
+        complete_national_focus = chbfocus_angry_students
+    }
+    option = {
+        name = CampHill.6.o2
+        add_popularity = {
+            ideology = monarchist
+            popularity = 0.1
+        }
+        complete_national_focus = chbfocus_status_quo
+    }
+    option = {
+        name = CampHill.6.o3
+        add_popularity = {
+            ideology = reactionary
+            popularity = 0.05
+        }
+        complete_national_focus = chbfocus_angry_ASS
+    }
+}
+country_event = {
+    id = CampHill.7
+    title = Camphill.7.t
+    desc = CampHill.7.d
+    is_triggered_only = yes
+    picture = GFX_communism_meme
+    option = {
+        name = CampHill.7.o1
+        add_popularity = {
+            ideology = communist
+            popularity = 0.05
+        }
+        add_popularity = {
+            ideology = democratic_socialist
+            popularity = 0.05
+        }
+        add_popularity = {
+            ideology = progressive
+            popularity = 0.025
+        }
+        add_popularity = {
+            ideology = social_democrat
+            popularity = 0.025
+        }
+    }
+}
+country_event = {
+    id = CampHill.8
+    title = CampHill.8.t
+    desc = CampHill.8.d
+    is_triggered_only = yes
+    picture = GFX_camphill_school
+    option = {
+        name = CampHill.8.o1
+        hidden_effect = {
+            set_variable = { CHB_zeeshan_influence = 1 }
+            set_variable = { CHB_tito_influence = 1 }
+            set_variable = { CHB_rudd_influence = 1 }
+            set_variable = { CHB_eng_hill_influence = 1 }
+            set_variable = { CHB_com_garrod_influence = 1 }
+        }
+    }
+}
+country_event = {
+    id = CampHill.9
+    title = CampHill.9.t
+    desc = CampHill.9.d
+    is_triggered_only = yes
+    option = {
+        name = CampHill.9.o1
+        hidden_effect = {
+            add_to_variable = { CHB_com_garrod_influence = 10 }
+            add_to_variable = { CHB_zeeshan_influence = 10 }
+            add_to_variable = { CHB_rudd_influence = 10 }
+            add_popularity = {
+                ideology = democratic_socialist
+                popularity = 0.15
+            }
+            add_popularity = {
+                ideology = communist
+                popularity = 0.1
+            }
+        }
+    }
+    option = {
+        name = CampHill.9.o2
+        add_popularity = {
+            ideology = monarchist
+            popularity = -0.15
+        }
+        CHB_Martin_Garrod={
+            remove_unit_leader_role = yes
+        }
+        hidden_effect = {
+            subtract_from_variable = { CHB_com_garrod_influence = 20 }
+            add_to_variable = { CHB_zeeshan_influence = 10 }
+            add_to_variable = { CHB_rudd_influence = 5 }
+            add_to_variable = { CHB_eng_hill_influence = 5 }
+            add_popularity = {
+                ideology = democratic_socialist
+                popularity = 0.05
+            }
+            add_popularity = {
+                ideology = communist
+                popularity = 0.15
+            }
+        }
+    }
+    option = {
+        name = CampHill.9.o3
+        add_popularity = {
+            ideology = monarchist
+            popularity = -0.30
+        }
+        retire_character = CHB_Martin_Garrod
+        hidden_effect = {
+            add_to_variable = { CHB_tito_influence = 10 }
+            add_to_variable = { CHB_eng_hill_influence = 10 }
+            subtract_from_variable = { CHB_com_garrod_influence = 1000 }  
+            add_popularity = {
+                ideology = democratic_socialist
+                popularity = -0.2
+            }
+            add_popularity = {
+                ideology = social_democrat
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = communist
+                popularity = 0.1
+            }
+        }
+    }
+}
+country_event = {
+    id = CampHill.10
+    title = CampHill.10.t
+    desc = CampHill.10.d
+    is_triggered_only = yes
+    option = {
+        name = CampHill.10.o1
+        hidden_effect = {
+            add_to_variable = { CHB_zeeshan_influence = 10 }
+            add_popularity = {
+                ideology = communist
+                popularity = 0.05
+            }
+        }
+    }
+    option = {
+        name = CampHill.10.o2
+        hidden_effect = {
+            add_to_variable = { CHB_tito_influence = 10 }
+            add_to_variable = { CHB_rudd_influence = 10 }
+            add_popularity = {
+                ideology = progressive
+                popularity = -0.1
+            }
+            add_popularity = {
+                ideology = social_democrat
+                popularity = -0.05
+            }
+            add_popularity = {
+                ideology = democratic_socialist
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = communist
+                popularity = 0.1
+            }
+        }
+    }
+    option = {
+        name = CampHill.10.o3
+        add_popularity = {
+            ideology = democratic_socialist
+            popularity = -0.2
+        }
+        add_popularity = {
+            ideology = progressive
+            popularity = -0.2
+        }
+        hidden_effect = {
+            add_to_variable = { CHB_eng_hill_influence = 10 }
+            add_to_variable = { CHB_com_garrod_influence = 10 }
+            add_popularity = {
+                ideology = social_democrat
+                popularity = 0.1
+            }
+        }
+    }
+}
+country_event = {
+    id = CampHill.11
+    title = CampHill.11.t
+    desc = CampHill.11.d
+    is_triggered_only = yes
+    option = {
+        name = CampHill.11.o1
+        add_opinion_modifier = {
+            target = USA
+            modifier = declaration_of_friendship
+        }
+        USA = {
+            add_opinion_modifier = {
+                target = CHB
+                modifier = declaration_of_friendship
+            }
+        }
+        hidden_effect = {
+            add_to_variable = { CHB_eng_hill_influence = 10 }
+            add_to_variable = { CHB_rudd_influence = 10 }
+            add_popularity = {
+                ideology = democratic_socialist
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = social_democrat
+                popularity = 0.1
+            }
+        }
+    }
+    option = {
+        name = CampHill.11.o2
+        add_opinion_modifier = {
+            target = PRC
+            modifier = declaration_of_friendship
+        }
+        PRC = {
+            add_opinion_modifier = {
+                target = CHB
+                modifier = declaration_of_friendship
+            }
+        }
+        hidden_effect = {
+            add_to_variable = { CHB_tito_influence = 10 }
+            add_to_variable = { CHB_zeeshan_influence = 5 }
+            add_popularity = {
+                ideology = communist
+                popularity = 0.1
+            }
+        }
+    }
+    option = {
+        name = CampHill.11.o3
+        hidden_effect = {
+            add_to_variable = { CHB_zeeshan_influence = 10 }
+            add_to_variable = { CHB_com_garrod_influence = 10 }
+            
+        }
+    }
+}
+country_event = {
+    id = CampHill.12
+    title = CampHill.12.t
+    desc = CampHill.12.d
+    is_triggered_only = yes
+    option = {
+        name = CampHill.12.o1
+        hidden_effect = {
+            add_to_variable = { CHB_rudd_influence = 10 }
+            add_to_variable = { CHB_tito_influence = 10 }
+            add_popularity = {
+                ideology = democratic_socialist
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = communist
+                popularity = 0.1
+            }
+        }
+    }
+    option = {
+        name = CampHill.12.o2
+        hidden_effect = {
+            add_to_variable = { CHB_zeeshan_influence = 10 }
+            add_popularity = {
+                ideology = communist
+                popularity = 0.12
+            }
+        }
+    }
+    option = {
+        name = CampHill.12.o3
+        hidden_effect = {
+            add_to_variable = { CHB_eng_hill_influence = 10 }
+            add_to_variable = { CHB_com_garrod_influence = 10 }
+            add_popularity = {
+                ideology = social_democrat
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = communist
+                popularity = 0.05
+            }
+        }
+    }
+}
+country_event = {
+    id = CampHill.13
+    title = CampHill.13.t
+    desc = CampHill.13.d
+    is_triggered_only = yes
+    option = {
+        trigger = {
+            check_variable = {
+                CHB_zeeshan_influence > 20
+            }
+        }
+        name = CampHill.13.o1
+        retire_character = CHB_Student_Council
+        add_country_leader_role = {
+            Character = CHB_Zeeshan
+            Promote_leader = yes
+            country_leader = {
+                ideology = fully_automated_luxury_gay_space_communism
+                expire = "2069.1.1.1"
+            }
+        }
+        set_politics = {
+            ruling_party = communist
+	        last_election = "1999.12.12"
+	        election_frequency = 24
+	        elections_allowed = yes
+        }
+        
+    }
+    option = {
+        trigger = {
+            check_variable = {
+                CHB_tito_influence > 20
+            }
+        }
+        name = CampHill.13.o2
+        retire_character = CHB_Student_Council
+        add_country_leader_role = {
+            Character = CHB_Josip_Broz_Tito
+            Promote_leader = yes
+            country_leader = {
+                ideology = maoist
+                expire = "2069.1.1.1"
+            }
+        }
+        add_popularity = {
+            ideology = communist
+            popularity = 0.2
+        }
+        
+    }
+    option = {
+        trigger = {
+            check_variable = {
+                CHB_com_garrod_influence > 20
+            }
+        }
+        name = CampHill.13.o3
+        retire_character = CHB_Student_Council
+        add_country_leader_role = {
+            Character = CHB_Martin_Garrod
+            Promote_leader = yes
+            country_leader = {
+                ideology = leninist
+                expire = "2069.1.1.1"
+            }
+        }
+        add_popularity = {
+            ideology = communist
+            popularity = 0.2
+        }
+        
+    }
+    option = {
+        trigger = {
+            check_variable = {
+                CHB_rudd_influence > 20
+            }
+        }
+        name = CampHill.13.o4
+        retire_character = CHB_Student_Council
+        add_country_leader_role = {
+            Character = CHB_Zeeshan
+            Promote_leader = yes
+            country_leader = {
+                ideology = marxist
+                expire = "2069.1.1.1"
+            }
+        }
+        add_popularity = {
+            ideology = democratic_socialist
+            popularity = 0.2
+        }
+        set_politics = {
+            ruling_party = democratic_socialist
+	        last_election = "1999.12.12"
+	        election_frequency = 12
+	        elections_allowed = no
+        }
+        
+    }
+    option = {
+        trigger = {
+            check_variable = {
+                CHB_eng_hill_influence > 20
+            }
+        }
+        name = CampHill.13.o5
+        retire_character = CHB_Student_Council
+        add_country_leader_role = {
+            Character = CHB_Zeeshan
+            Promote_leader = yes
+            country_leader = {
+                ideology = marxist
+                expire = "2069.1.1.1"
+            }
+        }
+        add_popularity = {
+            ideology = social_democrat
+            popularity = 0.2
+        }
+        set_politics = {
+            ruling_party = social_democrat
+	        last_election = "1999.12.12"
+	        election_frequency = 12
+	        elections_allowed = no
+        }
+        
+    }
+}
+country_event = {
+    id = CampHill.14
+    title = CampHill.14.t
+    desc = CampHill.14.d
+    is_triggered_only = yes
+    picture = gfx_report_event_american_flag
+    option = {
+        name = CampHill.14.o1
+        add_popularity = {
+            ideology = progressive
+            popularity = -0.05
+        }
+        add_popularity = {
+            ideology = social_democrat
+            popularity = -0.03
+        }
+        add_stability = 0.1
+    }
+    option = {
+        name = CampHill.14.o2
+        add_popularity = {
+            ideology = market_liberal
+            popularity = 0.25
+        }
+        add_popularity = {
+            ideology = communist
+            popularity = -0.25
+        }
+        hidden_effect = {
+            load_focus_tree = chbancapfocus
+        }
+    }
+}
+country_event = {
+    id = CampHill.15
+    title = CampHill.15.t
+    desc = CampHill.15.d
+    is_triggered_only = yes
+    picture = gfx_report_event_chinese_flag
+    option = {
+        name = CampHill.15.o1
+        add_popularity = {
+            ideology = progressive
+            popularity = -0.05
+        }
+        add_popularity = {
+            ideology = social_democrat
+            popularity = -0.03
+        }
+        add_stability = 0.1
+    }
+    option = {
+        name = CampHill.15.o2
+        add_popularity = {
+            ideology = communist
+            popularity = -0.05
+        }
+        add_stability = -0.1
+    }
+}
+country_event = {
+    id = CampHill.16
+    title = CampHill.16.t
+    desc = CampHill.16.d
+    is_triggered_only = yes
+    option = {
+        name = CampHill.16.o1
+        ai_chance = {
+            base=1
+            factor = 30
+        }
+        CHB = {
+            complete_national_focus = chbcomfocus_US_support
+        }
+        PRC = {
+            country_event = CampHill.17
+        }
+    }
+    option = {
+        name = CampHill.16.o2
+        ai_chance = {
+            base=1
+            factor = 70
+        }
+        PRC = {
+            country_event = CampHill.18
+        }
+    }
+}
+country_event = {
+    id = CampHill.17
+    title = CampHill.17.t
+    desc = CampHill.17.d
+    is_triggered_only = yes
+    option = {
+        name = CampHill.17.o1
+        ai_chance = {
+            base = 1
+            factor = 60
+        }
+        CHB = {
+            complete_national_focus = chbcomfocus_chinese_support
+        }
+    }
+    option = {
+        name = CampHill.17.o2
+        ai_chance = {
+            base = 1
+            factor = 40
+        }
+    }
+}
+country_event = {
+    id = CampHill.18
+    title = CampHill.17.t
+    desc = CampHill.17.d
+    is_triggered_only = yes
+    option = {
+        name = CampHill.17.o1
+        ai_chance = {
+            base=1
+            factor = 60
+        }
+        CHB = {
+            complete_national_focus = chbcomfocus_chinese_support
+        }
+    }
+    option = {
+        name = CampHill.17.o2
+        ai_chance = {
+            base = 1
+            factor = 40
+        }
+        CHB = {
+            complete_national_focus = chbcomfocus_diplomatic_failure
+        }
+    }
+}
+country_event = {
+    id = CampHill.19
+    title = CampHill.19.t
+    desc = CampHill.19.d
+    is_triggered_only = yes
+    picture = GFX_report_event_computer
+    option = {
+        name = CampHill.19.o1
+        add_popularity = {
+            ideology = monarchist
+            popularity = 0.1
+        }
+    }
+}
+country_event = {
+    id = CampHill.20
+    title = CampHill.20.t
+    desc = CampHill.20.d
+    is_triggered_only = yes
+    picture = GFX_report_event_assassination
+    option = {
+        name = CampHill.20.o1
+        add_popularity = {
+            ideology = social_liberal
+            popularity = 0.05
+        }
+        add_popularity = {
+            ideology = fascist
+            popularity = 0.1
+        }
+        set_party_name = {
+            ideology = fascist
+            long_name = CHB_NASI_fascist_party_long
+            name = CHB_NASI_fascist_party
+        }
+        hidden_effect = {
+            set_cosmetic_tag = CHBnoDaddy
+            retire_character = CHB_Mark_Duncan
+            add_country_leader_role = {
+                character = CHB_Giles_Hill
+                Promote_leader = yes
+                country_leader = {
+                    ideology = national_socialist
+                    expire = "2069.6.9.6"
+                }
+            }
+        }
+    }
+}
+country_event = {
+    id = CampHill.21
+    title = CampHill.21.t
+    desc = CampHill.21.d
+    is_triggered_only = yes
+    picture = GFX_report_event_british_monarchy
+    option = {
+        name = CampHill.21.o1
+        add_popularity = {
+            ideology = monarchist
+            popularity = 50
+        }
+        set_politics = {
+            ruling_party = monarchist
+            last_election = "1997.5.1"
+            election_frequency = 60
+            elections_allowed = no
+        }
+    }
+}
+country_event = {
+    id = CampHill.22
+    title = CampHill.22.t
+    desc = CampHill.22.d
+    is_triggered_only = yes
+    picture = GFX_camphill_school2
+    option = {
+        name = CampHill.22.o1
+        kill_country_leader = yes
+        add_country_leader_role = {
+            character = CHB_Russel_Bowen
+            Promote_leader = yes
+            country_leader={
+                ideology=bowenism
+                expire="3069.6.9.6"
+                id=-1
+            }
+        }
+        add_popularity = {
+            ideology = monarchist
+            popularity = 0.1
+        }
+    }
+}
+country_event = {
+    id = CampHill.23
+    title = CampHill.23.t
+    desc = CampHill.23.d
+    is_triggered_only = yes
+    picture = GFX_camphill_school2
+    option = {
+        name = CampHill.23.o1
+        set_politics = {
+            ruling_party = conservative
+            elections_allowed = yes
+            election_frequency = 60
+        }
+        add_popularity = {
+            ideology = conservative
+            popularity = 0.1
+        }
+        set_variable = { NAZI_NASI = 0}
+    }
+    option = {
+        name = CampHill.23.o2
+        set_politics = {
+            ruling_party = social_liberal
+            elections_allowed = yes
+            election_frequency = 60
+        }
+        add_popularity = {
+            ideology = social_liberal
+            popularity = 0.1
+        }
+        set_variable = { NAZI_NASI = 1}
+    }
+}
+country_event = {
+    id = CampHill.24
+    title = CampHill.24.t
+    desc = CampHill.24.d
+    trigger = {
+        check_variable = { NAZI_NASI = 1}
+    }
+    mean_time_to_happen = {
+        days = 5
+    }
+    picture = GFX_report_event_communism
+    option = {
+        name = CampHill.24.o1
+        add_popularity = {
+            ideology = social_democrat
+            popularity = -0.1
+        }
+        add_popularity = {
+            ideology = social_liberal
+            popularity = -0.1
+        }
+        add_popularity = {
+            ideology = fascist
+            popularity = 0.2
+        }
+        add_to_variable = { NAZI_NASI = 1}
+    }
+    option = {
+        name = CampHill.24.o2
+        add_popularity = {
+            ideology = fascist
+            popularity = -0.3
+        }
+        set_variable = { NAZI_NASI = 0}
+    }
+}
+country_event = {
+    id = CampHill.25
+    title = CampHill.25.t
+    desc = CampHill.25.d
+    trigger = {
+        check_variable = {NAZI_NASI = 2}
+    }
+    mean_time_to_happen = {
+        days = 5
+    }
+    picture = GFX_report_event_prison
+    option = {
+        name = CampHill.25.o1
+        add_popularity = {
+            ideology = conservative
+            popularity = -0.8
+        }
+        add_popularity = {
+            ideology = social_liberal
+            popularity = 0.1
+        }
+        add_popularity = {
+            ideology = fascist
+            popularity = 0.3
+        }
+        add_to_variable = { NAZI_NASI = 1}
+    }
+    option = {
+        name = CampHill.25.o2
+        add_popularity = {
+            ideology = fascist
+            popularity = -0.5
+        }
+        set_variable = { NAZI_NASI = 0}
+    }
+}
+country_event = {
+    id = CampHill.26
+    title = CampHill.26.t
+    desc = CampHill.26.d
+    trigger = {
+        check_variable = {NAZI_NASI = 3}
+    }
+    mean_time_to_happen = {
+        days = 5
+    }
+    picture = GFX_report_event_french_senate
+    option = {
+        name = CampHill.26.o1
+        add_popularity = {
+            ideology = fascist
+            popularity = 0.1
+        }
+        set_politics = {
+            ruling_party = fascist
+            elections_allowed = no
+            election_frequency = 60
+        }
+        set_variable = { NAZI_NASI = 0}
+
+    }
+}
+country_event = {
+    id = CampHill.27
+    title = CampHill.27.t
+    desc = CampHill.27.d
+    is_triggered_only = yes
+    picture = GFX_kids
+    option = {
+        name = CampHill.27.o1
+        add_popularity = {
+            ideology = reactionary
+            popularity = 0.1
+        }
+    }
+    option = {
+        name = CampHill.27.o2
+        add_popularity = {
+            ideology = nationalist
+            popularity = 0.1
+        }
+    }
+    option = {
+        name = CampHill.27.o3
+        add_popularity = {
+            ideology = fascist
+            popularity = 0.1
+        }
+    }
+}
+country_event = {
+    id = CampHill.28
+    title = CampHill.28.t
+    desc = CampHill.28.d
+    is_triggered_only = yes
+    picture = GFX_report_event_iraq_war4
+    option = {
+        name = CampHill.28.o1
+        add_popularity = {
+            ideology = reactionary
+            popularity = 0.1
+        }
+        918 = {
+            create_unit = {
+                division = "name = \"1st New Sports Team\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                owner = CHB
+            }
+            create_unit = {
+                division = "name = \"2nd New Sports Team\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                owner = CHB
+            }
+            create_unit = {
+                division = "name = \"3rd New Sports Team\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                owner = CHB
+            }
+            create_unit = {
+                division = "name = \"4th New Sports Team\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                owner = CHB
+            }
+            create_unit = {
+                division = "name = \"5th New Sports Team\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                owner = CHB
+            }
+        }
+        add_field_marshal_role = {
+            Character = CHB_Tim_Burgees
+            skill = 4
+            attack_skill = 2
+            defense_skill = 3
+            planning_skill = 3
+            logistics_skill = 5
+        }
+        add_corps_commander_role = {
+            Character = CHB_Mark_Duncan
+            skill = 4
+            attack_skill = 4
+            defense_skill = 3
+            planning_skill = 3
+            logistics_skill = 5
+        }
+        add_corps_commander_role = {
+            Character = CHB_Warren_Taylor
+            skill = 4
+            attack_skill = 2
+            defense_skill = 3
+            planning_skill = 3
+            logistics_skill = 5
+        }
+    }
+    option = {
+        name = CampHill.28.o2
+        add_popularity = {
+            ideology = nationalist
+            popularity = 0.1
+        }
+        918 = {
+            create_unit = {
+                division = "name = \"1st Cross Country Runners\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                owner = CHB
+            }
+            create_unit = {
+                division = "name = \"2nd Cross Country Runners\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                owner = CHB
+            }
+            create_unit = {
+                division = "name = \"3rd Cross Country Runners\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                owner = CHB
+            }
+            create_unit = {
+                division = "name = \"4th Cross Country Runners\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                owner = CHB
+            }
+        }
+        add_field_marshal_role = {
+            Character = CHB_Warren_Taylor
+            skill = 4
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 3
+            logistics_skill = 5
+        }
+        add_corps_commander_role = {
+            Character = CHB_Mark_Duncan
+            skill = 4
+            attack_skill = 4
+            defense_skill = 3
+            planning_skill = 3
+            logistics_skill = 5
+        }
+        add_corps_commander_role = {
+            Character = CHB_Tim_Burgees
+            skill = 4
+            attack_skill = 2
+            defense_skill = 3
+            planning_skill = 3
+            logistics_skill = 5
+        }
+    }
+    option = {
+        name = CampHill.28.o3
+        add_popularity = {
+            ideology = fascist
+            popularity = 0.1
+        }
+        918 = {
+            create_unit = {
+                division = "name = \"1st Group of Little Kids\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                owner = CHB
+            }
+            create_unit = {
+                division = "name = \"2nd Group of Little Kids\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                owner = CHB
+            }
+            create_unit = {
+                division = "name = \"3rd Group of Little Kids\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                owner = CHB
+            }
+            create_unit = {
+                division = "name = \"4th Group of Little Kids\" division_template = \"Sports Team\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+                owner = CHB
+            }
+        }
+        add_field_marshal_role = {
+            Character = CHB_Mark_Duncan
+            skill = 4
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 3
+            logistics_skill = 5
+        }
+        add_corps_commander_role = {
+            Character = CHB_Warren_Taylor
+            skill = 4
+            attack_skill = 4
+            defense_skill = 3
+            planning_skill = 3
+            logistics_skill = 5
+        }
+        add_corps_commander_role = {
+            Character = CHB_Tim_Burgees
+            skill = 4
+            attack_skill = 2
+            defense_skill = 3
+            planning_skill = 3
+            logistics_skill = 5
+        }
+        add_manpower = 10000
+    }
+}
+country_event = {
+    id = CampHill.29
+    title = CampHill.29.t
+    desc = CampHill.29.d
+    is_triggered_only = yes
+    picture = GFX_report_event_election
+    option = {
+        name = CampHill.29.o1
+        add_popularity = {
+            ideology = reactionary
+            popularity = 0.1
+        }
+    }
+    option = {
+        name = CampHill.29.o2
+        add_popularity = {
+            ideology = nationalist
+            popularity = 0.1
+        }
+    }
+    option = {
+        name = CampHill.29.o3
+        add_popularity = {
+            ideology = fascist
+            popularity = 0.1
+        }
+    }
+}
+country_event = {
+    id = CampHill.30
+    title = CampHill.30.t
+    desc = CampHill.30.d
+    is_triggered_only = yes
+    picture = gfx_report_event_american_flag
+    option = {
+        name = CampHill.30.o1
+        add_popularity = {
+            ideology = reactionary
+            popularity = 0.05
+        }
+        add_opinion_modifier = {
+            target = USA
+            modifier = declaration_of_friendship
+        }
+    }
+    option = {
+        name = CampHill.30.o2
+        add_popularity = {
+            ideology = nationalist
+            popularity = 0.05
+        }
+        add_opinion_modifier = {
+            target = SOV
+            modifier = declaration_of_friendship
+        }
+    }
+    option = {
+        name = CampHill.30.o3
+        add_popularity = {
+            ideology = fascist
+            popularity = 0.05
+        }
+    }
+}
+country_event = {
+    id = CampHill.31
+    title = CampHill.31.t
+    desc = CampHill.31.d
+    is_triggered_only = yes
+    picture = gfx_report_event_british_pound
+    option = {
+        name = CampHill.31.o1
+        add_popularity = {
+            ideology = reactionary
+            popularity = 0.05
+        }
+        add_building_construction = {
+            type = industrial_complex
+            level = 5
+            instant_build = yes
+        }
+        add_building_construction = {
+            type = industrial_complex
+            level = 5
+            instant_build = yes
+        }
+        add_building_construction = {
+            type = industrial_complex
+            level = 5
+            instant_build = yes
+        }
+    }
+    option = {
+        name = CampHill.31.o2
+        add_popularity = {
+            ideology = nationalist
+            popularity = 0.05
+        }
+        add_building_construction = {
+            type = arms_factory
+            level = 5
+            instant_build = yes
+        }
+        add_building_construction = {
+            type = arms_factory
+            level = 5
+            instant_build = yes
+        }
+        add_building_construction = {
+            type = arms_factory
+            level = 5
+            instant_build = yes
+        }
+    }
+    option = {
+        name = CampHill.31.o3
+        add_popularity = {
+            ideology = fascist
+            popularity = 0.05
+        }
+        add_building_construction = {
+            type = industrial_complex
+            level = 5
+            instant_build = yes
+        }
+        add_building_construction = {
+            type = industrial_complex
+            level = 5
+            instant_build = yes
+        }
+        add_building_construction = {
+            type = arms_factory
+            level = 5
+            instant_build = yes
+        }
+        add_building_construction = {
+            type = arms_factory
+            level = 5
+            instant_build = yes
+        }
+    }
+}
+country_event = {
+    id = CampHill.32
+    title = CampHill.32.t
+    desc = CampHill.32.d
+    is_triggered_only = yes
+    picture = GFX_report_event_coup
+    option = {
+        name = CampHill.32.o1
+        add_country_leader_role = {
+            Character = CHB_Thomas_Pitfield
+            Promote_leader = yes
+            country_leader = {
+                ideology = military_dictatorship
+                expire = "2069.1.1.1"
+            }
+        }
+        set_politics = {
+            ruling_party = monarchist
+            elections_allowed = no
+            election_frequency = 60
+        }
+        add_popularity = {
+            ideology = monarchist
+            popularity = 0.3
+        }
+        hidden_effect = {
+            set_cosmetic_tag = milchb
+        }
+    }
+}
+country_event = {
+    id = CampHill.33
+    title = CampHill.33.t
+    desc = CampHill.33.d
+    is_triggered_only = yes
+    picture = GFX_report_event_british_monarchy
+    option = {
+        name = CampHill.33.o1
+        add_popularity = {
+            ideology = communist
+            popularity = 0.1
+        }
+    }
+    option = {
+        name = CampHill.33.o2
+        add_popularity = {
+            ideology = communist
+            popularity = -1
+        }
+        add_popularity = {
+            ideology = monarchist
+            popularity = 0.5
+        }
+        add_popularity = {
+            ideology = conservative
+            popularity = 0.2
+        }
+        add_popularity = {
+            ideology = social_liberal
+            popularity = 0.2
+        }
+        set_politics = {
+            ruling_party = monarchist
+            elections_allowed = no
+            election_frequency = 60
+        }
+        remove_ideas = CHB_Socialist_Memery
+        hidden_effect = {
+            load_focus_tree = chbmonfocus
+        }
+    }
+}
+country_event = {
+    id = CampHill.34
+    title = CampHill.34.t
+    desc = CampHill.34.d
+    is_triggered_only = yes
+    option = {
+        name = CampHill.34.o1
+        CHB = {
+            puppet = IRE
+        }
+        if = {
+            limit = {CHB = {has_government = reactionary} }
+            set_popularities = {
+                reactionary = 30
+                fascist = 30
+                nationalist = 30
+                democratic_socialist = 5
+                social_liberal = 5
+            }
+            add_popularity = {
+                ideology = reactionary
+                popularity = 0.1
+            }
+            set_politics = {
+                ruling_party = reactionary
+                last_election = "1997.5.1"
+                election_frequency = 60
+                elections_allowed = no
+            }
+            
+        }
+        if = {
+            limit = {CHB = {has_government = nationalist}}
+            set_popularities = {
+                reactionary = 30
+                fascist = 30
+                nationalist = 30
+                democratic_socialist = 5
+                social_liberal = 5
+            }
+            add_popularity = {
+                ideology = nationalist
+                popularity = 0.1
+            }
+            set_politics = {
+                ruling_party = nationalist
+                last_election = "1997.5.1"
+                election_frequency = 60
+                elections_allowed = no
+            }
+            
+        }
+        if = {
+            limit = {CHB = {has_government = fascist}}
+            set_popularities = {
+                reactionary = 30
+                fascist = 30
+                nationalist = 30
+                democratic_socialist = 5
+                social_liberal = 5
+            }
+            add_popularity = {
+                ideology = fascist
+                popularity = 0.1
+            }
+            set_politics = {
+                ruling_party = fascist
+                last_election = "1997.5.1"
+                election_frequency = 60
+                elections_allowed = no
+            }
+            
+        }
+        if = {
+            limit = {CHB = {has_government = monarchist}}
+            set_popularities = {
+                islamist = 8.3
+                fascist = 8.3
+                nationalist = 8.3
+                monarchist = 8.4
+                reactionary = 8.4
+                conservative = 8.3
+                market_liberal = 8.4
+                social_liberal = 8.3
+                social_democrat = 8.3
+                progressive = 8.3
+                democratic_socialist = 8.4
+                communist = 8.3
+            }
+            set_politics = {
+                ruling_party = monarchist
+                last_election = "1997.5.1"
+                election_frequency = 60
+                elections_allowed = yes
+            }
+        }
+    }
+}
+country_event = {
+    id = CampHill.35
+    title = CampHill.35.t
+    desc = CampHill.35.d
+    is_triggered_only = yes
+    picture = GFX_report_event_terrorist_attack
+    option = {
+        name = CampHill.35.o1
+        add_popularity = {
+            ideology = communist
+            popularity = -0.05
+        }
+    }
+    option = {
+        name = CampHill.35.o2
+        add_popularity = {
+            ideology = communist
+            popularity = -0.05
+        }
+        UKR = {
+            change_tag_from = CHB
+            load_focus_tree = UKRanarchy
+        }
+        hidden_effect = {
+            set_global_flag = UKRanarchy
+        }
+    }
+}
+country_event = {
+    id = CampHill.36
+    title = CampHill.36.t
+    desc = CampHill.36.d
+    is_triggered_only = yes
+    picture = GFX_report_event_terrorist_attack
+    option = {
+        name = CampHill.36.o1
+        add_popularity = {
+            ideology = communist
+            popularity = 0.05
+        }
+        hidden_effect = {
+            set_global_flag = sampanna_killed
+        }
+    }
+    option = {
+        name = CampHill.36.o2
+        add_popularity = {
+            ideology = conservative
+            popularity = 0.1
+        }
+    }
+}
+country_event = {
+    id = CampHill.37
+    title = CampHill.37.t
+    desc = CampHill.37.d
+    is_triggered_only = yes
+    picture = GFX_kings_heath_park
+    option = {
+        name = CampHill.37.o1
+        custom_effect_tooltip = CampHill_Kings_Heath_Park_Gained_Com
+        add_manpower = -100
+        add_war_support = -0.1
+        hidden_effect = {
+            country_event = {
+                id = CampHill.38
+                days = 6
+            }
+        }
+    }
+    option = {
+        name = CampHill.37.o2
+        custom_effect_tooltip = CampHill_Counterrevolutionary_Growth
+        hidden_effect = {
+            add_popularity = {
+                ideology = social_liberal
+                popularity = 0.05
+            }
+            country_event = {
+                id = CampHill.38
+                days = 6
+            }
+        }
+    }
+}
+country_event = {
+    id = CampHill.38
+    title = CampHill.38.t
+    desc = CampHill.38.d
+    is_triggered_only = yes
+    picture = GFX_KES
+    option = {
+        name = CampHill.38.o1
+        custom_effect_tooltip = CampHill_Killed_KES_Bougies
+        add_popularity = {
+            ideology = communist
+            popularity = 0.1
+        }
+        add_popularity = {
+            ideology = democratic_socialist
+            popularity = 0.05
+        }
+        add_popularity = {
+            ideology = progressive
+            popularity = 0.05
+        }
+        add_popularity = {
+            ideology = social_democrat
+            popularity = 0.05
+        }
+        add_stability = -0.2
+        add_manpower = -2000
+        hidden_effect = {
+            country_event = {
+                id = CampHill.39
+                days = 6
+            }
+        }
+    }
+    option = {
+        name = CampHill.38.o2
+        custom_effect_tooltip = CampHill_Counterrevolutionary_Growth
+        hidden_effect = {
+            add_popularity = {
+                ideology = social_liberal
+                popularity = 0.1
+            }
+            country_event = {
+                id = CampHill.39
+                days = 6
+            }
+        }
+    }
+}
+country_event = {
+    id = CampHill.39
+    title = CampHill.39.t
+    desc = CampHill.39.d
+    is_triggered_only = yes
+    picture = GFX_report_event_prison
+    option = {
+        name = CampHill.39.o1
+        add_popularity = {
+            ideology = communist
+            popularity = 0.1
+        }
+        add_stability = -0.25
+        hidden_effect = {
+            country_event = {
+                id = CampHill.40
+                days = 6
+            }
+        }
+    }
+    option = {
+        name = CampHill.39.o2
+        custom_effect_tooltip = CampHill_Counterrevolutionary_Growth
+        add_manpower = 1000
+        hidden_effect = {
+            country_event = {
+                id = CampHill.40
+                days = 6
+            }
+            add_popularity = {
+                ideology = social_liberal
+                popularity = 0.1
+            }
+        }
+    }
+}
+country_event = {
+    id = CampHill.40
+    title = CampHill.40.t
+    desc = CampHill.40.d
+    is_triggered_only = yes
+    picture = GFX_report_event_customers
+    option = {
+        name = CampHill.40.o1
+        add_popularity = {
+            ideology = democratic_socialist
+            popularity = 0.1
+        }
+        add_stability = -0.1
+        hidden_effect = {
+            country_event = {
+                id = CampHill.41
+                days = 6
+            }
+        }
+    }
+    option = {
+        name = CampHill.40.o2
+        custom_effect_tooltip = CampHill_Counterrevolutionary_Growth
+        hidden_effect = {
+            add_popularity = {
+                ideology = social_liberal
+                popularity = 0.1
+            }
+            country_event = {
+                id = CampHill.41
+                days = 6
+            }
+        }
+    }
+}
+country_event = {
+    id = CampHill.41
+    title = CampHill.41.t
+    desc = CampHill.41.d
+    is_triggered_only = yes
+    picture = GFX_camphill_school2
+    option = {
+        name = CampHill.41.o1
+        trigger = {
+            NOT = {
+                social_liberal > 0.30
+            }
+        }
+        set_politics = {
+            ruling_party = communist
+            last_election = "1999.12.12"
+	        election_frequency = 12
+	        elections_allowed = no
+        }
+        hidden_effect = {
+            load_focus_tree = chbcomfocus
+        }
+    }
+    option = {
+        name = CampHill.41.o2
+        trigger = {
+            social_liberal > 0.30
+        }
+        promote_character = {
+            character = CHB_Charlie_Moore
+            ideology = liberalist
+        }
+        set_party_name = {
+            ideology = social_liberal
+            long_name = ENG_social_liberal_party_long
+            name = ENG_social_liberal_party
+        }
+        set_politics = {
+            ruling_party = social_liberal
+            last_election = "1999.12.12"
+	        election_frequency = 12
+	        elections_allowed = no
+        }
+        set_cosmetic_tag = BritCHB
+        hidden_effect = {
+            load_focus_tree = chbbritfocus
+        }
+    }
+}
+country_event = {
+    id = CampHill.42
+    title = CampHill.42.t
+    desc = CampHill.42.d
+    is_triggered_only = yes
+    option = {
+        name = CampHill.42.o1
+        CHB = {
+            annex_country = {
+                target = IRE
+                transfer_troops = yes
+            }
+        }
+    }
+}
+country_event = {
+    id = CampHill.43
+    title = CampHill.43.t
+    desc = CampHill.43.d
+    is_triggered_only = yes
+    option = {
+        name = CampHill.43.o1
+        CHB = {
+            transfer_state = 331
+            add_state_core = 331
+        }
+    }
+}
+country_event = {
+    id = CampHill.44
+    title = CampHill.44.t
+    desc = CampHill.44.d
+    is_triggered_only = yes
+    option = {
+        name = CampHill.44.o1
+        CHB = {
+            transfer_state = 15
+            add_state_core = 15
+            transfer_state = 29
+            add_state_core = 29
+        }
+    }
+    option = {
+        name = CampHill.44.o2
+        transfer_state = 15
+        add_state_core = 15
+    }
+    option = {
+        name = CampHill.44.o3
+        CHB = {
+            add_state_core = 29
+            add_state_core = 15
+            create_wargoal = {
+                target = FRA
+                type = take_core_state
+                generator = STATE_15
+            }
+        }
+    }
+}
+country_event = {
+    id = CampHill.45
+    title = CampHill.45.t
+    desc = CampHill.45.d
+    is_triggered_only = yes
+    option = {
+        name = CampHill.45.o1
+        CHB = {
+            transfer_state = 6
+            add_state_core = 6
+        }
+    }
+}

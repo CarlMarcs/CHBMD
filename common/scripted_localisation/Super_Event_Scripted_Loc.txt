@@ -1,0 +1,358 @@
+#Titles
+defined_text = {
+    name = get_super_event_title
+	
+    text = {
+        trigger = {
+            has_global_flag = Konstantin_German_War
+        }
+        localization_key = "sp_event_Konstantin_German_War"
+    }
+    text = {
+        trigger = {
+            has_global_flag = Thomson_German_War
+        }
+        localization_key = "sp_event_Thomson_German_War"
+    }
+    text = {
+        trigger = {
+            has_global_flag = Balkham_War
+        }
+        localization_key = "sp_event_Balkham_War"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Soviet_Reunion
+        }
+        localization_key = "sp_event_Soviet_Reunion"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Ancapistan_Formed
+        }
+        localization_key = "sp_event_Ancapistan"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Neoslavia_Formed
+        }
+        localization_key = "sp_event_Neoslavia"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Nazbol_Hill
+        }
+        localization_key = "sp_event_Nazbol_Hill"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Garrod_SSR
+        }
+        localization_key = "sp_event_Garrod_SSR"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_CHBReich
+        }
+        localization_key = "sp_event_Nazi_Hill"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_British_Republic
+        }
+        localization_key = "sp_event_British_Republic"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Airstrip_One
+        }
+        localization_key = "sp_event_Airstrip_One"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Burgess_CHB
+        }
+        localization_key = "sp_event_Burgess_CHB"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Taylor_CHB
+        }
+        localization_key = "sp_event_Taylor_CHB"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Duncan_CHB
+        }
+        localization_key = "sp_event_Duncan_CHB"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Thomas_CHB
+        }
+        localization_key = "sp_event_Thomas_CHB"
+    }
+    text = {
+        trigger = {
+            has_global_flag = Wide_War
+        }
+        localization_key = "sp_event_Wide_War"
+    }
+    text = {
+        trigger = {
+            has_global_flag = Wide_Taylor
+        }
+        localization_key = "sp_event_Wide_Taylor"
+    }
+    text = {
+        trigger = {
+            has_global_flag = Wide_Putin
+        }
+        localization_key = "sp_event_Wide_Putin"
+    }
+    text = {
+        trigger = {
+            has_global_flag = CHEWar
+        }
+        localization_key = "sp_event_CHEWar"
+    }
+}
+
+#Remarks
+defined_text = {
+    name = get_super_event_remark
+    
+    text = { 
+        trigger = {
+            has_global_flag = Konstantin_German_War
+        }
+        localization_key = "sp_event_Konstantin_German_War_REMARK"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = Thomson_German_War
+        }
+        localization_key = "sp_event_Thomson_German_War_REMARK"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = Balkham_War
+        }
+        localization_key = "sp_event_Balkham_War_REMARK"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Soviet_Reunion
+        }
+        localization_key = "sp_event_Soviet_Reunion_REMARK"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Ancapistan_Formed
+        }
+        localization_key = "sp_event_Ancapistan_REMARK"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Neoslavia_Formed
+        }
+        localization_key = "sp_event_Neoslavia_REMARK"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Garrod_SSR
+        }
+        localization_key = "sp_event_Garrod_SSR_REMARK"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Nazbol_Hill
+        }
+        localization_key = "sp_event_Nazbol_Hill_REMARK"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_CHBReich
+        }
+        localization_key = "sp_event_Nazi_Hill_REMARK"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_British_Republic
+        }
+        localization_key = "sp_event_British_Republic_REMARK"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Airstrip_One
+        }
+        localization_key = "sp_event_Airstrip_One_REMARK"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Burgess_CHB
+        }
+        localization_key = "sp_event_Burgess_CHB_REMARK"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Taylor_CHB
+        }
+        localization_key = "sp_event_Taylor_CHB_REMARK"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Duncan_CHB
+        }
+        localization_key = "sp_event_Duncan_CHB_REMARK"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Thomas_CHB
+        }
+        localization_key = "sp_event_Thomas_CHB_REMARK"
+    }
+    text = {
+        trigger = {
+            has_global_flag = Wide_War
+        }
+        localization_key = "sp_event_Wide_War_REMARK"
+    }
+    text = {
+        trigger = {
+            has_global_flag = Wide_Taylor
+        }
+        localization_key = "sp_event_Wide_Taylor_REMARK"
+    }
+    text = {
+        trigger = {
+            has_global_flag = Wide_Putin
+        }
+        localization_key = "sp_event_Wide_Putin_REMARK"
+    }
+    text = {
+        trigger = {
+            has_global_flag = CHEWar
+        }
+        localization_key = "sp_event_CHEWar_REMARK"
+    }
+}
+
+#Quotes
+defined_text = {
+    name = get_super_event_quote
+    text = { 
+        trigger = {
+            has_global_flag = Konstantin_German_War
+        }
+        localization_key = "sp_event_Konstantin_German_War_QUOTE"
+    }
+    text = {
+        trigger = {
+            has_global_flag = Thomson_German_War
+        }
+        localization_key = "sp_event_Thomson_German_War_QUOTE"
+    }
+    text = {
+        trigger = {
+            has_global_flag = Balkham_War
+        }
+        localization_key = "sp_event_Balkham_War_QUOTE"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Soviet_Reunion
+        }
+        localization_key = "sp_event_Soviet_Reunion_QUOTE"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Ancapistan_Formed
+        }
+        localization_key = "sp_event_Ancapistan_QUOTE"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Neoslavia_Formed
+        }
+        localization_key = "sp_event_Neoslavia_QUOTE"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Garrod_SSR
+        }
+        localization_key = "sp_event_Garrod_SSR_QUOTE"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Nazbol_Hill
+        }
+        localization_key = "sp_event_Nazbol_Hill_QUOTE"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_CHBReich
+        }
+        localization_key = "sp_event_Nazi_Hill_QUOTE"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_British_Republic
+        }
+        localization_key = "sp_event_British_Republic_QUOTE"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Airstrip_One
+        }
+        localization_key = "sp_event_Airstrip_One_QUOTE"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Burgess_CHB
+        }
+        localization_key = "sp_event_Burgess_CHB_QUOTE"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Taylor_CHB
+        }
+        localization_key = "sp_event_Taylor_CHB_QUOTE"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Duncan_CHB
+        }
+        localization_key = "sp_event_Duncan_CHB_QUOTE"
+    }
+    text = {
+        trigger = {
+            has_global_flag = SE_Thomas_CHB
+        }
+        localization_key = "sp_event_Thomas_CHB_QUOTE"
+    }
+    text = {
+        trigger = {
+            has_global_flag = Wide_War
+        }
+        localization_key = "sp_event_Wide_War_QUOTE"
+    }
+    text = {
+        trigger = {
+            has_global_flag = Wide_Taylor
+        }
+        localization_key = "sp_event_Wide_Taylor_QUOTE"
+    }
+    text = {
+        trigger = {
+            has_global_flag = Wide_Putin
+        }
+        localization_key = "sp_event_Wide_Putin_QUOTE"
+    }
+    text = {
+        trigger = {
+            has_global_flag = CHEWar
+        }
+        localization_key = "sp_event_CHEWar_QUOTE"
+    }
+}

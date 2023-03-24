@@ -1,0 +1,279 @@
+focus_tree = {
+	id = bulfocus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BUL
+		} 
+	}
+	continuous_focus_position = {
+		x = 56
+        y = 785
+	}
+	focus = {
+		id = bulfocus_prep_war
+		icon = war3
+		x = 3
+		y = 0
+		cost = 5
+		bypass = {
+			has_war_with = YUG
+		}
+		completion_reward = {
+			add_stability = 0.1
+			YUG = {
+				add_stability = -0.1
+				add_opinion_modifier = {
+                    target = YUG
+                    modifier = unprovoked_aggression
+                } 
+			}
+			add_opinion_modifier = {
+                target = YUG
+                modifier = unprovoked_aggression
+            }
+		}
+	}
+	focus = {
+		id = bulfocus_worsen_partisans
+		icon = communism8
+		x = 3
+		y = 1
+		cost = 5
+		bypass = {
+			OR = {
+				has_war_with = YUG
+				YUG = {
+					NOT = {
+						has_idea = CHB_yugoslav_partisans
+					}
+				}
+			}
+			
+		}
+		prerequisite = {
+			focus = bulfocus_prep_war
+		}
+		completion_reward = {
+			YUG = {
+				swap_ideas = {
+					remove_idea = CHB_yugoslav_partisans
+					add_idea = CHB_yugoslav_resistance
+				}
+			}
+		}
+	}
+	focus = {
+		id = bulfocus_bombings
+		icon = bombs2
+		x = 3
+		y = 2
+		cost = 5
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = balkham_bombings_occurred
+				always = no
+			}
+		}
+		bypass = {
+			has_war_with = YUG
+		}
+		prerequisite = {
+			focus = bulfocus_worsen_partisans
+		}
+		completion_reward = {
+			every_state = { limit = { is_controlled_by = YUG } ROOT = { add_state_core = PREV } }
+			YUG = {
+				country_event = BalWar.3
+			}
+		}
+	}
+	focus = {
+		id = bulfocus_camphill_support
+		icon = align_to_camphill
+		x = 1
+		y = 3
+		cost = 5
+		bypass = {
+			has_war_with = YUG
+		}
+		available = {
+			CHB = {
+                OR = {
+                    has_completed_focus = chbfocus_angry_ASS
+                    has_government = reactionary
+                    has_government = nationalist
+					AND = {
+						has_country_leader = {
+							character = CHB_Giles_Hill
+							ruling_only = yes
+						}
+						has_government = fascist
+					}
+                }
+            }
+			NOT = {
+				has_completed_focus = bulfocus_british_support
+			}
+		}
+		prerequisite = {
+			focus = bulfocus_bombings
+		}
+		completion_reward = {
+			CHB = {
+                add_popularity = {
+                    ideology = nationalist
+                    popularity = 0.1
+                }
+            }
+            add_equipment_to_stockpile = {
+                type = infantry_equipment_2
+                amount = 1000
+                producer = CHB
+            }
+		}
+	}
+	focus = {
+		id = bulfocus_russian_support
+		icon = align_to_russia
+		x = 3
+		y = 3
+		cost = 5
+		bypass = {
+			has_war_with = YUG
+		}
+		available = {
+			SOV = {
+				OR = {
+					NOT = {
+						has_government = communist
+					}
+				}
+			}
+		}
+		prerequisite = {
+			focus = bulfocus_bombings
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+                type = infantry_equipment_2
+                amount = 10000
+                producer = SOV
+            }
+            add_equipment_to_stockpile = {
+                type = artillery_equipment_1
+                amount = 1000
+                producer = SOV
+            }
+            add_equipment_to_stockpile = {
+                type = modern_tank_equipment_3
+                amount = 100
+                producer = SOV
+            }
+		}
+	}
+	focus = {
+		id = bulfocus_british_support
+		icon = align_to_britain
+		cost = 5
+		x = 5
+		y = 3
+		bypass = {
+			has_war_with = YUG
+		}
+		prerequisite = {
+			focus = bulfocus_bombings
+		}
+		available = {
+			NOT = {
+				has_completed_focus = bulfocus_camphill_support
+			}
+		}
+		completion_reward = { 
+			add_equipment_to_stockpile = {
+                type = infantry_equipment_2
+                amount = 1000
+                producer = CHB
+            }
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = bulfocus_bomb_em_back
+		icon = bombs
+		cost = 5
+		x = 4
+		y = 4
+		bypass = {
+			has_war_with = YUG
+		}
+		prerequisite = {
+			focus = bulfocus_camphill_support
+			focus = bulfocus_british_support
+		}
+		prerequisite = {
+			focus = bulfocus_russian_support
+		}
+		completion_reward = {
+			YUG = {
+				add_war_support = -0.2
+				add_ideas = {
+					CHB_balkham_bombings
+				}
+			}
+		}
+	}
+	focus = {
+		id = bulfocus_montenegran_partisans
+		icon = alliance_blue
+		cost = 5
+		x = 2
+		y = 4
+		bypass = {
+			has_war_with = YUG
+		}
+		prerequisite = {
+			focus = bulfocus_camphill_support
+			focus = bulfocus_british_support
+		}
+		prerequisite = {
+			focus = bulfocus_russian_support
+		}
+		completion_reward = {
+			YUG = {
+				add_stability = -0.1
+			}
+		}
+	}
+	focus = {
+		id = bulfocus_war
+		icon = war
+		cost = 5
+		x = 3
+		y = 5
+		prerequisite = {
+			focus = bulfocus_montenegran_partisans
+			focus = bulfocus_bomb_em_back
+		}
+		bypass = {
+			has_war_with = YUG
+		}
+		completion_reward = {
+			if = {
+				limit = {has_completed_focus = bulfocus_montenegran_partisans}
+				MNT = {
+					transfer_state = 105
+				}
+				puppet = MNT
+			}
+			declare_war_on = {
+				target = YUG
+				type = annex_everything
+			}
+		}
+	}
+}

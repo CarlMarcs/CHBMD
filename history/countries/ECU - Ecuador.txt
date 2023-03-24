@@ -1,0 +1,150 @@
+﻿capital = 305
+
+oob = "ECU_2000"
+
+set_research_slots = 3
+set_convoys = 100
+set_stability = 0.45
+
+set_country_flag = country_language_spanish
+set_country_flag = country_language_quechua
+
+set_technology = {
+	## Infantry ##
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	support_weapons = 1
+	night_vision = 1
+	body_armor = 1
+	camouflage = 1
+	marines = 1
+	tech_mountaineers = 1
+	paratroopers = 1
+	
+	## Support Companies ##
+	tech_support = 1
+	basic_train =1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	
+	## Armor ##
+	main_battle_tank1 = 1
+	main_battle_tank2 = 1
+	main_battle_tank3 = 1
+	light_tank1 = 1
+	mechanised_infantry1 = 1
+	light_mechanized_infantry1 = 1
+	
+	## Artillery ##
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	
+	## Air ##
+	CAS1 = 1
+	CAS2 = 1
+	fighter1 = 1
+	fighter2 = 1
+	fighter3 = 1
+	naval_bomber1 = 1
+	strategic_bomber1 = 1
+	
+	## Engineering ##
+	electronic_mechanical_engineering = 1
+	
+	## Industry ##
+	basic_machine_tools = 1
+	
+	## Doctrines ##
+	
+}
+
+add_ideas = {
+	civil_liberties_restricted
+	population_growth_steady
+}
+
+set_politics = {	
+	ruling_party = conservative
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    islamist = 1
+    nationalist = 1
+    reactionary = 2
+    conservative = 40
+    market_liberal = 6
+    social_liberal = 15
+    social_democrat = 5
+    progressive = 10
+    democratic_socialist = 10
+    communist = 10
+}
+recruit_character = ECU_gustavo_noboa
+recruit_character = ECU_lucio_gutierrez
+recruit_character = ECU_rafael_correa
+recruit_character = ECU_guillermo_lasso
+recruit_character = ECU_winston_alarcon_elizalde
+recruit_character = ECU_leonardo_barreiro
+recruit_character = ECU_césar_merizalde_pavón
+recruit_character = ECU_edison_narváez_rosero
+recruit_character = ECU_raúl_banderas_dueñas
+recruit_character = ECU_william_orellana_carrera
+recruit_character = ECU_roque_moreira
+recruit_character = ECU_fabián_fuel
+recruit_character = ECU_renán_ruíz_cornejo
+recruit_character = ECU_amilcar_villavicencio
+recruit_character = ECU_byron_jara_guerron
+recruit_character = ECU_carlos_noboa_coronel
+recruit_character = ECU_carlos_zumarraga_asanza
+recruit_character = ECU_darwin_cisneros
+recruit_character = ECU_fidel_erazo_jacome
+recruit_character = ECU_francisco_bruque_veliz
+recruit_character = ECU_galo_carrillo_moya
+recruit_character = ECU_harold_salvador_cadena
+recruit_character = ECU_jorge_echeverria_bucheli
+recruit_character = ECU_marie_fares_cantos
+recruit_character = ECU_aníbal_latorre
+recruit_character = ECU_eduardo_lynch
+recruit_character = ECU_andrés_corrico
+recruit_character = ECU_ladislao_daza
+recruit_character = ECU_bernardo_figueroa
+recruit_character = ECU_juan_francisco_franco
+recruit_character = ECU_antonio_belzú
+
+
+2013.2.18 = {
+	oob = "ECU_2016"
+	set_politics = {	
+		ruling_party = democratic_socialist
+		last_election = "2013.2.17"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+    set_popularities = {
+        islamist = 1
+        nationalist = 1
+        reactionary = 2
+        conservative = 10
+        market_liberal = 6
+        social_liberal = 15
+        social_democrat = 5
+        progressive = 10
+        democratic_socialist = 40
+        communist = 10
+    }
+}
+
+2017.5.24 = {
+
+}

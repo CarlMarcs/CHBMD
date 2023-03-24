@@ -1,0 +1,296 @@
+defined_text = { 
+	name = subideology
+
+
+	#Default
+	text = {
+		trigger = { 
+			has_country_leader_ideology = islamic_republican			
+		} 
+		localization_key = islamic_republican
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = telium_hivemind
+		}
+		localization_key = telium_hivemind
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = technocracy
+		}
+		localization_key = technocracy
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = chadism
+		}
+		localization_key = chadism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = moderate_chadism
+		}
+		localization_key = moderate_chadism
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = islamic_authoritarian			
+		} 
+		localization_key = islamic_authoritarian
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = black_supremacist			
+		} 
+		localization_key = black_supremacist
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = national_socialist			
+		} 
+		localization_key = national_socialist
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = fascist_ideology			
+		} 
+		localization_key = fascist_ideology
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = falangist			
+		} 
+		localization_key = falangist
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = rexist			
+		} 
+		localization_key = rexist
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = childist			
+		} 
+		localization_key = childist
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = national_democrat			
+		} 
+		localization_key = national_democrat
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = proto_fascist			
+		} 
+		localization_key = proto_fascist
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = autocrat			
+		} 
+		localization_key = autocrat
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = absolute_monarchist			
+		} 
+		localization_key = absolute_monarchist
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = pope			
+		} 
+		localization_key = pope
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = staff_dictatorship			
+		} 
+		localization_key = staff_dictatorship
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = military_dictatorship			
+		} 
+		localization_key = military_dictatorship
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = counter_progressive_democrat			
+		} 
+		localization_key = counter_progressive_democrat
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = oligarchist			
+		} 
+		localization_key = oligarchist
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = constitutionalist			
+		} 
+		localization_key = constitutionalist
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = christian_democrat			
+		} 
+		localization_key = christian_democrat
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = fiscal_conservative			
+		} 
+		localization_key = fiscal_conservative
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = gaullist			
+		} 
+		localization_key = gaullist
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = constitutional_monarchist			
+		} 
+		localization_key = constitutional_monarchist
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = right_wing_conservative			
+		} 
+		localization_key = right_wing_conservative
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = staff_democracy			
+		} 
+		localization_key = staff_democracy
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = libertarian			
+		} 
+		localization_key = libertarian
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = centrist			
+		} 
+		localization_key = centrist
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = anarcho_capitalist			
+		} 
+		localization_key = anarcho_capitalist
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = liberalist			
+		} 
+		localization_key = liberalist
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = moderate			
+		} 
+		localization_key = moderate
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = social_democrat_ideology			
+		} 
+		localization_key = social_democrat_ideology
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = moderate_socialism			
+		} 
+		localization_key = moderate_socialism
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = green			
+		} 
+		localization_key = green
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = progressive_ideology			
+		} 
+		localization_key = progressive_ideology
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = democratic_socialist_ideology			
+		} 
+		localization_key = democratic_socialist_ideology
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = marxist_ruddism			
+		} 
+		localization_key = marxist_ruddism
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = marxist			
+		} 
+		localization_key = marxist
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = leninist			
+		} 
+		localization_key = leninist
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = stalinist			
+		} 
+		localization_key = stalinist
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = maoist			
+		} 
+		localization_key = maoist
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = juche			
+		} 
+		localization_key = juche
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = bowenism			
+		} 
+		localization_key = bowenism
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = national_communist			
+		} 
+		localization_key = national_communist
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = fully_automated_luxury_gay_space_communism			
+		} 
+		localization_key = fully_automated_luxury_gay_space_communism
+	}
+	text = {
+		localization_key = loc_test
+	}
+
+	
+
+
+}
+

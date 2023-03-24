@@ -1,0 +1,162 @@
+﻿capital = 293
+
+oob = "YEM_2000"
+
+set_research_slots = 2
+set_convoys = 100
+set_stability = 0.2
+
+set_country_flag = country_language_arabic
+set_country_flag = country_behavior_indolent
+
+set_technology = {
+	## Infantry ##
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	night_vision = 1
+	body_armor = 1
+	camouflage = 1
+	marines = 1
+	tech_mountaineers = 1
+	paratroopers = 1
+	
+	## Support Companies ##
+	tech_support = 1
+	basic_train =1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	
+	## Armor ##
+	main_battle_tank1 = 1
+	main_battle_tank2 = 1
+	main_battle_tank3 = 1
+	light_tank1 = 1
+	mechanised_infantry1 = 1
+	light_mechanized_infantry1 = 1
+	
+	## Artillery ##
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	
+	## Air ##
+	CAS1 = 1
+	CAS2 = 1
+	fighter1 = 1
+	fighter2 = 1
+	fighter3 = 1
+	naval_bomber1 = 1
+	strategic_bomber1 = 1
+	
+	## Engineering ##
+	#eng_low
+	
+	## Industry ##
+	#ind_low
+	
+	## Doctrines ##
+	mass_assault = 1
+}
+
+set_country_flag = dominant_religion_islam
+set_country_flag = sunni_islam
+
+add_ideas = {
+	national_development_undeveloped
+	civil_liberties_totalitarian
+	population_growth_rapid
+	arab_league_member
+	islamic_sectarian_conflicts
+}
+
+set_politics = {
+	ruling_party = reactionary
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    islamist = 19
+    nationalist = 21
+    reactionary = 31
+    conservative = 10
+    communist = 11
+    social_liberal = 8
+}
+recruit_character = YEM_ali_abdullah_saleh
+recruit_character = YEM_ageel_bin_muhammad_albadr
+recruit_character = YEM_abdulmalik_alhouthi
+recruit_character = YEM_hassan_zaid
+recruit_character = YEM_sadiq_alahmar_of_hashid
+recruit_character = YEM_abdulrahman_alsaqqaf
+recruit_character = YEM_muhammad_almakhlafi
+recruit_character = YEM_aidaroos_alzubaidi
+recruit_character = YEM_mohammed_abdul_rahman_alrubaie
+recruit_character = YEM_razia_almutawakkil
+recruit_character = YEM_qassem_salam
+recruit_character = YEM_ahmed_saleh
+recruit_character = YEM_ali_mohsen_alahmar
+recruit_character = YEM_salem_nasser_qatn
+recruit_character = YEM_mahmoud_alsubaihi
+recruit_character = YEM_thabt_jawas
+recruit_character = YEM_salem_ali_qatan
+recruit_character = YEM_ali_aljaafy
+recruit_character = YEM_abdulrab_alshadadi
+recruit_character = YEM_adel_alqumeiri
+recruit_character = YEM_abdul_hakim_alsafwani
+recruit_character = YEM_abdulrahman_alhalili
+recruit_character = YEM_mfarrih_bahibh
+recruit_character = YEM_hussein_saleh_ziad
+recruit_character = YEM_adnan_alhammadi
+recruit_character = YEM_abdrabbo_ahmed_alkashibi
+recruit_character = YEM_faraj_albassani
+recruit_character = YEM_saif_alyafei
+recruit_character = YEM_ali_mohsen_muthanna
+recruit_character = YEM_ahmed_ali_alashwal
+recruit_character = YEM_mohammed_nasir_aleatifi
+recruit_character = YEM_mohammed_ali_alnumeiri
+recruit_character = YEM_ahmed_hussein_dahan
+recruit_character = YEM_nasir_alnuba
+recruit_character = YEM_ahmed_ali_jaafar
+recruit_character = YEM_askar_hamoud_dars
+recruit_character = YEM_naji_alsurhi
+recruit_character = YEM_ahmed_jamara
+recruit_character = YEM_samir_alhaj
+recruit_character = YEM_abdullah_ali_alnakhaie
+
+
+2012.1.1 = {
+	set_politics = {		
+		ruling_party = reactionary
+		last_election = "2012.1.1"
+		election_frequency = 48
+		elections_allowed = no
+}
+
+    set_popularities = {
+        islamist = 23
+        nationalist = 15
+        reactionary = 30
+        conservative = 7
+        communist = 16
+        social_liberal = 9
+    }
+	create_country_leader = {
+		name = "Abd Rabbuh Mansur Hadi"
+		picture = "Abd_Rabbuh_Mansuh_Hadi.dds"
+		ideology = oligarchist
+	}
+}
+
+2015.1.1 = {	#Yemeni Civil War
+	oob = "YEM_2016"
+	set_stability = 0.05
+}

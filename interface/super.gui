@@ -1,0 +1,151 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "sp_event_window"	
+		position = { x = 0 y = 0 }	
+		size = { width = 600 height = 510 }
+		orientation = center
+		origo = center
+		moveable = no
+		click_to_front = no
+		clipping = no
+
+		background = {
+			name = "Background"	
+			spriteType = "GFX_sp_event_window"
+		}
+		
+		iconType = {
+			name = "Super_Event_Image_Konstantin_German_War"
+			spriteType = "GFX_sp_event_Konstantin_German_War"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
+			name = "Super_Event_Image_Thomson_German_War"
+			spriteType = "GFX_sp_event_Thomson_German_War"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
+			name = "Super_Event_Image_Balkham_War"
+			spriteType = "GFX_sp_event_Balkham_War"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
+			name = "Super_Event_Image_Soviet_Reunion"
+			spriteType = "GFX_sp_event_Soviet_Reunion"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
+			name = "Super_Event_Image_Ancapistan"
+			spriteType = "GFX_sp_event_Ancapistan"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
+			name = "Super_Event_Image_Neoslavia"
+			spriteType = "GFX_sp_event_Neoslavia"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
+			name = "Super_Event_Image_Garrod_SSR"
+			spriteType = "GFX_sp_event_Garrod_SSR"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
+			name = "Super_Event_Image_Nazbol_CHB"
+			spriteType = "GFX_sp_event_Nazbol_State"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
+			name = "Super_Event_Image_Nazi_Hill"
+			spriteType = "GFX_sp_event_Nazi_Hill"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
+			name = "Super_Event_Image_British_Republic"
+			spriteType = "GFX_sp_event_British_Republic"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
+			name = "Super_Event_Image_Airstrip_One"
+			spriteType = "GFX_sp_event_Airstrip_One"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
+			name = "Super_Event_Image_Burgess_CHB"
+			spriteType = "GFX_sp_event_Burgess_CHB"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
+			name = "Super_Event_Image_Taylor_CHB"
+			spriteType = "GFX_sp_event_Taylor_CHB"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
+			name = "Super_Event_Image_Duncan_CHB"
+			spriteType = "GFX_sp_event_Duncan_CHB"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
+			name = "Super_Event_Image_Thomas_CHB"
+			spriteType = "GFX_sp_event_Thomas_CHB"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
+			name = "Super_Event_Image_Wide_War"
+			spriteType = "GFX_sp_event_Wide_War"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
+			name = "Super_Event_Image_Wide_Taylor"
+			spriteType = "GFX_sp_event_Wide_Taylor"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
+			name = "Super_Event_Image_Wide_Putin"
+			spriteType = "GFX_sp_event_Wide_Putin"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
+			name = "Super_Event_Image_CHEWar"
+			spriteType = "GFX_sp_event_CHEWar"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
+			name = "sp_event_text_underlay"
+			spriteType = "GFX_sp_event_underlay"
+			position = { x = 195 y = 332 }
+		}
+		
+		instantTextBoxType = {
+			name = "super_quote"
+			position = { x = 225 y = 336 }
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_quote]"
+			maxWidth = 348
+			maxHeight = 110
+			fixedsize = yes	
+			format = right
+		}
+		
+		instantTextboxType = {
+			name = "super_title"
+			position = { x = -52 y = 40 }
+			font = "hoi_24header"
+			format = center
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 700
+			maxHeight = 50
+			fixedsize = yes
+		}
+		buttonType = {
+			name = "sp_event_close_button"
+			spriteType = "GFX_sp_event_close_button"
+			position = { x = 187 y = 475 }
+			clicksound = click_close
+			buttonText = "[get_super_event_remark]"
+			buttonFont = "hoi_18b"
+		}
+	}
+}

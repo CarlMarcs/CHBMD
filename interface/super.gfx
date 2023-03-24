@@ -1,0 +1,101 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Wide_Putin"
+		textureFile = "gfx/leaders/SOV/Wide_Putin.dds"
+	}
+	spriteType = {
+		name = "GFX_super_event_picture"
+		textureFile = "gfx/super_events.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_event_window"
+		textureFile = "gfx/Super_Event_Window.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sp_event_close_button"
+		textureFile = "gfx/Super_Event_Close_Button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sp_event_underlay"
+		textureFile = "gfx/Super_Event_Underlay.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sp_event_Konstantin_German_War"
+		textureFile = "gfx/sp_events/Super_Event_Konstantin_German_War.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_event_Thomson_German_War"
+		textureFile = "gfx/sp_events/Super_Event_Thomson_German_War.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_event_Balkham_War"
+		textureFile = "gfx/sp_events/Super_Event_Balkham_War.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_event_Soviet_Reunion"
+		textureFile = "gfx/sp_events/Super_Event_Soviet_Reunion.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_event_Ancapistan"
+		textureFile = "gfx/sp_events/Super_Event_Ancapistan.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_event_Neoslavia"
+		textureFile = "gfx/sp_events/Super_Event_Neoslavia.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_event_Garrod_SSR"
+		textureFile = "gfx/sp_events/Super_Event_Garrod_SSR.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_event_Nazbol_State"
+		textureFile = "gfx/sp_events/Super_Event_Nazbol_Hill.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_event_Nazi_Hill"
+		textureFile = "gfx/sp_events/Super_Event_Nazi_Hill.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_event_British_Republic"
+		textureFile = "gfx/sp_events/Super_Event_British_Republic.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_event_Airstrip_One"
+		textureFile = "gfx/sp_events/Super_Event_Airstrip_One.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_event_Burgess_CHB"
+		textureFile = "gfx/sp_events/Super_Event_Burgess_CHB.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_event_Taylor_CHB"
+		textureFile = "gfx/sp_events/Super_Event_Taylor_CHB.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_event_Duncan_CHB"
+		textureFile = "gfx/sp_events/Super_Event_Duncan_CHB.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_event_Thomas_CHB"
+		textureFile = "gfx/sp_events/Super_Event_Thomas_CHB.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_event_Wide_War"
+		textureFile = "gfx/sp_events/Super_Event_Wide_War.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_event_Wide_Taylor"
+		textureFile = "gfx/sp_events/Super_Event_Wide_Taylor.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_event_Wide_Putin"
+		textureFile = "gfx/sp_events/Super_Event_Wide_Putin.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_event_CHEWar"
+		textureFile = "gfx/sp_events/Super_Event_CHEWar.dds"
+	}
+}

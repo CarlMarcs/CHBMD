@@ -1,0 +1,152 @@
+﻿capital = 8
+
+oob = "LUX_2000"
+
+set_research_slots = 3
+set_convoys = 15
+set_stability = 0.85
+
+set_country_flag = country_language_luxembourgish
+set_country_flag = country_language_german
+set_country_flag = country_language_french
+
+set_technology = {
+	## Infantry ##
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	night_vision = 1
+	body_armor = 1
+	camouflage = 1
+	marines = 1
+	tech_mountaineers = 1
+	paratroopers = 1
+	
+	## Support Companies ##
+	tech_support = 1
+	basic_train =1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	
+	## Armor ##
+	main_battle_tank1 = 1
+	main_battle_tank2 = 1
+	main_battle_tank3 = 1
+	light_tank1 = 1
+	mechanised_infantry1 = 1
+	light_mechanized_infantry1 = 1
+	
+	## Artillery ##
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	
+	## Air ##
+	CAS1 = 1
+	CAS2 = 1
+	fighter1 = 1
+	fighter2 = 1
+	fighter3 = 1
+	strategic_bomber1 = 1
+	tactical_bomber1 = 1
+	
+	## Engineering ##
+	electronic_mechanical_engineering = 1
+	radio = 1
+	
+	## Industry ##
+	basic_machine_tools = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	
+	## Doctrines ##
+	mobile_warfare = 1
+}
+
+add_ideas = {
+	government_system_constitutional_monarchy
+	national_development_developed
+	welfare_modest_assistance
+	civil_liberties_free
+	population_growth_decline
+	idea_eu_member
+}
+
+set_politics = {	
+	ruling_party = conservative
+	last_election = "1999.1.13"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+    reactionary = 11
+    conservative = 32
+    market_liberal = 22
+    social_democrat = 22
+    progressive = 9
+    democratic_socialist = 4
+}
+recruit_character = LUX_henri_of_luxembourg
+recruit_character = LUX_robert_mehlen
+recruit_character = LUX_jeanclaude_juncker
+recruit_character = LUX_lydie_polfer
+recruit_character = LUX_jean_asselborn
+recruit_character = LUX_christian_kmiotek
+recruit_character = LUX_fabienne_lentz
+recruit_character = LUX_romain_mancinelli
+recruit_character = LUX_gaston_reisig
+recruit_character = LUX_mario_daubenfeld
+recruit_character = LUX_alain_duchène
+recruit_character = LUX_marc_assel
+recruit_character = LUX_yves_kalmes
+recruit_character = LUX_claude_schmitz
+recruit_character = LUX_léonard_de_viron
+recruit_character = LUX_joseph_delacroix
+recruit_character = LUX_laurent_dhanis
+recruit_character = LUX_louis_du_pont
+recruit_character = LUX_isidore_fleussu
+
+
+2002.1.1 = {
+	add_ideas = the_euro
+}
+
+2004.6.13 = {
+
+}	
+2006.1.1 = {
+	set_party_name = {
+		ideology = reactionary
+		long_name = LUX_reactionary_party_ADR_long
+		name = LUX_reactionary_party_ADR
+	}
+}
+2013.10.20 = {
+	set_politics = {
+		ruling_party = market_liberal
+		last_election = "2013.10.20"
+		elections_allowed = yes
+		election_frequency = 60
+	}
+
+    set_popularities = {
+        reactionary = 7
+        conservative = 34
+        market_liberal = 18
+        social_democrat = 20
+        progressive = 10
+        democratic_socialist = 5
+        communist = 3
+        social_liberal = 3
+    }
+
+}

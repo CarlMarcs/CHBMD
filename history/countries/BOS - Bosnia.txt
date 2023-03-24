@@ -1,0 +1,137 @@
+﻿capital = 104
+
+oob = "BOS_2000"
+
+set_research_slots = 3
+set_convoys = 20
+set_stability = 0.4
+
+set_country_flag = country_language_bosnian
+set_country_flag = country_language_croatian
+set_country_flag = country_language_serbian
+
+set_technology = {
+	## Infantry ##
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	support_weapons = 1
+	night_vision = 1
+	body_armor = 1
+	camouflage = 1
+	
+	## Support Companies ##
+	tech_support = 1
+	basic_train =1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	
+	## Armor ##
+	main_battle_tank1 = 1
+	main_battle_tank2 = 1
+	main_battle_tank3 = 1
+	light_tank1 = 1
+	mechanised_infantry1 = 1
+	light_mechanized_infantry1 = 1
+	
+	## Artillery ##
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	
+	## Air ##
+	CAS1 = 1
+	CAS2 = 1
+	fighter1 = 1
+	fighter2 = 1
+	strategic_bomber1 = 1
+	
+	## Engineering ##
+	electronic_mechanical_engineering = 1
+	
+	## Industry ##
+	basic_machine_tools = 1
+	
+	## Doctrines ##
+	trench_warfare = 1
+}
+
+add_ideas = {
+	centralization_federal
+	government_system_parliamentary_republic
+	economy_growth
+	economy_tax_low
+	civil_liberties_restricted
+	population_growth_decline
+	limited_conscription
+}
+
+set_politics = {	
+	ruling_party = conservative
+	last_election = "1998.12.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    islamist = 1
+    nationalist = 1
+    reactionary = 2
+    conservative = 30
+    market_liberal = 6
+    social_liberal = 25
+    social_democrat = 5
+    progressive = 10
+    democratic_socialist = 10
+    communist = 10
+}
+
+recruit_character = BOS_alija_izetbegović
+recruit_character = BOS_sefer_halilovic
+recruit_character = BOS_anto_jeleč
+recruit_character = BOS_mirko_tepšić
+recruit_character = BOS_senad_mašović
+recruit_character = BOS_dragan_vuković
+recruit_character = BOS_husein_tursunović
+recruit_character = BOS_mirsad_ahmić
+recruit_character = BOS_ivica_jerkić
+recruit_character = BOS_marko_stojčić
+recruit_character = BOS_gojko_knežević
+recruit_character = BOS_kenan_dautović
+recruit_character = BOS_tomo_kolenda
+recruit_character = BOS_radovan_ilić
+recruit_character = BOS_enes_husejnović
+recruit_character = BOS_amir_Čorbo
+recruit_character = BOS_danis_arslanagic
+recruit_character = BOS_zijad_zilic
+recruit_character = BOS_leukip_vazda
+recruit_character = BOS_berin_torlak
+recruit_character = BOS_edin_teskeredzic
+recruit_character = BOS_husnija_softic
+recruit_character = BOS_nuredin_sedic
+recruit_character = BOS_dzemal_sadikovic
+recruit_character = BOS_senijad_repuh
+recruit_character = BOS_danis_omerbegovic
+
+
+2006.1.1 = {
+	add_ideas = {
+		volunteer_only
+	}
+}
+
+2015.1.1 = {
+	oob = "BOS_2016"
+	create_country_leader = {
+		name = "Bakir Izetbegović"
+		ideology = constitutionalist
+		picture = "Bakir_Izetbegovic.dds"
+	}
+}
+

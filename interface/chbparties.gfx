@@ -1,0 +1,90 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_ideology_staff_dictatorship"
+		texturefile = "gfx/interface/ideologies/staff_dictatorship.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_oligarchist"
+		texturefile = "gfx/interface/ideologies/oligarchist.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_bowenism"
+		texturefile = "gfx/interface/ideologies/bowenism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_pope"
+		texturefile = "gfx/interface/ideologies/pope.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_telium_hivemind"
+		texturefile = "gfx/interface/ideologies/telium_hivemind.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_technocracy"
+		texturefile = "gfx/interface/ideologies/technocracy.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_christian_democrat"
+		texturefile = "gfx/interface/ideologies/christian_democrat.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_national_socialist"
+		texturefile = "gfx/interface/ideologies/national_socialism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_right_wing_conservative"
+		texturefile = "gfx/interface/ideologies/right_wing_conservative.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_anarcho_capitalist"
+		texturefile = "gfx/interface/ideologies/ancap.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_gaullist"
+		texturefile = "gfx/interface/ideologies/gaullist.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_centrist"
+		texturefile = "gfx/interface/ideologies/centrist.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_moderate_socialism"
+		texturefile = "gfx/interface/ideologies/moderate_socialism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_moderate_chadism"
+		texturefile = "gfx/interface/ideologies/moderate_chadism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_national_communist"
+		texturefile = "gfx/interface/ideologies/national_communist.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_juche"
+		texturefile = "gfx/interface/ideologies/juche.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_leninist"
+		texturefile = "gfx/interface/ideologies/leninism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_maoist"
+		texturefile = "gfx/interface/ideologies/maoist.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_stalinist"
+		texturefile = "gfx/interface/ideologies/stalinist.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_fully_automated_luxury_gay_space_communism"
+		texturefile = "gfx/interface/ideologies/fully_automated_luxury_gay_space_communism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_military_dictatorship"
+		texturefile = "gfx/interface/ideologies/military_dictatorship.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_chadism"
+		texturefile = "gfx/interface/ideologies/chadism.dds"
+	}
+}

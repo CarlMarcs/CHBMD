@@ -1,0 +1,37 @@
+scripted_gui = {
+    CHB_House_Divide = {
+        context_type = player_context
+        window_name = "CHB_house_compass_GUI"
+        visible = {
+            AND = {
+                has_country_flag = House_Compass_Open
+                has_idea = CHB_House_Divide
+            }
+            
+        }
+        properties = {
+			house_divide_circle = {
+				x = house_compass_x
+				y = house_compass_y
+			}
+		}
+    }
+    House_Divide_Button = {
+        context_type = player_context
+        window_name = "CHB_house_compass_button"
+        visible = {
+            has_idea = CHB_House_Divide
+        }
+        effects = {
+            house_compass_button_click = {
+                if = {
+					limit = { has_country_flag = House_Compass_Open }
+					clr_country_flag = House_Compass_Open
+				}
+				else = {
+					set_country_flag = House_Compass_Open
+				}
+            }
+        }
+    }
+}

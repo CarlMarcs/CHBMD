@@ -1,0 +1,26 @@
+focus_tree = {
+    id = UKRanarchy
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = UKR
+        }
+    }
+    focus = {
+        id = UKRanarchy_init
+        icon = neutrality
+        x = 5
+        y = 0
+        cost = 1
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = UKRanarchy_happened
+                has_global_flag = UKRanarchy
+            }
+        }
+        completion_reward = {
+            add_political_power = 100
+        } 
+    }
+}

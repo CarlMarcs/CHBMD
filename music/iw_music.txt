@@ -1,0 +1,289 @@
+music_station = "iw_test_station"
+music = {
+	song = "Internationale_Instrumental"
+	chance = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = communist
+		}
+		modifier = {
+			add = 5
+			has_government = democratic_socialist
+		}
+		modifier = {
+			add = 5
+			has_government = progressive
+		}
+	}
+}
+music = {
+	song = "Soviet_Anthem_Synthwave"
+	chance = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = communist
+		}
+		modifier = {
+			add = 5
+			has_government = democratic_socialist
+		}
+	}
+}
+music = {
+	song = "Soviet_Anthem_Instrumental"
+	chance = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = communist
+		}
+		modifier = {
+			add = 5
+			has_government = democratic_socialist
+		}
+	}
+}
+music = {
+	song = "Song_Of_The_United_Front"
+	chance = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = communist
+		}
+		modifier = {
+			add = 5
+			has_government = democratic_socialist
+		}
+	}
+}
+music = {
+	song = "Uz_Marsala_Tita_Instrumental"
+	chance = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = communist
+			has_country_leader = {
+				character = CHB_Josip_Broz_Tito
+				ruling_only = yes
+			}
+		}
+	}
+}
+music = {
+	song = "With_Marshal_Tito_English"
+	chance = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = communist
+			has_country_leader = {
+				character = CHB_Josip_Broz_Tito
+				ruling_only = yes
+			}
+		}
+	}
+}
+music = {
+	song = "Workers_Nazionale"
+	chance = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = social_democrat
+		}
+		modifier = {
+			add = 5
+			has_government = communist
+		}
+		modifier = {
+			add = 5
+			has_government = democratic_socialist
+		}
+	}
+}
+music = {
+	song = "Ancap_Anthem"
+	chance = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = market_liberal
+		}
+	}
+}
+music = {
+	song = "Imperial_March"
+	chance = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = monarchist
+		}
+	}
+}
+music = {
+	song = "Imperial_March_Short"
+	chance = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = monarchist
+		}
+	}
+}
+music = {
+	song = "Land_Of_Hope_And_Glory"
+	chance = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = conservative
+		}
+		modifier = {
+			add = 5
+			has_government = social_liberal
+		}
+		modifier = {
+			add = 5
+			has_government = social_democrat
+		}
+	}
+}
+music = {
+	song = "Comrades_the_Voices"
+	chance = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = fascist
+		}
+	}
+}
+music = {
+	song = "All_Hail_Oceania"
+	chance = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_country_leader = {
+				character = CHB_Russel_Bowen
+				ruling_only = yes
+			}
+		}
+	}
+}
+music = {
+	song = "Der_Offene_Aufmarsch"
+	chance = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = communist
+			has_war_with = BAV
+		}
+	}
+}
+music = {
+	song = "Wo_Alle_Strassen_Enden"
+	chance = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = fascist
+			has_war_with = GER
+		}
+	}
+}
+music = {
+	song = "The_Botev_March"
+	chance = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = nationalist
+			has_war_with = YUG
+		}
+	}
+}
+music = {
+	song = "Russian_Anthem_English"
+	chance = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = nationalist
+			has_government = reactionary
+		}
+	}
+}
+music = {
+	song = "Taylor_March"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "Little_Kid_Laughing"
+	chance = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_country_leader = {
+				character = CHB_Mark_Duncan
+				ruling_only = yes
+			}
+		}
+	}
+}
+music = {
+	song = "Radical_Centrism"
+	chance = {
+		factor = 0
+		modifier {
+			has_country_leader = {
+				character = CHB_Thomas_Pitfield
+				ruling_only = yes
+			}
+		}
+	}
+}
+music = {
+	song = "Wide_Putin_Init"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "Wide_Putin_2"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "All_Star"
+	chance = {
+		factor = 5
+	}
+}
+music = {
+	song = "Never_Gonna_Give_You_Up"
+	chance = {
+		factor = 5
+	}
+}
+music = {
+	song = "Soldiers_of_the_Queen"
+	chance = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = nationalist
+			has_government = reactionary
+			has_war_with = eng
+		}
+	}
+}

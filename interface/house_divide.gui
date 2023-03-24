@@ -1,0 +1,59 @@
+guiTypes = {
+    containerWindowType = {
+        name = CHB_house_compass_button
+        position = {
+            x = 1500
+            y = 10
+        }
+        buttonType = {
+            name = house_compass_button
+            spriteType = "house_compass_button"
+        }
+        
+    }
+    containerWindowType = {
+        name = CHB_house_compass_GUI
+        position = { x = 0 y = 0 }
+		size = { width = 320 height = 295 }
+		margin = { top = 14 bottom = 14 }
+        orientation = center
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window_thin_border2"
+
+		}
+        iconType = {
+            name = "house_compass_beaufort_corner"
+            spriteType = "beaufort_corner"
+            position = { x = 30 y = 0 }
+            alwaystransparent = no
+            pdx_tooltip = "GetHOBeaufort"
+        }
+        iconType = {
+            name = "house_compass_howard_corner"
+            spriteType = "howard_corner"
+            position = { x = 160 y = 0 }
+            alwaystransparent = no
+            pdx_tooltip = "GetHOHoward"
+        }
+        iconType = {
+            name = "house_compass_seymour_corner"
+            spriteType = "seymour_corner"
+            position = { x = 30 y = 130 }
+            alwaystransparent = no
+            pdx_tooltip = "GetHOSeymour"
+        }
+        iconType = {
+            name = "house_compass_tudor_corner"
+            spriteType = "tudor_corner"
+            position = { x = 160 y = 130 }
+            alwaystransparent = no
+            pdx_tooltip = "GetHOTudor"
+        }
+		iconType = {
+			name = "house_divide_circle"
+			spriteType = "house_compass_circle"
+
+		}
+    }
+}

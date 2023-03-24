@@ -1,0 +1,29 @@
+focus_tree = {
+	id = cokfocus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = COK
+		} 
+	}
+	continuous_focus_position = {
+		x = 56
+        y = 785
+	}
+	default = no
+	focus = {
+		id = COK_init_power_struggle
+		x = 3
+		y = 0
+		cost = 0
+		completion_reward = {
+			set_power_balance = {
+				id = COK_power_balance
+				left_side = COK_Diet_Coke_Side
+				right_side = COK_Coca_Cola_Side
+				set_default = yes
+			}
+		}
+	}
+}

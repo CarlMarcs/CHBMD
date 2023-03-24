@@ -1,0 +1,236 @@
+decisions_GER = {
+	rename_east = {
+		visible = {
+			NOT = { has_country_flag = renamed_east }
+			NOT = { has_democratic_form_of_government = yes }
+		}
+		
+		available = {
+			AND = {
+				has_full_control_of_state = 742
+				has_full_control_of_state = 743
+				has_full_control_of_state = 66
+				has_full_control_of_state = 63
+				has_full_control_of_state = 67
+				has_full_control_of_state = 5
+				has_full_control_of_state = 85
+				has_full_control_of_state = 86
+			}
+		}
+		
+		icon = germany
+		
+		cost = 10
+		fire_only_once = yes
+		
+		complete_effect = {
+		set_country_flag = renamed_east
+			742 = { set_state_name = "Stettin" }
+			set_province_name = { id = 6282 name = "Stettin" }
+			set_province_name = { id = 9334 name = "Köslin" }
+			
+			63 = { set_state_name = "Ostpommern" }
+			set_province_name = { id = 11372 name = "Stolp" }			
+			
+			743 = { set_state_name = "Ostmark" }
+			set_province_name = { id = 6236 name = "Landsberg an der Warthe" }
+			set_province_name = { id = 3438 name = "Grünberg" }
+			
+			66 = { set_state_name = "Niederschlesien" }
+			set_province_name = { id = 9570 name = "Breslau" }
+			set_province_name = { id = 3545 name = "Waldenburg" }
+			
+			67 = { set_state_name = "Oberschlesien" }
+			 set_province_name = { id = 11467 name = "Oppeln" }
+			 set_province_name = { id = 6464 name = "Kattowitz" }
+			
+			86 = { set_state_name = "Posen" }
+			set_province_name = { id = 6558 name = "Posen" }
+			set_province_name = { id = 243 name = "Bromberg" }
+			 
+			5 = { set_state_name = "Ermland-Masuren" }
+			set_province_name = { id = 6375 name = "Allenstein" }  
+			set_province_name = { id = 6402 name = " Elbing" }  
+
+			85 = { set_state_name = "Danzig" }
+			set_province_name = { id = 362 name = "Danzig" }
+			set_province_name = { id = 13851 name = "Gotenhafen" }
+			set_province_name = { id = 3295 name = "Thorn" }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+	}
+	
+	
+	rename_prussia = {
+		visible = {
+			NOT = { has_country_flag = renamed_prussia }
+			NOT = { has_democratic_form_of_government = yes }
+		}
+		
+		available = {
+			AND = {
+				has_full_control_of_state = 741
+			}
+		}
+		
+		icon = germany
+		
+		cost = 5
+		fire_only_once = yes
+		
+		complete_effect = {
+		set_country_flag = renamed_prussia
+			741 = { set_state_name = "Königsberg" }
+			set_province_name = { id = 6332 name = "Königsberg" }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+	}
+	
+	
+	rename_elsass = {
+		visible = {
+			NOT = { has_country_flag = renamed_elsass }
+			NOT = { has_democratic_form_of_government = yes }
+		}
+		
+		available = {
+			AND = {
+				has_full_control_of_state = 28
+			}
+		}
+		
+		icon = germany
+		
+		cost = 5
+		fire_only_once = yes
+		
+		complete_effect = {
+		set_country_flag = renamed_elsass
+			28 = { set_state_name = "Elsaß-Lothringen" }
+			set_province_name = { id = 9503 name = "Straßburg" }
+			set_province_name = { id = 678 name = "Mülhausen" }
+			set_province_name = { id = 11502 name = "Meß" }
+			set_province_name = { id = 9559 name = "Diedenhofen" }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+	}
+	
+	rename_memel = {
+		visible = {
+			NOT = { has_country_flag = renamed_memel }
+			NOT = { has_democratic_form_of_government = yes }
+		}
+		
+		available = {
+			AND = {
+				has_full_control_of_state = 188
+			}
+		}
+		
+		icon = germany
+		
+		cost = 0
+		fire_only_once = yes
+		
+		complete_effect = {
+		set_country_flag = renamed_memel
+			188 = { set_state_name = "Memel" }
+			set_province_name = { id = 3288 name = "Memel" }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+	}
+	
+	
+	rename_sudetenland = {
+		visible = {
+			NOT = { has_country_flag = renamed_sudetenland }
+			NOT = { has_democratic_form_of_government = yes }
+		}
+		
+		available = {
+			AND = {
+				has_full_control_of_state = 69
+			}
+		}
+		
+		icon = germany
+		
+		cost = 0
+		fire_only_once = yes
+		
+		complete_effect = {
+		set_country_flag = renamed_sudetenland 
+			69 = { set_state_name = "Sudetenland " }
+			set_province_name = { id = 11432 name = "Aussig" }
+			set_province_name = { id = 11401 name = "Reichenberg" }
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+	}
+	
+	
+		
+}
+
+
+
+
+NVX_pulling_the_strings_cat = {
+
+	polish_names = {
+		visible = {
+			is_ai = no
+			NOT = { has_country_flag = renamed_poland }
+			OR = {
+				date < 2000.1.2
+				AND = {
+					has_start_date > 2016.6.1
+					date < 2016.6.2
+				}
+				has_country_flag = NVX_Cheats_reshow_PTS
+			}
+		}
+		
+		available = {
+		}
+		
+		icon = tabula_rasa
+		
+		cost = 0
+		fire_only_once = yes
+		
+		complete_effect = {
+		set_country_flag = renamed_poland
+			63 = { set_state_name = "Pomorskie" }
+			5 = { set_state_name = "Warmińsko-Mazurskie" }
+			97 = { set_state_name = "Podlaskie" }
+			92 = { set_state_name = "Lubelskie" }
+			88 = { set_state_name = "Małopolskie" }
+			10 = { set_state_name = "Mazowieckie" }
+			87 = { set_state_name = "Łódzkie" }
+			67 = { set_state_name = "Śląskie" }
+			66 = { set_state_name = "Dolnośląskie" }
+			86 = { set_state_name = "Wielkopolskie" }
+			743 = { set_state_name = "Lubuskie" }
+			90 = { set_state_name = "Świętokrzyskie" }
+		}
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+}

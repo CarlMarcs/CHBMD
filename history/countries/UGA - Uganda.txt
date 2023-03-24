@@ -1,0 +1,126 @@
+﻿capital = 548
+
+oob = "UGA_2000"
+
+set_research_slots = 2
+set_convoys = 10
+set_stability = 0.25
+
+set_country_flag = country_language_english
+set_country_flag = country_language_swahili
+set_country_flag = country_behavior_dispersed
+set_country_flag = country_behavior_indolent
+
+set_technology = {
+	## Infantry ##
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	body_armor = 1
+	camouflage = 1
+	marines = 1
+	tech_mountaineers = 1
+	paratroopers = 1
+	
+	## Support Companies ##
+	tech_support = 1
+	basic_train =1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	
+	## Armor ##
+	main_battle_tank1 = 1
+	main_battle_tank2 = 1
+	main_battle_tank3 = 1
+	light_tank1 = 1
+	mechanised_infantry1 = 1
+	light_mechanized_infantry1 = 1
+	
+	## Artillery ##
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	
+	## Air ##
+	CAS1 = 1
+	CAS2 = 1
+	fighter1 = 1
+	fighter2 = 1
+	strategic_bomber1 = 1
+	
+	## Engineering ##
+	#eng_low
+	
+	## Industry ##
+	#ind_low
+	
+	## Doctrines ##
+	mass_assault = 1
+	formation_flying = 1
+}
+
+add_ideas = {
+	national_development_undeveloped
+	economy_growth
+	economy_tax_high
+	civil_liberties_totalitarian
+	population_growth_explosion
+	african_union_member
+	commonwealth_of_nations_member
+}
+set_politics = {	
+	ruling_party = nationalist
+	last_election = "1996.5.9"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+    nationalist = 60
+    conservative = 25
+    progressive = 10
+    communist = 5
+}
+recruit_character = UGA_yoweri_museveni
+recruit_character = UGA_paul_ssemogerere
+recruit_character = UGA_kibirige_mayanja
+recruit_character = UGA_kizza_besigye
+recruit_character = UGA_jaberi_bidandi_ssali
+recruit_character = UGA_ken_lukyamuzi
+recruit_character = UGA_miria_obote
+recruit_character = UGA_katumba_wamala
+recruit_character = UGA_patrick_kankiriho
+recruit_character = UGA_nathan_mugisha
+recruit_character = UGA_moses_auma
+recruit_character = UGA_shekhar_besigye
+recruit_character = UGA_ayub_kanyomozi
+recruit_character = UGA_john_auma
+recruit_character = UGA_mutesa_auma
+
+
+2016.1.1 = {
+	oob = "UGA_2016"
+}
+
+2016.2.18 = {
+	set_politics = {
+		ruling_party = nationalist
+		last_election = "2016.2.18"
+		election_frequency = 60
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        nationalist = 70
+        conservative = 11
+        social_liberal = 18
+        communist = 1
+    }
+
+}

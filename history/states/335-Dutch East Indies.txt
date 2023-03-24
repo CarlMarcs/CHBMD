@@ -1,0 +1,40 @@
+
+state={
+	id=335
+	name="STATE_335"
+	resources={
+		oil=15.000
+		steel=15.000
+	}
+
+	history={
+		owner = INS
+		add_extra_state_shared_building_slots = 3
+		victory_points = {
+			7381 40
+		}
+		victory_points = {
+			1386 10 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 10
+			arms_factory = 2
+			dockyard = 2
+			air_base = 8
+			7381 = {
+				naval_base = 6
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1386 1398 1425 4406 4621 7381 7421 10279 10307 12249 
+	}
+	manpower=53183500
+	buildings_max_level_factor=1.000
+	state_category=state_level_21
+}

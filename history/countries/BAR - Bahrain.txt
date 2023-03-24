@@ -1,0 +1,120 @@
+﻿capital = 856
+
+oob = "BAR_2000"
+
+set_research_slots = 3
+set_convoys = 40
+set_stability = 0.3
+
+set_country_flag = country_language_arabic
+
+set_technology = {
+	## Infantry ##
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	support_weapons = 1
+	night_vision = 1
+	body_armor = 1
+	camouflage = 1
+	marines = 1
+	paratroopers = 1
+	
+	## Support Companies ##
+	tech_support = 1
+	basic_train =1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	
+	## Armor ##
+	main_battle_tank1 = 1
+	main_battle_tank2 = 1
+	main_battle_tank3 = 1
+	light_tank1 = 1
+	mechanised_infantry1 = 1
+	mechanised_infantry2 = 1
+	light_mechanized_infantry1 = 1
+	
+	## Artillery ##
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	
+	## Air ##
+	CAS1 = 1
+	CAS2 = 1
+	fighter1 = 1
+	fighter2 = 1
+	fighter3 = 1
+	naval_bomber1 = 1
+	strategic_bomber1 = 1
+	tactical_bomber1 = 1
+	
+	## Engineering ##
+	electronic_mechanical_engineering = 1
+	
+	## Industry ##
+	basic_machine_tools = 1
+	
+	## Doctrines ##
+	trade_interdiction = 1
+	force_rotation = 1
+}
+
+add_ideas = {
+	government_system_constitutional_monarchy
+	economy_tax_meager
+	public_safety_secret_police
+	civil_liberties_totalitarian
+	population_growth_rapid
+	islamic_sectarian_conflicts
+	arab_league_member
+}
+
+set_country_flag = dominant_religion_islam
+set_country_flag = sunni_islam
+
+set_politics = {	
+	ruling_party = monarchist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    islamist = 20
+    nationalist = 4
+    monarchist = 40
+    reactionary = 3
+    conservative = 16
+    social_liberal = 5
+    social_democrat = 7
+    communist = 5
+}
+recruit_character = BAR_king_hamad
+recruit_character = BAR_abdulrahman_alnuaimi
+recruit_character = BAR_saeed_alshehabi
+recruit_character = BAR_ghanim_albuaneen
+recruit_character = BAR_jassim_abdulaal
+recruit_character = BAR_ali_salman
+recruit_character = BAR_matar_matar
+recruit_character = BAR_ahmad_jumaa
+recruit_character = BAR_anonymous_activists
+recruit_character = BAR_hassan_tariq_alhassan
+recruit_character = BAR_abdullah_hashem
+recruit_character = BAR_ahmad_althawadi
+recruit_character = BAR_khalifa_bin_ahmed
+recruit_character = BAR_daij_bin_salman
+recruit_character = BAR_theyab_bin_saqer_al_noaimi
+recruit_character = BAR_yusuf_almaluallah
+
+
+2016.1.1 = {
+	oob = "BAR_2016"
+}

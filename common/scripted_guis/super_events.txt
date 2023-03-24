@@ -1,0 +1,226 @@
+scripted_gui = {
+
+	sp_event_window = {
+		window_name = "sp_event_window"
+		context_type = player_context
+
+		visible = {
+			has_global_flag = Super_Event_Visible
+		}
+		
+		triggers = {
+			Super_Event_Image_Konstantin_German_War_visible = {
+				has_global_flag = Konstantin_German_War
+			}
+		}
+		triggers = {
+			Super_Event_Image_Thomson_German_War_visible = {
+				has_global_flag = Thomson_German_War
+			}
+		}
+		triggers = {
+			Super_Event_Image_Balkham_War_visible = {
+				has_global_flag = Balkham_War
+			}
+		}
+		triggers = {
+			Super_Event_Image_Soviet_Reunion_visible = {
+				has_global_flag = SE_Soviet_Reunion
+			}
+		}
+		triggers = {
+			Super_Event_Image_Ancapistan_visible = {
+				has_global_flag = SE_Ancapistan_Formed
+			}
+		}
+		triggers = {
+			Super_Event_Image_Neoslavia_visible = {
+				has_global_flag = SE_Neoslavia_Formed
+			}
+		}
+		triggers = {
+			Super_Event_Image_Garrod_SSR_visible = {
+				has_global_flag = SE_Garrod_SSR
+			}
+		}
+		triggers = {
+			Super_Event_Image_Nazbol_CHB_visible = {
+				has_global_flag = SE_Nazbol_Hill
+			}
+		}
+		triggers = {
+			Super_Event_Image_Nazi_Hill_visible = {
+				has_global_flag = SE_CHBReich
+			}
+		}
+		triggers = {
+			Super_Event_Image_British_Republic_visible = {
+				has_global_flag = SE_British_Republic
+			}
+		}
+		triggers = {
+			Super_Event_Image_Airstrip_One_visible = {
+				has_global_flag = SE_Airstrip_One
+			}
+		}
+		triggers = {
+			Super_Event_Image_Burgess_CHB_visible = {
+				has_global_flag = SE_Burgess_CHB
+			}
+		}
+		triggers = {
+			Super_Event_Image_Taylor_CHB_visible = {
+				has_global_flag = SE_Taylor_CHB
+			}
+		}
+		triggers = {
+			Super_Event_Image_Duncan_CHB_visible = {
+				has_global_flag = SE_Duncan_CHB
+			}
+		}
+		triggers = {
+			Super_Event_Image_Thomas_CHB_visible = {
+				has_global_flag = SE_Thomas_CHB
+			}
+		}
+		triggers = {
+			Super_Event_Image_Wide_War_visible = {
+				has_global_flag = Wide_War
+			}
+		}
+		triggers = {
+			Super_Event_Image_Wide_Taylor_visible = {
+				has_global_flag = Wide_Taylor
+			}
+		}
+		triggers = {
+			Super_Event_Image_Wide_Putin_visible = {
+				has_global_flag = Wide_Putin
+			}
+		}
+		triggers = {
+			Super_Event_Image_CHEWar_visible = {
+				has_global_flag = CHEWar
+			}
+		}
+		
+		############
+		###BUTTON###
+		############
+		
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+				if = {
+					limit = {
+						has_global_flag = Konstantin_German_War
+					}
+					clr_global_flag = Konstantin_German_War
+				}
+				if = {
+					limit = {
+						has_global_flag = Thomson_German_War
+					}
+					clr_global_flag = Thomson_German_War
+				}
+				if = {
+					limit = {
+						has_global_flag = Balkham_War
+					}
+					clr_global_flag = Balkham_War
+				}
+				if = {
+					limit = {
+						has_global_flag = SE_Soviet_Reunion
+					}
+					clr_global_flag = SE_Soviet_Reunion
+				}
+				if = {
+					limit = {
+						has_global_flag = SE_Ancapistan_Formed
+					}
+					clr_global_flag = SE_Ancapistan_Formed
+				}
+				if = {
+					limit = {
+						has_global_flag = SE_Neoslavia_Formed
+					}
+					clr_global_flag = SE_Neoslavia_Formed
+				}
+				if = {
+					limit = {
+						has_global_flag = SE_Garrod_SSR_Formed
+					}
+					clr_global_flag = SE_Garrod_SSR_Formed
+				}
+				if = {
+					limit = {
+						has_global_flag = SE_Nazbol_Hill
+					}
+					clr_global_flag = SE_Nazbol_Hill
+				}
+				if = {
+					limit = {
+						has_global_flag = SE_British_Republic
+					}
+					clr_global_flag = SE_British_Republic
+				}
+				if = {
+					limit = {
+						has_global_flag = SE_Airstrip_One
+					}
+					clr_global_flag = SE_Airstrip_One
+				}
+				if = {
+					limit = {
+						has_global_flag = SE_Burgess_CHB
+					}
+					clr_global_flag = SE_Burgess_CHB
+				}
+				if = {
+					limit = {
+						has_global_flag = SE_Taylor_CHB
+					}
+					clr_global_flag = SE_Taylor_CHB
+				}
+				if = {
+					limit = {
+						has_global_flag = SE_Duncan_CHB
+					}
+					clr_global_flag = SE_Duncan_CHB
+				}
+				if = {
+					limit = {
+						has_global_flag = SE_Thomas_CHB
+					}
+					clr_global_flag = SE_Thomas_CHB
+				}
+				if = {
+					limit = {
+						has_global_flag = Wide_War
+					}
+					clr_global_flag = Wide_War
+				}
+				if = {
+					limit = {
+						has_global_flag = Wide_Taylor
+					}
+					clr_global_flag = Wide_Taylor
+				}
+				if = {
+					limit = {
+						has_global_flag = Wide_Putin
+					}
+					clr_global_flag = Wide_Putin
+				}
+				if = {
+					limit = {
+						has_global_flag = CHEWar
+					}
+					clr_global_flag = CHEWar
+				}
+			}
+		}
+	}
+}

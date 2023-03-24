@@ -1,0 +1,28 @@
+
+state={
+	id=432
+	name="STATE_432"
+	resources={
+		oil=7
+		chromium=20
+	}
+
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		victory_points = {
+			1553 2 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+	}
+
+	provinces={
+		997 1497 1525 1553 1581 7179 7455 10090 10349 10514 12366 12395 
+	}
+	manpower=38125250
+	buildings_max_level_factor=1.000
+	state_category = state_level_14
+}

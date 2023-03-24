@@ -1,0 +1,202 @@
+﻿capital = 291
+
+oob = "IRQ_2000"
+
+set_research_slots = 2
+set_convoys = 100
+set_stability = 0.3
+
+set_country_flag = country_language_arabic
+set_country_flag = country_language_kurdish
+set_country_flag = country_behavior_indolent
+
+set_technology = {
+	## Infantry ##
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	support_weapons = 1
+	night_vision = 1
+	body_armor = 1
+	camouflage = 1
+	marines = 1
+	tech_mountaineers = 1
+	paratroopers = 1
+	
+	## Support Companies ##
+	tech_support = 1
+	basic_train =1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	
+	## Armor ##
+	main_battle_tank1 = 1
+	main_battle_tank2 = 1
+	light_tank1 = 1
+	mechanised_infantry1 = 1
+	light_mechanized_infantry1 = 1
+	
+	## Artillery ##
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	rocket_artillery = 1
+	motorized_rocket_unit = 1
+	
+	## Air ##
+	CAS1 = 1
+	CAS2 = 1
+	fighter1 = 1
+	fighter2 = 1
+	strategic_bomber1 = 1
+	strategic_bomber2 = 1
+	
+	## Engineering ##
+	#eng_low
+	
+	## Industry ##
+	#ind_low
+	
+	## Doctrines ##
+	mass_assault = 1
+	formation_flying = 1
+}
+
+set_country_flag = dominant_religion_islam
+set_country_flag = sunni_islam
+
+add_ideas = {
+	centralization_federal
+	government_system_one_party
+	economy_recession
+	civil_liberties_totalitarian
+	population_growth_explosion
+	arab_league_member
+	extensive_conscription
+	iraq_embargo_heavy
+	iraq_army_heavy
+
+}
+2005.1.1 = {
+	add_ideas = {
+		government_system_parliamentary_republic
+	}
+}
+
+set_politics = {	
+	ruling_party = nationalist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    islamist = 20
+    nationalist = 42
+    reactionary = 18
+    conservative = 10
+    social_democrat = 2
+    communist = 8
+}
+recruit_character = IRQ_saddam_hussein
+recruit_character = IRQ_raad_i
+recruit_character = IRQ_muqtada_alsadr
+recruit_character = IRQ_ibrahim_aljaafari
+recruit_character = IRQ_adnan_pachachi
+recruit_character = IRQ_ahmed_chalabi
+recruit_character = IRQ_naseer_alchaderchi
+recruit_character = IRQ_ayad_allawi
+recruit_character = IRQ_khalil_fazil
+recruit_character = IRQ_hamid_majid_mousa
+recruit_character = IRQ_mohammad_baqir_alhakim
+recruit_character = IRQ_yonadam_kanna
+recruit_character = IRQ_izzat_ibrahim_aldouri
+recruit_character = IRQ_othman_al_ghanimi
+recruit_character = IRQ_babaker_zebari
+recruit_character = IRQ_qassi_jassem_nazal
+recruit_character = IRQ_abud_qanbar
+recruit_character = IRQ_ali_hassan_almajid
+recruit_character = IRQ_mutaa_al_khazraji
+recruit_character = IRQ_ahmed_hashim
+recruit_character = IRQ_othman_ali_farhood
+recruit_character = IRQ_hamid_al_maliki
+recruit_character = IRQ_abdel_wahal_al_saadi
+recruit_character = IRQ_qassim_atta
+recruit_character = IRQ_ali_ghaidan_majid
+recruit_character = IRQ_fadhil_jalil_al_barwari
+recruit_character = IRQ_nassir_al_hiti
+recruit_character = IRQ_najm_abdullah_alsudani
+recruit_character = IRQ_sultan_hashim
+recruit_character = IRQ_sabah_al_fatlawi
+recruit_character = IRQ_talib_shaghati
+recruit_character = IRQ_saad_maan
+recruit_character = IRQ_ali_hussain_ali
+
+
+2004.1.1 = {
+	set_politics = {
+		ruling_party = conservative
+		last_election = "2001.1.1"
+		election_frequency = 48
+		elections_allowed = yes
+	}#EW
+    set_popularities = {
+        islamist = 30
+        nationalist = 15
+        reactionary = 18
+        conservative = 30
+        market_liberal = 1
+        social_democrat = 2
+        communist = 4
+    }
+}
+
+2003.8.30 = {	#Saddam is toppled
+	add_stability = -0.1
+ 
+	add_ideas = {
+		islamic_sectarian_conflicts
+	}
+	create_country_leader = {
+        name = "Izzat Ibrahim al-Douri"
+		ideology = pannationalist
+	    picture = "Portrait_Izzat_Ibrahim_al-Douri.dds"
+    }
+	create_country_leader = {
+	    name = "Abdul Aziz al-Hakim"
+	    ideology = islamic_authoritarian
+	    picture = "Abdul_Aziz_al_Hakim.dds"
+    }
+}
+
+2006.5.20 = {
+	create_country_leader = {
+			name = "Nouri al-Maliki"
+			picture = "Nouri_Maliki.dds"
+			ideology = fiscal_conservative
+		}
+	}
+	
+	2009.1.1 = {
+		create_country_leader = {
+			name = "Ammar al-Hakim"
+			ideology = islamic_authoritarian
+			picture = "Ammar_al_Hakim.dds"
+		}
+	}
+	
+	2016.5.1 = { oob = "IRQ_2016" }
+	
+	2014.9.8 = {
+		create_country_leader = {     #President Fuad Masum nominatines Haidar al-Abadi to replace Al-Maliki for constitutional violation
+			name = "Haider al-Abadi"
+			picture = "Haider_Abadi.dds"
+			ideology = fiscal_conservative
+		}
+	}

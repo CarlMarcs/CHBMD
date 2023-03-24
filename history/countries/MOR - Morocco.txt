@@ -1,0 +1,130 @@
+﻿capital = 461
+
+oob = "MOR_2000"
+
+set_research_slots = 3
+set_convoys = 340
+set_stability = 0.4
+
+set_country_flag = country_language_arabic
+set_country_flag = country_language_berber
+
+set_technology = {
+	## Infantry ##
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	night_vision = 1
+	body_armor = 1
+	camouflage = 1
+	marines = 1
+	tech_mountaineers = 1
+	paratroopers = 1
+	
+	## Support Companies ##
+	tech_support = 1
+	basic_train =1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	
+	## Armor ##
+	main_battle_tank1 = 1
+	main_battle_tank2 = 1
+	main_battle_tank3 = 1
+	light_tank1 = 1
+	mechanised_infantry1 = 1
+	light_mechanized_infantry1 = 1
+	
+	## Artillery ##
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	
+	## Air ##
+	CAS1 = 1
+	CAS2 = 1
+	fighter1 = 1
+	fighter2 = 1
+	fighter3 = 1
+	naval_bomber1 = 1
+	naval_bomber2 = 1
+	strategic_bomber1 = 1
+	
+	## Engineering ##
+	electronic_mechanical_engineering = 1
+	
+	## Industry ##
+	basic_machine_tools = 1
+	
+	## Doctrines ##
+	superior_firepower = 1
+}
+
+set_country_flag = dominant_religion_islam
+set_country_flag = sunni_islam
+
+add_ideas = {
+	government_system_constitutional_monarchy
+	economy_tax_high
+	civil_liberties_restricted
+	population_growth_rapid
+	arab_league_member
+	limited_conscription
+}
+
+set_politics = {	
+	ruling_party = reactionary
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    reactionary = 21
+    monarchist = 37
+    market_liberal = 11
+    conservative = 11
+    social_liberal = 9
+    social_democrat = 6
+    democratic_socialist = 5
+}
+recruit_character = MOR_abderramán_yusufi
+recruit_character = MOR_mohammed_vi
+recruit_character = MOR_hamid_chabat
+recruit_character = MOR_mohand_laenser
+recruit_character = MOR_abbas_elfassi
+recruit_character = MOR_mohamed_khalidi
+recruit_character = MOR_abdallah_alharrif
+recruit_character = MOR_ahmed_dgharni
+recruit_character = MOR_driss_lachgar
+recruit_character = MOR_ahmed_balghazi
+recruit_character = MOR_nabil_benabdallah
+recruit_character = MOR_salaheddine_mezouar
+recruit_character = MOR_bouchaib_arroub
+recruit_character = MOR_abdel_fattah_louarak
+recruit_character = MOR_housni_ben_slimane
+recruit_character = MOR_belkhir_el_farouk
+recruit_character = MOR_mohammed_zeggaoui
+recruit_character = MOR_ahmed_boutaleb
+recruit_character = MOR_hamidou_laanigri
+recruit_character = MOR_mohammed_laghmari
+
+
+2010.1.1 = {
+	oob = "MOR_2016"
+}
+
+2017.1.30 = {
+	add_ideas = { african_union_member }
+}
+
+2017.1.1 = {  #Benkirán got fired by the King
+}

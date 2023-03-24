@@ -1,0 +1,131 @@
+﻿capital = 455
+
+oob = "JOR_2000"
+
+set_research_slots = 3
+set_convoys = 10
+set_stability = 0.3	
+
+set_country_flag = country_language_arabic
+
+set_technology = {
+	## Infantry ##
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	night_vision = 1
+	body_armor = 1
+	camouflage = 1
+	marines = 1
+	
+	## Support Companies ##
+	tech_support = 1
+	basic_train =1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	
+	## Armor ##
+	main_battle_tank1 = 1
+	main_battle_tank2 = 1
+	main_battle_tank3 = 1
+	light_tank1 = 1
+	mechanised_infantry1 = 1
+	light_mechanized_infantry1 = 1
+	light_mechanized_infantry2 = 1
+	
+	## Artillery ##
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	
+	## Air ##
+	CAS1 = 1
+	CAS2 = 1
+	fighter1 = 1
+	fighter2 = 1
+	fighter3 = 1
+	naval_bomber1 = 1
+	strategic_bomber1 = 1
+	strategic_bomber2 = 1
+	tactical_bomber1 = 1
+	
+	## Engineering ##
+	electronic_mechanical_engineering = 1
+	
+	## Industry ##
+	basic_machine_tools = 1
+	
+	## Doctrines ##
+	superior_firepower = 1
+	formation_flying = 1
+	### REMOVE THESE AHHHHHH ###
+}
+
+set_country_flag = dominant_religion_islam
+set_country_flag = sunni_islam
+
+add_ideas = {
+	government_system_constitutional_monarchy
+	economy_growth
+	public_safety_secret_police
+	civil_liberties_restricted
+	population_growth_rapid
+	arab_league_member
+	extensive_conscription
+}
+
+give_military_access = USA
+
+set_politics = {
+	ruling_party = monarchist
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    islamist = 19
+    nationalist = 1
+    monarchist = 40
+    reactionary = 2
+    conservative = 18
+    market_liberal = 2
+    social_liberal = 2
+    social_democrat = 2
+    progressive = 2
+    democratic_socialist = 2
+    communist = 10
+}
+recruit_character = JOR_abdullah_ii
+recruit_character = JOR_saeed_thyab
+recruit_character = JOR_mazin_riyal
+recruit_character = JOR_hamza_mansour
+recruit_character = JOR_akram_alhomsi
+recruit_character = JOR_faraj_altameezi
+recruit_character = JOR_ahmed_alshunaq
+recruit_character = JOR_fawaz_zoubi
+recruit_character = JOR_hazem_qashou
+recruit_character = JOR_saleh_ersheidat
+recruit_character = JOR_rula_alhroob
+recruit_character = JOR_emhamed_abu_khalil
+recruit_character = JOR_abdul_hafiz_alkaabnehn
+recruit_character = JOR_mohammed_yousef_al_malkawi
+recruit_character = JOR_maashal_alzabin
+recruit_character = JOR_mahmoud_abdel_halim_freihat
+recruit_character = JOR_hussein_almajali
+recruit_character = JOR_khaled_jamil_elsarayreh
+recruit_character = JOR_khaled_alsharah
+recruit_character = JOR_qasim_fadil_nahar
+
+
+2016.1.1 = {
+	oob = "JOR_2016"
+}

@@ -1,0 +1,29 @@
+ideas = {
+    country = {
+        seize_the_means_of_diet_coke_production = {
+            picture = diet_coke
+            modifier = {
+                consumer_goods_factor = 0.1
+                communist_drift = 0.1
+                democratic_socialist_drift = 0.1
+            }
+        }
+    }
+    political_advisor = {
+        ben_little_advisor = {
+            name = "Ben Little"
+            allowed = {
+                original_tag = COK
+            }
+            available = {
+                NOT = {
+                    has_government = market_liberal
+                }
+            }
+            removal_cost = -1
+            traits = {
+                moderate_coke_addict
+            }
+        }
+    }
+}

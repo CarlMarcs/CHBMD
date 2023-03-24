@@ -1,0 +1,13 @@
+on_actions = {
+	
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+				has_start_date < 2001.01.01
+				}
+				FRA = { news_event = { id = miscFlavor.1  days = 206 } }
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+
+state={
+	id=437
+	name="STATE_437"
+	resources={
+		oil=4.000
+	}
+
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 1
+
+		}
+
+	}
+
+	provinces={
+		1129 1898 2076 3989 5002 5157 7106 10021 12708 
+	}
+	manpower=14566000
+	buildings_max_level_factor=1.000
+	state_category=state_level_8
+}

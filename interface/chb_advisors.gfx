@@ -1,0 +1,74 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_idea_zeeshan"
+		texturefile = "gfx/leaders/CHB/Zeeshan_Small.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_bob_ross"
+		texturefile = "gfx/leaders/CHB/Bob_Ross_Small.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ben_little_advisor"
+		texturefile = "gfx/leaders/CHB/Ben_Little_Small.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sampy_boy"
+		texturefile = "gfx/leaders/CHB/Sampy_Boy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_stephen_hawking"
+		texturefile = "gfx/leaders/CHB/Stephen_Hawking.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_andrew_caves"
+		texturefile = "gfx/leaders/CHB/Andrew_Caves.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_daddy_duncan"
+		texturefile = "gfx/leaders/CHB/daddy_duncan.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_justin_thompson"
+		texturefile = "gfx/leaders/CHB/Justin_Thompson.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kishan"
+		texturefile = "gfx/leaders/CHB/Kishan_Sambhi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ibby_jamal"
+		texturefile = "gfx/leaders/CHB/Ibby_Jamal.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_jamie_paige"
+		texturefile = "gfx/leaders/CHB/Jamie_Paige_Small.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_timothy_watkins"
+		texturefile = "gfx/leaders/CHB/Timothy_Watkins_Small.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_george_rees"
+		texturefile = "gfx/leaders/CHB/George_Rees_Small.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_emma_lamb"
+		texturefile = "gfx/leaders/CHB/Lamb_Small.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_daniel_wilkins"
+		texturefile = "gfx/leaders/CHB/Daniel_Wilkins_Small.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_charlie_moore"
+		texturefile = "gfx/leaders/CHB/Charlie_Moore_Small.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_stephen_jobs"
+		texturefile = "gfx/leaders/CHB/Stephen_Jobs.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tom_munoz_britton"
+		textureFile = "gfx/leaders/CHB/Tom_Munoz_Britton_small.dds"
+	}
+}

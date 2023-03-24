@@ -1,0 +1,25 @@
+add_namespace = BalWar
+
+country_event = {
+    id = BalWar.3
+    title = BalWar.3.t
+    desc = BalWar.3.d
+    is_triggered_only = yes
+    option = {
+        name = Balwar.3.o1
+        every_state = { limit = { is_controlled_by = BUL } ROOT = { add_state_core = PREV } }
+        add_war_support = 0.2
+        complete_national_focus = yugfocus_prep_balwar
+    }
+}
+country_event = {
+    id = BalWar.4
+    title = BalWar.4.t
+    desc = BalWar.4.d
+    is_triggered_only = yes
+    picture = GFX_report_event_nine_eleven
+    option = {
+        name = BalWar.3.o1
+        complete_national_focus = bulfocus_bombings
+    }
+}

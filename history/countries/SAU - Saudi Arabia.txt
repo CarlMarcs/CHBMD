@@ -1,0 +1,160 @@
+﻿capital = 292
+
+oob = "SAU_2000"
+
+set_research_slots = 4
+set_convoys = 370
+set_stability = 0.4
+
+set_country_flag = country_language_arabic
+
+set_technology = {
+	## Infantry ##
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	night_vision = 1
+	body_armor = 1
+	camouflage = 1
+	paratroopers = 1
+	
+	## Support Companies ##
+	tech_support = 1
+	basic_train =1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	
+	## Armor ##
+	main_battle_tank1 = 1
+	main_battle_tank2 = 1
+	main_battle_tank3 = 1
+	light_tank1 = 1
+	mechanised_infantry1 = 1
+	light_mechanized_infantry1 = 1
+	light_mechanized_infantry2 = 1
+	
+	## Artillery ##
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	
+	## Air ##
+	CAS1 = 1
+	CAS2 = 1
+	fighter1 = 1
+	fighter2 = 1
+	fighter3 = 1
+	naval_bomber1 = 1
+	naval_bomber2 = 1
+	strategic_bomber1 = 1
+	strategic_bomber2 = 1
+	tactical_bomber1 = 1
+	
+	## Engineering ##
+	electronic_mechanical_engineering = 1
+	
+	## Industry ##
+	basic_machine_tools = 1
+	
+	## Doctrines ##
+	superior_firepower = 1
+	force_rotation = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		mtg_transport = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+	}
+}
+
+set_country_flag = dominant_religion_islam
+set_country_flag = sunni_islam
+
+add_ideas = {
+	government_system_absolute_monarchy
+	economy_tax_meager
+	public_safety_secret_police
+	civil_liberties_totalitarian
+	population_growth_rapid
+	arab_league_member
+	limited_conscription
+}
+
+give_military_access = USA
+
+set_politics = {	
+	ruling_party = monarchist
+	last_election = "1982.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    islamist = 25
+    nationalist = 10
+    monarchist = 30
+    conservative = 18
+    market_liberal = 10
+    social_liberal = 2
+    communist = 5
+}
+recruit_character = SAU_king_abdullah
+recruit_character = SAU_abdulrahman_al_banyan
+recruit_character = SAU_saleh_elmansour
+recruit_character = SAU_abdulaziz_al_ashsheikh
+recruit_character = SAU_mohammad_almassari
+recruit_character = SAU_ahmed_mohammad_alrebh
+recruit_character = SAU_mohammad_fahad_muflih_alqahtani
+recruit_character = SAU_ibrahim_almugaiteeb
+recruit_character = SAU_khalid_bin_jamal
+recruit_character = SAU_badr_bin_abdul_aziz
+recruit_character = SAU_eid_al_shalawi
+recruit_character = SAU_mohammed_al_otaibi
+recruit_character = SAU_ahmed_asseri
+recruit_character = SAU_hussein_bin_abdullah_alqabil
+recruit_character = SAU_khalid_bin_bandar_al_saud
+recruit_character = SAU_mansour_al_turki
+recruit_character = SAU_ali_ben_mohamed_assiri
+recruit_character = SAU_abdullah_al_sultan
+
+
+2013.12.11 = {
+	create_faction = peninsula_shield_force
+	add_to_faction = SAU
+	add_to_faction = KUW
+	add_to_faction = OMA
+	add_to_faction = BAR
+	add_to_faction = UAE
+	add_to_faction = QAT
+}
+
+2015.1.23 = {
+	oob = "SAU_2016"
+
+}

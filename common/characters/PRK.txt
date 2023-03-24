@@ -1,0 +1,170 @@
+characters={
+	PRK_dong_wei={
+		name="Dong Wei"
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia/politician2.dds"
+			}
+		}
+		country_leader={
+			ideology=islamic_authoritarian
+			traits={ experienced_attorney }
+			expire="2014.1.1.12"
+			id=-1
+		}
+	}
+	PRK_Seema_Mahmud={
+		name="Seema Mahmud"
+		portraits={
+			civilian={
+				large="gfx/leaders/CHB/Seema_Mahmud.dds"
+			}
+		}
+		country_leader={
+			ideology=fascist_ideology
+			traits={ Unqualified }
+			expire="2017.1.1.12"
+			id=-1
+		}
+	}
+	PRK_Craig_N_Dave={
+		name="Craig 'n' Dave"
+		portraits={
+			civilian={
+				large="gfx/leaders/CHB/CraignDave.dds"
+			}
+		}
+		country_leader={
+			ideology=technocracy
+			traits={  }
+			expire="2017.1.1.12"
+			id=-1
+		}
+	}
+	PRK_li_jin={
+		name="Li Jin"
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia/politician2.dds"
+			}
+		}
+		country_leader={
+			ideology=proto_fascist
+			traits={ friend_of_india }
+			expire="2005.1.1.12"
+			id=-1
+		}
+	}
+	PRK_Telium={
+		name="Telium"
+		portraits={
+			civilian={
+				large="gfx/leaders/CHB/Telium.dds"
+			}
+		}
+		country_leader={
+			ideology=telium_hivemind
+			traits={  }
+			expire="2009.1.1.12"
+			id=-1
+		}
+	}
+	PRK_yu_peng={
+		name="Yu Peng"
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia/politician1.dds"
+			}
+		}
+		country_leader={
+			ideology=counter_progressive_democrat
+			traits={ friend_of_china }
+			expire="2012.1.1.12"
+			id=-1
+		}
+	}
+	PRK_dong_zhao={
+		name="Dong Zhao"
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia/politician2.dds"
+			}
+		}
+		country_leader={
+			ideology=fiscal_conservative
+			traits={ enemy_of_china }
+			expire="2016.1.1.12"
+			id=-1
+		}
+	}
+	PRK_dong_hu={
+		name="Dong Hu"
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia/politician2.dds"
+			}
+		}
+		country_leader={
+			ideology=libertarian
+			traits={ smooth_talking_charmer }
+			expire="2020.1.1.12"
+			id=-1
+		}
+	}
+	PRK_kong_zhao={
+		name="Kong Zhao"
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia/politician1.dds"
+			}
+		}
+		country_leader={
+			ideology=moderate
+			traits={ enemy_of_france }
+			expire="2007.1.1.12"
+			id=-1
+		}
+	}
+	PRK_zhang_ma={
+		name="Zhang Ma"
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia/politician1.dds"
+			}
+		}
+		country_leader={
+			ideology=social_democrat_ideology
+			traits={ friend_of_china }
+			expire="2011.1.1.12"
+			id=-1
+		}
+	}
+	PRK_gao_ye={
+		name="Gao Ye"
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia/politician2.dds"
+			}
+		}
+		country_leader={
+			ideology=progressive_ideology
+			traits={ armaments_organizer }
+			expire="2015.1.1.12"
+			id=-1
+		}
+	}
+	PRK_yu_sun={
+		name="Yu Sun"
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia/politician2.dds"
+			}
+		}
+		country_leader={
+			ideology=democratic_socialist_ideology
+			traits={ friend_of_france enemy_of_britain }
+			expire="2018.1.1.12"
+			id=-1
+		}
+	}
+}

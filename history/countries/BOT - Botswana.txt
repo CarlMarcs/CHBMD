@@ -1,0 +1,131 @@
+﻿capital = 542
+
+oob = "BOT_2000"
+
+set_research_slots = 2
+set_convoys = 10
+set_stability = 0.6
+
+set_country_flag = country_language_english
+set_country_flag = country_language_tswana
+set_country_flag = country_behavior_indolent
+
+set_technology = {
+	## Infantry ##
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	support_weapons = 1
+	night_vision = 1
+	body_armor = 1
+	camouflage = 1
+	marines = 1
+	tech_mountaineers = 1
+	paratroopers = 1
+	
+	## Support Companies ##
+	tech_support = 1
+	basic_train =1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	
+	## Armor ##
+	main_battle_tank1 = 1
+	main_battle_tank2 = 1
+	light_tank1 = 1
+	mechanised_infantry1 = 1
+	light_mechanized_infantry1 = 1
+	
+	## Artillery ##
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	
+	## Air ##
+	CAS1 = 1
+	CAS2 = 1
+	fighter1 = 1
+	fighter2 = 1
+	
+	## Engineering ##
+	#eng_low
+	
+	## Industry ##
+	#ind_low
+	
+	## Doctrines ##
+	
+}
+
+add_ideas = {
+	government_system_parliamentary_republic
+	economy_growth
+	civil_liberties_free
+	population_growth_rapid
+	african_union_member
+	commonwealth_of_nations_member
+}
+
+set_politics = {	
+	ruling_party = conservative
+	last_election = "1999.10.16"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+    conservative = 57
+    social_liberal = 26
+    social_democrat = 12
+    progressive = 5
+}
+recruit_character = BOT_festus_mogae
+recruit_character = BOT_otsweletse_moupo
+recruit_character = BOT_michael_dingake
+recruit_character = BOT_ephraim_setshwaelo
+recruit_character = BOT_themba_joina
+recruit_character = BOT_mostlatsi_molapisi
+recruit_character = BOT_placid_segokgo
+recruit_character = BOT_tebogo_masire
+recruit_character = BOT_goitsebeng_khama
+recruit_character = BOT_dikgakgamatso_segokgo
+recruit_character = BOT_ketumile_masire
+recruit_character = BOT_tebogo_khama
+recruit_character = BOT_quett_segokgo
+recruit_character = BOT_maphiri_masire
+
+
+2016.1.1 = {
+	oob = "BOT_2016"
+	set_politics = {
+		ruling_party = conservative
+		last_election = "2014.10.16"
+		election_frequency = 60
+		elections_allowed = yes
+	}
+    set_popularities = {
+        conservative = 46
+        social_liberal = 30
+        social_democrat = 21
+        progressive = 3
+    }
+	create_country_leader = {
+		name = "Ian Khama"
+		picture = "Ian_Khama.dds"
+		ideology = fiscal_conservative
+	}
+	create_country_leader = {
+		name = "Duma Boko"
+		picture = "Duma_Boko.dds"
+		ideology = liberalist
+	}
+	create_country_leader = {
+		name = "Dumelang Saleshando"
+		picture = "Dumelang_Saleshando.dds"
+		ideology = social_democrat_ideology
+	}
+}

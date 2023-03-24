@@ -1,0 +1,176 @@
+focus_tree = {
+    id = chbancapfocus
+
+    country = {
+        factor = 0
+
+        modifier = {
+            add = 10
+            tag = CHB
+        }
+    }
+    continuous_focus_position = {
+        x = 20
+        y = 1056
+    }
+    default = no
+    focus = {
+        id = chbancapfocus_change_of_path
+        x = 3
+        y = 0
+        cost = 5
+        icon = libertarianism
+        completion_reward = {
+            add_stability = -0.5
+        }
+    }
+    focus = {
+        id = chbancapfocus_destroy_commies
+        x = 3
+        y = 1
+        cost = 5
+        icon = attack_communism
+        prerequisite = {
+            focus = chbancapfocus_change_of_path
+        }
+        completion_reward = {
+            add_popularity = {
+                ideology = communist
+                popularity = -0.3
+            }
+            add_popularity = {
+                ideology = democratic_socialist
+                popularity = -0.3
+            }
+            add_popularity = {
+                ideology = social_democrat
+                popularity = -0.15
+            }
+        }
+    }
+    focus = {
+        id = chbancapfocus_corporate_takeover
+        x = 3
+        y = 2
+        cost = 10
+        icon = industry_democratic2
+        prerequisite = {
+            focus = chbancapfocus_destroy_commies
+        }
+        completion_reward = {
+            set_politics = {
+                ruling_party = market_liberal
+                last_election = "1999.12.12"
+	            election_frequency = 12
+	            elections_allowed = no
+            }
+            remove_ideas = CHB_House_Divide
+        }
+    }
+    focus = {
+        id = chbancapfocus_free_press
+        x = 3
+        y = 3
+        cost = 5
+        icon = propaganda
+        prerequisite = {
+            focus = chbancapfocus_corporate_takeover
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = CHB_Socialist_Memery
+                add_idea = CHB_Ancap_Memery
+            }
+        }
+    }
+    focus = {
+        id = chbancapfocus_full_privatisation
+        x = 3
+        y = 4
+        cost = 5
+        icon = industry_democratic
+        prerequisite = {
+            focus = chbancapfocus_free_press
+        }
+        completion_reward = {
+            add_ideas = CHB_Full_Privatisation
+        }
+    }
+    focus = {
+        id = chbancapfocus_turn_eyes_to_britain
+        x = 3
+        y = 5
+        cost = 5
+        icon = align_to_britain
+        prerequisite = {
+            focus = chbancapfocus_full_privatisation
+        }
+        completion_reward = {
+            add_political_power = 150
+            ENG = {
+                add_stability = -1
+            }
+        }
+    }
+    focus = {
+        id = chbancapfocus_corporate_uprising
+        x = 3
+        y = 6
+        cost = 5
+        icon = attack_britain
+        prerequisite = {
+            focus = chbancapfocus_turn_eyes_to_britain
+        }
+        completion_reward = {
+            annex_country = {
+                target = ENG
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = IRE
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = SCO
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = WLS
+                transfer_troops = yes
+            }
+        }
+    }
+    focus = {
+        id = chbancapfocus_ancapistan
+        x = 3
+        y = 7
+        cost = 5
+        icon = align_to_ancapistan
+        prerequisite = {
+            focus = chbancapfocus_corporate_uprising
+        }
+        completion_reward = {
+            add_state_core = 123
+            add_state_core = 127
+            add_state_core = 338
+            add_state_core = 126
+            add_state_core = 128
+            add_state_core = 129
+            add_state_core = 125
+            add_state_core = 132
+            add_state_core = 130
+            add_state_core = 131
+            add_state_core = 122
+            add_state_core = 119
+            add_state_core = 133
+            add_state_core = 121
+            add_state_core = 136
+            add_state_core = 120
+            every_state = { limit = { is_controlled_by = IRE } ROOT = { add_state_core = PREV } }
+            hidden_effect = {
+                set_cosmetic_tag = ancapistan
+                set_global_flag = ancapistan_formed
+            }
+        }
+    }
+}

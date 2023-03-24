@@ -1,0 +1,40 @@
+
+state = {
+	id = 367
+	name = "STATE_367"
+	manpower = 4447000
+	
+	state_category = state_level_9
+	
+	resources = {
+		steel = 40
+	}
+
+	history = {
+		owner = USA
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			air_base = 4
+			7480 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = USA
+		add_core_of = CSA
+		victory_points = {
+			7480 3 
+		}
+		victory_points = {
+			860 4 
+		}
+		victory_points = {
+			12735 15 
+		}
+
+	}
+
+	provinces = {
+		492 860 1587 4594 4622 4756 5059 7422 7480 7640 10192 10520 11509 11942 12735 12803 
+	}
+}

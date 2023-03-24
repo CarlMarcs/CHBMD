@@ -1,0 +1,41 @@
+add_namespace = miscFlavor
+
+#Concorde Crash
+news_event = {
+	id = miscFlavor.1
+	title = miscFlavor.1.t
+	desc = miscFlavor.1.d
+	picture = GFX_news_event_concorde_crash
+
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	date > 2000.07.01
+	}
+	
+	option = {
+		name = miscFlavor.1.a
+		trigger = {
+			NOT = {
+			OR = {
+				TAG = FRA
+				TAG = ENG
+			}
+			}
+		}
+	}
+	option = {
+		name = miscFlavor.1.b
+		trigger = { 
+		OR = {
+			TAG = FRA
+			TAG = ENG
+		}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+}

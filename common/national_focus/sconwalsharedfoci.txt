@@ -1,0 +1,610 @@
+shared_focus = {
+    id = chbscotland_paige
+    icon = align_to_scotland
+    cost = 5
+    x = 2
+    y = 11
+    allow_branch = {
+        OR = {
+            has_completed_focus = chbmonfocus_scotland
+            has_completed_focus = chbcomfocus_sco_and_wal
+        }
+        SCO = {
+            has_government = democratic_socialist
+        }
+        
+    }
+    completion_reward = {
+        SCO = {
+            add_stability = -0.1
+        }
+    }
+}
+shared_focus = {
+    id = chbscotland_paige_war
+    icon = war
+    cost = 5
+    x = 1
+    y = 12
+    available = {
+        NOT = {
+            has_government = democratic_socialist
+        }
+    }
+    mutually_exclusive = {
+        focus = chbscotland_paige_negotiate
+    }
+    prerequisite = {
+        focus = chbscotland_paige
+    }
+    completion_reward = {
+        declare_war_on = {
+            target = SCO
+            type = annex_everything
+        }
+    }
+}
+shared_focus = {
+    id = chbscotland_paige_negotiate
+    icon = alliance
+    cost = 5
+    x = 3
+    y = 12
+    available = {
+        NOT = {
+            has_completed_focus = chbmonfocus_dehumanise_left
+        }
+    }
+    mutually_exclusive = {
+        focus = chbscotland_paige_war
+    }
+    prerequisite = {
+        focus = chbscotland_paige
+    }
+    completion_reward = {
+        add_stability = 0.1
+        SCO = {
+            add_stability = 0.1
+        }
+    }
+}
+shared_focus = {
+    id = chbscotland_paige_NAP
+    icon = improve_relations
+    cost = 5
+    x = 3
+    y = 13
+    prerequisite = {
+        focus = chbscotland_paige_negotiate
+    }
+    completion_reward = {
+        diplomatic_relation = {
+            country = SCO
+            relation = non_aggression_pact
+            active = yes
+        }
+    }
+}
+shared_focus = {
+    id = chbscotland_paige_military
+    icon = entente
+    cost = 5
+    x = 3
+    y = 14
+    prerequisite = {
+        focus = chbscotland_paige_NAP
+    }
+    completion_reward = {
+        give_military_access = SCO
+        SCO = {
+            give_military_access = CHB
+        }
+    }
+}
+shared_focus = {
+    id = chbscotland_paige_integration
+    icon = align_to_scotland
+    cost = 5
+    x = 3
+    y = 15
+    prerequisite = {
+        focus = chbscotland_paige_military
+    }
+    completion_reward = {
+        annex_country = {
+            target = SCO
+            transfer_troops = yes
+        }
+    }
+}
+shared_focus = {
+    id = chbwales_watkins
+    icon = align_to_wales
+    cost = 5
+    x = 6
+    y = 11
+    allow_branch = {
+        OR = {
+            has_completed_focus = chbmonfocus_wales
+            has_completed_focus = chbcomfocus_sco_and_wal
+        }
+        WLS = {
+            OR = {
+                has_government = reactionary
+                has_government = nationalist
+                has_government = fascist
+                has_government = conservative
+                has_government = monarchist
+            }
+        }
+        
+    }
+    completion_reward = {
+        WLS = {
+            add_stability = -0.1
+        }
+    }
+}
+shared_focus = {
+    id = chbwales_watkins_war
+    icon = war
+    cost = 5
+    x = 5
+    y = 12
+    mutually_exclusive = {
+        focus = chbwales_watkins_negotiate
+    }
+    prerequisite = {
+        focus = chbwales_watkins
+    }
+    completion_reward = {
+        declare_war_on = {
+        target = WLS
+        type = annex_everything
+        }
+    }
+}
+shared_focus = {
+    id = chbwales_watkins_negotiate
+    icon = alliance
+    cost = 5
+    x = 7
+    y = 12
+    available = {
+        NOT = {
+            has_government = communist
+            has_government = democratic_socialist
+        }
+    }
+    mutually_exclusive = {
+        focus = chbwales_watkins_war
+    }
+    prerequisite = {
+        focus = chbwales_watkins
+    }
+    completion_reward = {
+        add_stability = 0.1
+        WLS = {
+            add_stability = 0.1
+        }
+    }
+}
+shared_focus = {
+    id = chbwales_watkins_NAP
+    icon = improve_relations
+    cost = 5
+    x = 7
+    y = 13
+    prerequisite = {
+        focus = chbwales_watkins_negotiate
+    }
+    completion_reward = {
+        diplomatic_relation = {
+            country = WLS
+            relation = non_aggression_pact
+            active = yes
+        }
+    }
+}
+shared_focus = {
+    id = chbwales_watkins_military
+    icon = entente
+    cost = 5
+    x = 7
+    y = 14
+    prerequisite = {
+        focus = chbwales_watkins_NAP
+    }
+    completion_reward = {
+        give_military_access = WLS
+        WLS = {
+            give_military_access = CHB
+        }
+    }
+}
+shared_focus = {
+    id = chbwales_watkins_integration
+    icon = align_to_wales
+    cost = 5
+    x = 7
+    y = 15
+    prerequisite = {
+        focus = chbwales_watkins_military
+    }
+    completion_reward = {
+        annex_country = {
+            target = WLS
+            transfer_troops = yes
+        }
+    }
+}
+shared_focus = {
+    id = chbwales_lamb
+    icon = align_to_baa
+    cost = 5
+    x = 6
+    y = 11
+    allow_branch = {
+        OR = {
+            has_completed_focus = chbmonfocus_wales
+            has_completed_focus = chbcomfocus_sco_and_wal
+        }
+        WLS = {
+            has_government = communist
+        }
+        
+    }
+    completion_reward = {
+        WLS = {
+            add_stability = -0.1
+        }
+    }
+}
+shared_focus = {
+    id = chbwales_lamb_negotiate
+    icon = ms_lamb
+    cost = 5
+    x = 7
+    y = 12
+    available = {
+
+        has_government = communist
+        has_government = democratic_socialist
+
+    }
+    mutually_exclusive = {
+        focus = chbwales_lamb_war
+    }
+    prerequisite = {
+        focus = chbwales_lamb
+    }
+    completion_reward = {
+        add_stability = 0.1
+        WLS = {
+            add_stability = 0.1
+        }
+    }
+}
+shared_focus = {
+    id = chbwales_lamb_war
+    icon = war
+    cost = 5
+    x = 5
+    y = 12
+    available = {
+        NOT = {
+            has_government = communist
+            has_government = democratic_socialist
+        }
+    }
+    mutually_exclusive = {
+        focus = chbwales_lamb_negotiate
+    }
+    prerequisite = {
+        focus = chbwales_lamb
+    }
+    completion_reward = {
+        declare_war_on = {
+        target = WLS
+        type = annex_everything
+        }
+    }
+}
+shared_focus = {
+    id = chbwales_lamb_NAP
+    icon = improve_relations
+    cost = 5
+    x = 7
+    y = 13
+    prerequisite = {
+        focus = chbwales_lamb_negotiate
+    }
+    completion_reward = {
+        diplomatic_relation = {
+            country = WLS
+            relation = non_aggression_pact
+            active = yes
+        }
+    }
+}
+shared_focus = {
+    id = chbwales_lamb_military
+    icon = entente
+    cost = 5
+    x = 7
+    y = 14
+    prerequisite = {
+        focus = chbwales_lamb_NAP
+    }
+    completion_reward = {
+        give_military_access = WLS
+        WLS = {
+            give_military_access = CHB
+        }
+    }
+}
+shared_focus = {
+    id = chbwales_lamb_integration
+    icon = align_to_baa
+    cost = 5
+    x = 7
+    y = 15
+    prerequisite = {
+        focus = chbwales_lamb_military
+    }
+    completion_reward = {
+        annex_country = {
+            target = WLS
+            transfer_troops = yes
+        }
+    }
+}
+shared_focus = {
+    id = chbscotland_ASS
+    icon = align_to_scotland
+    cost = 5
+    x = 2
+    y = 11
+    allow_branch = {
+        OR = {
+            has_completed_focus = chbmonfocus_scotland
+            has_completed_focus = chbcomfocus_sco_and_wal
+        }
+        SCO = {
+            OR = {
+                has_government = reactionary
+                has_government = nationalist
+                has_government = fascist
+            }
+        }
+        
+    }
+    completion_reward = {
+        SCO = {
+            add_stability = -0.1
+        }
+    }
+}
+shared_focus = {
+    id = chbscotland_ASS_war
+    icon = war
+    cost = 5
+    x = 1
+    y = 12
+    available = {
+        NOT = {
+            has_completed_focus = chbmonfocus_support_ass
+        }
+    }
+    mutually_exclusive = {
+        focus = chbscotland_ASS_negotiate
+    }
+    prerequisite = {
+        focus = chbscotland_ASS
+    }
+    completion_reward = {
+        declare_war_on = {
+            target = SCO
+            type = annex_everything
+        }
+    }
+}
+shared_focus = {
+    id = chbscotland_ASS_negotiate
+    icon = alliance
+    cost = 5
+    x = 3
+    y = 12
+    available = {
+        OR = {
+            NOT = {
+                has_completed_focus = chbmonfocus_dehumanise_ASS
+            }
+            NOT = {
+                has_government = communist
+            }
+            NOT = {
+                has_government = democratic_socialist
+            }
+        }
+    }
+    mutually_exclusive = {
+        focus = chbscotland_ASS_war
+    }
+    prerequisite = {
+        focus = chbscotland_ASS
+    }
+    completion_reward = {
+        add_stability = 0.1
+        SCO = {
+            add_stability = 0.1
+        }
+    }
+}
+shared_focus = {
+    id = chbscotland_ASS_NAP
+    icon = improve_relations
+    cost = 5
+    x = 3
+    y = 13
+    prerequisite = {
+        focus = chbscotland_ASS_negotiate
+    }
+    completion_reward = {
+        diplomatic_relation = {
+            country = SCO
+            relation = non_aggression_pact
+            active = yes
+        }
+    }
+}
+shared_focus = {
+    id = chbscotland_ASS_military
+    icon = entente
+    cost = 5
+    x = 3
+    y = 14
+    prerequisite = {
+        focus = chbscotland_ASS_NAP
+    }
+    completion_reward = {
+        give_military_access = SCO
+        SCO = {
+            give_military_access = CHB
+        }
+    }
+}
+shared_focus = {
+    id = chbscotland_ASS_integration
+    icon = align_to_scotland
+    cost = 5
+    x = 3
+    y = 15
+    prerequisite = {
+        focus = chbscotland_ASS_military
+    }
+    completion_reward = {
+        annex_country = {
+            target = SCO
+            transfer_troops = yes
+        }
+    }
+}
+shared_focus = {
+    id = chbscotland_PP
+    icon = align_to_scotland
+    cost = 5
+    x = 2
+    y = 11
+    allow_branch = {
+        OR = {
+            has_completed_focus = chbmonfocus_scotland
+            has_completed_focus = chbcomfocus_sco_and_wal
+        }
+        SCO = {
+            OR = {
+                has_government = communist
+                has_government = progressive
+                has_government = social_democrat
+            }
+        }
+        
+    }
+    completion_reward = {
+        SCO = {
+            add_stability = -0.1
+        }
+    }
+}
+shared_focus = {
+    id = chbscotland_PP_war
+    icon = war
+    cost = 5
+    x = 1
+    y = 12
+    mutually_exclusive = {
+        focus = chbscotland_PP_negotiate
+    }
+    prerequisite = {
+        focus = chbscotland_PP
+    }
+    completion_reward = {
+        declare_war_on = {
+            target = SCO
+            type = annex_everything
+        }
+    }
+}
+shared_focus = {
+    id = chbscotland_PP_negotiate
+    icon = communism7
+    cost = 5
+    x = 3
+    y = 12
+    available = {
+        OR = {
+            has_completed_focus = chbmonfocus_support_socdems
+        }
+    }
+    mutually_exclusive = {
+        focus = chbscotland_PP_war
+    }
+    prerequisite = {
+        focus = chbscotland_PP
+    }
+    completion_reward = {
+        add_stability = 0.1
+        SCO = {
+            add_stability = 0.1
+        }
+    }
+}
+shared_focus = {
+    id = chbscotland_PP_NAP
+    icon = improve_relations
+    cost = 5
+    x = 3
+    y = 13
+    prerequisite = {
+        focus = chbscotland_PP_negotiate
+    }
+    completion_reward = {
+        diplomatic_relation = {
+            country = SCO
+            relation = non_aggression_pact
+            active = yes
+        }
+    }
+}
+shared_focus = {
+    id = chbscotland_PP_military
+    icon = communism5
+    cost = 5
+    x = 3
+    y = 14
+    prerequisite = {
+        focus = chbscotland_PP_NAP
+    }
+    completion_reward = {
+        give_military_access = SCO
+        SCO = {
+            give_military_access = CHB
+        }
+    }
+}
+shared_focus = {
+    id = chbscotland_PP_integration
+    icon = align_to_scotland
+    cost = 5
+    x = 3
+    y = 15
+    prerequisite = {
+        focus = chbscotland_PP_military
+    }
+    completion_reward = {
+        annex_country = {
+            target = SCO
+            transfer_troops = yes
+        }
+    }
+}

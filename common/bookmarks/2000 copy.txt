@@ -1,0 +1,79 @@
+bookmarks = {
+	bookmark = {	#Millennium Dawn
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 2000.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "CHB"
+		default = yes
+		
+		"CHB"={
+			history = "CHB_GATHERING_STORM_DESC"
+			ideology = monarchist
+			ideas = {
+				CHB_The_Blip
+				CHB_Socialist_Memery
+				CHB_Sweaties
+			}
+			focuses = {
+				chbfocus_angry_students
+				chbfocus_keep_status_quo
+				chbfocus_angry_ASS
+			}
+		}
+		"SCO"={
+			history = "SCO_GATHERING_STORM_DESC"
+			ideology = reactionary
+			ideas = {
+				CHB_The_Blip
+			}
+		}
+		"FRA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = conservative
+			ideas = {
+				CHB_The_Blip
+			}
+		}
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = communist
+			ideas = {
+				CHB_The_Blip
+			}
+		}
+		"SER"={
+			history = "YUG_GATHERING_STORM_DESC"
+			ideology = conservative
+			ideas = {
+				CHB_The_Blip
+				CHB_yugoslav_partisans
+
+			}
+		}
+		"KAZ"={
+			history = "KAZ_GATHERING_STORM_DESC"
+			ideology = communist
+			ideas = {
+				CHB_The_Blip
+			}
+		}
+		"PRK"={
+			history = "PRK_GATHERING_STORM_DESC"
+			ideology = fascist
+			ideas = {
+				CHB_The_Blip
+			}
+		}
+		
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+		
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

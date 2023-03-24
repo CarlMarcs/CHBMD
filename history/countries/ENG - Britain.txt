@@ -1,0 +1,411 @@
+﻿capital = 126
+
+oob = "ENG_2000"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "ENG_2000_naval_mtg"
+	else = {
+		set_naval_oob = "ENG_2000_naval_legacy"
+	}
+}
+
+set_research_slots = 4
+set_convoys = 1000
+set_stability = 0.45
+
+set_country_flag = country_language_english
+set_country_flag = unique_tank_manufacturer
+set_country_flag = unique_naval_manufacturer
+set_country_flag = unique_aircraft_manufacturer
+
+set_technology = {
+	## Infantry ##
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	night_vision = 1
+	body_armor = 1
+	camouflage = 1
+	marines = 1
+	tech_mountaineers = 1
+	paratroopers = 1
+	
+	## Support Companies ##
+	tech_support = 1
+	basic_train =1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_military_police = 1
+	tech_signal_company = 1
+	tech_maintenance_company = 1
+	
+	## Armor ##
+	main_battle_tank1 = 1
+	main_battle_tank2 = 1
+	main_battle_tank3 = 1
+	light_tank1 = 1
+	mechanised_infantry1 = 1
+	mechanised_infantry2 = 1
+	light_mechanized_infantry1 = 1
+	
+	## Artillery ##
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	rocket_artillery = 1
+	motorized_rocket_unit = 1
+	
+	## Air ##
+	CAS1 = 1
+	CAS2 = 1
+	cv_CAS1 = 1
+	cv_CAS2 = 1
+	fighter1 = 1
+	fighter2 = 1
+	fighter3 = 1
+	cv_fighter1 = 1
+	cv_fighter2 = 1
+	naval_bomber1 = 1
+	naval_bomber2 = 1
+	naval_bomber3 = 1
+	cv_naval_bomber1 = 1
+	cv_naval_bomber2 = 1
+	strategic_bomber1 = 1
+	strategic_bomber2 = 1
+	tactical_bomber1 = 1
+	scout_plane1 = 1
+	
+	## Engineering ##
+	electronic_mechanical_engineering = 1
+	radio = 1
+	atomic_research = 1
+	nuclear_reactor = 1
+	nukes = 1
+	experimental_rockets = 1
+	rocket_engines = 1
+	improved_rocket_engines = 1
+	
+	## Industry ##
+	basic_machine_tools = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	
+	## Doctrines ##
+	trench_warfare = 1
+	fleet_in_being = 1
+	air_superiority = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+		basic_destroyer = 1
+		improved_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		improved_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+		basic_battleship = 1
+		early_carrier = 1
+		basic_carrier = 1
+		early_submarine = 1
+		basic_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		improved_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		improved_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		escort_ship_hull_carrier = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		smoke_generator = 1
+		sonar = 1
+		basic_depth_charges = 1
+		improved_airplane_launcher = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_secondary_battery = 1
+		basic_nuclear_reactors = 1
+		mtg_transport = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+	}
+}
+
+add_ideas = {
+	government_system_constitutional_monarchy
+	national_development_developed
+	welfare_modest_assistance
+	population_growth_stagnation
+	ENG_queen_elizabeth_2
+	idea_eu_member
+	idea_united_nations_security_council_member
+	commonwealth_of_nations_member
+}
+
+give_guarantee = BRU
+give_guarantee = KUR
+give_guarantee = MLT
+give_guarantee = CYP
+
+set_politics = {
+	ruling_party = social_democrat
+	last_election = "1997.5.1"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+    social_democrat = 47.6
+	conservative = 31
+	social_liberal = 16.2
+	reactionary = 3.2
+	democratic_socialist = 0.7
+	progressive = 0.8
+	market_liberal = 0.2
+	fascist = 0.1
+	nationalist = 0.1
+	communist = 0.1
+}
+
+add_opinion_modifier = {
+	target = AST
+	modifier = five_eyes_agreement
+}
+
+add_opinion_modifier = {
+	target = CAN
+	modifier = five_eyes_agreement
+}
+
+add_opinion_modifier = {
+	target = FRA
+	modifier = entente_cordiale
+}
+
+add_opinion_modifier = {
+	target = NZL
+	modifier = five_eyes_agreement
+}
+
+add_opinion_modifier = {
+	target = USA
+	modifier = five_eyes_agreement
+}
+recruit_character = ENG_nick_griffin
+recruit_character = ENG_tom_holmes
+recruit_character = ENG_elizabeth_ii
+recruit_character = ENG_michael_holmes
+recruit_character = ENG_william_hague
+recruit_character = ENG_tony_blair
+recruit_character = ENG_anjem_choudary
+recruit_character = ENG_charles_kennedy
+recruit_character = ENG_natalie_bennett
+recruit_character = ENG_peter_taaffe
+recruit_character = ENG_robert_griffiths
+recruit_character = ENG_sir_stuart_peach
+recruit_character = ENG_patrick_sanders
+recruit_character = ENG_sir_richard_shirreff
+recruit_character = ENG_sir_christopher_deverell
+recruit_character = ENG_glenn_haughton
+recruit_character = ENG_paul_anthony_edward_nanson
+recruit_character = ENG_andrew_hughes
+recruit_character = ENG_philip_napier
+recruit_character = ENG_mike_elviss
+recruit_character = ENG_tom_beckett
+recruit_character = ENG_richard_william_dennis
+recruit_character = ENG_bob_bruce
+recruit_character = ENG_colin_weir
+recruit_character = ENG_ralph_wooddisse
+recruit_character = ENG_charlie_herbert
+recruit_character = ENG_richard_felton
+recruit_character = ENG_tyrone_urch
+recruit_character = ENG_alastair_aitken
+recruit_character = ENG_david_neal
+recruit_character = ENG_benjamin_bathurst
+recruit_character = ENG_mike_walliker
+recruit_character = ENG_james_illingworth
+recruit_character = ENG_russell_la_forte
+recruit_character = ENG_james_robert_chiswell
+recruit_character = ENG_oliver_stokes
+recruit_character = ENG_andy_hadfield
+recruit_character = ENG_david_middleton
+recruit_character = ENG_sir_stephen_hillier
+recruit_character = ENG_robert_magowan
+recruit_character = ENG_matt_pierson
+recruit_character = ENG_richard_cantrill
+recruit_character = ENG_graeme_fraser
+recruit_character = ENG_tony_turner
+recruit_character = ENG_paul_lynch
+recruit_character = ENG_graeme_armour
+recruit_character = ENG_ed_davis
+recruit_character = ENG_patrick_cordingley
+recruit_character = ENG_michael_rose
+recruit_character = ENG_peter_wall
+recruit_character = ENG_richard_dannatt
+recruit_character = ENG_rupert_smith
+recruit_character = ENG_sharon_nesmith
+recruit_character = ENG_jock_slater
+recruit_character = ENG_mark_stanhope
+recruit_character = ENG_michael_boyce
+recruit_character = ENG_philip_jones
+recruit_character = ENG_duncan_potts
+recruit_character = ENG_alasdair_walker
+recruit_character = ENG_ben_key
+recruit_character = ENG_jonathan_woodcock
+recruit_character = ENG_tom_karsten
+recruit_character = ENG_paul_bennett
+recruit_character = ENG_robert_tarrant
+recruit_character = ENG_alex_burton
+recruit_character = ENG_john_weale
+recruit_character = ENG_simon_williams
+recruit_character = ENG_john_clink
+recruit_character = ENG_richard_wolseley
+set_cosmetic_tag = ENG_England
+
+
+### VARIANTS ###
+# 2000 Start #
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	## Corvettes ##
+	create_equipment_variant = { #Corvette 1
+		name = "Hunt class"
+		type = ship_hull_light_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = no
+	}
+	create_equipment_variant = { #Corvette 2
+		name = "Sandown class"
+		type = ship_hull_light_2
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = no
+	}
+	## Frigates ##
+	create_equipment_variant = { #Frigate 2
+		name = "Type 23 Frigate"
+		type = ship_hull_cruiser_2
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			front_1_custom_slot = ship_light_medium_battery_2
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_light_medium_battery_1
+		}
+		obsolete = no
+	}
+	## Destroyers ##
+	create_equipment_variant = { #Destroyer 1
+		name = "Type 42 Destroyer"
+		type = ship_hull_cruiser_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_medium_battery_1
+		}
+		obsolete = no
+	}
+	## Carriers ##
+	create_equipment_variant = { #Carrier 2
+		name = "Invincible class"
+		type = ship_hull_carrier_1
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = carrier_ship_engine_1
+			fixed_ship_secondaries_slot = empty
+			front_1_custom_slot = empty
+		}
+		obsolete = no
+	}
+	## Submarines ##
+	create_equipment_variant = { #Diesel Sub 1A
+		name = "Trafalgar class"
+		type = ship_hull_submarine_1
+		parent_version = 0
+		modules = {
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = { #Nuclear Sub 2A
+		name = "Trident Ballistic Missile Submarine"
+		type = ship_hull_submarine_2
+		parent_version = 0
+		modules = {
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_n1
+			rear_1_custom_slot = ship_torpedo_sub_2
+		}
+		obsolete = no
+	}
+}

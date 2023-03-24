@@ -1,0 +1,501 @@
+focus_tree = {
+    id = yugfocus
+	country = {
+		factor = 0
+        modifier = {
+			add = 10
+			tag = SER
+		} 
+	}
+    default = no
+    continuous_focus_position = {
+		x = 56
+        y = 585
+	}
+    focus = {
+        id = yugfocus_prep_balwar
+        icon = demand_sudetenland
+        available = {
+            always = no
+        }
+        x = 3
+        y = 0
+        completion_reward = {
+            add_war_support = 0.1
+        }
+    }
+    focus = {
+        id = yugfocus_german_support
+        icon = align_to_germany
+        x = 2
+        y = 1
+        cost = 5
+        prerequisite = {
+            focus = yugfocus_prep_balwar
+        }
+        completion_reward = {
+            add_ideas = {
+                YUG_German_Support
+            }
+        }
+    }
+    focus = {
+        id = yugfocus_camphill_support
+        icon = align_to_camphill
+        x = 4
+        y = 1
+        cost = 5
+        prerequisite = {
+            focus = yugfocus_prep_balwar
+        }
+        available = {
+			CHB = {
+                NOT = {
+                    OR = {
+                        has_completed_focus = chbfocus_angry_ASS
+                        has_government = reactionary
+                        has_government = nationalist
+                        has_government = monarchist
+                        has_country_leader = {
+                            character = CHB_Giles_Hill
+                            ruling_only = yes
+                        }
+                    }
+                }
+            }
+		}
+        completion_reward = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment_2
+                amount = 1000
+                producer = CHB
+            }
+        }
+    }
+    focus = {
+        id = yugfocus_forts
+        icon = defence
+        x = 1
+        y = 2
+        prerequisite = {
+            focus = yugfocus_german_support
+        }
+        cost = 5
+        completion_reward = {
+            976 = {
+                add_building_construction = {
+                    type = bunker
+                    level = 10
+                    instant_build = yes
+                    province = {
+                        all_provinces = yes
+                        limit_to_border = yes
+                    }
+                }
+            }
+            1125 = {
+                add_building_construction = {
+                    type = bunker
+                    level = 10
+                    instant_build = yes
+                    province = {
+                        all_provinces = yes
+                        limit_to_border = yes
+                    }
+                }
+            }
+        }
+    }
+    focus = {
+        id = yugfocus_national_unity_gov
+        icon = national_unity
+        x = 3
+        y = 2
+        cost = 5
+        prerequisite = {
+            focus = yugfocus_german_support
+        }
+        completion_reward = {
+            add_stability = 0.1
+            add_war_support = 0.1
+            add_popularity = {
+                ideology = conservative
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = monarchist
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = communist
+                popularity = 0.1
+            }
+        }
+    }
+    focus = {
+        id = yugfocus_offence
+        icon = army_doctrine
+        x = 5
+        y = 2
+        cost = 5
+        prerequisite = {
+            focus = yugfocus_german_support
+        }
+        completion_reward = {
+            custom_effect_tooltip = YUG_Balwar_Troops_Trained
+            hidden_effect = {
+                load_oob = yug_prep_balwar
+            }
+        }
+    }
+    focus = {
+        id = yugfocus_wartime_measures
+        icon = national_unity_red
+        x = 3
+        y = 3
+        cost = 1
+        prerequisite = {
+            focus = yugfocus_forts
+            focus = yugfocus_national_unity_gov
+            focus = yugfocus_offence
+        }
+        available = {
+            has_war_with = BUL
+        }
+        completion_reward = {
+            add_war_support = 1
+            108 = {
+                add_building_construction = {
+                    type = arms_factory
+                    level = 5
+                }
+                add_building_construction = {
+                    type = arms_factory
+                    level = 5
+                }
+                add_building_construction = {
+                    type = arms_factory
+                    level = 5
+                }
+                add_building_construction = {
+                    type = arms_factory
+                    level = 5
+                }
+            }
+        }
+    }
+    focus = {
+        id = yugfocus_a_divided_hugosharveya
+        icon = war3
+        x = 10
+        y = 0
+        cost = 1
+        completion_reward = {
+            add_stability = -0.1
+            hidden_effect = {
+                set_variable = { YUG_Commie_Influence = 0 }
+                set_variable = { YUG_Crusadist_Influence = 0 }
+            }
+        }
+    }
+    focus = {
+        id = yugfocus_liberty_for_all
+        icon = communism5
+        x = 8
+        y = 1
+        cost = 5
+        mutually_exclusive = {
+            focus = yugfocus_stability_for_all
+        }
+        prerequisite = {
+            focus = yugfocus_a_divided_hugosharveya
+        }
+        completion_reward = {
+            custom_effect_tooltip = YUG_Commie_Influence_Up
+            add_political_power = 150
+            hidden_effect = {
+                add_to_variable = { YUG_Commie_Influence = 1 }
+                add_popularity = {
+                    ideology = democratic_socialist
+                    popularity = 0.1
+                }
+            }
+        }
+    }
+    focus = {
+        id = yugfocus_stability_for_all
+        icon = neutrality
+        x = 12
+        y = 1
+        cost = 5
+        prerequisite = {
+            focus = yugfocus_a_divided_hugosharveya
+        }
+        mutually_exclusive = {
+            focus = yugfocus_liberty_for_all
+        }
+        completion_reward = {
+            custom_effect_tooltip = YUG_Crusadist_Influence_Up
+            add_stability = 0.15
+            hidden_effect = {
+                add_to_variable = { YUG_Crusadist_Influence = 1 }
+                add_popularity = {
+                    ideology = monarchist
+                    popularity = 0.1
+                }
+            }
+        }
+    }
+    focus = {
+        id = yugfocus_nationalisation
+        icon = industry_democratic4
+        x = 8
+        y = 2
+        cost = 5
+        prerequisite = {
+            focus = yugfocus_liberty_for_all
+            focus = yugfocus_stability_for_all
+        }
+        mutually_exclusive = {
+            focus = yugfocus_industry_middle_ground
+            focus = yugfocus_privatise
+        }
+        completion_reward = {
+            custom_effect_tooltip = YUG_Commie_Influence_Up
+            107 = {
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 5
+                    instant_build = yes
+                }
+            }
+            45 = {
+                add_building_construction = {
+                    type = arms_factory
+                    level = 3
+                    instant_build = yes
+                }
+            }
+            hidden_effect = {
+                add_to_variable = { YUG_Commie_Influence = 1 }
+                add_popularity = {
+                    ideology = communist
+                    popularity = 0.1
+                }
+            }
+        }
+    }
+    focus = {
+        id = yugfocus_industry_middle_ground
+        icon = industry_democratic
+        x = 10
+        y = 2
+        cost = 5
+        prerequisite = {
+            focus = yugfocus_liberty_for_all
+            focus = yugfocus_stability_for_all
+        }
+        mutually_exclusive = {
+            focus = yugfocus_nationalisation
+            focus = yugfocus_privatise
+        }
+        completion_reward = {
+            custom_effect_tooltip = YUG_Harvey_Stabilise
+            107 = {
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 5
+                    instant_build = yes
+                }
+            }
+            45 = {
+                add_building_construction = {
+                    type = arms_factory
+                    level = 5
+                    instant_build = yes
+                }
+            }
+            hidden_effect = {
+                add_popularity = {
+                    ideology = conservative
+                    popularity = 0.1
+                }
+                if = {
+                    limit = {
+                        check_variable = {
+                            YUG_Commie_Influence > YUG_Crusadist_Influence
+                        }
+                    }
+                    add_to_variable = { YUG_Crusadist_Influence = 1 }
+                }
+                if = {
+                    limit = {
+                        check_variable = {
+                            YUG_Commie_Influence < YUG_Crusadist_Influence
+                        }
+                    }
+                    add_to_variable = { YUG_Commie_Influence = 1 }
+                }
+            }
+        }
+    }
+    focus = {
+        id = yugfocus_privatise
+        icon = industry_democratic2
+        x = 12
+        y = 2
+        prerequisite = {
+            focus = yugfocus_liberty_for_all
+            focus = yugfocus_stability_for_all
+        }
+        mutually_exclusive = {
+            focus = yugfocus_nationalisation
+            focus = yugfocus_industry_middle_ground
+        }
+        completion_reward = {
+            custom_effect_tooltip = YUG_Crusadist_Influence_Up
+            107 = {
+                add_building_construction = {
+                    type = arms_factory
+                    level = 5
+                    instant_build = yes
+                }
+            }
+            45 = {
+                add_building_construction = {
+                    type = arms_factory
+                    level = 3
+                    instant_build = yes
+                }
+            }
+            hidden_effect = {
+                add_to_variable = { YUG_Crusadist_Influence = 1 }
+                add_popularity = {
+                    ideology = monarchist
+                    popularity = 0.1
+                }
+            }
+        }
+    }
+    focus = {
+        id = yugfocus_to_unite_yugoslavia
+        icon = yugoslavia
+        x = 8
+        y = 3
+        prerequisite = {
+            focus = yugfocus_nationalisation
+            focus = yugfocus_industry_middle_ground
+            focus = yugfocus_privatise
+        }
+        mutually_exclusive = {
+            focus = yugfocus_to_free_barbarians
+        }
+        completion_reward = {
+            custom_effect_tooltip = YUG_Commie_Influence_Up
+            hidden_effect = {
+                add_to_variable = { YUG_Commie_Influence = 1 }
+                add_popularity = {
+                    ideology = communist
+                    popularity = 0.1
+                }
+            }
+        }
+    }
+    focus = {
+        id = yugfocus_to_free_barbarians
+        icon = attack_democracy
+        x = 12
+        y = 3
+        prerequisite = {
+            focus = yugfocus_nationalisation
+            focus = yugfocus_industry_middle_ground
+            focus = yugfocus_privatise
+        }
+        mutually_exclusive = {
+            focus = yugfocus_to_unite_yugoslavia
+        }
+        completion_reward = {
+            custom_effect_tooltip = YUG_Crusadist_Influence_Up
+            hidden_effect = {
+                add_to_variable = { YUG_Crusadist_Influence = 1 }
+                add_popularity = {
+                    ideology = monarchist
+                    popularity = 0.1
+                }
+            }
+        }
+    }
+    focus = {
+        id = yugfocus_boiling_point
+        icon = skull
+        x = 10
+        y = 4
+        prerequisite = {
+            focus = yugfocus_to_unite_yugoslavia
+            focus = yugfocus_to_free_barbarians
+        }
+        completion_reward = {
+            custom_effect_tooltip = YUG_Init_PowerStruggle_End
+            hidden_effect = {
+                if = {
+                    limit = {
+                        check_variable = {YUG_Crusadist_Influence > YUG_Commie_Influence}
+                    }
+                    add_popularity = {
+                        ideology = monarchist
+                        popularity 0.2
+                    }
+                    set_politics = {
+                        ruling_party = monarchist
+                        elections_allowed = no
+                        election_frequency = 60
+                    }
+                    remove_ideas = {
+                        CHB_yugoslav_partisans
+                        CHB_yugoslav_resistance
+                    }
+                }
+                else_if = {
+                    limit = {
+                        check_variable = {YUG_Commie_Influence > YUG_Crusadist_Influence}
+                    }
+                    add_popularity = {
+                        ideology = communist
+                        popularity = 0.1
+                    }
+                    set_politics = {
+                        ruling_party = communist
+                        elections_allowed = no
+                        election_frequency = 60
+                    }
+                    remove_ideas = {
+                        CHB_crusadist_militias
+                    }
+                }
+                else_if = {
+                    limit = {
+                        check_variable = {YUG_Crusadist_Influence = YUG_Commie_Influence}
+                    }
+                    add_popularity = {
+                        ideology = conservative
+                        popularity = 0.1
+                    }
+                    add_popularity = {
+                        ideology = social_liberal
+                        popularity = 0.2
+                    }
+                    remove_ideas = {
+                        CHB_yugoslav_partisans
+                        CHB_yugoslav_resistance
+                        CHB_crusadist_militias
+                    }
+                    set_politics = {
+                        ruling_party = conservative
+                        election_frequency = 60
+                        elections_allowed = yes
+                    }
+                }
+            }
+        }
+    }
+}

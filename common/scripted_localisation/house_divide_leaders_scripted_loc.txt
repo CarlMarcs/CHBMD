@@ -1,0 +1,82 @@
+defined_text = {
+    name = GetHouseLeaderBeufort
+    text = {
+        trigger = {
+            NOT = {
+                has_country_flag = OMalley_left
+            }
+        }
+        localization_key = Steven_Omalley
+    }
+}
+defined_text = {
+    name = GetHeadofBeaufortTitle
+    text = {
+        localization_key = head_of_beaufort
+    }
+}
+defined_text = {
+    name = GetHoHPortraitBeaufort
+    text = {
+        trigger = {
+            NOT = {
+                has_country_flag = OMalley_left
+            }
+        }
+        localization_key = GFX_house_divide_omalley
+    }
+}
+defined_text = {
+    name = GetHeadofSeymourTitle
+    text = {
+        localization_key = head_of_seymour
+    }
+}
+defined_text = {
+    name = GetHoHPortraitSeymour
+    text = {
+        localization_key = GFX_house_divide_dowling
+    }
+}
+defined_text = {
+    name = GetHouseLeaderSeymour
+    text = {
+        localization_key = Thomas_Dowling
+    }
+}
+defined_text = {
+    name = GetHeadofHowardTitle
+    text = {
+        localization_key = head_of_howard
+    }
+}
+defined_text = {
+    name = GetHoHPortraitHoward
+    text = {
+        localization_key = GFX_house_divide_giles
+    }
+}
+defined_text = {
+    name = GetHouseLeaderHoward
+    text = {
+        localization_key = Giles_Hill
+    }
+}
+defined_text = {
+    name = GetHeadofTudorTitle
+    text = {
+        localization_key = head_of_tudor
+    }
+}
+defined_text = {
+    name = GetHoHPortraitTudor
+    text = {
+        localization_key = GFX_house_divide_nash
+    }
+}
+defined_text = {
+    name = GetHouseLeaderTudor
+    text = {
+        localization_key = Andy_Nash
+    }
+}

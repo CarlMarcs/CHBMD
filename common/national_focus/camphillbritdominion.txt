@@ -1,0 +1,123 @@
+focus_tree = {
+    id = chbbritfocus
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = CHB
+        }
+    }
+    focus = {
+        id = chbbritfocus_counterrevolution
+        x = 3
+        y = 0
+        cost = 5
+        icon = democracy
+        completion_reward = {
+            add_popularity = {
+                ideology = social_liberal
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = conservative
+                popularity = 0.1
+            }
+        }
+    }
+    focus = {
+        id = chbbritfocus_attack_radicals
+        x = 2
+        y = 1
+        cost = 5
+        icon = attack_communism
+        prerequisite = {
+            focus = chbbritfocus_counterrevolution
+        }
+        completion_reward = {
+            remove_ideas = CHB_Socialist_Memery
+            add_popularity = {
+                ideology = communist
+                popularity = -1
+            }
+            add_popularity = {
+                ideology = democratic_socialist
+                popularity = -1
+            }
+            add_manpower = -1000
+            add_stability = -0.1
+        }
+    }
+    focus = {
+        id = chbbritfocus_befriend_moderates
+        x = 4
+        y = 1
+        cost = 5
+        icon = alliance
+        prerequisite = {
+            focus = chbbritfocus_counterrevolution
+        }
+        completion_reward = {
+            add_popularity = {
+                ideology = social_democrat
+                popularity = 0.05
+            }
+            set_party_name = {
+                ideology = social_democrat
+                long_name = CHB_social_democratic_party_Rudd_long
+                name = CHB_social_democratic_party_Rudd
+            }
+            add_country_leader_role = {
+                Character = CHB_Andrew_Rudd
+                Promote_leader = yes
+                country_leader = {
+                    ideology = social_democrat_ideology
+                    expire = "2069.1.1.1"
+                }
+            }
+        }
+    }
+    focus = {
+        id = chbbritfocus_invite_windsors
+        icon = monarchy
+        cost = 5
+        x = 3
+        y = 2
+        prerequisite = {
+            focus = chbbritfocus_attack_radicals
+        }
+        prerequisite = {
+            focus = chbbritfocus_befriend_moderates
+        }
+        completion_reward = {
+            add_popularity = {
+                ideology = monarchist
+                popularity = -1
+            }
+            set_party_name = {
+                ideology = monarchist
+                long_name = ENG_monarchist_party_long
+                name = ENG_monarchist_party
+            }
+        }
+    }
+    focus = {
+        id = chbbritfocus_annexed
+        icon = align_to_britain
+        cost = 2
+        x = 3
+        y = 3
+        prerequisite = {
+            focus = chbbritfocus_invite_windsors
+        }
+        completion_reward = {
+            custom_effect_tooltip = game_end
+            ENG = {
+                annex_country = {
+                    target = CHB
+                    transfer_troops = yes
+                }
+                add_state_core = 918
+            }
+        }
+    }
+}

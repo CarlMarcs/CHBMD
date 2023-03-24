@@ -1,0 +1,125 @@
+characters={
+
+	#Delete non-existent figure - Ran Mitake
+	
+	# The person 'Abdifatah Sheikh Abdullahi' couldn't find any information on any site, such as Wikipedia, Google searches, etc.
+	# In the current version, this figure appears as the leader of Ethiopia in 2000. but, In fact, the prime minister of Ethiopia in 2000 was Meles Zenawi.
+	
+	#ETH_abdifatah_sheikh_abdullahi={
+	#	name="Abdifatah Sheikh Abdullahi"
+	#	portraits={
+	#		civilian={
+	#			large="gfx/leaders/ETH/Abdifatah_Abdullahi.dds" #person who probably doesn't exist But whose picture is his?
+	#		}
+	#	}
+	#	country_leader={
+	#		ideology=democratic_socialist_ideology
+	#		expire="1.1.1.1"
+	#		id=-1
+	#	}
+	#}
+	
+	ETH_meles_zenawi={
+		name="Meles Zenawi"
+		portraits={
+			civilian={
+				large="gfx/leaders/ETH/Meles_Zenawi.dds"
+			}
+		}
+		country_leader={
+			ideology=democratic_socialist_ideology
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	ETH_birtukan_mideksa={
+		name="Birtukan Mideksa"
+		portraits={
+			civilian={
+				large="gfx/leaders/ETH/Birtukan_Mideksa.dds"
+			}
+		}
+		country_leader={
+			ideology=liberalist
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	ETH_hailu_shawul={
+		name="Hailu Shawul"
+		portraits={
+			civilian={
+				large="gfx/leaders/ETH/Hailu_Shawul.dds"
+			}
+		}
+		country_leader={
+			ideology=social_democrat_ideology
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	ETH_dr_chane_kebede={
+		name="Dr. Chane Kebede"
+		portraits={
+			civilian={
+				large="gfx/leaders/ETH/Chane_Kebede.dds"
+			}
+		}
+		country_leader={
+			ideology=constitutionalist
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	ETH_zera_yacob_amha_selassie={
+		name="Zera Yacob Amha Selassie"
+		portraits={
+			civilian={
+				large="gfx/leaders/ETH/Zera_Selassie.dds"
+			}
+		}
+		country_leader={
+			ideology=absolute_monarchist
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	ETH_birhanu_julla={
+		name="Birhanu Julla"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+			army={
+				large="gfx/leaders/ETH/generals/Birhanu_Julla.dds"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	ETH_samora_yunis={
+		name="Samora Yunis"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+			army={
+				large="gfx/leaders/ETH/generals/Samora_Yunis.dds"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+}

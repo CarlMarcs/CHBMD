@@ -1,0 +1,390 @@
+﻿capital = 64
+
+oob = "GER_2000"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "GER_2000_naval_mtg"
+	else = {
+		set_naval_oob = "GER_2000_naval_legacy"
+	}
+}
+
+set_research_slots = 5
+set_convoys = 400
+set_stability = 0.7
+
+set_war_support = 0.15
+
+set_country_flag = country_language_german
+set_country_flag = unique_tank_manufacturer
+set_country_flag = unique_naval_manufacturer
+#set_country_flag = unique_aircraft_manufacturer
+
+set_technology = {
+	## Infantry ##
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	night_vision = 1
+	body_armor = 1
+	camouflage = 1
+	tech_mountaineers = 1
+	paratroopers = 1
+	
+	## Support Companies ##
+	tech_support = 1
+	basic_train =1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	
+	## Armor ##
+	main_battle_tank1 = 1
+	main_battle_tank2 = 1
+	main_battle_tank3 = 1
+	light_tank1 = 1
+	mechanised_infantry1 = 1
+	mechanised_infantry2 = 1
+	light_mechanized_infantry1 = 1
+	
+	## Artillery ##
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	
+	## Air ##
+	CAS1 = 1
+	CAS2 = 1
+	fighter1 = 1
+	fighter2 = 1
+	fighter3 = 1
+	naval_bomber1 = 1
+	naval_bomber2 = 1
+	strategic_bomber1 = 1
+	tactical_bomber1 = 1
+	
+	## Engineering ##
+	electronic_mechanical_engineering = 1
+	radio = 1
+	
+	## Industry ##
+	basic_machine_tools = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	
+	## Doctrines ##
+	mobile_warfare = 1
+	fleet_in_being = 1
+	formation_flying = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_submarine = 1
+		basic_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		smoke_generator = 1
+		sonar = 1
+		basic_depth_charges = 1
+		improved_airplane_launcher = 1
+		basic_cruiser_armor_scheme = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_secondary_battery = 1
+		mtg_transport = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+	}
+}
+
+add_ideas = {
+	centralization_federal
+	government_system_parliamentary_republic
+	national_development_developed
+	population_growth_decline
+	limited_conscription
+	free_trade
+	immigration_policy_loose_regulations
+	welfare_considerable_assistance
+}
+
+set_politics = {
+	ruling_party = communist
+	last_election = "1998.9.27"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	communist = 45
+	democratic_socialist = 15
+	social_democrat = 10
+	social_liberal = 5
+	market_liberal = 5
+	fascist = 10
+	nationalist = 5
+	reactionary = 5
+}
+
+#create_import = {
+#	resource = oil
+#	factories = 3
+#	exporter = NOR
+#}
+
+add_ideas = {
+	CHB_The_Blip
+}
+recruit_character = GER_Konstantin
+recruit_character = GER_volker_wieker
+recruit_character = GER_wolfgang_schneiderhan
+recruit_character = GER_hanspeter_von_kirchbach
+recruit_character = GER_bruno_kasdorf
+recruit_character = GER_jörg_vollmer
+recruit_character = GER_martin_schelleis
+recruit_character = GER_richard_roßmanith
+recruit_character = GER_hanserich_antoni
+recruit_character = GER_joachim_wundrak
+recruit_character = GER_peter_bohrer
+recruit_character = GER_helmut_schütz
+recruit_character = GER_eberhard_zorn
+recruit_character = GER_ansgar_rieks
+recruit_character = GER_dieter_warnecke
+recruit_character = GER_josef_blotz
+recruit_character = GER_dieter_naskrent
+recruit_character = GER_karl_müllner
+recruit_character = GER_klaus_reinhardt
+recruit_character = GER_karlheinz_lather
+recruit_character = GER_joachim_spiering
+recruit_character = GER_rainer_schuwirth
+recruit_character = GER_dieter_stöckmann
+recruit_character = GER_hanslothar_domröse
+recruit_character = GER_werner_freers
+recruit_character = GER_egon_ramms
+recruit_character = GER_wolfdieter_langheld
+recruit_character = GER_ludwig_leinhos
+recruit_character = GER_hanswerner_wiermann
+recruit_character = GER_franz_xaver_pfrengle
+recruit_character = GER_stephan_thomas
+recruit_character = GER_walter_huhn
+recruit_character = GER_gert_gawellek
+recruit_character = GER_carsten_jahnel
+recruit_character = GER_volker_thomas
+recruit_character = GER_christof_munzlinger
+recruit_character = GER_bernd_schuett
+recruit_character = GER_jürgen_weigt
+recruit_character = GER_dirk_backen
+recruit_character = GER_andreas_marlow
+recruit_character = GER_jürgen_setzer
+recruit_character = GER_thorsten_poschwatta
+recruit_character = GER_udo_schnittker
+recruit_character = GER_alexander_sollfrank
+recruit_character = GER_dirk_faust
+recruit_character = GER_markus_laubenthal
+recruit_character = GER_ruprecht_von_butler
+recruit_character = GER_heico_hübner
+recruit_character = GER_frank_leidenberger
+recruit_character = GER_gert_hagemann
+recruit_character = GER_walter_spindler
+recruit_character = GER_manfred_hofmann
+recruit_character = GER_dag_baehr
+recruit_character = GER_carsten_jacobson
+recruit_character = GER_erich_pfeffer
+recruit_character = GER_erhard_bühler
+recruit_character = GER_gunter_schneider
+recruit_character = GER_jörg_see
+recruit_character = GER_markus_kneip
+recruit_character = GER_werner_albl
+recruit_character = GER_oliver_kohl
+recruit_character = GER_kai_rohrschneider
+recruit_character = GER_wilhelm_grün
+recruit_character = GER_manfred_nielson
+recruit_character = GER_rainer_feist
+recruit_character = GER_axel_meissel
+recruit_character = GER_henrik_riechert
+recruit_character = GER_axel_schimpf
+recruit_character = GER_andreas_krause
+recruit_character = GER_joachim_rühle
+recruit_character = GER_rainer_brinkmann
+recruit_character = GER_carsten_stawitzki
+recruit_character = GER_thomas_jugel
+recruit_character = GER_jan_christian_kaack
+recruit_character = GER_christoph_müllermeinhard
+recruit_character = GER_jean_martens
+recruit_character = GER_axel_deertz
+recruit_character = GER_jens_nemeyer
+recruit_character = GER_kayachim_schönbach
+recruit_character = GER_rainer_endres
+recruit_character = GER_advisor_GER_alexander_gauland
+recruit_character = GER_advisor_GER_anton_hofreiter
+recruit_character = GER_advisor_GER_heinrich_hiesinger
+recruit_character = GER_advisor_GER_sophie_princess_of_prussia
+recruit_character = GER_advisor_GER_thomas_de_maiziere
+recruit_character = GER_advisor_GER_frank_haun
+recruit_character = GER_advisor_GER_maybritt_illner
+recruit_character = GER_advisor_GER_hans_eichel
+recruit_character = GER_advisor_GER_lutz_bachmann
+recruit_character = GER_advisor_GER_heiko_maas
+recruit_character = GER_advisor_GER_thomas_oppermann
+recruit_character = GER_advisor_GER_katja_kipping
+recruit_character = GER_advisor_GER_werner_mueller
+recruit_character = GER_advisor_GER_gerd_mueller
+recruit_character = GER_advisor_GER_kristos_thingilouthis
+recruit_character = GER_advisor_GER_hans_peter_brenner
+recruit_character = GER_advisor_GER_sven_lau
+recruit_character = GER_advisor_GER_renate_kunast
+recruit_character = GER_advisor_GER_alexander_dobrindt
+recruit_character = GER_advisor_GER_sigmar_gabriel
+recruit_character = GER_advisor_GER_peter_frank
+recruit_character = GER_advisor_GER_dirk_rossmann
+recruit_character = GER_advisor_GER_horst_seehofer
+recruit_character = GER_advisor_GER_wolfgang_schaeuble
+recruit_character = GER_advisor_GER_ursula_von_der_leyen
+recruit_character = GER_advisor_GER_karl_theodor_zu_guttenberg
+recruit_character = GER_advisor_GER_frank_walter_steinmeier
+recruit_character = GER_advisor_GER_brigitte_zypries
+recruit_character = GER_advisor_GER_wolfgang_kubicki
+recruit_character = GER_advisor_GER_kurt_bodewig
+recruit_character = GER_advisor_GER_heidemarie_zieczorek_zeul
+recruit_character = GER_advisor_GER_frank_franz
+recruit_character = GER_advisor_GER_peter_struck
+
+
+
+### VARIANTS ###
+# 2000 Start #
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	## Corvettes ##
+	create_equipment_variant = { #Corvette 1
+		name = "Frankenthal class"
+		type = ship_hull_light_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = { #Corvette 2
+		name = "Ensdorf class"
+		type = ship_hull_light_2
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = no
+	}
+	## Frigates ##
+	create_equipment_variant = { #Frigate 1
+		name = "Bremen class"
+		type = ship_hull_cruiser_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_light_medium_battery_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = { #Frigate 2
+		name = "Brandenburg class"
+		type = ship_hull_cruiser_2
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			front_1_custom_slot = ship_light_medium_battery_2
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_light_medium_battery_1
+		}
+		obsolete = no
+	}
+	## Destroyers ##
+	create_equipment_variant = { #Destroyer 1
+		name = "Lütjens class"
+		type = ship_hull_cruiser_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_medium_battery_1
+		}
+		obsolete = no
+	}
+	## Submarines ##
+	create_equipment_variant = { #Diesel Sub 1
+		name = "Type 206 Submarine"
+		type = ship_hull_submarine_1
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = no
+	}
+}

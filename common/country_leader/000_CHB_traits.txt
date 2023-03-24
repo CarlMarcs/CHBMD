@@ -1,0 +1,162 @@
+leader_traits = {
+    impostor_syndrome = {
+		random = no
+		stability_factor = 0.1
+		political_power_gain = 0.5
+	}
+	always_five = {
+		random = no
+		stability_factor = 0.05
+		political_power_gain = 5
+		war_support_weekly = 0.05
+		nuclear_production_factor = 0.05
+		global_building_slots = 0.05
+	}
+	moderate_coke_addict = {
+		random = no
+		stability_factor = 0.05
+		political_power_gain = 0.1
+		democratic_socialist_drift = 0.1
+		communist_drift = 0.1
+	}
+	Incompetent = {
+		random = no
+		research_speed_factor = -0.5
+		#mussolini_factor = 10
+	}
+	Unqualified = {
+		random = no
+		research_speed_factor = -100
+	}
+	head_haver = {
+		sprite = 04
+		random = no
+		stability_weekly = -0.069
+		war_support_weekly = 0.42
+	}
+	theory_of_everything = {
+		sprite = 6
+		random = no
+		nuclear_production_factor = 1
+		research_speed_factor = 1
+		local_resources_factor = 2
+		improve_relations_maintain_cost_factor = -0.5
+		political_power_gain = 3
+		production_factory_efficiency_gain_factor = 0.5
+		base_fuel_gain = 100 
+		supply_factor = 3
+		global_building_slots = 10
+		industry_repair_factor = 0.3
+	}
+	tory_drummer = {
+		random = no	
+		drift_defence_factor = 0.3
+		monarchist_drift = 0.1
+		conservative_drift = 0.1
+		social_liberal_drift = -0.1
+		social_democrat_drift = -0.1
+		democratic_socialist_drift = -0.1
+		progressive_drift = -0.1
+		communist_drift = -0.1
+		sprite = 27
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	edi_founder = {
+		random = no
+		sprite = 02
+		autonomy_manpower_share = 0.5
+		weekly_manpower = 10000
+		conscription = 0.5
+		recruitable_population = 0.3
+		communist_drift = 0.1
+		democratic_socialist_drift = 0.1
+		progressive_drift = 0.1
+	}
+	professional_bagpipe_player = {
+		random = no
+		sprite = 30
+		subjects_autonomy_gain = -0.5
+		compliance_growth = 2
+		required_garrison_factor = 0
+		resistance_growth = -2
+	}
+	timothy_watkins = {
+		random = no
+		sprite = 03
+		stability_factor = 0.3
+		stability_weekly = 0.01
+		drift_defence_factor = 0.3
+		social_democrat_drift = -0.1
+		democratic_socialist_drift = -0.1
+		progressive_drift = -0.1
+		communist_drift = -0.1
+		reactionary_drift = 0.1
+
+	}
+	cross_country_runner = {
+		random = no
+		
+		nationalist_drift = 0.10
+		offence = 1.5
+		defence = 1.5
+		
+		sprite = 28
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	bowen_friend = {
+		random = no
+		
+		monarchist_drift = 0.10
+		stability_weekly = 0.05
+		research_speed_factor = 1
+		consumer_goods_factor = 0.15
+		
+		sprite = 30
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	recruiter_in_sheep = {
+		random = no
+		offence = 1
+		defence = 1
+		weekly_manpower = 10000
+		communist_drift = 0.10
+		
+		sprite = 12
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	communist_revolutionary = {
+		random = no
+		
+		communist_drift = 0.10
+		democratic_socialist_drift = 0.05
+		
+		sprite = 12
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	in_the_dark = {
+		random = no
+		fascist_drift = 0.15
+		monthly_population = 500
+	}
+	educake_enthusiast = {
+        random = no
+        research_speed_factor = 2
+        nuclear_production_factor = 2
+        party_popularity_stability_factor = 0.2
+        stability_weekly = 0.2
+        enemy_justify_war_goal_time = 3
+        justify_war_goal_time = -3
+        annex_cost_factor = -1
+        puppet_cost_factor = -1
+    }
+}

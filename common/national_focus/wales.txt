@@ -1,0 +1,347 @@
+focus_tree = {
+    id = walfocus
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = WAL
+        }
+    }
+    focus = {
+        id = walfocus_welsh_empire_eternal
+        icon = align_to_wales
+        x = 3
+        y = 0
+        cost = 1
+        completion_reward = {
+            add_political_power = 150
+        }
+    }
+    focus = {
+        id = walfocus_alliance_split
+        icon = alliance_blue
+        cost = 5
+        x = 3
+        y = 1
+        prerequisite = {
+            focus = walfocus_welsh_empire_eternal
+        }
+        completion_reward = {
+            set_party_name = {
+                ideology = social_democrat
+                long_name = WAL_socdem_Butcher_long
+                name = WAL_socdem_Butcher
+            }
+            set_party_name = {
+                ideology = progressive
+                long_name = WAL_progressive_Butcher_long
+                name = WAL_progressive_Butcher
+            }
+            set_party_name = {
+                ideology = democratic_socialist
+                long_name = WAL_demsoc_Butcher_long
+                name = WAL_demsoc_Butcher
+            }
+            set_party_name = {
+                ideology = social_liberal
+                long_name = WAL_soclib_Butcher_long
+                name = WAL_soclib_Butcher
+            }
+            country_event = wales.1
+            hidden_effect = {
+                set_variable = { WAL_Watkins_Influence = 0 }
+                set_variable = { WAL_Butcher_Influence = 0 }
+                set_variable = { WAL_Lamb_Influence = 0 }
+            }
+        }
+    }
+    focus = {
+        id = walfocus_meet_companies
+        icon = industry_democratic
+        cost = 4
+        x = 1
+        y = 2
+        prerequisite = {
+            focus = walfocus_alliance_split
+        }
+        mutually_exclusive = {
+            focus = walfocus_meet_people
+            focus = walfocus_meet_sheep
+        }
+        completion_reward = {
+            custom_effect_tooltip = WAL_Watkins_Influence_Up
+            add_popularity = {
+                ideology = reactionary
+                popularity = 0.1
+            }
+            hidden_effect = {
+                add_to_variable = { WAL_Watkins_Influence = 1 }
+            }
+        }
+    }
+    focus = {
+        id = walfocus_meet_people
+        icon = national_unity
+        cost = 4
+        x = 3
+        y = 2
+        prerequisite = {
+            focus = walfocus_alliance_split
+        }
+        mutually_exclusive = {
+            focus = walfocus_meet_companies
+            focus = walfocus_meet_sheep
+        }
+        completion_reward = {
+            custom_effect_tooltip = WAL_Butcher_Influence_Up
+            add_popularity = {
+                ideology = democratic_socialist
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = social_democrat
+                popularity = 0.1
+            }
+            hidden_effect = {
+                add_to_variable = { WAL_Butcher_Influence = 1 }
+            }
+        }
+    }
+    focus = {
+        id = walfocus_meet_sheep
+        icon = align_to_baa
+        cost = 4
+        x = 5
+        y = 2
+        prerequisite = {
+            focus = walfocus_alliance_split
+        }
+        mutually_exclusive = {
+            focus = walfocus_meet_companies
+            focus = walfocus_meet_people
+        }
+        completion_reward = {
+            custom_effect_tooltip = WAL_Lamb_Influence_Up
+            add_popularity = {
+                ideology = communist
+                popularity = 0.1
+            }
+            hidden_effect = {
+                add_to_variable = { WAL_Lamb_Influence = 1}
+            }
+        }
+    }
+    focus = {
+        id = walfocus_german_support
+        icon = align_to_germany
+        cost = 4
+        x = 5
+        y = 3
+        prerequisite = {
+            focus = walfocus_meet_companies
+            focus = walfocus_meet_people
+            focus = walfocus_meet_sheep
+        }
+        mutually_exclusive = {
+            focus = walfocus_american_support
+            focus = walfocus_russian_support
+        }
+        completion_reward = {
+            custom_effect_tooltip = WAL_Lamb_Influence_Up
+            add_popularity = {
+                ideology = communist
+                popularity = 0.1
+            }
+            add_opinion_modifier = {
+                target = GER
+                modifier = declaration_of_friendship
+            }
+            GER = {
+                add_opinion_modifier = {
+                    target = WAL
+                    modifier = declaration_of_friendship
+                }
+            }
+            hidden_effect = {
+                add_to_variable = { WAL_Lamb_Influence = 1}
+            }
+        }
+    }
+    focus = {
+        id = walfocus_american_support
+        icon = align_to_america2
+        cost = 4
+        x = 3
+        y = 3
+        prerequisite = {
+            focus = walfocus_meet_companies
+            focus = walfocus_meet_people
+            focus = walfocus_meet_sheep
+        }
+        mutually_exclusive = {
+            focus = walfocus_german_support
+            focus = walfocus_russian_support
+        }
+        completion_reward = {
+            custom_effect_tooltip = WAL_Butcher_Influence_Up
+            add_popularity = {
+                ideology = democratic_socialist
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = social_democrat
+                popularity = 0.1
+            }
+            add_opinion_modifier = {
+                target = USA
+                modifier = declaration_of_friendship
+            }
+            USA = {
+                add_opinion_modifier = {
+                    target = WAL
+                    modifier = declaration_of_friendship
+                }
+            }
+            hidden_effect = {
+                add_to_variable = { WAL_Butcher_Influence = 1 }
+            }
+        }
+    }
+    focus = {
+        id = walfocus_russian_support
+        icon = align_to_russia
+        cost = 4
+        x = 1
+        y = 3
+        prerequisite = {
+            focus = walfocus_meet_companies
+            focus = walfocus_meet_people
+            focus = walfocus_meet_sheep
+        }
+        mutually_exclusive = {
+            focus = walfocus_american_support
+            focus = walfocus_german_support
+        }
+        completion_reward = {
+            custom_effect_tooltip = WAL_Watkins_Influence_Up
+            add_popularity = {
+                ideology = reactionary
+                popularity = 0.1
+            }
+            add_opinion_modifier = {
+                target = SOV
+                modifier = declaration_of_friendship
+            }
+            SOV = {
+                add_opinion_modifier = {
+                    target = WAL
+                    modifier = declaration_of_friendship
+                }
+            }
+            hidden_effect = {
+                add_to_variable = { WAL_Watkins_Influence = 1 }
+            }
+        }
+    }
+    focus = {
+        id = walfocus_nationalist_sentiment
+        icon = national_greatness
+        x = 1
+        y = 4
+        cost = 4
+        prerequisite = {
+            focus = walfocus_russian_support
+            focus = walfocus_american_support
+            focus = walfocus_german_support
+        }
+        mutually_exclusive = {
+            focus = walfocus_socialist_sentiment
+            focus = walfocus_anti_anglo_sentiment
+        }
+        completion_reward = {
+            custom_effect_tooltip = WAL_Watkins_Influence_Up
+            add_popularity = {
+                ideology = fascist
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = nationalist
+                popularity = 0.1
+            }
+            hidden_effect = {
+                add_to_variable = { WAL_Watkins_Influence = 1 }
+            }
+        }
+    }
+    focus = {
+        id = walfocus_socialist_sentiment
+        icon = communism7
+        x = 3
+        y = 4
+        cost = 4
+        prerequisite = {
+            focus = walfocus_russian_support
+            focus = walfocus_american_support
+            focus = walfocus_german_support
+        }
+        mutually_exclusive = {
+            focus = walfocus_nationalist_sentiment
+            focus = walfocus_anti_anglo_sentiment
+        }
+        completion_reward = {
+            custom_effect_tooltip = WAL_Butcher_Influence_Up
+            add_popularity = {
+                ideology = democratic_socialist
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = progressive
+                popularity = 0.1
+            }
+            hidden_effect = {
+                add_to_variable = { WAL_Butcher_Influence = 1 }
+            }
+        }
+    }
+    focus = {
+        id = walfocus_anti_anglo_sentiment
+        icon = enemy_of_britain
+        x = 5
+        y = 4
+        cost = 4
+        prerequisite = {
+            focus = walfocus_russian_support
+            focus = walfocus_american_support
+            focus = walfocus_german_support
+        }
+        mutually_exclusive = {
+            focus = walfocus_nationalist_sentiment
+            focus = walfocus_socialist_sentiment
+        }
+        completion_reward = {
+            custom_effect_tooltip = WAL_Lamb_Influence_Up
+            add_popularity = {
+                ideology = communist
+                popularity = 0.1
+            }
+            hidden_effect = {
+                add_to_variable = { WAL_Lamb_Influence = 1}
+            }
+        }
+    }
+    focus = {
+        id = walfocus_struggle_outcome
+        icon = alliance
+        cost = 10
+        x = 3
+        y = 5
+        prerequisite = {
+            focus = walfocus_nationalist_sentiment
+            focus = walfocus_socialist_sentiment
+            focus = walfocus_anti_anglo_sentiment
+        }
+        completion_reward = {
+            country_event = wales.2
+        }
+    }
+}

@@ -1,0 +1,34 @@
+# Written and Edited by E. Wolfe
+
+spriteTypes = {
+	
+	
+	SpriteType = {
+		name = "GFX_idea_US_bombing"
+		texturefile = "gfx/interface/ideas/USA/usa_bombing.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_free_kurdistan"
+		texturefile = "gfx/interface/ideas/KUR/free_kurdistan.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_iraq_army_bad"
+		texturefile = "gfx/interface/ideas/IRQ/iraq_army_bad.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_IRQ_MIC"
+		texturefile = "gfx/interface/ideas/IRQ/MIC.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_IRQ_SCEEI"
+		texturefile = "gfx/interface/ideas/IRQ/SCEEI.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_northern_alliance"
+		texturefile = "gfx/interface/ideas/AFG/northern_alliance.dds"
+	}
+
+	
+}

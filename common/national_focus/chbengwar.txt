@@ -1,0 +1,222 @@
+shared_focus = {
+    id = chbengwar_init
+    icon = attack_monarchy3
+    x = 10
+    y = 11
+    cost = 0
+    bypass = {
+        has_war_with = ENG
+    }
+    available = {
+        has_war_with = ENG
+    }
+    completion_reward = {
+        add_war_support = 0.2
+    }
+}
+shared_focus = {
+    id = chbengwar_plundering
+    icon = production
+    relative_position_id = chbengwar_init
+    x = 0
+    y = 1
+    cost = 2
+    prerequisite = {
+        focus = chbengwar_init
+    }
+    completion_reward = {
+        add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 5000
+            producer = ENG
+        }
+        ENG = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = -5000
+            }
+        }
+    }
+}
+shared_focus = {
+    id = chbengwar_red_guards
+    icon = communism5
+    cost = 1
+    relative_position_id = chbengwar_init
+    x = -2
+    y = 2
+    prerequisite = {
+        focus = chbengwar_plundering
+    }
+    available = {
+        OR = {
+            has_government = communist
+            has_government = democratic_socialist
+            has_government = social_democrat
+            has_country_leader = {
+                character = CHB_Thomas_Pitfield
+                ruling_only = yes
+            }
+        }
+    }
+    completion_reward = {
+        add_popularity = {
+            ideology = communist
+            popularity = 0.03
+        }
+        add_corps_commander_role = {
+            character = CHB_Hun_Kang
+            skill = 4
+            attack_skill = 3
+            defence_skill = 3
+            planning_skill = 4
+            logistics_skill = 5
+        }
+        load_oob = CHB_Red_Guards
+        if = {
+            limit = {
+                has_country_leader = {
+                    character = CHB_Josip_Broz_Tito
+                    ruling_only = yes
+                }
+            }
+            custom_effect_tooltip = Tito_Red_Guards_init_TT
+            set_global_flag = CHB_Tito_Red_Guards
+        }
+    }
+}
+shared_focus = {
+    id = chbengwar_adult_units
+    icon = small_arms
+    cost = 1
+    x = 0
+    y = 2
+    prerequisite = {
+        focus = chbengwar_plundering
+    }
+    available = {
+        NOT = {
+            OR = {
+                has_country_leader = {
+                    character = CHB_Zeeshan
+                    ruling_only = yes
+                }
+                has_country_leader = {
+                    character = CHB_Thomas_Pitfield
+                    ruling_only = yes
+                }
+            }
+        }
+        any_state = {
+            NOT = {
+                is_owned_by = CHB
+                
+            }
+            is_controlled_by = CHB
+        }
+    }
+    relative_position_id = chbengwar_init
+    completion_reward = {
+        load_oob = CHB_British_Infantry
+    }
+}
+shared_focus = {
+    id = chbengwar_sweats
+    icon = military_mission
+    cost = 1
+    x = 2
+    y = 2
+    relative_position_id = chbengwar_init
+    prerequisite = {
+        focus = chbengwar_plundering
+    }
+    available = {
+        OR = {
+            has_government = reactionary
+            has_government = nationalist
+            has_government = fascist
+            has_completed_focus = chbmonfocus_support_ass
+        }
+    }
+    completion_reward = {
+        load_oob = CHB_Sweats
+    }
+}
+shared_focus = {
+    id = chbengwar_for_people
+    icon = democracy
+    cost = 2
+    x = -1
+    y = 3
+    relative_position_id = chbengwar_init
+    prerequisite = {
+        focus = chbengwar_red_guards
+        focus = chbengwar_adult_units
+        focus = chbengwar_sweats
+    }
+    available = {
+        NOT = {
+                has_government = reactionary
+                has_government = nationalist
+                AND = {
+                    has_country_leader = {
+                        character = CHB_Martin_Garrod
+                        ruling_only = yes
+                    }
+                    fascist > 0.2
+                }
+        }
+    }
+    completion_reward = {
+        add_stability = 0.1
+        add_war_support = 0.05
+    }
+}
+shared_focus = {
+    id = chbengwar_for_camphill
+    icon = align_to_camphill
+    cost = 2
+    x = 1
+    y = 3
+    relative_position_id = chbengwar_init
+    prerequisite = {
+        focus = chbengwar_red_guards
+        focus = chbengwar_adult_units
+        focus = chbengwar_sweats
+    }
+    available = {
+        OR = {
+            has_government = reactionary
+            has_government = nationalist
+            AND = {
+                has_country_leader = {
+                    character = CHB_Martin_Garrod
+                    ruling_only = yes
+                }
+                fascist > 0.2
+            }
+        }
+    }
+    completion_reward = {
+        add_stability = -0.1
+        add_war_support = 0.2
+    }
+}
+shared_focus = {
+    id = chbengwar_fuck_english
+    icon = attack_monarchy
+    cost = 2
+    x = 0
+    y = 4
+    relative_position_id = chbengwar_init
+    prerequisite = {
+        focus = chbengwar_for_people
+        focus = chbengwar_for_camphill
+    }
+    completion_reward = {
+        add_timed_idea = {
+            idea = CHB_Fuck_English
+            days = 200
+        }
+    }
+}

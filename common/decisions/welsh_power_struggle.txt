@@ -1,0 +1,419 @@
+the_welsh_struggle_category = {
+    watkins_influence_grows = {
+        days_mission_timeout = 30
+        priority = 10
+        activation = {
+            always = no
+        }
+        available = {
+            always = no
+        }
+        cancel_trigger = {
+            has_completed_focus = walfocus_struggle_outcome
+        }
+        timeout_effect = {
+            custom_effect_tooltip = WAL_Watkins_Influence_Up
+            add_stability = -0.05
+            hidden_effect = {
+                add_to_variable = { WAL_Watkins_Influence = 1 }
+            }
+        }
+    }
+    lamb_influence_grows = {
+        days_mission_timeout = 30
+        priority = 9
+        activation = {
+            always = no
+        }
+        available = {
+            always = no
+        }
+        cancel_trigger = {
+            has_completed_focus = walfocus_struggle_outcome
+        }
+        timeout_effect = {
+            custom_effect_tooltip = WAL_Lamb_Influence_Up
+            add_stability = -0.05
+            add_manpower = -500
+            hidden_effect = {
+                add_to_variable = { WAL_Lamb_Influence = 1 }
+            }
+        }
+    }
+    butcher_influence_grows = {
+        days_mission_timeout = 30
+        priority = 8
+        activation = {
+            always = no
+        }
+        available = {
+            always = no
+        }
+        cancel_trigger = {
+            has_completed_focus = walfocus_struggle_outcome
+        }
+        timeout_effect = {
+            custom_effect_tooltip = WAL_Butcher_Influence_Up
+            add_stability = -0.05
+            hidden_effect = {
+                add_to_variable = { WAL_Butcher_Influence = 1 }
+            }
+        }
+    }
+    watkins_certify_more_stuff = {
+        allowed = {
+            original_tag = WAL
+        }
+        priority = 7
+        visible = {
+            has_completed_focus = walfocus_alliance_split
+            has_country_flag = WAL_Team_Watkins
+            NOT = {
+                has_completed_focus = walfocus_struggle_outcome
+            }
+        }
+        cost = 25
+        days_remove = 30
+        days_re_enable = 10
+        modifier = {
+            stability_weekly = -0.002
+        }
+        remove_effect = {
+            custom_effect_tooltip = WAL_Watkins_Influence_Up
+            hidden_effect = {
+                add_to_variable = { WAL_Watkins_Influence = 1 }
+            }
+        }
+    }
+    lamb_recruit_sheep = {
+        allowed = {
+            original_tag = WAL
+        }
+        priority = 7
+        visible = {
+            has_completed_focus = walfocus_alliance_split
+            has_country_flag = WAL_Team_Lamb
+            NOT = {
+                has_completed_focus = walfocus_struggle_outcome
+            }
+        }
+        cost = 25
+        days_remove = 30
+        days_re_enable = 10
+        modifier = {
+            stability_weekly = -0.002
+        }
+        remove_effect = {
+            custom_effect_tooltip = WAL_Lamb_Influence_Up
+            hidden_effect = {
+                add_to_variable = { WAL_Lamb_Influence = 1 }
+            }
+            add_manpower = 500
+        }
+    }
+    butcher_recruit_humans = {
+        allowed = {
+            original_tag = WAL
+        }
+        priority = 7
+        visible = {
+            has_completed_focus = walfocus_alliance_split
+            has_country_flag = WAL_Team_Butcher
+            NOT = {
+                has_completed_focus = walfocus_struggle_outcome
+            }
+        }
+        cost = 25
+        days_remove = 30
+        days_re_enable = 10
+        modifier = {
+            stability_weekly = -0.002
+        }
+        remove_effect = {
+            custom_effect_tooltip = WAL_Butcher_Influence_Up
+            hidden_effect = {
+                add_to_variable = { WAL_Butcher_Influence = 1 }
+            }
+        }
+    }
+    appease_other_factions = {
+        allowed = {
+            original_tag = WAL
+        }
+        priority = 6
+        visible = {
+            has_completed_focus = walfocus_alliance_split
+            OR = {
+                has_country_flag = WAL_Team_Watkins
+                has_country_flag = WAL_Team_Lamb
+                has_country_flag = WAL_Team_Butcher
+            }
+            NOT = {
+                has_completed_focus = walfocus_struggle_outcome
+            }
+        }
+        days_remove = 10
+        cost = 10
+        days_re_enable = 35
+        modifier = {
+            stability_weekly = 0.005
+        }
+        remove_effect = {
+            if = {
+                limit = {
+                    has_country_flag = WAL_Team_Watkins
+                }
+                custom_effect_tooltip = WAL_Lamb_Influence_Up
+                custom_effect_tooltip = WAL_Butcher_Influence_Up
+                hidden_effect = {
+                    add_to_variable = { WAL_Lamb_Influence = 1 }
+                    add_to_variable = { WAL_Butcher_Influence = 1 }
+                }
+            }
+            else_if = {
+                limit = {
+                    has_country_flag = WAL_Team_Lamb
+                }
+                custom_effect_tooltip = WAL_Watkins_Influence_Up
+                custom_effect_tooltip = WAL_Butcher_Influence_Up
+                hidden_effect = {
+                    add_to_variable = { WAL_Watkins_Influence = 1 }
+                    add_to_variable = { WAL_Butcher_Influence = 1 }
+                }
+            }
+            else_if = {
+                limit = {
+                    has_country_flag = WAL_Team_Butcher
+                }
+                custom_effect_tooltip = WAL_Watkins_Influence_Up
+                custom_effect_tooltip = WAL_Lamb_Influence_Up
+                hidden_effect = {
+                    add_to_variable = { WAL_Watkins_Influence = 1 }
+                    add_to_variable = { WAL_Lamb_Influence = 1 }
+                }
+            }
+        }
+    }
+    watkins_ASS_support = {
+        allowed = {
+            original_tag = WAL
+        }
+        priority = 5
+        icon = fascism
+        visible = {
+            has_completed_focus = walfocus_alliance_split
+            has_country_flag = WAL_Team_Watkins
+            NOT = {
+                has_completed_focus = walfocus_struggle_outcome
+            }
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = WAL_Watkins_Influence_at_least_five
+                check_variable = {
+                    var = WAL_Watkins_Influence
+                    value = 5
+                    compare = greater_than_or_equals
+                }
+            }
+            CHB = {
+                OR = {
+                    has_completed_focus = chbfocus_angry_ASS
+                    has_government = reactionary
+                    has_government = nationalist
+                    has_country_leader = {
+                        character = CHB_Mark_Duncan
+                        ruling_only = yes
+                    }
+                }
+            }
+        }
+        cost = 50
+        days_remove = 30
+        days_re_enable = 30
+        remove_effect = {
+            custom_effect_tooltip = WAL_Watkins_Influence_Up
+            add_popularity = {
+                ideology = reactionary
+                popularity = 0.1
+            }
+            hidden_effect = {
+                add_to_variable = { WAL_Watkins_Influence = 3 }
+            }
+        }
+    }
+    lamb_PP_support = {
+        allowed = {
+            original_tag = WAL
+        }
+        priority = 5
+        icon = communsim
+        visible = {
+            has_completed_focus = walfocus_alliance_split
+            has_country_flag = WAL_Team_Lamb
+            NOT = {
+                has_completed_focus = walfocus_struggle_outcome
+            }
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = WAL_Lamb_Influence_at_least_five
+                check_variable = {
+                    var = WAL_Lamb_Influence
+                    value = 5
+                    compare = greater_than_or_equals
+                }
+            }
+            CHB = {
+                OR = {
+                    has_completed_focus = chbfocus_angry_students
+                    has_government = communist
+                    has_government = democratic_socialist
+                    has_government = social_democrat
+                }
+            }
+        }
+        cost = 50
+        days_remove = 30
+        days_re_enable = 30
+        remove_effect = {
+            custom_effect_tooltip = WAL_Lamb_Influence_Up
+            add_popularity = {
+                ideology = communist
+                popularity = 0.1
+            }
+            hidden_effect = {
+                add_to_variable = { WAL_Lamb_Influence = 3 }
+            }
+        }
+    }
+    butcher_centre_support = {
+        allowed = {
+            original_tag = WAL
+        }
+        icon = democracy
+        priority = 5
+        visible = {
+            has_completed_focus = walfocus_alliance_split
+            has_country_flag = WAL_Team_Butcher
+            NOT = {
+                has_completed_focus = walfocus_struggle_outcome
+            }
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = WAL_Butcher_Influence_at_least_five
+                check_variable = {
+                    var = WAL_Butcher_Influence
+                    value = 5
+                    compare = greater_than_or_equals
+                }
+            }
+            CHB = {
+                OR = {
+                    has_completed_focus = chbfocus_status_quo
+                    has_government = social_liberal
+                    has_government = conservative
+                    AND = {
+                        has_government = monarchist
+                        has_country_leader = {
+                            character = CHB_Martin_Garrod
+                            ruling_only = yes
+                        }
+                    }
+                }
+            }
+        }
+        cost = 50
+        days_remove = 30
+        days_re_enable = 30
+        remove_effect = {
+            custom_effect_tooltip = WAL_Butcher_Influence_Up
+            add_popularity = {
+                ideology = social_democrat
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = social_liberal
+                popularity = 0.1
+            }
+            hidden_effect = {
+                add_to_variable = { WAL_Butcher_Influence = 3 }
+            }
+        }
+    }
+    attack_sheep = {
+        allowed = {
+            original_tag = WAL
+        }
+        priority = 4
+        visible = {
+            has_completed_focus = walfocus_alliance_split
+            OR = {
+                has_country_flag = WAL_Team_Butcher
+                has_country_flag = WAL_Team_Watkins
+            }
+            NOT = {
+                has_completed_focus = walfocus_struggle_outcome
+            }
+        }
+        available = {
+            has_equipment = {
+                infantry_equipment_2 > 99
+            }
+        }
+        cost = 100
+        days_remove = 30
+        days_re_enable = 60
+        complete_effect = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment_2
+                amount = -100
+                producer = WAL
+            }
+        }
+        remove_effect = {
+            custom_effect_tooltip = WAL_Lamb_Influence_Down
+            hidden_effect = {
+                subtract_from_variable = { WAL_Lamb_Influence = 2}
+            }
+        }
+    }
+    attack_humans = {
+        allowed = {
+            original_tag = WAL
+        }
+        priority = 4
+        visible = {
+            has_completed_focus = walfocus_alliance_split
+            has_country_flag = WAL_Team_Lamb
+            NOT = {
+                has_completed_focus = walfocus_struggle_outcome
+            }
+        }
+        available = {
+            has_equipment = {
+                infantry_equipment_2 > 99
+            }
+        }
+        cost = 100
+        days_remove = 30
+        days_re_enable = 60
+        complete_effect = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment_2
+                amount = -100
+                producer = WAL
+            }
+        }
+        remove_effect = {
+            custom_effect_tooltip = WAL_Butcher_Influence_Down
+            custom_effect_tooltip = WAL_Watkins_Influence_Down
+            hidden_effect = {
+                subtract_from_variable = { WAL_Watkins_Influence = 2}
+                subtract_from_variable = { WAL_Butcher_Influence = 3}
+            }
+        }
+
+    }
+}

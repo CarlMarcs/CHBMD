@@ -1,0 +1,221 @@
+﻿#This is the Czech Republic. Ignore the file name.#
+
+capital = 9
+
+oob = "CZE_2000"
+
+set_research_slots = 4
+set_convoys = 10
+set_stability = 0.55
+
+set_country_flag = country_language_czech
+
+set_technology = {
+	## Infantry ##
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	night_vision = 1
+	body_armor = 1
+	camouflage = 1
+	
+	## Support Companies ##
+	tech_support = 1
+	basic_train =1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	
+	## Armor ##
+	main_battle_tank1 = 1
+	main_battle_tank2 = 1
+	main_battle_tank3 = 1
+	light_tank1 = 1
+	light_tank2 = 1
+	mechanised_infantry1 = 1
+	light_mechanized_infantry1 = 1
+	
+	## Artillery ##
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	
+	## Air ##
+	CAS1 = 1
+	CAS2 = 1
+	fighter1 = 1
+	fighter2 = 1
+	fighter3 = 1
+	strategic_bomber1 = 1
+	tactical_bomber1 = 1
+	
+	## Engineering ##
+	electronic_mechanical_engineering = 1
+	radio = 1
+	
+	## Industry ##
+	basic_machine_tools = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	
+	## Doctrines ##
+	superior_firepower = 1
+	formation_flying = 1
+}
+
+add_ideas = {
+	government_system_parliamentary_republic
+	national_development_developed
+	population_growth_stagnation
+	visegrad_group_member
+	free_trade
+	civil_liberties_free
+	welfare_modest_assistance
+}
+
+set_politics = {
+	ruling_party = social_democrat
+	last_election = "1998.6.20"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    fascist = 4
+    conservative = 13
+    social_liberal = 31
+    social_democrat = 40
+    progressive = 1
+    communist = 11
+}
+
+add_opinion_modifier = {
+	target = HUN
+	modifier = visegrad_group
+}
+add_opinion_modifier = {
+	target = POL
+	modifier = visegrad_group
+}
+add_opinion_modifier = {
+	target = SLO
+	modifier = visegrad_group
+}
+recruit_character = CZE_vaclav_havel
+recruit_character = CZE_vaclav_klaus
+recruit_character = CZE_miroslav_grebenicek
+recruit_character = CZE_josef_lux
+recruit_character = CZE_miroslav_sladek
+recruit_character = CZE_petr_michek
+recruit_character = CZE_matej_stropnicky
+recruit_character = CZE_josef_bečvář
+recruit_character = CZE_vlastimil_picek
+recruit_character = CZE_jiří_baloun
+recruit_character = CZE_Štefan_kaleta
+recruit_character = CZE_miroslav_zizka
+recruit_character = CZE_ales_opata
+recruit_character = CZE_frantisek_maleninsky
+recruit_character = CZE_milan_virt
+recruit_character = CZE_gabriel_kovacs
+recruit_character = CZE_františek_maleninský
+recruit_character = CZE_petr_mikulenka
+recruit_character = CZE_Štefan_muránský
+recruit_character = CZE_jaroslav_kocián
+recruit_character = CZE_ján_gurník
+recruit_character = CZE_ivo_střecha
+recruit_character = CZE_jaromír_Šebesta
+recruit_character = CZE_petr_hromek
+recruit_character = CZE_zuzana_Špačková
+recruit_character = CZE_pavel_kříž
+recruit_character = CZE_vratislav_beran
+recruit_character = CZE_karel_Řehka
+recruit_character = CZE_jaromír_alan
+recruit_character = CZE_jaromír_zůna
+recruit_character = CZE_jaroslav_trakal
+recruit_character = CZE_františek_ridzák
+recruit_character = CZE_zoltán_bubeník
+recruit_character = CZE_josef_kopecký
+recruit_character = CZE_roman_náhončík
+recruit_character = CZE_miroslav_hlaváč
+recruit_character = CZE_jiří_adamec
+recruit_character = CZE_pavel_lipka
+recruit_character = CZE_robert_bielený
+recruit_character = CZE_josef_havlík
+recruit_character = CZE_václav_novotný
+recruit_character = CZE_jaroslav_suchý
+recruit_character = CZE_vojtěch_ferko
+recruit_character = CZE_bořivoj_chalupa
+recruit_character = CZE_vladimír_novotný
+
+
+2004.1.1 = {
+	add_ideas = {
+		idea_eu_member
+	}
+}
+
+2009.1.1 = {
+	
+	set_party_name = {
+		ideology = conservative
+		name = CZE_conservative_party_TOP09
+	}
+
+}
+
+2013.10.26 = {
+	oob = "CZE_2016"
+	set_politics = {
+		ruling_party = social_democrat
+		last_election = "2013.10.26"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        reactionary = 7
+        conservative = 20
+        market_liberal = 20
+        social_liberal = 10
+        social_democrat = 20
+        progressive = 8
+        communist = 15
+    }
+	create_country_leader = {
+		name = "Andrej Babis"
+		picture = "Andrej_Babis.dds"
+		ideology = libertarian
+	}
+	create_country_leader = {
+		name = "Bohuslav Sobotka"
+		picture = "Bohuslav_Sobotka.dds"
+		ideology = social_democrat_ideology
+	}
+	create_country_leader = {
+		name = "Vojtech Filip"
+		picture = "Vojtech_Filip.dds"
+		ideology = marxist
+	}
+	create_country_leader = {
+		name = "Karel Schwarzenberg"
+		picture = "Karel_Schwarzenberg.dds"
+		ideology = fiscal_conservative
+	}
+	create_country_leader = {
+		name = "Miroslava Nemcova"
+		picture = "Miroslava_Nemcova.dds"
+		ideology = centrist
+	}
+	create_country_leader = {
+		name = "Miroslav Lidinsky"
+		picture = "Miroslav_Lidinsky.dds"
+		ideology = counter_progressive_democrat
+	}
+}
