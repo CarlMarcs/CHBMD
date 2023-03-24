@@ -203,18 +203,16 @@ add_to_variable = {
 	value = 123
 }
 set_popularities = {
-    monarchist = 25.5
-	conservative = 9.5
-	social_liberal = 9
-	islamist = 4
-	communist = 13
+    monarchist = 30
+	communist = 15
+	democratic_socialist = 5
 	social_democrat = 5
-	progressive = 5
-	democratic_socialist = 6
-	market_liberal = 1
-	reactionary = 8
+	reactionary = 15
 	nationalist = 5
-	fascist = 9
+	fascist = 5
+	market_liberal = 5
+	conservative = 7.5
+	social_liberal = 7.5
 }
 
 
