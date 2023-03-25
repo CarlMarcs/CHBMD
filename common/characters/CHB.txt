@@ -61,7 +61,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=autocrat
+			ideology=cross_country_thought
 			expire="3069.6.9.6"
 			id=-1
 		}

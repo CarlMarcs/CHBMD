@@ -65,6 +65,9 @@ ideologies = {
 			childist = {
 				can_be_randomly_selected = no
 			}
+			balkhamism_fasc = {
+				can_be_randomly_selected = no
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -113,6 +116,12 @@ ideologies = {
 			autocrat = {
 			}
 			pannationalist = {
+				can_be_randomly_selected = no
+			}
+			cross_country_thought = {
+				can_be_randomly_selected = no
+			}
+			balkhamism_nat = {
 				can_be_randomly_selected = no
 			}
 		}
@@ -583,6 +592,12 @@ ideologies = {
 			technocracy = {
 				can_be_randomly_selected = no
 			}
+			moderate_cokeism = {
+				can_be_randomly_selected = no
+			}
+			stratocratic_anarchism = {
+				can_be_randomly_selected = no
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -645,7 +660,7 @@ ideologies = {
 			juche = {
 				can_be_randomly_selected = no
 			}
-			anarcho_communist = {
+			anarcho_communism = {
 				can_be_randomly_selected = no
 			}
 			socialism_with_ccp = {
@@ -658,6 +673,15 @@ ideologies = {
 				can_be_randomly_selected = no
 			}
 			fully_automated_luxury_gay_space_communism = {
+				can_be_randomly_selected = no
+			}
+			cokeism = {
+				can_be_randomly_selected = no
+			}
+			titoism = {
+
+			}
+			staff_socialism = {
 				can_be_randomly_selected = no
 			}
 		}

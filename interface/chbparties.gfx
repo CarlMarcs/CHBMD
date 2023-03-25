@@ -4,6 +4,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/staff_dictatorship.dds"
 	}
 	spriteType = {
+		name = "GFX_ideology_cross_country_thought"
+		texturefile = "gfx/interface/ideologies/crosscountryism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_balkhamism_fasc"
+		texturefile = "gfx/interface/ideologies/balkhamism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_balkhamism_nat"
+		texturefile = "gfx/interface/ideologies/balkhamism.dds"
+	}
+	spriteType = {
 		name = "GFX_ideology_oligarchist"
 		texturefile = "gfx/interface/ideologies/oligarchist.dds"
 	}

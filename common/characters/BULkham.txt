@@ -42,7 +42,7 @@ characters={
 			id=-1
 		}
 		country_leader={
-			ideology=proto_fascist
+			ideology=balkhamism_nat
 			expire="1.1.1.1"
 			id=-1
 		}
@@ -57,7 +57,7 @@ characters={
 			id=-1
 		}
 		country_leader={
-			ideology=national_socialist
+			ideology=balkhamism_fasc
 			expire="1.1.1.1"
 			id=-1
 		}

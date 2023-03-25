@@ -11,6 +11,60 @@ defined_text = {
 	}
 	text = {
 		trigger = { 
+			has_country_leader_ideology = balkhamism_fasc			
+		} 
+		localization_key = balkhamism_fasc
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = balkhamism_nat			
+		} 
+		localization_key = balkhamism_nat
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = titoism			
+		} 
+		localization_key = titoism
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = staff_socialism			
+		} 
+		localization_key = staff_socialism
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = cross_country_thought			
+		} 
+		localization_key = cross_country_thought
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = moderate_cokeism			
+		} 
+		localization_key = moderate_cokeism
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = stratocratic_anarchism			
+		} 
+		localization_key = stratocratic_anarchism
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = anarcho_communism			
+		} 
+		localization_key = anarcho_communism
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = cokeism			
+		} 
+		localization_key = cokeism
+	}
+	text = {
+		trigger = { 
 			has_country_leader_ideology = socialism_with_ccp			
 		} 
 		localization_key = socialism_with_ccp
