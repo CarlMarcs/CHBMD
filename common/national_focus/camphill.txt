@@ -272,4 +272,22 @@ focus_tree = {
             }
         }
     }
+    focus = {
+        id = chbfocus_use_zeeshan
+        icon = communism4
+        cost = 5
+        x = 0
+        y = 1
+        relative_position_id = chbfocus_status_quo
+        prerequisite = {
+            focus = chbfocus_status_quo
+        }
+        completion_reward = {
+            set_power_balance = {
+                id = CHB_Staff_v_Students
+                left_side = CHB_Student_Side
+                right_side = CHB_Staff_Side
+            }
+        }
+    }
 }

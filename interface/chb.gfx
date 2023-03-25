@@ -17,7 +17,14 @@ spriteTypes = {
 		name = "GFX_musicplayer_bottom_bar"
 		texturefile = "gfx//interface//topbar//musicplayer//musicplayer_bottom_bar.dds"
 	}
-
+	spriteType = {
+		name = "GFX_bop_CHB_BigZee_Side"
+		texturefile = "gfx/interface/bop/bop_BigZee.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_CHB_Staff_Side"
+		texturefile = "gfx/interface/bop/bop_Staff.dds"
+	}
 	spriteType = {
 		name = "GFX_musicplayer_list_bg2"
 		texturefile = "gfx//interface//topbar//musicplayer//musicplayer_list_bg2.dds"

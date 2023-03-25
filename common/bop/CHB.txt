@@ -1,0 +1,141 @@
+CHB_Staff_v_Students = {
+    initial_value = 0
+    left_side = CHB_Student_Side
+    right_side = CHB_Staff_Side
+    decision_category = CHB_SS_BOP_category
+    range = {
+        id = CHB_SS_balanced
+        min = -0.1
+        max = 0.1
+        modifier = {
+            monarchist_drift = 0.1
+            communist_drift = 0.1
+            stability_weekly = -0.001
+        }
+        on_activate = {
+            add_stability = -0.1
+        }
+        on_deactivate = {
+            add_stability = 0.1
+        }
+    }
+    side = {
+        id = CHB_Staff_Side
+        icon = GFX_bop_CHB_Staff_Side
+        range = {
+            id = CHB_Staff_Low_Control_Range
+            min = 0.1
+            max = 0.3
+            modifier = {
+                monarchist_drift = 0.2
+                stability_weekly = 0.001
+            }
+            on_activate = {
+                add_political_power = -50
+            }
+        }
+        range = {
+            id = CHB_Staff_Med_Control_Range
+            min = 0.3
+            max = 0.6
+            modifier = {
+                monarchist_drift = 0.3
+                communist_drift = -0.1
+                stability_weekly = 0.004
+            }
+            on_activate = {
+                add_political_power = -50
+            }
+        }
+        range = {
+            id = CHB_Staff_High_Control_Range
+            min = 0.6
+            max = 0.9
+            modifier = {
+                monarchist_drift = 0.4
+                communist_drift = -0.2
+                democratic_socialist_drift = -0.1
+                stability_weekly = 0.01
+            }
+            on_activate = {
+                add_political_power = -50
+            }
+        }
+        range = {
+            id = CHB_Staff_Max_Control_Range
+            min = 0.9
+            max = 1
+            modifier = {
+                monarchist_drift = 0.8
+                communist_drift = -0.3
+                conservative_drift = 0.1
+                social_liberal_drift = 0.1
+                democratic_socialist_drift = -0.3
+                stability_weekly = 0.02
+            }
+            on_activate = {
+                add_political_power = -50
+            }
+        }
+    }
+    side = {
+        id = CHB_Student_Side
+        icon = GFX_bop_CHB_BigZee_Side
+        range = {
+            id = CHB_Student_Low_Control_Range
+            min = -0.3
+            max = -0.1
+            modifier = {
+                communist_drift = 0.01
+                democratic_socialist_drift = 0.01
+                stability_weekly = 0.001
+            }
+            on_activate = {
+                add_stability = -0.01
+            }
+
+        }
+        range = {
+            id = CHB_Student_Med_Control_Range
+            min = -0.6
+            max = -0.3
+            modifier = {
+                communist_drift = 0.02
+                democratic_socialist_drift = 0.02
+                social_democrat_drift = 0.01
+                stability_weekly = 0.004
+            }
+            on_activate = {
+                add_stability = -0.01
+            }
+        }
+        range = {
+            id = CHB_Student_High_Control_Range
+            min = -0.9
+            max = -0.6
+            modifier = {
+                communist_drift = 0.04
+                democratic_socialist_drift = 0.03
+                social_democrat_drift = 0.02
+                stability_weekly = 0.004
+            }
+            on_activate = {
+                add_stability = -0.01
+            }
+        }
+        range = {
+            id = CHB_Student_Max_Control_Range
+            min = -1
+            max = -0.9
+            modifier = {
+                communist_drift = 0.08
+                democratic_socialist_drift = 0.04
+                social_democrat_drift = 0.03
+                stability_weekly = 0.01
+            }
+            on_activate = {
+                add_stability = -0.01
+            }
+        }
+    }
+}

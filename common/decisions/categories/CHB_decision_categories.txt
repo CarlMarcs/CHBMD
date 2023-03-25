@@ -1,0 +1,13 @@
+CHB_SS_BOP_category = {
+	icon = GFX_decision_category_power_struggle
+	
+	allowed = {
+		original_tag = CHB
+	}
+	
+	priority = 90
+	
+	visible = {
+		
+	}
+}
