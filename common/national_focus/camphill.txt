@@ -27,7 +27,7 @@ focus_tree = {
         id = chbfocus_status_quo
         icon = self_management
         cost = 1
-        x = 2
+        x = 1
         y = 1
         prerequisite = {
             focus = chbfocus_initial
@@ -55,7 +55,7 @@ focus_tree = {
         id = chbfocus_the_ASS_Way
         icon = military_mission
         cost = 1
-        x = 8
+        x = 9
         y = 1
         prerequisite = {
             focus = chbfocus_initial
@@ -76,6 +76,66 @@ focus_tree = {
             add_popularity = {
                 ideology = fascist
                 popularity = 0.01
+            }
+        }
+    }
+    focus = {
+        id = chbfocus_military_expansion
+        icon = entente
+        cost = 3
+        x = 7
+        y = 2
+        prerequisite = {
+            focus = chbfocus_the_ASS_Way
+        }
+        completion_reward = {
+            add_manpower = 1000
+            add_ideas = {
+                CHB_ASS_Expansion_1
+            }
+        }
+    }
+    focus = {
+        id = chbfocus_purge_zeeshan
+        icon = attack_communism
+        cost = 3
+        x = 11
+        y = 2
+        prerequisite = {
+            focus = chbfocus_the_ASS_Way
+        }
+        available = {
+            has_completed_focus = chbfocus_military_expansion
+        }
+        completion_reward = {
+            remove_ideas = CHB_Socialist_Memery
+            random_list = {
+                9 = {
+
+                }
+                1 = {
+                    country_event = CampHill.46
+                    set_global_flag = UKRanarchy
+                }
+            }
+        }
+    }
+    focus = {
+        id = chbfocus_second_ASS_expansion
+        icon = industry_military
+        cost = 3
+        x = 9
+        y = 3
+        prerequisite = {
+            focus = chbfocus_military_expansion
+        }
+        prerequisite = {
+            focus = chbfocus_purge_zeeshan
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = CHB_ASS_Expansion_1
+                add_idea = CHB_ASS_Expansion_2
             }
         }
     }

@@ -283,6 +283,28 @@ ideas = {
         CHB_House_Divide = {
             picture = house_divide
         }
+        CHB_ASS_Expansion_1 = {
+            picture = war_college
+            modifier = {
+                command_power_gain = 0.2
+                experience_gain_army = 0.2
+                max_command_power_mult = 0.2
+                reactionary_drift = 0.1
+                nationalist_drift = 0.1
+                fascist_drift = 0.1
+            }
+        }
+        CHB_ASS_Expansion_2 = {
+            picture = war_college
+            modifier = {
+                command_power_gain = 0.4
+                experience_gain_army = 0.4
+                max_command_power_mult = 0.4
+                reactionary_drift = 0.2
+                nationalist_drift = 0.2
+                fascist_drift = 0.2
+            }
+        }
     }
     political_advisor = {
         zeeshan = {
@@ -292,7 +314,6 @@ ideas = {
             }
             available = {
                 OR = {
-                    has_completed_focus = chbfocus_angry_students
                     has_government = democratic_socialist
                     AND = {
                         has_government = communist
