@@ -64,7 +64,7 @@ focus_tree = {
             focus = chbfocus_status_quo
         }
         completion_reward = {
-            add_stability = -0.1
+            add_stability = -0.10
             add_popularity = {
                 ideology = reactionary
                 popularity = 0.05
