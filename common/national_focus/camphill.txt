@@ -83,8 +83,9 @@ focus_tree = {
         id = chbfocus_military_expansion
         icon = entente
         cost = 3
-        x = 7
-        y = 2
+        x = -2
+        y = 1
+        relative_position_id = chbfocus_the_ASS_Way
         prerequisite = {
             focus = chbfocus_the_ASS_Way
         }
@@ -99,8 +100,9 @@ focus_tree = {
         id = chbfocus_purge_zeeshan
         icon = attack_communism
         cost = 3
-        x = 11
-        y = 2
+        x = 2
+        y = 1
+        relative_position_id = chbfocus_the_ASS_Way
         prerequisite = {
             focus = chbfocus_the_ASS_Way
         }
@@ -109,6 +111,7 @@ focus_tree = {
         }
         completion_reward = {
             remove_ideas = CHB_Socialist_Memery
+            add_stability = -0.1
             random_list = {
                 9 = {
 
@@ -124,8 +127,9 @@ focus_tree = {
         id = chbfocus_second_ASS_expansion
         icon = industry_military
         cost = 3
-        x = 9
-        y = 3
+        x = 0
+        y = 2
+        relative_position_id = chbfocus_the_ASS_Way
         prerequisite = {
             focus = chbfocus_military_expansion
         }
@@ -139,4 +143,69 @@ focus_tree = {
             }
         }
     }
+    focus = {
+        id = chbfocus_beacon_of_anti_communism
+        icon = war3
+        cost = 3
+        x = -2
+        y = 3
+        relative_position_id = chbfocus_the_ASS_Way
+        prerequisite = {
+            focus = chbfocus_second_ASS_expansion
+        }
+        mutually_exclusive = {
+            focus = chbfocus_national_pride
+        }
+        completion_reward = {
+            every_country = {
+                limit = {
+                    has_government = communist
+                }
+                add_opinion_modifier = {
+                    target = CHB
+                    modifier = anti_communism
+                }
+                CHB = {
+                    add_opinion_modifier = {
+                        target = PREV
+                        modifier = anti_communism
+                    }
+                }
+            }
+            add_stability = 0.2
+        }
+    }
+    focus = {
+        id = chbfocus_national_pride
+        icon = fascism
+        cost = 3
+        x = 2
+        y = 3
+        relative_position_id = chbfocus_the_ASS_Way
+        prerequisite = {
+            focus = chbfocus_second_ASS_expansion
+        }
+        mutually_exclusive = {
+            focus = chbfocus_beacon_of_anti_communism
+        }
+        completion_reward = {
+            every_country = {
+                limit = {
+                    is_camphillified = yes
+                }
+                add_opinion_modifier = {
+                    target = CHB
+                    modifier = camp_hill_ally
+                }
+                CHB = {
+                    add_opinion_modifier = {
+                        target = PREV
+                        modifier = camp_hill_ally
+                    }
+                }
+            }
+            add_war_support = 0.2
+        }
+    }
+    
 }
