@@ -156,4 +156,12 @@ opinion_modifiers = {
 	destroyers_for_bases_opinion = {
 		value = 30
 	}
+
+	anti_communism = {
+		value = -50
+	}
+
+	camp_hill_ally = {
+		value = 50
+	}
 }	

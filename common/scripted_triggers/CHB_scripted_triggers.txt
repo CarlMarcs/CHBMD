@@ -1,0 +1,23 @@
+is_camphillified = {
+    OR = {
+        original_tag = CHB
+        original_tag = SCO
+        original_tag = WLS
+        original_tag = GER
+        original_tag = BAY
+        original_tag = FRA
+        original_tag = ITA
+        original_tag = YUG
+        original_tag = SER
+        original_tag = BUL 
+        original_tag = COK
+        original_tag = SUR
+        AND = {
+            original_tag = UKR
+            OR = {
+                has_government = communist
+                has_government = democratic_socialist
+            }
+        }
+    }
+}

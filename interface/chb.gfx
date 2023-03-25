@@ -106,9 +106,4 @@ spriteTypes = {
 		textureFile = "gfx//interface//topbar//musicplayer//chb_album_art.dds"
 		noOfFrames = 2
 	}
-	}
-	spriteType = {
-		name = "GFX_report_bowen"
-		textureFile = "gfx/event_pictures/report_event/camphill/bigbowen.dds"
-	}
 }
