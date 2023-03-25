@@ -164,4 +164,8 @@ opinion_modifiers = {
 	camp_hill_ally = {
 		value = 50
 	}
+
+	anti_communist_solidarity = {
+		value = 25
+	}
 }	
