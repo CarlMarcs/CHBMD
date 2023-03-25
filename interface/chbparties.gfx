@@ -28,6 +28,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/childism.dds"
 	}
 	spriteType = {
+		name = "GFX_ideology_anarcho_communism"
+		texturefile = "gfx/interface/ideologies/ancom.dds"
+	}
+	spriteType = {
 		name = "GFX_ideology_marxist_ruddism"
 		texturefile = "gfx/interface/ideologies/ruddism.dds"
 	}
