@@ -47,7 +47,7 @@ characters = {
 			id=-1
 		}
 		country_leader={
-			ideology=leninist
+			ideology=cokeism
 			expire="1.1.1.1"
 			id=-1
 		}
@@ -60,7 +60,7 @@ characters = {
 			}
 		}
 		country_leader={
-			ideology=marxist_ruddism
+			ideology=moderate_cokeism
 			expire="1.1.1.1"
 			id=-1
 		}

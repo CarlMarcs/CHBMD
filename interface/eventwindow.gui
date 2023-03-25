@@ -99,7 +99,7 @@ guiTypes = {
 			iconType = {
 				name ="event_picture"
 				spriteType = "GFX_report_event_001"
-				position = { x = 40 y = 190 } #NVX# x from 5; y from 5
+				position = { x = 40 y = 180 } #NVX# x from 5; y from 5
 				Orientation = "UPPER_LEFT"
 				alwaystransparent = yes				
 			}
