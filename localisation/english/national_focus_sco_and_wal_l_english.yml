@@ -115,6 +115,7 @@
  walfocus_russian_support:0 "Russian Support"
  walfocus_russian_support_desc:0 "Russia was a once great nation with an empire spanning three continents. We also had former colonies across the world. The two of us together will help us both gain that back." walfocus_nationalist_sentiment:0 "Exploit Nationalist Sentiment"
  walfocus_nationalist_sentiment_desc:0 "Nationalism got us to this stage, since without it, we'd still be a part of the UK. We should use this nationalism to further our goals"
+ walfocus_nationalist_sentiment:0 "Exploit Nationalist Sentiment"
  walfocus_socialist_sentiment:0 "Exploit Leftist Sentiment"
  walfocus_socialist_sentiment_desc:0 "Many Welsh people blame Tony Blair's Labour for the hard times before independence. Due to this, many of them took a leftward turn. The Butcher plans to take advantage of this to gain extra support."
  walfocus_anti_anglo_sentiment:0 "Exploit Anti-Anglo Sentiment"

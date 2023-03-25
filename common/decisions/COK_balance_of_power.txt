@@ -33,7 +33,7 @@ COK_balance_of_power_category = {
         available = {
             power_balance_value = {
                 id = COK_power_balance
-                value > 10
+                value > 0.9
             }
         }
         cost = 50
