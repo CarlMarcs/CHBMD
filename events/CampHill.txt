@@ -390,7 +390,7 @@ country_event = {
             Character = CHB_Josip_Broz_Tito
             Promote_leader = yes
             country_leader = {
-                ideology = maoist
+                ideology = titoism
                 expire = "2069.1.1.1"
             }
         }
@@ -412,7 +412,7 @@ country_event = {
             Character = CHB_Martin_Garrod
             Promote_leader = yes
             country_leader = {
-                ideology = leninist
+                ideology = staff_socialism
                 expire = "2069.1.1.1"
             }
         }
