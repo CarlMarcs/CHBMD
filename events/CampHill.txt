@@ -1667,3 +1667,29 @@ country_event = {
         }
     }
 }
+country_event = {
+    id = CampHill.46
+    title = CampHill.46.t
+    desc = CampHill.46.d
+    is_triggered_only = yes
+    option = {
+        name = CampHill.46.o1
+        add_popularity = {
+            ideology = communist
+            popularity = -0.05
+        }
+        add_manpower = -1000
+    }
+    option = {
+        name = CampHill.46.o2
+        add_popularity = {
+            ideology = communist
+            popularity = -0.05
+        }
+        add_manpower = -1000
+        UKR = {
+            change_tag_from = CHB
+            load_focus_tree = UKRanarchy
+        }
+    }
+}

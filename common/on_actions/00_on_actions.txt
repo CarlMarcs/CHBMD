@@ -468,10 +468,9 @@ on_actions = {
 	#Not run on a specific country.
 	on_startup = {
 		effect = {
-#			every_country = { #Democracies must love each other.
-#				limit = { has_democratic_form_of_government = yes }
-#				country_event = ideology.4
-#			}
+			every_country = {
+				country_event = welcome.1
+			}
 		}
 	}
 }

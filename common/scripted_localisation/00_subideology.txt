@@ -10,6 +10,18 @@ defined_text = {
 		localization_key = islamic_republican
 	}
 	text = {
+		trigger = { 
+			has_country_leader_ideology = socialism_with_ccp			
+		} 
+		localization_key = socialism_with_ccp
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = pannationalist			
+		} 
+		localization_key = pannationalist
+	}
+	text = {
 		trigger = {
 			has_country_leader_ideology = telium_hivemind
 		}
