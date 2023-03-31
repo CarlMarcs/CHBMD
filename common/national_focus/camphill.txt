@@ -290,4 +290,135 @@ focus_tree = {
             }
         }
     }
+    focus = {
+        id = chbfocus_smash_the_fash
+        icon = attack_fascism
+        cost = 5
+        x = -2
+        y = 2
+        relative_position_id = chbfocus_status_quo
+        prerequisite = {
+            focus = chbfocus_use_zeeshan
+        }
+        completion_reward = {
+            add_manpower = -1000
+            army_experience = -100
+            add_popularity = {
+                ideology = reactionary
+                popularity = -0.1
+            }
+            add_popularity = {
+                ideology = nationalist
+                popularity = -0.1
+            }
+            remove_ideas = chb_sweaties
+        }
+    }
+    focus = {
+        id = chbfocus_all_over_world
+        icon = align_to_camphill
+        cost = 5
+        x = 2
+        y = 2
+        relative_position_id = chbfocus_status_quo
+        prerequisite = {
+            focus = chbfocus_use_zeeshan
+        }
+        available = {
+            has_completed_focus = chbfocus_smash_the_fash
+        }
+        completion_reward = {
+            every_country = {
+                limit = {
+                    AND = {
+                        is_camphillified = yes
+                        is_far_rightist = yes
+                    }
+                }
+                add_stability = -0.1
+                add_popularity = {
+                    ideology = fascist
+                    popularity = -0.1
+                }
+                add_popularity = {
+                    ideology = nationalist
+                    popularity = -0.1
+                }
+                add_popularity = {
+                    ideology = reactionary
+                    popularity = -0.1
+                }
+            }
+            every_country = {
+                limit = {
+                    AND = {
+                        is_camphillified = yes
+                        is_far_rightist = no
+                    }
+                }
+                add_stability = 0.1
+                add_popularity = {
+                    ideology = fascist
+                    popularity = -0.1
+                }
+                add_popularity = {
+                    ideology = nationalist
+                    popularity = -0.1
+                }
+                add_popularity = {
+                    ideology = reactionary
+                    popularity = -0.1
+                }
+            }
+        }
+    }
+    focus = {
+        id = chbfocus_purge
+        icon = demand_sudetenland
+        cost = 7
+        x = 0
+        y = 3
+        relative_position_id = chbfocus_status_quo
+        prerequisite = {
+            focus = chbfocus_smash_the_fash
+        }
+        prerequisite = {
+            focus = chbfocus_all_over_world
+        }
+        completion_reward = {
+            add_popularity = {
+                ideology = reactionary
+                popularity = -1
+            }
+            add_popularity = {
+                ideology = nationalist
+                popularity = -1
+            }
+            add_popularity = {
+                ideology = fascist
+                popularity = -1
+            }
+            add_timed_idea = {
+                idea = CHB_Ded_Army
+                days = 100
+            }
+        }
+    }
+    focus = {
+        id = chbfocus_commie_threat
+        icon = communism5
+        cost = 5
+        x = 0
+        y = 4
+        relative_position_id = chbfocus_status_quo
+        prerequisite = {
+            focus = chbfocus_purge
+        }
+        completion_reward = {
+            custom_effect_tooltip = chbfocus_new_tree_tt
+            hidden_effect = {
+                load_focus_tree = chbfocuscvd
+            }
+        }
+    }
 }

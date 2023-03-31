@@ -213,4 +213,19 @@ CHB_SS_BOP_category = {
             }
         }
     }
+    CHB_British_Coup = {
+        allowed = {
+            original_tag = CHB
+        }
+        activation = {
+            has_completed_focus = chbfocus_use_zeeshan
+        }
+        available = {
+            has_completed_focus = chbfocus_purge
+        }
+        timeout_effect = {
+            country_event = CampHill.47
+        }
+        days_mission_timeout = 200
+    }
 }

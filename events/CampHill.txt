@@ -1693,3 +1693,38 @@ country_event = {
         }
     }
 }
+country_event = {
+    id = CampHill.47
+    title = CampHill.47.t
+    desc = CampHill.47.d
+    is_triggered_only = yes
+    option = {
+        name = CampHill.47.o1
+        promote_character = {
+            character = CHB_Charlie_Moore
+            ideology = liberalist
+        }
+        set_party_name = {
+            ideology = social_liberal
+            long_name = ENG_social_liberal_party_long
+            name = ENG_social_liberal_party
+        }
+        set_politics = {
+            ruling_party = social_liberal
+            last_election = "1999.12.12"
+	        election_frequency = 12
+	        elections_allowed = no
+        }
+        set_cosmetic_tag = BritCHB
+        add_popularity = {
+            ideology = social_liberal
+            popularity = 0.5
+        }
+        hidden_effect = {
+            load_focus_tree = chbbritfocus
+            remove_power_balance = {
+                id = CHB_Staff_v_Students
+            }
+        }
+    }
+}

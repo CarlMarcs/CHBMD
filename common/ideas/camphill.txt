@@ -314,6 +314,17 @@ ideas = {
                 training_time_factor = -0.3
             }
         }
+        CHB_Ded_Army = {
+            picture = war_to_end_all_wars
+            modifier = {
+                command_power_gain = -0.5
+                experience_gain_army = -1
+                land_reinforce_rate = -0.8
+                max_command_power = 0
+                training_time_factor = 2
+                land_doctrine_cost_factor = 2
+            }
+        }
     }
     political_advisor = {
         zeeshan = {

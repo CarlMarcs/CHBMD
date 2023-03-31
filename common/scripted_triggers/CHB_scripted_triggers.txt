@@ -21,3 +21,10 @@ is_camphillified = {
         }
     }
 }
+is_far_rightist = {
+    OR = {
+        has_government = fascist
+        has_government = nationalist
+        has_government = reactionary
+    }
+}
