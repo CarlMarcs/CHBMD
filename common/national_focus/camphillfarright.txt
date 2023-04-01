@@ -160,42 +160,48 @@ focus_tree = {
         }
         completion_reward = {
             if = {
-                limit = {reactionary > 0.40}
+                limit = {reactionary > 0.30}
                 custom_effect_tooltip = chbassfocusreward_elections
-                add_popularity = {
-                    ideology = reactionary
-                    popularity = 0.1
-                }
-                set_politics = {
-                    ruling_party = reactionary
-                    elections_allowed = yes
-                    election_frequency = 60
+                hidden_effect = {
+                    add_popularity = {
+                        ideology = reactionary
+                        popularity = 0.1
+                    }
+                    set_politics = {
+                        ruling_party = reactionary
+                        elections_allowed = yes
+                        election_frequency = 60
+                    }
                 }
             }
             else_if = {
-                limit = {nationalist > 0.40}
+                limit = {nationalist > 0.30}
                 custom_effect_tooltip = chbassfocusreward_elections
-                add_popularity = {
-                    ideology = nationalist
-                    popularity = 0.1
-                }
-                set_politics = {
-                    ruling_party = nationalist
-                    elections_allowed = no
-                    election_frequency = 60
+                hidden_effect = {
+                    add_popularity = {
+                        ideology = nationalist
+                        popularity = 0.1
+                    }
+                    set_politics = {
+                        ruling_party = nationalist
+                        elections_allowed = no
+                        election_frequency = 60
+                    }
                 }
             }
             else_if = {
-                limit = {fascist > 0.40}
+                limit = {fascist > 0.30}
                 custom_effect_tooltip = chbassfocusreward_elections
-                add_popularity = {
-                    ideology = fascist
-                    popularity = 0.1
-                }
-                set_politics = {
-                    ruling_party = fascist
-                    elections_allowed = no
-                    election_frequency = 60
+                hidden_effect = {
+                    add_popularity = {
+                        ideology = fascist
+                        popularity = 0.1
+                    }
+                    set_politics = {
+                        ruling_party = fascist
+                        elections_allowed = no
+                        election_frequency = 60
+                    }
                 }
             }
             else = {

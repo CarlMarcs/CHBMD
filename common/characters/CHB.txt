@@ -202,7 +202,7 @@ characters={
 				large="gfx/leaders/CHB/Josip_Broz_Tito.dds"
 			}
 		}
-		field_marshal={
+		corps_commander={
 			traits={ old_guard defensive_doctrine }
 			skill=5
 			attack_skill=5
@@ -326,6 +326,46 @@ characters={
 			defense_skill=6
 			planning_skill=6
 			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	CHB_Ian_Cattermole={
+		name="Ian Cattermole"
+		portraits={
+			army={
+				small="gfx/leaders/CHB/Ian_Cattermole_Small.dds"
+			}
+			army={
+				large="gfx/leaders/CHB/Ian_Cattermole.dds"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = ian_cattermole
+			ledger = army
+			allowed = {
+				original_tag = CHB
+			}
+			available = {
+				OR = {
+					has_completed_focus = chbfocuscvd_hammer_and_chisel
+					has_government = communist
+					has_government = democratic_socialist
+					has_government = progressive
+					has_government = social_democrat
+				}
+			}
+			traits = {
+				superior_firepower_expert
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=4
+			defense_skill=6
+			planning_skill=5
+			logistics_skill=7
 			legacy_id=-1
 		}
 	}

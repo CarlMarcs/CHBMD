@@ -398,10 +398,7 @@ focus_tree = {
                 ideology = fascist
                 popularity = -1
             }
-            add_timed_idea = {
-                idea = CHB_Ded_Army
-                days = 100
-            }
+            add_ideas = CHB_Ded_Army
         }
     }
     focus = {

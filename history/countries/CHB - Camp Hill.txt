@@ -173,6 +173,7 @@ recruit_character=CHB_Eckers
 recruit_character=CHB_Bob_Ross
 recruit_character=CHB_Daniel_Redshaw
 recruit_character=CHB_Hun_Kang
+recruit_character=CHB_Ian_Cattermole
 add_ideas = {
 	CHB_The_Blip
 	CHB_Socialist_Memery

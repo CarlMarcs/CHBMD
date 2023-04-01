@@ -8,4 +8,517 @@ focus_tree = {
         #    tag = CHB
         #}
     }
+    continuous_focus_position = {
+        x = 125
+        y = 1200
+    }
+    focus = {
+        id = chbfocuscvd_init
+        icon = monarchy5
+        cost = 2
+        x = 5
+        y = 0
+        completion_reward = {
+            add_stability = -0.1
+            add_political_power = -100
+        }
+    }
+    focus = {
+        id = chbfocuscvd_military_fix
+        icon = military_mission
+        cost = 1
+        x = 3
+        y = 1
+        relative_position_id = chbfocuscvd_init
+        prerequisite = {
+            focus = chbfocuscvd_init
+        }
+        completion_reward = {
+            army_experience = 20
+        }
+    }
+    focus = {
+        id = chbfocuscvd_red_army
+        icon = propaganda_communist
+        cost = 5
+        x = -1
+        y = 1
+        relative_position_id = chbfocuscvd_military_fix
+        prerequisite = {
+            focus = chbfocuscvd_military_fix
+        }
+        available = {
+            NOT = {
+                has_completed_focus = chbfocuscvd_SC
+            }
+        }
+        mutually_exclusive = {
+            focus = chbfocuscvd_pro_army
+        }
+        completion_reward = {
+            add_power_balance_value = {
+                id = CHB_Staff_v_Students
+                value = -0.05
+                tooltip_side = CHB_Student_Side
+            }
+            add_popularity = {
+                ideology = communist
+                popularity = 0.1
+            }
+        }
+    }
+    focus = {
+        id = chbfocuscvd_pro_army
+        icon = license_production
+        cost = 5
+        x = 1
+        y = 1
+        relative_position_id = chbfocuscvd_military_fix
+        prerequisite = {
+            focus = chbfocuscvd_military_fix
+        }
+        available = {
+            NOT = {
+                has_completed_focus = chbfocuscvd_COPS
+            }
+        }
+        mutually_exclusive = {
+            focus = chbfocuscvd_red_army
+        }
+        completion_reward = {
+            add_power_balance_value = {
+                id = CHB_Staff_v_Students
+                value = 0.05
+                tooltip_side = CHB_Staff_Side
+            }
+            add_popularity = {
+                ideology = monarchist
+                popularity = 0.1
+            }
+        }
+    }
+    focus = {
+        id = chbfocuscvd_soviet_army
+        icon = align_to_soviet_union
+        x = 0
+        y = 1
+        cost = 5
+        relative_position_id = chbfocuscvd_red_army
+        prerequisite = {
+            focus = chbfocuscvd_red_army
+        }
+        completion_reward = {
+            add_popularity = {
+                ideology = communist
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = democratic_socialist
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = social_democrat
+                popularity = 0.05
+            }
+            add_ideas = CHB_Political_Commissars
+        }
+    }
+    focus = {
+        id = chbfocuscvd_american_army
+        icon = align_to_america2
+        x = 0
+        y = 1
+        cost = 5
+        relative_position_id = chbfocuscvd_pro_army
+        prerequisite = {
+            focus = chbfocuscvd_pro_army
+        }
+        completion_reward = {
+            add_popularity = {
+                ideology = monarchist
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = conservative
+                popularity = 0.05
+            }
+            add_popularity = {
+                ideology = social_liberal
+                popularity = 0.05
+            }
+            add_ideas = CHB_High_Military_Spending
+        }
+    }
+    focus = {
+        id = chbfocuscvd_promote_tito
+        icon = communism8
+        x = 0
+        y = 2
+        cost = 5
+        relative_position_id = chbfocuscvd_red_army
+        prerequisite = {
+            focus = chbfocuscvd_soviet_army
+        }
+        completion_reward = {
+            CHB_Josip_Broz_Tito = {
+                promote_leader = yes
+            }
+            add_power_balance_value = {
+                id = CHB_Staff_v_Students
+                value = -0.05
+                tooltip_side = CHB_Student_Side
+            }
+        }
+    }
+    focus = {
+        id = chbfocuscvd_promote_garrod
+        icon = monarchy3
+        x = 0
+        y = 2
+        cost = 5
+        relative_position_id = chbfocuscvd_pro_army
+        prerequisite = {
+            focus = chbfocuscvd_american_army
+        }
+        completion_reward = {
+            CHB_Martin_Garrod = {
+                promote_leader = yes
+            }
+            add_power_balance_value = {
+                id = CHB_Staff_v_Students
+                value = 0.05
+                tooltip_side = CHB_Staff_Side
+            }
+        }
+    }
+    focus = {
+        id = chbfocuscvd_reinvite_ASS
+        icon = fascism
+        x = 0
+        y = 3
+        relative_position_id = chbfocuscvd_pro_army
+        cost = 5
+        prerequisite = {
+            focus = chbfocuscvd_promote_garrod
+        }
+        completion_reward = {
+            add_stability = -0.1
+            add_popularity = {
+                ideology = reactionary
+                popularity = 0.1
+            }
+            add_command_power = 10
+        }
+    }
+    focus = {
+        id = chbfocuscvd_international_brigades
+        icon = communism10
+        cost = 5
+        x = 0
+        y = 3
+        relative_position_id = chbfocuscvd_red_army
+        prerequisite = {
+            focus = chbfocuscvd_promote_tito
+        }
+        completion_reward = {
+            add_manpower = 100000
+            add_popularity = {
+                ideology = communist
+                popularity = 0.05
+            }
+            add_popularity = {
+                ideology = democratic_socialist
+                popularity = 0.05
+            }
+        }
+    }
+    focus = {
+        id = chbfocuscvd_mil_recovery
+        icon = entente
+        cost = 5
+        x = 0
+        y = 5
+        relative_position_id = chbfocuscvd_military_fix
+        prerequisite = {
+            focus = chbfocuscvd_international_brigades
+            focus = chbfocuscvd_reinvite_ASS
+        }
+        completion_reward = {
+            add_stability = 0.2
+            remove_ideas = CHB_Ded_Army
+        }
+    }
+    focus = {
+        id = chbfocuscvd_pol_fix
+        icon = major_alliance
+        cost = 1
+        x = -3
+        y = 1
+        relative_position_id = chbfocuscvd_init
+        prerequisite = {
+            focus = chbfocuscvd_init
+        }
+        completion_reward = {
+            add_political_power = 120
+        }
+    }
+    focus = {
+        id = chbfocuscvd_COPS
+        icon = communism3
+        cost = 5
+        x = -1
+        y = 1
+        relative_position_id = chbfocuscvd_pol_fix
+        prerequisite = {
+            focus = chbfocuscvd_pol_fix
+        }
+        available = {
+            NOT = {
+                has_completed_focus = chbfocuscvd_pro_army
+            }
+        }
+        mutually_exclusive = {
+            focus = chbfocuscvd_SC
+        }
+        completion_reward = {
+            add_power_balance_value = {
+                id = CHB_Staff_v_Students
+                value = -0.1
+                tooltip_side = CHB_Student_Side
+            }
+            add_popularity = {
+                ideology = communist
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = democratic_socialist
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = social_democrat
+                popularity = 0.1
+            }
+        }
+    }
+    focus = {
+        id = chbfocuscvd_SC
+        icon = democracy
+        cost = 5
+        x = 1
+        y = 1
+        relative_position_id = chbfocuscvd_pol_fix
+        available = {
+            NOT = {
+                has_completed_focus = chbfocuscvd_red_army
+            }
+        }
+        prerequisite = {
+            focus = chbfocuscvd_pol_fix
+        }
+        mutually_exclusive = {
+            focus = chbfocuscvd_COPS
+        }
+        completion_reward = {
+            add_power_balance_value = {
+                id = CHB_Staff_v_Students
+                value = 0.1
+                tooltip_side = CHB_Staff_Side
+            }
+            add_popularity = {
+                ideology = monarchist
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = conservative
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = social_liberal
+                popularity = 0.1
+            }
+        }
+    }
+    focus = {
+        id = chbfocuscvd_seize_the_memes
+        icon = communism9
+        cost = 5
+        x = 0
+        y = 1
+        relative_position_id = chbfocuscvd_COPS
+        prerequisite = {
+            focus = chbfocuscvd_COPS
+        }
+        completion_reward = {
+            country_event = CampHill.7
+        }
+    }
+    focus = {
+        id = chbfocuscvd_freedomize
+        icon = align_to_nato
+        cost = 5
+        x = 0
+        y = 1
+        relative_position_id = chbfocuscvd_SC
+        prerequisite = {
+            focus = chbfocuscvd_SC
+        }
+        completion_reward = {
+            USA = {
+                add_opinion_modifier = {
+                    target = CHB
+                    modifier = anti_communist_solidarity
+                }
+            }
+            add_opinion_modifier = {
+                target = CHB
+                modifier = anti_communist_solidarity
+            }
+            add_popularity = {
+                ideology = monarchist
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = conservative
+                popularity = 0.05
+            }
+            add_popularity = {
+                ideology = social_liberal
+                popularity = 0.05
+            }
+        }
+    }
+    focus = {
+        id = chbfocuscvd_meet_rudd
+        icon = align_to_soviet_union
+        cost = 5
+        x = 0
+        y = 1
+        relative_position_id = chbfocuscvd_seize_the_memes
+        prerequisite = {
+            focus = chbfocuscvd_seize_the_memes
+        }
+        completion_reward = {
+            add_stability = 0.1
+            add_popularity = {
+                ideology = democratic_socialist
+                popularity = 0.1
+            }
+        }
+    }
+    focus = {
+        id = chbfocuscvd_hammer_and_chisel
+        icon = production
+        cost = 5
+        x = 0
+        y = 1
+        relative_position_id = chbfocuscvd_meet_rudd
+        prerequisite = {
+            focus = chbfocuscvd_meet_rudd
+        }
+        completion_reward = {
+            add_stability = 0.1
+            add_popularity = {
+                ideology = communist
+                popularity = 0.15
+            }
+            add_popularity = {
+                ideology = social_democrat
+                popularity = 0.1
+            }
+            add_ideas = ian_cattermole
+        }
+    }
+    focus = {
+        id = chbfocuscvd_meet_giles
+        icon = fascism3
+        cost = 5
+        x = 0
+        y = 1
+        relative_position_id = chbfocuscvd_freedomize
+        prerequisite = {
+            focus = chbfocuscvd_freedomize
+        }
+        completion_reward = {
+            add_stability = 0.1
+            add_popularity = {
+                ideology = social_liberal
+                popularity = 0.1
+            }
+        }
+    }
+    focus = {
+        id = chbfocuscvd_second_purge
+        icon = attack_communism
+        cost = 5
+        x = 0
+        y = 1
+        relative_position_id = chbfocuscvd_meet_giles
+        prerequisite = {
+            focus = chbfocuscvd_meet_giles
+        }
+        completion_reward = {
+            add_stability = -0.2
+            remove_ideas = CHB_Socialist_Memery
+            add_popularity = {
+                ideology = communist
+                popularity = -1
+            }
+            add_popularity = {
+                ideology = democratic_socialist
+                popularity = -1
+            }
+            add_popularity = {
+                ideology = social_democrat
+                popularity = -0.3
+            }
+        }
+    }
+    focus = {
+        id = chbfocuscvd_revolution
+        icon = communism8
+        cost = 7
+        x = -1
+        y = 7
+        relative_position_id = chbfocuscvd_init
+        prerequisite = {
+            focus = chbfocuscvd_mil_recovery
+        }
+        prerequisite = {
+            focus = chbfocuscvd_hammer_and_chisel
+        }
+        completion_reward = {
+            set_politics = {
+                ruling_party = communist
+            }
+            hidden_effect = {
+                load_focus_tree = chbcomfocus
+                remove_power_balance = {
+                    id = CHB_Staff_v_Students
+                }
+            }
+        }
+    }
+    focus = {
+        id = chbfocuscvd_stability
+        icon = democracy
+        cost = 7
+        x = 1
+        y = 7
+        relative_position_id = chbfocuscvd_init
+        prerequisite = {
+            focus = chbfocuscvd_mil_recovery
+        }
+        prerequisite = {
+            focus = chbfocuscvd_second_purge
+        }
+        completion_reward = {
+            add_stability = 0.5
+            hidden_effect = {
+                load_focus_tree = chbmonfocus
+                remove_power_balance = {
+                    id = CHB_Staff_v_Students
+                }
+            }
+        }
+    }
 }
