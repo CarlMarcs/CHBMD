@@ -68,6 +68,9 @@ ideologies = {
 			balkhamism_fasc = {
 				can_be_randomly_selected = no
 			}
+			nasism_fasc = {
+				can_be_randomly_selected = no
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -302,6 +305,9 @@ ideologies = {
 				can_be_randomly_selected = no
 				
 			}
+			nasism_con = {
+				can_be_randomly_selected = no
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -419,6 +425,9 @@ ideologies = {
 			liberalist = {
 			}
 			moderate = {
+			}
+			nasism_lib = {
+				can_be_randomly_selected = no
 			}
 		}
 		
@@ -596,6 +605,9 @@ ideologies = {
 				can_be_randomly_selected = no
 			}
 			stratocratic_anarchism = {
+				can_be_randomly_selected = no
+			}
+			dixie_socialism = {
 				can_be_randomly_selected = no
 			}
 		}

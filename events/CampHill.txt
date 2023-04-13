@@ -659,7 +659,7 @@ country_event = {
                 character = CHB_Giles_Hill
                 Promote_leader = yes
                 country_leader = {
-                    ideology = national_socialist
+                    ideology = nasism_fasc
                     expire = "2069.6.9.6"
                 }
             }

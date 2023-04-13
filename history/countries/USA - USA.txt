@@ -273,7 +273,6 @@ add_to_faction = TUR
 give_guarantee = KUR
 give_guarantee = ISR
 give_guarantee = JAP
-give_guarantee = KOR
 give_guarantee = KIR
 give_guarantee = MAR
 give_guarantee = MIC

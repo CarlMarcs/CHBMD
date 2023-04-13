@@ -114,12 +114,12 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=centrist
+			ideology=nasism_lib
 			expire="3069.6.9.6"
 			id=-1
 		}
 		country_leader={
-			ideology=national_socialist
+			ideology=nasism_fasc
 			expire="3069.6.9.6"
 			id=-1
 		}

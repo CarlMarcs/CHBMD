@@ -164,6 +164,12 @@
  titoism_desc:0 "Titoism is the marxist ideology developed by Josip Broz Tito. Is expouses pan-slavic nationalism, Market Socialism, and an adherence to the Marxist world revolution, aligning with any communist regime possible."
  staff_socialism:0 "Staff Socialism"
  staff_socialism_desc:0 "Staff Socialism is a form of Marxism developed out of the unique material conditions of Camp Hill. The former ruling class of the Staff have been incorporated into the proletariat, and there is finally unity between staff and students."
+ nasism:0 "NASIsm"
+ nasism_con_desc:0 "NASIsm is the right-wing ideology created by Giles Hill. However, it comes in multiple forms. \n\n Conservative NASIsm promotes moderate nationalism, traditional values, and anti-socialism. Conservative NASIsm usually adheres to democratic values, although the legitimacy of elections is questionable"
+ nasism_lib_desc:0 "NASIsm is the right-wing ideology created by Giles Hill. However, it comes in multiple forms. \n\n Liberal NASIsm promotes civic nationalism, progressive values, and moderate anti-socialism. Unlike other forms of NASIsm, however, Liberal NASIsm doesn't actively suppress socialism. Liberal NASIsm also adheres to democratic values, and is seen as the most democratic form of NASIsm"
+ nasism_fasc_desc:0 "NASIsm is the right-wing ideology created by Giles Hill. However, it comes in multiple forms. \n\n Radical NASIsm promotes pan-Camphill ultranationalism, reactionary values, and radical anti-socialism and anti-democracy. Deemed the most authoritarian form of NASIsm, Radical NASIsm is even opposed to the more moderate wings of NASIsm, to the extend of performing mass purges on them."
+ dixie_socialism:0 "Dixie Socialism"
+ dixie_socialism_desc:0 "Dixie Socialism takes advantage of the anti-yankee, christian heritage of Dixie. It represents Capitalism as America, and teaches of Jesus's more socialist ideals, convincing the dixie populace to follow socialism. Dixie Socialism has developed into a semi-radical, anti-american ideology expressing liberty and southern pride"
  ###Ideological Influence###
  islamist_influence_1:0 "Islamist Influence: 1"
  islamist_influence_2:0 "Islamist Influence: 2"
