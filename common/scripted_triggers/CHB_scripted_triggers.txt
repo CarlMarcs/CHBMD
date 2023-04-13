@@ -28,3 +28,11 @@ is_far_rightist = {
         has_government = reactionary
     }
 }
+is_leftist = {
+    OR = {
+        has_government = progressive
+        has_government = democratic_socialist
+        has_government = communist
+        has_government = social_democrat
+    }
+}

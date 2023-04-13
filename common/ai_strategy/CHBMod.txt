@@ -1,0 +1,69 @@
+pro_chb_diplo_dem = {
+    enable = {
+        is_camphillified = yes
+        NOT = {
+            tag = CHB
+        }
+        CHB = {
+            has_democratic_form_of_government = yes
+        }
+        has_democratic_form_of_government = yes
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+		type = befriend
+		id = "CHB"
+		value = 50
+	}
+	ai_strategy = {
+		type = alliance
+		id = "CHB"
+		value = 125
+	}
+}
+pro_chb_diplo_com = {
+    enable = {
+        is_camphillified = yes
+        NOT = {
+            tag = CHB
+        }
+        CHB = {
+            is_leftist = yes
+        }
+        is_leftist = yes
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+		type = befriend
+		id = "CHB"
+		value = 50
+	}
+	ai_strategy = {
+		type = alliance
+		id = "CHB"
+		value = 125
+	}
+}
+pro_chb_diplo_right = {
+    enable = {
+        is_camphillified = yes
+        NOT = {
+            tag = CHB
+        }
+        CHB = {
+            is_far_rightist = yes
+        }
+        is_far_rightist = yes
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+		type = befriend
+		id = "CHB"
+		value = 50
+	}
+	ai_strategy = {
+		type = alliance
+		id = "CHB"
+		value = 125
+	}
+}
