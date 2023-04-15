@@ -9,7 +9,7 @@ state={
 	}
 
 	history={
-		owner = USA
+		owner = COK
 		buildings = {
 			infrastructure = 6
 			air_base = 3
@@ -23,6 +23,7 @@ state={
 
 		}
 		add_core_of = USA
+		add_core_of = COK
 		add_core_of = CSA
 		victory_points = {
 			7138 20 

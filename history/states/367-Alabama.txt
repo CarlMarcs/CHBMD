@@ -11,7 +11,7 @@ state = {
 	}
 
 	history = {
-		owner = USA
+		owner = COK
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 3
@@ -22,6 +22,7 @@ state = {
 		}
 		add_core_of = USA
 		add_core_of = CSA
+		add_core_of = COK
 		victory_points = {
 			7480 3 
 		}

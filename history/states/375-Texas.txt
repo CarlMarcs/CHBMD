@@ -31,6 +31,7 @@ state={
 		add_core_of = USA
 		add_core_of = TEX
 		add_core_of = CSA
+		add_core_of = COK
 		victory_points = {
 			10337 50 
 		}

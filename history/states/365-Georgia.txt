@@ -23,6 +23,7 @@ state = {
 		}
 		add_core_of = COK
 		add_core_of = CSA
+		add_core_of = COK
 		victory_points = { 12384 35 }	#Atlanta
 		victory_points = { 7118 3 }		#Augusta
 		victory_points = { 7583 3 }		#Columbus
