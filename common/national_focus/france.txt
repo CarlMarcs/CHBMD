@@ -1,0 +1,71 @@
+focus_tree = {
+    id = frafocus
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            original_tag = FRA
+        }
+    }
+    focus = {
+        id = frafocus_init
+        icon = neutrality
+        cost = 1
+        x = 6
+        y = 0
+        completion_reward = {
+            add_political_power = 150
+        }
+    }
+    focus = {
+        id = frafocus_egalite
+        icon = communism
+        cost = 2
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = frafocus_init
+        }
+        mutually_exclusive = {
+            focus = frafocus_liberte
+            focus = frafocus_fraternite
+        }
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = frafocus_liberte
+        icon = democracy
+        cost = 2
+        x = 6
+        y = 1
+        prerequisite = {
+            focus = frafocus_init
+        }
+        mutually_exclusive = {
+            focus = frafocus_egalite
+            focus = frafocus_fraternite
+        }
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = frafocus_fraternite
+        icon = fascism
+        cost = 2
+        x = 10
+        y = 1
+        prerequisite = {
+            focus = frafocus_init
+        }
+        mutually_exclusive = {
+            focus = frafocus_liberte
+            focus = frafocus_egalite
+        }
+        completion_reward = {
+
+        }
+    }
+}

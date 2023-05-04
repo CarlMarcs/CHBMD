@@ -1,0 +1,42 @@
+characters={
+    CSA_Giles_Hill = {
+        name="Giles Hill"
+        portraits = {
+            civilian = {
+                large="gfx/leaders/CHB/Giles_Hill_Con.dds"
+            }
+        }
+        country_leader = {
+            ideology = nasism_con
+            expire = "2069.6.9.6"
+        }
+        country_leader = {
+            ideology = nasism_fasc
+            expire = "2069.6.9.6"
+        }
+    }
+    CSA_Abi_Emilton = {
+        name="Abi Emilton"
+        portraits = {
+            civilian = {
+                large="gfx/leaders/CHB/Abi_Emilton.dds"
+            }
+        }
+        country_leader = {
+            ideology = dixie_socialism
+            expire = "2069.6.9.6"
+        }
+    }
+    CSA_Random_Nobody = {
+        name="Abi Emilton"
+        portraits = {
+            civilian = {
+                large="gfx/leaders/CHB/Abi_Emilton.dds"
+            }
+        }
+        country_leader = {
+            ideology = dixie_socialism
+            expire = "2069.6.9.6"
+        }
+    }
+}

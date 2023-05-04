@@ -308,6 +308,9 @@ ideologies = {
 			nasism_con = {
 				can_be_randomly_selected = no
 			}
+			islamic_democrat = {
+				can_be_randomly_selected = no
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -610,6 +613,9 @@ ideologies = {
 			dixie_socialism = {
 				can_be_randomly_selected = no
 			}
+			christian_socialism = {
+				can_be_randomly_selected = no
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -694,6 +700,9 @@ ideologies = {
 
 			}
 			staff_socialism = {
+				can_be_randomly_selected = no
+			}
+			islamic_marxism = {
 				can_be_randomly_selected = no
 			}
 		}

@@ -229,3 +229,28 @@ CHB_SS_BOP_category = {
         days_mission_timeout = 200
     }
 }
+decisions_CHB = {
+    CHB_Deal_With_Giles = {
+        allowed = {
+            original_tag = CHB
+        }
+        available = {
+            NOT = {
+                country_exists = ENG
+                country_exists = CSA
+            }
+        }
+        visible = {
+            OR = {
+                has_government = communist
+                has_government = democratic_socialist
+                has_government = progressive
+            }
+        }
+        cost = 150
+        days_remove = 7
+        remove_effect = {
+            country_event = CampHill.48
+        }
+    }
+}

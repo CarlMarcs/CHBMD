@@ -1,7 +1,39 @@
 spriteTypes = {
+	spriteType = {
+		name = "GFX_Giles_Hill_NAZI"
+		textureFile = "gfx/leaders/CHB/Giles_Hill_Nazi.dds"
+	}
     spriteType = {
 		name = "GFX_ideology_staff_dictatorship"
 		texturefile = "gfx/interface/ideologies/staff_dictatorship.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_nasism_lib"
+		texturefile = "gfx/interface/ideologies/hillian_nasism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_nasism_con"
+		texturefile = "gfx/interface/ideologies/hillian_nasism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_nasism_fasc"
+		texturefile = "gfx/interface/ideologies/hillian_nasism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_dixie_socialism"
+		texturefile = "gfx/interface/ideologies/dixie_socialist.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_islamic_marxism"
+		texturefile = "gfx/interface/ideologies/islamic_marxist.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_christian_socialism"
+		texturefile = "gfx/interface/ideologies/christian_socialist.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_islamic_democrat"
+		texturefile = "gfx/interface/ideologies/islamic_democracy.dds"
 	}
 	spriteType = {
 		name = "GFX_ideology_cross_country_thought"

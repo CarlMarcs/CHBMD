@@ -838,6 +838,13 @@ country_event = {
             election_frequency = 60
         }
         set_variable = { NAZI_NASI = 0}
+        CHB_Giles_Hill = {
+            set_portraits = {
+                civilian = {
+                    large="GFX_Giles_Hill_NAZI"
+                }
+            }
+        }
 
     }
 }
@@ -1725,6 +1732,69 @@ country_event = {
             remove_power_balance = {
                 id = CHB_Staff_v_Students
             }
+        }
+    }
+}
+country_event = {
+    id = CampHill.48
+    title = CampHill.48.t
+    desc = CampHill.48.d
+    is_triggered_only = yes
+    option = {
+        name = CampHill.48.o1
+        add_popularity = {
+            ideology = social_liberal
+            popularity = -0.1
+        }
+        add_stability = 0.1
+    }
+    option = {
+        name = CampHill.48.o2
+        add_popularity = {
+            ideology = social_liberal
+            popularity = -1
+        }
+        add_stability = -0.1
+        CSA = {
+            transfer_state = 375
+            transfer_state = 374
+            transfer_state = 372
+            transfer_state = 371
+            transfer_state = 370
+            promote_character = {
+                character = CSA_Giles_Hill
+                ideology = nasism_con
+            }
+            promote_character = {
+                character = CSA_Abi_Emilton
+                ideology = dixie_socialism
+            }
+            hidden_effect = {
+                set_popularities = {
+                    conservative = 40
+                    democratic_socialist = 25
+                    social_liberal = 25
+                    fascist = 10
+                }
+                add_ideas = CHB_The_Blip
+            }
+        }
+        country_event = CampHill.49
+        
+    }
+}
+country_event = {
+    id = CampHill.49
+    title = CampHill.49.t
+    desc = CampHill.49.d
+    is_triggered_only = yes
+    option = {
+        name = CampHill.49.o1
+    }
+    option = {
+        name = CampHill.49.o2
+        CSA = {
+            change_tag_from = CHB
         }
     }
 }

@@ -129,3 +129,6 @@ create_country_leader = {
 	picture = "Rand_Paul.dds"
 	ideology = libertarian  
 }
+recruit_character = CSA_Giles_Hill
+recruit_character = CSA_Abi_Emilton
+recruit_character = CSA_Random_Nobody

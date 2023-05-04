@@ -11,3 +11,12 @@ CHB_SS_BOP_category = {
 		
 	}
 }
+decisions_CHB = {
+	allowed = {
+		original_tag = CHB
+	}
+	priority = 90
+	visible = {
+		
+	}
+}
