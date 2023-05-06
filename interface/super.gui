@@ -111,6 +111,11 @@ guiTypes = {
 			position = {x = 0 y = 0}
 		}
 		iconType = {
+			name = "Super_Event_Image_CSA"
+			spriteType = "GFX_sp_event_CSA"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
 			name = "sp_event_text_underlay"
 			spriteType = "GFX_sp_event_underlay"
 			position = { x = 195 y = 332 }

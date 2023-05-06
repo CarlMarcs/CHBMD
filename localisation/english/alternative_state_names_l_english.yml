@@ -74,3 +74,7 @@
  sp_event_CHEWar:0 "The Camp Hill-English War"
  sp_event_CHEWar_QUOTE:0 "We won against the English before. We gained independence, we caused their collapse, we caused their forced isolation. What's the point of waiting, when they're still weak now? \n- Thomas Pitfield"
  sp_event_CHEWar_REMARK:0 "They surely can't win twice"
+
+ sp_event_CSA:0 "The Confederacy Reborn"
+ sp_event_CSA_QUOTE:0 "In the South we burn all the books. The only book we read is the Bible. In the South, we believe in God. God is everything. \n- Abi Emilton"
+ sp_event_CSA_REMARK:0 "The South rises again"

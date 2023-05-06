@@ -570,3 +570,32 @@ country_event = {	#CampHill-English-War
 		set_global_flag = Super_CHEWar
 	}
 }
+country_event = {	#CSA Founded
+	id = super.20
+	title = super.1.t
+	desc = super.1.d
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			NOT = {
+				has_global_flag = Super_CSA
+			}
+			country_exists = CSA
+			
+		}
+	}
+
+	option = {
+		name = super.1.a
+		
+        set_global_flag = CSAFounded
+		set_global_flag = Super_Event_Visible
+		play_song = "Dixie_Land"
+		
+		
+		set_global_flag = Super_CSA
+	}
+}

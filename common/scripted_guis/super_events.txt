@@ -103,6 +103,11 @@ scripted_gui = {
 				has_global_flag = CHEWar
 			}
 		}
+		triggers = {
+			Super_Event_Image_CSA_visible = {
+				has_global_flag = CSAFounded
+			}
+		}
 		
 		############
 		###BUTTON###
@@ -219,6 +224,12 @@ scripted_gui = {
 						has_global_flag = CHEWar
 					}
 					clr_global_flag = CHEWar
+				}
+				if = {
+					limit = {
+						has_global_flag = CSAFounded
+					}
+					clr_global_flag = CSAFounded
 				}
 			}
 		}

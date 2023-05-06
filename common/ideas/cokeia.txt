@@ -20,6 +20,7 @@ ideas = {
                     has_government = market_liberal
                 }
             }
+            can_be_fired = no
             removal_cost = -1
             traits = {
                 moderate_coke_addict

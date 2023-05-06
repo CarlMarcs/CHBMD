@@ -116,6 +116,12 @@ defined_text = {
         }
         localization_key = "sp_event_CHEWar"
     }
+    text = {
+        trigger = {
+            has_global_flag = CSAFounded
+        }
+        localization_key = "sp_event_CSA"
+    }
 }
 
 #Remarks
@@ -236,6 +242,12 @@ defined_text = {
         }
         localization_key = "sp_event_CHEWar_REMARK"
     }
+    text = {
+        trigger = {
+            has_global_flag = CSAFounded
+        }
+        localization_key = "sp_event_CSA_REMARK"
+    }
 }
 
 #Quotes
@@ -354,5 +366,11 @@ defined_text = {
             has_global_flag = CHEWar
         }
         localization_key = "sp_event_CHEWar_QUOTE"
+    }
+    text = {
+        trigger = {
+            has_global_flag = CSAFounded
+        }
+        localization_key = "sp_event_CSA_QUOTE"
     }
 }

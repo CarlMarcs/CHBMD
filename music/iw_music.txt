@@ -287,3 +287,13 @@ music = {
 		}
 	}
 }
+music = {
+	song = "Dixie_Land"
+	chance = {
+		factor = 0
+		modifier = {
+			add = 5
+			tag = CSA
+		}
+	}
+}

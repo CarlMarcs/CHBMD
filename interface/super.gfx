@@ -98,4 +98,8 @@ spriteTypes = {
 		name = "GFX_sp_event_CHEWar"
 		textureFile = "gfx/sp_events/Super_Event_CHEWar.dds"
 	}
+	spriteType = {
+		name = "GFX_sp_event_CSA"
+		textureFile = "gfx/sp_events/Super_Event_CSA.dds"
+	}
 }

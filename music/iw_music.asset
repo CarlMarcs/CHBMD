@@ -98,3 +98,7 @@ music = {
 	name = "Soldiers_of_the_Queen"
 	file = "Soldiers_of_the_Queen.ogg"
 }
+music = {
+	name = "Dixie_Land"
+	file = "Dixie_Land.ogg"
+}
