@@ -11,6 +11,30 @@ defined_text = {
 	}
 	text = {
 		trigger = { 
+			has_country_leader_ideology = islamic_democrat			
+		} 
+		localization_key = islamic_democrat
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = christian_socialism			
+		} 
+		localization_key = christian_socialism
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = islamic_marxism			
+		} 
+		localization_key = islamic_marxism
+	}
+	text = {
+		trigger = { 
+			has_country_leader_ideology = bonapartism			
+		} 
+		localization_key = bonapartism
+	}
+	text = {
+		trigger = { 
 			has_country_leader_ideology = nasism_con			
 		} 
 		localization_key = nasism

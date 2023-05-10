@@ -187,6 +187,9 @@ ideologies = {
 			military_dictatorship = {
 				can_be_randomly_selected = no
 			}
+			bonapartism = {
+				can_be_randomly_selected = no
+			}
 		}
 		
 		dynamic_faction_names = {

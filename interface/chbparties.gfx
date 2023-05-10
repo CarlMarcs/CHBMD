@@ -8,6 +8,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/staff_dictatorship.dds"
 	}
 	spriteType = {
+		name = "GFX_ideology_bonapartism"
+		texturefile = "gfx/interface/ideologies/bonapartism.dds"
+	}
+	spriteType = {
 		name = "GFX_ideology_nasism_lib"
 		texturefile = "gfx/interface/ideologies/hillian_nasism.dds"
 	}

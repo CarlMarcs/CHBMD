@@ -13,27 +13,27 @@
 
  sp_event_Soviet_Reunion:0 "The Soviet Union Returns"
  sp_event_Soviet_Reunion_QUOTE:0 "Give me just one generation of youth, and I'll transform the whole world. \n- Vladmir Lenin"
- sp_event_Soviet_Reunion_REMARK:0 "It Returns..."
+ sp_event_Soviet_Reunion_REMARK:0 "A Spectre is Haunting Europe..."
 
  sp_event_Ancapistan:0 "The Declaration of Ancapistan"
- sp_event_Ancapistan_QUOTE:0 "Collectivism means the subjugation of the individual to a group—whether to a race, class or state does not matter. Collectivism holds that man must be chained to collective action and collective thought for the sake of what is called “the common good.“  \n- Ayn Rand"
- sp_event_Ancapistan_REMARK:0 "I Like Money"
+ sp_event_Ancapistan_QUOTE:0 "I like money. Money is good. Money should control all.  \n- Random Guy at Corporate"
+ sp_event_Ancapistan_REMARK:0 "I Like Money too"
 
  sp_event_Neoslavia:0 "The Founding of Neoslavia"
  sp_event_Neoslavia_QUOTE:0 "We have spilt an ocean of blood for the brotherhood and unity of our peoples and we shall not allow anyone to touch or destroy it from within.  \n- Josip Broz Tito"
  sp_event_Neoslavia_REMARK:0 "So, Brits are Slavs?"
 
  sp_event_Garrod_SSR:0 "The Greater Camp Hill SSR"
- sp_event_Garrod_SSR_QUOTE:0 "A socialist society is one designed for the people. This is a socialist society, it is for the people. However, we also believe in a sensible hierachy, so the teachers are needed to run the government for the people  \n- Martin Garrod"
+ sp_event_Garrod_SSR_QUOTE:0 "All I want is for things to be fair. You should get what you deserve. Which is why you, Aayan Nagra, should kill yourself.  \n- Martin Garrod"
  sp_event_Garrod_SSR_REMARK:0 "The Revolutionary Tax Evader"
 
  sp_event_Nazbol_Hill:0 "The Greater Camp Hill SSR"
- sp_event_Nazbol_Hill_QUOTE:0 "We can have democracy in this country, or we can have great wealth concentrated in the hands of a few, but we can't have both.  \n- Louis D. Brandeis"
- sp_event_Nazbol_Hill_REMARK:0 "A More Moderate Socialism"
+ sp_event_Nazbol_Hill_QUOTE:0 "We need to have an English Revolution, to deal with this incompetent government  \n- Nathan Hill"
+ sp_event_Nazbol_Hill_REMARK:0 "Fuck Labour and the Tories"
 
  sp_event_Nazi_Hill:0 "The Camp Hill Reich"
  sp_event_Nazi_Hill_QUOTE:0 "The Nazis view many races unfavourably, for example, the Irish, the Italians, the Slavs, the Polish, the Russians, and the Germans. They really hate the Germans  \n- Giles Hill"
- sp_event_Nazi_Hill_REMARK:0 "Dark Days Lie Ahead"
+ sp_event_Nazi_Hill_REMARK:0 "Literally Hillter"
 
  sp_event_British_Republic:0 "The British Republic"
  sp_event_British_Republic_QUOTE:0 "The Queen wanted to mercilessly send British lives to the meat grinder, in the name of a united Kingdom. Well, she failed, and the lives lost are immesurable. A Republic is now the only way forward  \n- Martin Garrod"
@@ -41,7 +41,7 @@
 
  sp_event_Airstrip_One:0 "The Founding of Airstrip One"
  sp_event_Airstrip_One_QUOTE:0 "You can clap now  \n- Russel Bowen"
- sp_event_Airstrip_One_REMARK:0 "Literally 1984"
+ sp_event_Airstrip_One_REMARK:0 "Big Bowen is watching"
 
  sp_event_Burgess_CHB:0 "Greater Camp Hill"
  sp_event_Burgess_CHB_QUOTE:0 "We will not allow the past to drag us down and stop us from moving ahead. We understand where we should move.  \n- Vladmir Putin"
@@ -57,7 +57,7 @@
 
  sp_event_Thomas_CHB:0 "Greater Camp Hill"
  sp_event_Thomas_CHB_QUOTE:0 "I am the Political Compass  \n- Thomas Pitfield"
- sp_event_Thomas_CHB_REMARK:0 "A Radical Centrist Democratic Dictatorship"
+ sp_event_Thomas_CHB_REMARK:0 "What the fu-"
 
  sp_event_Wide_War:0 "The Wide War"
  sp_event_Wide_War_QUOTE:0 "I am wider.  \n- Vladmir Putin & Andy Taylor"
