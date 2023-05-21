@@ -49,7 +49,6 @@
  communist_noun:0 "Communism"
  communist_desc:0 "Communist Regime"
  ###Sub Ideologies###
- fascist_ideology:0 "Fascism"
  technocracy:0 "Technocracy"
  technocracy_desc:0 "Technocracy is a left-wing ideology that structures society based on intellect. The smarter ones should lead society for the sake of everyone else, and the less intelligent can never rule. These governments usually follow a state-managed or socialist economic system."
  telium_hivemind:0 "Telium Hivemind"
@@ -82,8 +81,8 @@
  black_supremacist_desc:0 "Black Supremacists believe in the inherent superiority of the black race over all other races - even though their aggression will be mostly directed towards the white race. Black supremacy is an ideology that is especially present in post-colonial Africa, but can also be found in the Caribbean and in the United States. Economically, the black supremacist movement often supports anti-imperialistic, anti-capitalistic, pro-socialist movements, but still bases economic policy towards individuals strictly on race."
  national_socialist:0 "National Socialism"
  national_socialist_desc:0 "Rooted in extreme nationalism, National Socialism is driven by ideas of Germanic supremacy. It promotes aggressive expansionism and a totalitarian state where the people are united under a leader with absolute power, the Führer."
- fascism_ideology:0 "Fascism"
- fascism_ideology_desc:0 "Encompassing a variety of ultra-nationalist movements, fascism typically venerates devotion to the state and uniting the people under a strong leader."
+ fascist_ideology:0 "Fascism"
+ fascist_ideology_desc:0 "Encompassing a variety of ultra-nationalist movements, fascism typically venerates devotion to the state and uniting the people under a strong leader."
  falangism:0 "Falangism"
  falangism_desc:0 "An authoritarian ideology with traits of fascism and conservatism, Falangism values national and Catholic identity."
  rexism:0 "Rexism"

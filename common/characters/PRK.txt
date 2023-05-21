@@ -13,6 +13,20 @@ characters={
 			id=-1
 		}
 	}
+	PRK_Charlotte_Dawson={
+		name="Charlotte Dawson"
+		portraits={
+			civilian={
+				large="gfx/leaders/CHB/Charlotte_Dawson.dds"
+			}
+		}
+		country_leader={
+			ideology=fascist_ideology
+			traits={ Unqualified }
+			expire="2017.1.1.12"
+			id=-1
+		}
+	}
 	PRK_Seema_Mahmud={
 		name="Seema Mahmud"
 		portraits={

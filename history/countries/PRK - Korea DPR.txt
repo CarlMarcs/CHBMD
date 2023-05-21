@@ -137,6 +137,7 @@ set_popularities = {
 	monarchist = 25
 }
 recruit_character = PRK_dong_wei
+recruit_character = PRK_Charlotte_Dawson
 recruit_character = PRK_Seema_Mahmud
 recruit_character = PRK_Craig_N_Dave
 recruit_character = PRK_li_jin
