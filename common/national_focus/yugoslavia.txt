@@ -52,7 +52,7 @@ focus_tree = {
 			CHB = {
                 NOT = {
                     OR = {
-                        has_completed_focus = chbfocus_angry_ASS
+                        has_completed_focus = chbfocus_the_ASS_Way
                         has_government = reactionary
                         has_government = nationalist
                         has_government = monarchist
@@ -443,7 +443,7 @@ focus_tree = {
                     }
                     add_popularity = {
                         ideology = monarchist
-                        popularity 0.2
+                        popularity = 0.2
                     }
                     set_politics = {
                         ruling_party = monarchist

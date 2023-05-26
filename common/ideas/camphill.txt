@@ -402,19 +402,12 @@ ideas = {
             }
             available = {
                 OR = {
-                    has_completed_focus = chbfocus_angry_students
+                    has_completed_focus = chbfocuscvd_COPS
+                    has_completed_focus = chbfocuscvd_red_army
                     has_government = communist
                     has_government = democratic_socialist
                     has_government = progressive
-                    AND = {
-                        has_government = social_democrat
-                        NOT = {
-                            has_country_leader = {
-                                character = CHB_Nathan_Hill
-                                ruling_only = yes
-                            }
-                        }
-                    }
+                    has_government = social_democrat
                 }
             }
             traits = {

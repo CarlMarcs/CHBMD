@@ -68,7 +68,7 @@ country_event = {
             ideology = reactionary
             popularity = 0.05
         }
-        complete_national_focus = chbfocus_angry_ASS
+        complete_national_focus = chbfocus_the_ASS_Way
     }
 }
 country_event = {

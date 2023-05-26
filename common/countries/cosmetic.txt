@@ -2,6 +2,10 @@ USSR_SOV = {
 	color = rgb { 125 13 24 }
 	color_ui = rgb { 163 17 31 }
 }
+GER_united = {
+	color = rgb { 115 115 115 }
+	color_ui = rgb { 115 115 115 }
+}
 SOV_SovietUnion = {
 	color = rgb { 204 0 0 }
 	color_ui = rgb { 255 0 0 }

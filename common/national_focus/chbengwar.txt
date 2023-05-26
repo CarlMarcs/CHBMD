@@ -68,7 +68,7 @@ shared_focus = {
             character = CHB_Hun_Kang
             skill = 4
             attack_skill = 3
-            defence_skill = 3
+            defense_skill = 3
             planning_skill = 4
             logistics_skill = 5
         }

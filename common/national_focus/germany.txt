@@ -64,17 +64,34 @@ focus_tree = {
         y = 2
         cost = 5
         bypass = {
-			has_war_with = BAY
-		}
-        available = {
+			NOT = {
+                country_exists = BAY
+            }
+            NOT = {
+                has_completed_focus = gerfocus_united
+            }
             CHB = {
                 OR = {
-                    has_completed_focus = chbfocus_angry_students
+                    has_completed_focus = chbfocuscvd_red_army
                     has_government = communist
                     has_government = democratic_socialist
                     has_government = social_democrat
                     has_government = progressive
                 }
+            }
+		}
+        available = {
+            CHB = {
+                OR = {
+                    has_completed_focus = chbfocuscvd_red_army
+                    has_government = communist
+                    has_government = democratic_socialist
+                    has_government = social_democrat
+                    has_government = progressive
+                }
+            }
+            NOT = {
+                has_completed_focus = gerfocus_united
             }
         }
         prerequisite = {
@@ -139,5 +156,25 @@ focus_tree = {
             }
         }
 
+    }
+    focus = {
+        id = gerfocus_united
+        icon = align_to_germany
+        x = 3
+        y = 4
+        cost = 3
+        available = {
+            NOT = {
+                country_exists = BAY
+            }
+        }
+        prerequisite = {
+            focus = gerfocus_strike_first
+        }
+        completion_reward = {
+            add_stability = 0.2
+            add_political_power = 200
+            set_cosmetic_tag = GER_united
+        }
     }
 }

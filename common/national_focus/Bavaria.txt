@@ -71,17 +71,33 @@ focus_tree = {
 		y = 2
 		cost = 5
 		bypass = {
-			has_war_with = GER
-		}
-		available = {
+			NOT = {
+				country_exists = GER
+			}
+			NOT = {
+				has_completed_focus = bavfocus_unification
+			}
 			CHB = {
                 OR = {
-                    has_completed_focus = chbfocus_angry_ASS
+                    has_completed_focus = chbfocus_the_ASS_Way
                     has_government = reactionary
                     has_government = nationalist
 					has_government = fascist
                 }
             }
+		}
+		available = {
+			CHB = {
+                OR = {
+                    has_completed_focus = chbfocus_the_ASS_Way
+                    has_government = reactionary
+                    has_government = nationalist
+					has_government = fascist
+                }
+            }
+			NOT = {
+				has_completed_focus = bavfocus_unification
+			}
 		}
 		prerequisite = {
 			focus = bavfocus_promise_democracy
@@ -143,5 +159,25 @@ focus_tree = {
                 type = annex_everything
             }
 		}
+	}
+	focus = {
+		id = bavfocus_unification
+		icon = align_to_germany
+		x = 3
+		y = 4
+		cost = 3
+		prerequisite = {
+			focus = bavfocus_strike_first
+		}
+		available = {
+			NOT = {
+				country_exists = GER
+			}
+		}
+		completion_reward = {
+            add_stability = 0.2
+            add_political_power = 200
+            set_cosmetic_tag = GER_united
+        }
 	}
 }

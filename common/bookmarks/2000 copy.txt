@@ -16,9 +16,9 @@ bookmarks = {
 				CHB_Sweaties
 			}
 			focuses = {
-				chbfocus_angry_students
-				chbfocus_keep_status_quo
-				chbfocus_angry_ASS
+				chbfocus_the_ASS_Way
+				chbfocuscvd_revolution
+				chbfocuscvd_stability
 			}
 		}
 		"SCO"={

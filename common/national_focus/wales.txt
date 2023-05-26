@@ -158,7 +158,7 @@ focus_tree = {
             }
             GER = {
                 add_opinion_modifier = {
-                    target = WAL
+                    target = WLS
                     modifier = declaration_of_friendship
                 }
             }
@@ -198,7 +198,7 @@ focus_tree = {
             }
             USA = {
                 add_opinion_modifier = {
-                    target = WAL
+                    target = WLS
                     modifier = declaration_of_friendship
                 }
             }
@@ -234,7 +234,7 @@ focus_tree = {
             }
             SOV = {
                 add_opinion_modifier = {
-                    target = WAL
+                    target = WLS
                     modifier = declaration_of_friendship
                 }
             }
