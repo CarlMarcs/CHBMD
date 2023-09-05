@@ -841,3 +841,33 @@ news_event = {
 		trigger = { has_democratic_form_of_government = no }
 	}
 }
+
+#French Protests
+news_event = {
+	id = news.130
+	title = news.130.t
+	desc = news.130.d
+	picture = GFX_news_event_french_communists
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = news.130.o1
+		trigger = {
+			original_tag = FRA
+		}
+	}
+	option = {
+		name = news.130.o2
+		trigger = {
+			original_tag = ITA
+		}
+	}
+	option = {
+		name = news.130.o3
+		trigger = {
+			NOT = {
+				original_tag = FRA
+			}
+		}
+	}
+}

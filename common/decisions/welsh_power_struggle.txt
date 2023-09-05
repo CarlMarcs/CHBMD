@@ -16,6 +16,7 @@ the_welsh_struggle_category = {
             add_stability = -0.05
             hidden_effect = {
                 add_to_variable = { WAL_Watkins_Influence = 1 }
+                activate_mission = watkins_influence_grows
             }
         }
     }
@@ -37,6 +38,7 @@ the_welsh_struggle_category = {
             add_manpower = -500
             hidden_effect = {
                 add_to_variable = { WAL_Lamb_Influence = 1 }
+                activate_mission = lamb_influence_grows
             }
         }
     }
@@ -57,6 +59,7 @@ the_welsh_struggle_category = {
             add_stability = -0.05
             hidden_effect = {
                 add_to_variable = { WAL_Butcher_Influence = 1 }
+                activate_mission = butcher_influence_grows
             }
         }
     }

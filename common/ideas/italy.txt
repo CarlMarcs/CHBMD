@@ -14,7 +14,15 @@ ideas = {
 				research_speed_factor = 0.02
 			}
 		}
-		
+		ITA_Friends_Forever = {
+			allowed = {
+				always = no
+			}
+			picture = mrt_referendum
+			modifier = {
+				autonomy_gain = -1
+			}
+		}
 		ITA_bureaucratic_reforms_research = {
 			
 			allowed = {

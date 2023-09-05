@@ -187,7 +187,7 @@ ideas = {
 			
 		}
 	
-		FRA_persecution_of_enemies_of_communism = {
+		FRA_left_protests = {
 			
 			allowed = {
 				always = no
@@ -196,22 +196,14 @@ ideas = {
 			picture = communism7
 			
 			modifier = {
-				islamist_drift = -0.02
-				fascist_drift = -0.02
-				nationalist_drift = -0.02
-				monarchist_drift = -0.01
-				reactionary_drift = -0.01
-				conservative_drift = -0.01
-				market_liberal_drift = -0.01
-				social_liberal_drift = -0.01
-				social_democrat_drift = -0.01
-				progressive_drift = -0.01
-				democratic_socialist_drift = 0.01
+				social_democrat_drift = 0.01
+				democratic_socialist_drift = 0.02
 				communist_drift = 0.03
+				stability_weekly = -0.01
 			}
 			
 		}
-		
+		 
 		FRA_reformed_officer_school = {
 			
 			allowed = {
