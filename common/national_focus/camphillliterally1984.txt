@@ -1,0 +1,7 @@
+focus_tree = {
+	id = bowsoctree
+	country = {
+		factor = 0
+	}
+	
+}

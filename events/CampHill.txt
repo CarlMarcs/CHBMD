@@ -742,6 +742,19 @@ country_event = {
         }
         set_variable = { NAZI_NASI = 1}
     }
+    option = {
+        trigger = {
+            has_completed_focus = chbmonfocus_support_socdems
+        }
+        name = CampHill.23.o3
+        set_politics = {
+            ruling_party = social_democrat
+        }
+        add_popularity = {
+            ideology = social_democrat
+            popularity = 0.25
+        }
+    }
 }
 country_event = {
     id = CampHill.24

@@ -26,7 +26,7 @@ tags={
 	"National Focuses"
 	"Technologies"
 }
-picture="chb.png"
+picture="mod/chb.png"
 supported_version="1.12.*"
 path="D:/Hoi4/mod/CHB"
 remote_file_id="2810469267"

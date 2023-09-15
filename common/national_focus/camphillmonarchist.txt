@@ -67,7 +67,7 @@ focus_tree = {
                 Character = CHB_Andrew_Rudd
                 Promote_leader = yes
                 country_leader = {
-                    ideology = social_democrat_ideology
+                    ideology = moderate_socialism
                     expire = "2069.1.1.1"
                 }
             }
@@ -691,6 +691,7 @@ focus_tree = {
             add_state_core = 120
             hidden_effect = {
                 set_global_flag = Airstrip_One
+                load_focus_tree = bowsoctree
             }
         }
     }
