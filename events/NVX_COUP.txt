@@ -14,6 +14,9 @@ country_event = {
 		islamist > 0.45
 		NOT = { has_government = islamist }
 		NOT = { has_country_flag = NVX_COUP_wait_election }
+		NOT = {
+			is_camphillified = yes
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -96,6 +99,9 @@ country_event = {
 		NVX_COUP_initial_trigger_universal = yes
 		fascist > 0.45
 		NOT = { has_government = fascist }
+		NOT = {
+			is_camphillified = yes
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -140,6 +146,9 @@ country_event = {
 		nationalist > 0.45
 		NOT = { has_government = nationalist }
 		NOT = { has_country_flag = NVX_COUP_wait_election }
+		NOT = {
+			is_camphillified = yes
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -222,6 +231,9 @@ country_event = {
 		NVX_COUP_initial_trigger_universal = yes
 		monarchist > 0.45
 		NOT = { has_government = monarchist }
+		NOT = {
+			is_camphillified = yes
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -267,6 +279,9 @@ country_event = {
 		reactionary > 0.45
 		NOT = { has_government = reactionary }
 		NVX_has_government_ideology_authoritarian = yes
+		NOT = {
+			is_camphillified = yes
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -311,6 +326,9 @@ country_event = {
 		conservative > 0.45
 		NOT = { has_government = conservative }
 		NVX_has_government_ideology_authoritarian = yes
+		NOT = {
+			is_camphillified = yes
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -355,6 +373,9 @@ country_event = {
 		market_liberal > 0.45
 		NOT = { has_government = market_liberal }
 		NVX_has_government_ideology_authoritarian = yes
+		NOT = {
+			is_camphillified = yes
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -399,6 +420,9 @@ country_event = {
 		social_liberal > 0.45
 		NOT = { has_government = social_liberal }
 		NVX_has_government_ideology_authoritarian = yes
+		NOT = {
+			is_camphillified = yes
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -443,6 +467,9 @@ country_event = {
 		social_democrat > 0.45
 		NOT = { has_government = social_democrat }
 		NVX_has_government_ideology_authoritarian = yes
+		NOT = {
+			is_camphillified = yes
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -487,6 +514,9 @@ country_event = {
 		progressive > 0.45
 		NOT = { has_government = progressive }
 		NVX_has_government_ideology_authoritarian = yes
+		NOT = {
+			is_camphillified = yes
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -531,6 +561,9 @@ country_event = {
 		democratic_socialist > 0.45
 		NOT = { has_government = democratic_socialist }
 		NVX_has_government_ideology_authoritarian = yes
+		NOT = {
+			is_camphillified = yes
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -574,6 +607,9 @@ country_event = {
 		NVX_COUP_initial_trigger_universal = yes
 		communist > 0.45
 		NOT = { has_government = communist }
+		NOT = {
+			is_camphillified = yes
+		}
 	}
 	
 	mean_time_to_happen = {

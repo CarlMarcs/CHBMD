@@ -568,7 +568,9 @@ focus_tree = {
             custom_effect_tooltip = chbmonfocusreward_elections
             hidden_effect = {
                 if = {
-                    limit = {monarchist > 0.40}
+                    limit = {
+                        monarchist > 0.40
+                    }
                     country_event = CampHill.22
                 }
                 else = {
@@ -623,6 +625,7 @@ focus_tree = {
            OR = {
             has_government = social_liberal
             has_government = conservative
+            has_government = social_democrat
            }
            
         }
@@ -652,6 +655,7 @@ focus_tree = {
             
             hidden_effect = {
                 set_global_flag = British_Republic
+                load_focus_tree = chbdemfocus
             }
         }
     }

@@ -638,7 +638,66 @@ focus_tree = {
             remove_ideas = CHB_House_Divide
             hidden_effect = {
                 set_global_flag = Soviet_Reunion
-                
+                if = {
+                    limit = {
+                        has_country_leader = CHB_Andrew_Rudd
+                    }
+                    set_party_name = {
+                        ideology = communist
+                        long_name = CHB_USSR_Com_Rudd_long
+                        name = CHB_USSR_Com_Rudd
+                    }
+                    set_party_name = {
+                        ideology = democratic_socialist
+                        long_name = CHB_USSR_soc_Rudd_long
+                        name = CHB_USSR_soc_Rudd
+                    }
+                    set_party_name = {
+                        ideology = social_democrat
+                        long_name = CHB_USSR_socdem_Rudd_long
+                        name = CHB_USSR_socdem_Rudd
+                    }
+                }
+                if = {
+                    limit = {
+                        has_country_leader = CHB_Student_Council_Rudd
+                    }
+                    set_party_name = {
+                        ideology = communist
+                        long_name = CHB_USSR_Com_Rudd_long
+                        name = CHB_USSR_Com_Rudd
+                    }
+                    set_party_name = {
+                        ideology = democratic_socialist
+                        long_name = CHB_USSR_soc_Rudd_long
+                        name = CHB_USSR_soc_Rudd
+                    }
+                    set_party_name = {
+                        ideology = social_democrat
+                        long_name = CHB_USSR_socdem_Rudd_long
+                        name = CHB_USSR_socdem_Rudd
+                    }
+                }
+                if = {
+                    limit = {
+                        has_country_leader = CHB_Zeeshan
+                    }
+                    set_party_name = {
+                        ideology = communist
+                        long_name = CHB_USSR_Com_long
+                        name = CHB_USSR_Com
+                    }
+                    set_party_name = {
+                        ideology = democratic_socialist
+                        long_name = CHB_USSR_soc_long
+                        name = CHB_USSR_soc
+                    }
+                    set_party_name = {
+                        ideology = social_democrat
+                        long_name = CHB_USSR_socdem_long
+                        name = CHB_USSR_socdem
+                    }
+                }
             }
         }
     }

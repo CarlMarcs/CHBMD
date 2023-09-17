@@ -1,0 +1,6 @@
+focus_tree = {
+    id = chbruddfocus
+    country = {
+        factor = 0
+    }
+}

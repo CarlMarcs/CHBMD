@@ -1,0 +1,406 @@
+focus_tree = {
+    id = chbdemfocus
+    country = {
+        factor = 0
+    }
+    focus = {
+        id = CHB_demrudd_pop_front
+        icon = communism7
+        cost = 2
+        x = 2
+        y = 0
+        available = {
+            has_government = social_democrat
+        }
+        mutually_exclusive = {
+            focus = CHB_dem_stabilise
+        }
+        completion_reward = {
+            add_stability = -0.1
+        }
+    }
+    focus = {
+        id = CHB_demrudd_not_dem
+        icon = communism
+        cost = 1
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = CHB_demrudd_pop_front
+        }
+        mutually_exclusive = {
+            focus = CHB_demrudd_democratic
+        }
+        completion_reward = {
+            add_stability = -0.1
+            add_popularity = {
+                ideology = communist
+                popularity = 0.05
+            }
+            add_popularity = {
+                ideology = democratic_socialist
+                popularity = 0.1
+            }
+        }
+    }
+    focus = {
+        id = CHB_demrudd_democratic
+        icon = attack_communism
+        cost = 1
+        x = 3
+        y = 1
+        prerequisite = {
+            focus = CHB_demrudd_pop_front
+        }
+        mutually_exclusive = {
+            focus = CHB_demrudd_not_dem
+        }
+        completion_reward = {
+            add_stability = 0.1
+            add_popularity = {
+                ideology = social_democrat
+                popularity = 0.05
+            }
+            add_popularity = {
+                ideology = social_liberal
+                popularity = 0.03
+            }
+        }
+    }
+    focus = {
+        id = CHB_demrudd_puppet_democracy
+        icon = attack_democracy
+        cost = 3
+        x = 1
+        y = 2
+        prerequisite = {
+            focus = CHB_demrudd_not_dem
+        }
+        completion_reward = {
+            add_stability = -0.1
+            set_politics = {
+                ruling_party = social_democrat
+                elections_allowed = no
+            }
+        }
+    }
+    focus = {
+        id = CHB_demrudd_remove_opposition
+        icon = communism8
+        cost = 4
+        x = 1
+        y = 3
+        prerequisite = {
+            focus = CHB_demrudd_puppet_democracy
+        }
+        completion_reward = {
+            add_stability = -0.2
+            add_manpower = -5000
+            add_popularity = {
+                ideology = social_liberal
+                popularity = -0.20
+            }
+            add_popularity = {
+                ideology = conservative
+                popularity = -0.2
+            }
+            add_popularity = {
+                ideology = monarchist
+                popularity = -0.1
+            }
+            add_popularity = {
+                ideology = communist
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = democratic_socialist
+                popularity = 0.2
+            }
+            retire_character = CHB_Martin_Garrod
+            add_field_marshal_role = {
+                Character = CHB_Andrew_Rudd
+                skill = 4
+                attack_skill = 3
+                defense_skill = 3
+                planning_skill = 3
+                logistics_skill = 5
+            }
+        }
+    }
+    focus = {
+        id = CHB_demrudd_market_socialism
+        icon = industry_democratic4
+        cost = 3
+        x = 1
+        y = 4
+        prerequisite = {
+            focus = CHB_demrudd_remove_opposition
+        }
+        completion_reward = {
+            add_ideas = CHB_Market_Socialism
+            add_popularity = {
+                ideology = democratic_socialist
+                popularity = 0.2
+            }
+            add_popularity = {
+                ideology = communist
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = social_democrat
+                popularity = 0.05
+            }
+        }
+    }
+    focus = {
+        id = CHB_demrudd_USSR
+        icon = ussr
+        cost = 7
+        x = 1
+        y = 5
+        prerequisite = {
+            focus = CHB_demrudd_market_socialism
+        }
+        completion_reward = {
+            set_politics = {
+                ruling_party = democratic_socialist
+                elections_allowed = no
+            }
+            hidden_effect = {
+                load_focus_tree = chbruddfocus
+                set_party_name = {
+                    ideology = communist
+                    long_name = CHB_USSR_Com_Rudd_long
+                    name = CHB_USSR_Com_Rudd
+                }
+                set_party_name = {
+                    ideology = democratic_socialist
+                    long_name = CHB_USSR_soc_Rudd_long
+                    name = CHB_USSR_soc_Rudd
+                }
+                set_party_name = {
+                    ideology = social_democrat
+                    long_name = CHB_USSR_socdem_Rudd_long
+                    name = CHB_USSR_socdem_Rudd
+                }
+                set_party_name = {
+                    ideology = progressive
+                    long_name = CHB_progressive_party_disunited_long
+                    name = CHB_progressive_party_disunited
+                }
+                add_country_leader_role = {
+                    Character = CHB_Zeeshan
+                    Promote_leader = yes
+                    country_leader = {
+                        ideology = fully_automated_luxury_gay_space_communism
+                        expire = "2069.1.1.1"
+                    }
+                }
+            }
+        }
+    }
+    focus = {
+        id = CHB_demrudd_approach_demsocs
+        icon = communism6
+        cost = 2
+        x = 3
+        y = 2
+        prerequisite = {
+            focus = CHB_demrudd_democratic
+        }
+        completion_reward = {
+            add_stability = 0.1
+            set_party_name = {
+                ideology = democratic_socialist
+                long_name = CHB_Rudd_Demsoc_party_long
+                name = CHB_Rudd_Demsoc_party
+            }
+            add_popularity = {
+                ideology = democratic_socialist
+                popularity = 0.05
+            }
+        }
+    }
+    focus = {
+        id = CHB_demrudd_meet_giles
+        icon = democracy
+        cost = 2
+        x = 3
+        y = 3
+        prerequisite = {
+            focus = CHB_demrudd_approach_demsocs
+        }
+        completion_reward = {
+            add_stability = 0.1
+            add_popularity = {
+                ideology = social_democrat
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = social_liberal
+                popularity = 0.1
+            }
+        }
+    }
+    focus = {
+        id = CHB_demrudd_three_party
+        icon = national_unity
+        cost = 2
+        x = 3
+        y = 4
+        prerequisite = {
+            focus = CHB_demrudd_meet_giles
+        }
+        completion_reward = {
+            add_ideas = CHB_Three_Party_Democracy
+            add_popularity = {
+                ideology = social_democrat
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = social_liberal
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = conservative
+                popularity = 0.1
+            }
+            hidden_effect = {
+                add_popularity = {
+                    ideology = democratic_socialist
+                    popularity = 0.05
+                }
+            }
+        }
+    }
+    focus = {
+        id = CHB_demrudd_stability
+        icon = neutrality
+        cost = 5
+        x = 3
+        y = 5
+        prerequisite = {
+            focus = CHB_demrudd_three_party
+        }
+        completion_reward = {
+            add_stability = 0.1
+        }
+    }
+    focus = {
+        id = CHB_dem_stabilise
+        icon = democracy
+        cost = 1
+        x = 6
+        y = 0
+        available = {
+            OR = {
+                has_government = conservative
+                has_government = social_liberal
+            }
+        }
+        mutually_exclusive = {
+            focus = CHB_demrudd_pop_front
+        }
+        completion_reward = {
+            add_popularity = {
+                ideology = conservative
+                popularity = 0.05
+            }
+            add_popularity = {
+                ideology = social_liberal
+                popularity = 0.05
+            }
+        }
+    }
+    focus = {
+        id = CHB_dem_NASI_stabilise
+        icon = attack_communism
+        cost = 2
+        x = 5
+        y = 1
+        prerequisite = {
+            focus = CHB_dem_stabilise
+        }
+        completion_reward = {
+            add_popularity = {
+                ideology = social_liberal
+                popularity = 0.05
+            }
+            add_ideas = CHB_anti_communism
+        }
+    }
+    focus = {
+        id = CHB_dem_NASI_absorb_socdems
+        icon = industry_democratic3
+        cost = 3
+        x = 5
+        y = 2
+        prerequisite = {
+            focus = CHB_dem_NASI_stabilise
+        }
+        completion_reward = {
+            add_popularity = {
+                ideology = social_democrat
+                popularity = -1
+            }
+            add_stability = -0.1
+        }
+    }
+    focus = {
+        id = CHB_dem_NASI_McCarthyism
+        icon = align_to_america
+        cost = 2
+        x = 5
+        y = 3
+        prerequisite = {
+            focus = CHB_dem_NASI_absorb_socdems
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = CHB_anti_communism
+                add_idea = CHB_anti_communism2
+            }
+        }
+    }
+    focus = {
+        id = CHB_dem_NASI_Fascists_Cringe
+        icon = attack_fascism
+        cost = 3
+        x = 5
+        y = 4
+        prerequisite = {
+            focus = CHB_dem_NASI_McCarthyism
+        }
+        completion_reward = {
+            add_popularity = {
+                ideology = fascist
+                popularity = -1
+            }
+            swap_ideas = {
+                remove_idea = CHB_anti_communism2
+                add_idea = CHB_anti_radicalism
+            }
+        }
+    }
+    focus = {
+        id = CHB_dem_NASI_moderate_future
+        icon = neutrality
+        cost = 2
+        x = 5
+        y = 5
+        prerequisite = {
+            focus = CHB_dem_NASI_Fascists_Cringe
+        }
+        completion_reward = { 
+            add_stability = 0.2
+            add_popularity = {
+                ideology = social_liberal
+                popularity = 0.2
+            }
+            add_popularity = {
+                ideology = conservative
+                popularity = 0.2
+            }
+        }
+    }
+}

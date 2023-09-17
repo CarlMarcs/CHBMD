@@ -434,7 +434,7 @@ country_event = {
             Character = CHB_Zeeshan
             Promote_leader = yes
             country_leader = {
-                ideology = marxist
+                ideology = fully_automated_luxury_gay_space_communism
                 expire = "2069.1.1.1"
             }
         }
@@ -462,7 +462,7 @@ country_event = {
             Character = CHB_Zeeshan
             Promote_leader = yes
             country_leader = {
-                ideology = marxist
+                ideology = fully_automated_luxury_gay_space_communism
                 expire = "2069.1.1.1"
             }
         }
@@ -749,10 +749,12 @@ country_event = {
         name = CampHill.23.o3
         set_politics = {
             ruling_party = social_democrat
+            elections_allowed = yes
+            election_frequency = 60
         }
         add_popularity = {
             ideology = social_democrat
-            popularity = 0.25
+            popularity = 0.15
         }
     }
 }
